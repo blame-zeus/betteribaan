@@ -1,0 +1,1818 @@
+{
+ "url": "dist/index.html",
+ "at": "2026-11-19T16:53:49.265Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.16,
+    0.2,
+    0.21,
+    0.3
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 2846,
+     "screens": 3.2,
+     "words": 702,
+     "img": 9,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [
+      "http://127.0.0.1:54334/images/st-james-the-greater-shrine-parish-ibaan.jpg",
+      "http://127.0.0.1:54334/images/good-friday-procession-in-ibaan-batangas-2023.jpg",
+      "http://127.0.0.1:54334/images/philippines-map-1749-historiadelaprov00muri-0005.jpg",
+      "http://127.0.0.1:54334/images/star-tollway-ibaan-batangas-2024-04-14.jpg",
+      "http://127.0.0.1:54334/images/lipa-ibaan-road-ibaan-batangas-sep-2026.jpg",
+      "http://127.0.0.1:54334/images/panuluyan-sa-ibaan-batangas-2023-12-24.jpg",
+      "http://127.0.0.1:54334/images/good-friday-procession-in-ibaan-batangas-2023.jpg",
+      "http://127.0.0.1:54334/images/star-tollway-ibaan-batangas-2024-04-14.jpg"
+     ],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "The register of builders.",
+     "words": 4,
+     "chars": 25,
+     "lines": 1,
+     "size": 32,
+     "vw": 2.2,
+     "font": "Times New Roman",
+     "weight": 700,
+     "tracking": 0,
+     "leading": 1.2,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.99,
+     "top": 261,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "The register of builders.",
+     "words": 4,
+     "lines": 1,
+     "size": 32,
+     "font": "Times New Roman"
+    },
+    "headings": [
+     {
+      "text": "The register of builders.",
+      "words": 4,
+      "chars": 25,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Times New Roman",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.99,
+      "top": 261,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Times New Roman",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Arial",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      16,
+      19,
+      24,
+      32
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Times New Roman",
+      "size": 16,
+      "leading": 1.2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 21
+     },
+     "measureChars": 178,
+     "max": {
+      "size": 32,
+      "vw": 2.2,
+      "font": "Times New Roman",
+      "text": "The register"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#000000",
+       "share": 0.86
+      },
+      {
+       "color": "#0000ee",
+       "share": 0.14
+      }
+     ],
+     "button": null,
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 0,
+     "inHero": 0,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 8,
+     "fixed": false,
+     "height": 60,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 2846,
+    "margins": {
+     "left": 8,
+     "right": 158
+    },
+    "sections": [
+     {
+      "sel": "div.mosaic",
+      "tag": "div",
+      "top": 120,
+      "height": 120,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.hero-body.frame",
+      "tag": "section",
+      "top": 261,
+      "height": 215,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The register",
+       "size": 32,
+       "tag": "h1"
+      },
+      "left": 8,
+      "right": 593,
+      "textLeft": 8,
+      "textRight": 593,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.section-tight",
+      "tag": "section",
+      "top": 497,
+      "height": 162,
+      "words": 35,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A small map",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 1008,
+      "textLeft": 8,
+      "textRight": 1008,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.spines-stage",
+      "tag": "section",
+      "top": 679,
+      "height": 511,
+      "words": 107,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Four ways in.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 841,
+      "textLeft": 8,
+      "textRight": 841,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section",
+      "tag": "section",
+      "top": 1209,
+      "height": 303,
+      "words": 63,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "How the directory works",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 961,
+      "textLeft": 8,
+      "textRight": 961,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.section-band",
+      "tag": "section",
+      "top": 1532,
+      "height": 361,
+      "words": 86,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The record, plainly.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 44,
+      "textLeft": 8,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 1913,
+      "height": 235,
+      "words": 50,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Get involved",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 788,
+      "textLeft": 8,
+      "textRight": 788,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 2168,
+      "height": 493,
+      "words": 208,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions, answered.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 297,
+      "textLeft": 8,
+      "textRight": 297,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 2676,
+      "height": 162,
+      "words": 79,
+      "media": 0,
+      "middle": 4,
+      "heading": null,
+      "left": 8,
+      "right": 39,
+      "textLeft": 8,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "The register of builders.",
+      "size": 32,
+      "top": 261,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "Skip to main content",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Independent community project.",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Better",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Directory",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "The register",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Open the directory",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "A directory of local-government transparency porta",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Find a place or region",
+      "side": "left",
+      "px": 8
+     }
+    ],
+    "edges": [
+     {
+      "x": 8,
+      "n": 36
+     },
+     {
+      "x": 181,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 37,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.33,
+    "voidBox": {
+     "x": 540,
+     "y": 420,
+     "w": 900,
+     "h": 480
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 3,
+   "filled": [
+    0.24,
+    0.23,
+    0.4
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 3008,
+     "screens": 2.9,
+     "words": 702,
+     "img": 9,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [
+      "http://127.0.0.1:54334/images/st-james-the-greater-shrine-parish-ibaan.jpg",
+      "http://127.0.0.1:54334/images/good-friday-procession-in-ibaan-batangas-2023.jpg",
+      "http://127.0.0.1:54334/images/philippines-map-1749-historiadelaprov00muri-0005.jpg",
+      "http://127.0.0.1:54334/images/star-tollway-ibaan-batangas-2024-04-14.jpg",
+      "http://127.0.0.1:54334/images/lipa-ibaan-road-ibaan-batangas-sep-2026.jpg",
+      "http://127.0.0.1:54334/images/panuluyan-sa-ibaan-batangas-2023-12-24.jpg",
+      "http://127.0.0.1:54334/images/good-friday-procession-in-ibaan-batangas-2023.jpg",
+      "http://127.0.0.1:54334/images/star-tollway-ibaan-batangas-2024-04-14.jpg"
+     ],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "The register of builders.",
+     "words": 4,
+     "chars": 25,
+     "lines": 1,
+     "size": 32,
+     "vw": 4.2,
+     "font": "Times New Roman",
+     "weight": 700,
+     "tracking": 0,
+     "leading": 1.2,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.98,
+     "top": 261,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "The register of builders.",
+     "words": 4,
+     "lines": 1,
+     "size": 32,
+     "font": "Times New Roman"
+    },
+    "headings": [
+     {
+      "text": "The register of builders.",
+      "words": 4,
+      "chars": 25,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Times New Roman",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.98,
+      "top": 261,
+      "tag": "h1",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": null,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Times New Roman",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Arial",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      16,
+      19,
+      24,
+      32
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Times New Roman",
+      "size": 16,
+      "leading": 1.2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 21
+     },
+     "measureChars": 94,
+     "max": {
+      "size": 32,
+      "vw": 4.2,
+      "font": "Times New Roman",
+      "text": "The register"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#000000",
+       "share": 0.86
+      },
+      {
+       "color": "#0000ee",
+       "share": 0.14
+      }
+     ],
+     "button": null,
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 0,
+     "inHero": 0,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 8,
+     "fixed": false,
+     "height": 60,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 3008,
+    "margins": {
+     "left": 8,
+     "right": 26
+    },
+    "sections": [
+     {
+      "sel": "div.mosaic",
+      "tag": "div",
+      "top": 120,
+      "height": 120,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.hero-body.frame",
+      "tag": "section",
+      "top": 261,
+      "height": 233,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The register",
+       "size": 32,
+       "tag": "h1"
+      },
+      "left": 8,
+      "right": 44,
+      "textLeft": 8,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.section-tight",
+      "tag": "section",
+      "top": 515,
+      "height": 162,
+      "words": 35,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A small map",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 336,
+      "textLeft": 8,
+      "textRight": 336,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.spines-stage",
+      "tag": "section",
+      "top": 697,
+      "height": 511,
+      "words": 107,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Four ways in.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 169,
+      "textLeft": 8,
+      "textRight": 169,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section",
+      "tag": "section",
+      "top": 1227,
+      "height": 303,
+      "words": 63,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "How the directory works",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 289,
+      "textLeft": 8,
+      "textRight": 289,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.section-band",
+      "tag": "section",
+      "top": 1550,
+      "height": 379,
+      "words": 86,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The record, plainly.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 15,
+      "textLeft": 8,
+      "textRight": 15,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 1949,
+      "height": 235,
+      "words": 50,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Get involved",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 116,
+      "textLeft": 8,
+      "textRight": 116,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 2204,
+      "height": 601,
+      "words": 208,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions, answered.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 26,
+      "textLeft": 8,
+      "textRight": 8,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 2820,
+      "height": 180,
+      "words": 79,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 8,
+      "right": 20,
+      "textLeft": 8,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "The register of builders.",
+      "size": 32,
+      "top": 261,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "Skip to main content",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Independent community project.",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Better",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Directory",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "The register",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Open the directory",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "A directory of local-government transparency porta",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Find a place or region",
+      "side": "left",
+      "px": 8
+     }
+    ],
+    "edges": [
+     {
+      "x": 8,
+      "n": 36
+     },
+     {
+      "x": 181,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 37,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.52,
+    0.37,
+    0.47,
+    0.51,
+    0.5
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 3656,
+     "screens": 4.3,
+     "words": 702,
+     "img": 9,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [
+      "http://127.0.0.1:54334/images/st-james-the-greater-shrine-parish-ibaan.jpg",
+      "http://127.0.0.1:54334/images/good-friday-procession-in-ibaan-batangas-2023.jpg",
+      "http://127.0.0.1:54334/images/philippines-map-1749-historiadelaprov00muri-0005.jpg",
+      "http://127.0.0.1:54334/images/star-tollway-ibaan-batangas-2024-04-14.jpg",
+      "http://127.0.0.1:54334/images/lipa-ibaan-road-ibaan-batangas-sep-2026.jpg",
+      "http://127.0.0.1:54334/images/panuluyan-sa-ibaan-batangas-2023-12-24.jpg",
+      "http://127.0.0.1:54334/images/good-friday-procession-in-ibaan-batangas-2023.jpg",
+      "http://127.0.0.1:54334/images/star-tollway-ibaan-batangas-2024-04-14.jpg"
+     ],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "The register of builders.",
+     "words": 4,
+     "chars": 25,
+     "lines": 1,
+     "size": 32,
+     "vw": 8.2,
+     "font": "Times New Roman",
+     "weight": 700,
+     "tracking": 0,
+     "leading": 1.2,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.96,
+     "top": 333,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "The register of builders.",
+     "words": 4,
+     "lines": 1,
+     "size": 32,
+     "font": "Times New Roman"
+    },
+    "headings": [
+     {
+      "text": "The register of builders.",
+      "words": 4,
+      "chars": 25,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Times New Roman",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 333,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "A small map of a growing field.",
+      "words": 7,
+      "chars": 31,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Times New Roman",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 605,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Four ways in.",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Times New Roman",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 805,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "How the directory works",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Times New Roman",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1425,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The record, plainly.",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Times New Roman",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1784,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Get involved",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Times New Roman",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2255,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions, answered.",
+      "words": 2,
+      "chars": 20,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Times New Roman",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2564,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Times New Roman",
+       "share": 1,
+       "mono": false
+      },
+      {
+       "family": "Arial",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      16,
+      19,
+      24,
+      32
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Times New Roman",
+      "size": 16,
+      "leading": 1.2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 21
+     },
+     "measureChars": 47,
+     "max": {
+      "size": 32,
+      "vw": 8.2,
+      "font": "Times New Roman",
+      "text": "The register"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [],
+     "textColors": [
+      {
+       "color": "#000000",
+       "share": 0.86
+      },
+      {
+       "color": "#0000ee",
+       "share": 0.14
+      }
+     ],
+     "button": null,
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 0,
+     "inHero": 0,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 8,
+     "fixed": false,
+     "height": 78,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 3656,
+    "margins": {
+     "left": 8,
+     "right": 12
+    },
+    "sections": [
+     {
+      "sel": "div.mosaic",
+      "tag": "div",
+      "top": 156,
+      "height": 156,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 48,
+      "right": 48,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.hero-body.frame",
+      "tag": "section",
+      "top": 333,
+      "height": 251,
+      "words": 54,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The register",
+       "size": 32,
+       "tag": "h1"
+      },
+      "left": 8,
+      "right": 26,
+      "textLeft": 8,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.section-tight",
+      "tag": "section",
+      "top": 605,
+      "height": 180,
+      "words": 35,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A small map",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 14,
+      "textLeft": 8,
+      "textRight": 14,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.spines-stage",
+      "tag": "section",
+      "top": 805,
+      "height": 601,
+      "words": 107,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Four ways in.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 10,
+      "textLeft": 8,
+      "textRight": 10,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section",
+      "tag": "section",
+      "top": 1425,
+      "height": 339,
+      "words": 63,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "How the directory works",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 14,
+      "textLeft": 8,
+      "textRight": 14,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.section-band",
+      "tag": "section",
+      "top": 1784,
+      "height": 451,
+      "words": 86,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The record, plainly.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 8,
+      "textLeft": 8,
+      "textRight": 8,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 2255,
+      "height": 289,
+      "words": 50,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Get involved",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 19,
+      "textLeft": 8,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 2564,
+      "height": 781,
+      "words": 208,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions, answered.",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 13,
+      "textLeft": 8,
+      "textRight": 13,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 3360,
+      "height": 288,
+      "words": 79,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 8,
+      "right": 12,
+      "textLeft": 8,
+      "textRight": 12,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "The register of builders.",
+      "size": 32,
+      "top": 333,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [
+     {
+      "text": "Skip to main content",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Independent community project.",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Not an official government website.",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Better",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Directory",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Sources",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "The register",
+      "side": "left",
+      "px": 8
+     },
+     {
+      "text": "Open the directory",
+      "side": "left",
+      "px": 8
+     }
+    ],
+    "edges": [
+     {
+      "x": 8,
+      "n": 36
+     },
+     {
+      "x": 181,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 37,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "default-link",
+   "width": 1440,
+   "message": "Browser-default blue/purple link colour is showing.",
+   "fix": "Style every link: inherit the text colour and mark it with weight, underline offset, or the accent.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "first-action",
+   "width": 1440,
+   "message": "No visible button in the first screen.",
+   "fix": "Give the one primary action a real button in the first screen (a filled or solid-bordered control, 44px or taller), not only a link in the navigation.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 178 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "broken-image",
+   "width": 1440,
+   "message": "Broken image(s): http://127.0.0.1:54334/images/st-james-the-greater-shrine-parish-ibaan.jpg, http://127.0.0.1:54334/images/good-friday-procession-in-ibaan-batangas-2023.jpg, http://127.0.0.1:54334/images/philippines-map-1749-historiadelaprov00muri-0005.jpg, http://127.0.0.1:54334/images/star-tollway-ibaan-batangas-2024-04-14.jpg",
+   "fix": "Fix the URL or replace the asset.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "focal-point",
+   "width": 1440,
+   "message": "The first screen has no dominant element: the largest type is 32px (2.2vw) and no single picture holds a third of the viewport.",
+   "fix": "Make one thing lead: the headline at display size, or one large picture. A grid of many small pictures is not one thing; in blind tests jurors marked a first screen without a headline down every time. On the strongest studied sites the largest type has a median of 8.4vw.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The page sits off-centre: its content comes to 8px from the left edge but only to 158px from the right, at 1440px.",
+   "fix": "Give the page one pair of equal margins. Check the wrapper for a max-width without margin-inline: auto, a grid with an empty last column, or padding on one side only. If one side is meant to hold air, it must still be closed by something that reaches the margin (a picture, the navigation's last item, a figure)."
+  },
+  {
+   "level": "FAIL",
+   "id": "lopsided",
+   "width": 1440,
+   "message": "3 sections keep all their content on one side and leave 67% of the width empty: \"Four ways in.\" (right 841px empty); \"How the directory works\" (right 961px empty); \"Get involved\" (right 788px empty)",
+   "fix": "Use the whole width the page has set up: put the section's picture, its second column, its list or its figure in the empty half, or set the text larger across the grid. Empty space must be placed, with something on each side of it."
+  },
+  {
+   "level": "WARN",
+   "id": "hero-void",
+   "width": 1440,
+   "message": "33% of the first screen is one empty block (900×480px at 540,420).",
+   "fix": "Place the void on purpose or fill it: move the picture, the film or one fact into it, grow the headline to meet it, or shrink the screen to its content. A void reads as placed only when something closes it on the far side and it is the screen's one rest."
+  },
+  {
+   "level": "FAIL",
+   "id": "edge-text",
+   "width": 1440,
+   "message": "8 text block(s) sit within 16px of the screen edge: \"Skip to main content\" (8px from the left); \"Independent community project.\" (8px from the left); \"Better\" (8px from the left); \"Directory\" (8px from the left)",
+   "fix": "Keep text inside the page margin (16–32px or more). Only display type deliberately bled past the edge may touch it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 0 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 768,
+   "message": "The margins differ: 8px on the left, 26px on the right, at 768px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "C:\\Users\\jjzeu\\Documents\\Personal Projects\\betteribaan\\betteribaan\\.taste-skill\\before\\desktop-fold.jpg",
+   "pages": [
+    "C:\\Users\\jjzeu\\Documents\\Personal Projects\\betteribaan\\betteribaan\\.taste-skill\\before\\desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\jjzeu\\Documents\\Personal Projects\\betteribaan\\betteribaan\\.taste-skill\\before\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\jjzeu\\Documents\\Personal Projects\\betteribaan\\betteribaan\\.taste-skill\\before\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\jjzeu\\Documents\\Personal Projects\\betteribaan\\betteribaan\\.taste-skill\\before\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\jjzeu\\Documents\\Personal Projects\\betteribaan\\betteribaan\\.taste-skill\\before\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

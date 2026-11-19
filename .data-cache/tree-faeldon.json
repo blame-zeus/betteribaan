@@ -1,0 +1,1833 @@
+{
+  "sha": "be65ee15b10bba45e310f6edeec1bd45afcb33b6",
+  "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/be65ee15b10bba45e310f6edeec1bd45afcb33b6",
+  "tree": [
+    {
+      "path": ".claude",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "488536f02d6252a0a3a3db665afdaf6a43edb2ea",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/488536f02d6252a0a3a3db665afdaf6a43edb2ea"
+    },
+    {
+      "path": ".claude/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d291c5a0985037a0a37e9f4640c699afd27886e3",
+      "size": 1257,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/d291c5a0985037a0a37e9f4640c699afd27886e3"
+    },
+    {
+      "path": ".devcontainer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dbb000497b4b5f4119d82af99f6f1a08347d6db9",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/dbb000497b4b5f4119d82af99f6f1a08347d6db9"
+    },
+    {
+      "path": ".devcontainer/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad0fafe7df1524d93c19f8b91cfebca41df4a29f",
+      "size": 433,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/ad0fafe7df1524d93c19f8b91cfebca41df4a29f"
+    },
+    {
+      "path": ".devcontainer/devcontainer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d8f8327de26fe3596698584ac37bffa401c8b69",
+      "size": 1514,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/4d8f8327de26fe3596698584ac37bffa401c8b69"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f0e290d60bee7296239fe7760db8f4289cb79d44",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/f0e290d60bee7296239fe7760db8f4289cb79d44"
+    },
+    {
+      "path": ".github/CODE_OF_CONDUCT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67fe8cee798a7d8dc9307eb6d1cf5b4c2e5d48c8",
+      "size": 5487,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/67fe8cee798a7d8dc9307eb6d1cf5b4c2e5d48c8"
+    },
+    {
+      "path": ".github/CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5807a399d96ccd9cce590e5a1bf8e71156ab751",
+      "size": 5697,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/d5807a399d96ccd9cce590e5a1bf8e71156ab751"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c22b32c931f9e7b80d1f2f2849b84158a16c9b74",
+      "size": 1074,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/c22b32c931f9e7b80d1f2f2849b84158a16c9b74"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "131bca62fede1895bd3dadf76529179b009e98cf",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/131bca62fede1895bd3dadf76529179b009e98cf"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/sdlc-bug.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d33d5894cd74648bc23e5eb315aac9fb2d1373bb",
+      "size": 1092,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/d33d5894cd74648bc23e5eb315aac9fb2d1373bb"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/sdlc-request.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66680925470bffc20f1061c7a9a333ec15cc3b6e",
+      "size": 641,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/66680925470bffc20f1061c7a9a333ec15cc3b6e"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deec8a5024471082ba4e5974934927e9fb76bfef",
+      "size": 1438,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/deec8a5024471082ba4e5974934927e9fb76bfef"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4781ecb30221c3a39b03ccbac1c382575cac7bae",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/4781ecb30221c3a39b03ccbac1c382575cac7bae"
+    },
+    {
+      "path": ".github/workflows/build.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dccf5db9dba1df7dbea3c3a7c6a1f750eab0897",
+      "size": 313,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/2dccf5db9dba1df7dbea3c3a7c6a1f750eab0897"
+    },
+    {
+      "path": ".github/workflows/check-pr.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8e58f7d94be10c07aac1e7d786119411beb3713",
+      "size": 316,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/e8e58f7d94be10c07aac1e7d786119411beb3713"
+    },
+    {
+      "path": ".github/workflows/sched-actions-update.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19ee150a210e3f6c2b393f360718997161f770a4",
+      "size": 699,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/19ee150a210e3f6c2b393f360718997161f770a4"
+    },
+    {
+      "path": ".github/workflows/stale.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67f395ac37c7fedcd61fcba1ea086333464c1619",
+      "size": 870,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/67f395ac37c7fedcd61fcba1ea086333464c1619"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea224d58ceb2de0f37f5b4439d2da4a2eb6512e1",
+      "size": 2657,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/ea224d58ceb2de0f37f5b4439d2da4a2eb6512e1"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5345ddb1e51f047a6d6c392f31dd98843d37916",
+      "size": 1521,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/f5345ddb1e51f047a6d6c392f31dd98843d37916"
+    },
+    {
+      "path": ".sdlc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d89d875b112f4d9587d2dce9dcf859da85c2f3be",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/d89d875b112f4d9587d2dce9dcf859da85c2f3be"
+    },
+    {
+      "path": ".sdlc/HEALTH.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb9ad5ea917a607f4bac9981f5ab474ffe4e05d9",
+      "size": 5152,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/eb9ad5ea917a607f4bac9981f5ab474ffe4e05d9"
+    },
+    {
+      "path": ".sdlc/PRODUCT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fca6da56f5f3251f56947da32b33a85dca1f34b",
+      "size": 2839,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/1fca6da56f5f3251f56947da32b33a85dca1f34b"
+    },
+    {
+      "path": ".sdlc/REVIEW.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f2543be74d345a6b85e6706ebc43e3df638448b",
+      "size": 2326,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/6f2543be74d345a6b85e6706ebc43e3df638448b"
+    },
+    {
+      "path": ".sdlc/SDLC.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f8d7c861fa6060269f165fb688e2bbdecc0a899",
+      "size": 5893,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/9f8d7c861fa6060269f165fb688e2bbdecc0a899"
+    },
+    {
+      "path": ".sdlc/config.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67add03ddc0c201f5b29279e54f2537ea78dfcfa",
+      "size": 2921,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/67add03ddc0c201f5b29279e54f2537ea78dfcfa"
+    },
+    {
+      "path": ".sdlc/setup.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99b7f8625dd0b925a1b1e18b339ce3ce6298ebd7",
+      "size": 2339,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/99b7f8625dd0b925a1b1e18b339ce3ce6298ebd7"
+    },
+    {
+      "path": ".sdlc/work",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3ad64580833391a3c027087ff96a1bdab4640179",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/3ad64580833391a3c027087ff96a1bdab4640179"
+    },
+    {
+      "path": ".sdlc/work/inbox.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00b033889f3983cd8fba88f700013d18bca20ed5",
+      "size": 5450,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/00b033889f3983cd8fba88f700013d18bca20ed5"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb4ffba413ca52a092182f07f1f8af79548705cd",
+      "size": 11981,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/cb4ffba413ca52a092182f07f1f8af79548705cd"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4ad3210d4c6e36d8e21ad2411e9a0a273565995",
+      "size": 21719,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/a4ad3210d4c6e36d8e21ad2411e9a0a273565995"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8119b89239cfc5e48ffb747d7db15b13b141b626",
+      "size": 1133,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/8119b89239cfc5e48ffb747d7db15b13b141b626"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec9f613d83a0b5d72a2e141a1c6aaf81a04f6173",
+      "size": 9542,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/ec9f613d83a0b5d72a2e141a1c6aaf81a04f6173"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "da9244a5805ae66690bf1bc573e3721c5e82ebee",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/da9244a5805ae66690bf1bc573e3721c5e82ebee"
+    },
+    {
+      "path": "data/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9cd35f643217dcfaccf8151322ca5108407959e",
+      "size": 88,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/e9cd35f643217dcfaccf8151322ca5108407959e"
+    },
+    {
+      "path": "data/edit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ed7b2095fca7ab2be79d0335a60c7fc8bfc9e07",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/9ed7b2095fca7ab2be79d0335a60c7fc8bfc9e07"
+    },
+    {
+      "path": "data/edit/20261025",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7291fbb5a06d846c6730c5be3d8729beb6733ac",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/a7291fbb5a06d846c6730c5be3d8729beb6733ac"
+    },
+    {
+      "path": "data/edit/20261025/approximated-report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6079251bdb3d4eefea0704a27b8281f962709d8c",
+      "size": 1507,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/6079251bdb3d4eefea0704a27b8281f962709d8c"
+    },
+    {
+      "path": "data/edit/20261025/approximated.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c486472f87c57420d0b9c83fe1ef9a7e74b3df3b",
+      "size": 10848,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/c486472f87c57420d0b9c83fe1ef9a7e74b3df3b"
+    },
+    {
+      "path": "data/edit/20261025/approximations.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43a543959a7aa4e19241bb9da51c191ba526a969",
+      "size": 2777,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/43a543959a7aa4e19241bb9da51c191ba526a969"
+    },
+    {
+      "path": "data/edit/20261025/plotted-report.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00e50a99c82111d8b11ff81c8cf2bf6ac41ba663",
+      "size": 2773,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/00e50a99c82111d8b11ff81c8cf2bf6ac41ba663"
+    },
+    {
+      "path": "data/edit/20261025/plotted.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e52547c34054d36745b4004ed66d7e24a1351c1",
+      "size": 71480,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/8e52547c34054d36745b4004ed66d7e24a1351c1"
+    },
+    {
+      "path": "data/edit/20261025/traverses.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a897e622962dd529110ba1a32f3a1efe3a2e9792",
+      "size": 23464,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/a897e622962dd529110ba1a32f3a1efe3a2e9792"
+    },
+    {
+      "path": "data/psgc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "812accef570bcd4f983699e5ff692f5f68cc8fe5",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/812accef570bcd4f983699e5ff692f5f68cc8fe5"
+    },
+    {
+      "path": "data/psgc/2023-4q",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b8dc3077fb3df22d9905db3c5970f8c47557f9c2",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/b8dc3077fb3df22d9905db3c5970f8c47557f9c2"
+    },
+    {
+      "path": "data/psgc/2023-4q/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b48c6592d8af0538e13f75a2ba162f83806b2c4e",
+      "size": 2117,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/b48c6592d8af0538e13f75a2ba162f83806b2c4e"
+    },
+    {
+      "path": "data/psgc/2023-4q/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3e0b7713cfc4b29b59437761a5d4c09590ff7be",
+      "size": 2449,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/b3e0b7713cfc4b29b59437761a5d4c09590ff7be"
+    },
+    {
+      "path": "data/psgc/2023-4q/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2023-4q/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c2513bc26c82d8ab407a68c25d3f951161179c8",
+      "size": 2328656,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/8c2513bc26c82d8ab407a68c25d3f951161179c8"
+    },
+    {
+      "path": "data/psgc/2023-4q/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d016c9e9f2bddc4886f54a97cf3619cb7fbe35b",
+      "size": 125,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/7d016c9e9f2bddc4886f54a97cf3619cb7fbe35b"
+    },
+    {
+      "path": "data/psgc/2024-04",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc6466d43950260b6e63d443f449f8f28c052ce4",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/fc6466d43950260b6e63d443f449f8f28c052ce4"
+    },
+    {
+      "path": "data/psgc/2024-04/diff-from-2024-1q.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "295fa92a88a933f20e51fd4b4f8516ea2d021578",
+      "size": 14624,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/295fa92a88a933f20e51fd4b4f8516ea2d021578"
+    },
+    {
+      "path": "data/psgc/2024-04/diff-from-2024-1q.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "027ff033f844ae7473e031842c4e144c80995f43",
+      "size": 15784,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/027ff033f844ae7473e031842c4e144c80995f43"
+    },
+    {
+      "path": "data/psgc/2024-04/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d94b623c59ae6c73d6096ce6d353e0e05f9c8c7",
+      "size": 1853,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/9d94b623c59ae6c73d6096ce6d353e0e05f9c8c7"
+    },
+    {
+      "path": "data/psgc/2024-04/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "420b063551a92cf755104bded928792179625301",
+      "size": 1820,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/420b063551a92cf755104bded928792179625301"
+    },
+    {
+      "path": "data/psgc/2024-04/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2024-04/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e3b1a487ad85832c7519af5125308ab8d139106",
+      "size": 2077576,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/5e3b1a487ad85832c7519af5125308ab8d139106"
+    },
+    {
+      "path": "data/psgc/2024-04/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8e29b3de0137ab121d47f4fc52451f1235abbc6",
+      "size": 16666,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/e8e29b3de0137ab121d47f4fc52451f1235abbc6"
+    },
+    {
+      "path": "data/psgc/2024-1q",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "efb4662778ea3d9960216032ebfaad7e4634127d",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/efb4662778ea3d9960216032ebfaad7e4634127d"
+    },
+    {
+      "path": "data/psgc/2024-1q/diff-from-2023-4q.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1054f029ad96e8b2365f1b58bd77a4d5005c323b",
+      "size": 3906,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/1054f029ad96e8b2365f1b58bd77a4d5005c323b"
+    },
+    {
+      "path": "data/psgc/2024-1q/diff-from-2023-4q.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2045191c1c3e34b4cecb8f09caad6a8a9db52449",
+      "size": 4863,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/2045191c1c3e34b4cecb8f09caad6a8a9db52449"
+    },
+    {
+      "path": "data/psgc/2024-1q/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb23dd784c7722db879ed157659e36ee25d5fee3",
+      "size": 1860,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/eb23dd784c7722db879ed157659e36ee25d5fee3"
+    },
+    {
+      "path": "data/psgc/2024-1q/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fba5de99e6abd3af374e3dd5de2a49310072d93b",
+      "size": 1820,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/fba5de99e6abd3af374e3dd5de2a49310072d93b"
+    },
+    {
+      "path": "data/psgc/2024-1q/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2024-1q/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa8a24e2ff35994400618ea47689d01c65b5f78b",
+      "size": 2077709,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/aa8a24e2ff35994400618ea47689d01c65b5f78b"
+    },
+    {
+      "path": "data/psgc/2024-1q/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1c9f4f39320b855e3777a3a2a96bddad583d765",
+      "size": 4802,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/e1c9f4f39320b855e3777a3a2a96bddad583d765"
+    },
+    {
+      "path": "data/psgc/2024-2q",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bcc4058b78dbf91c693566f89a0854cf5eb4899d",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/bcc4058b78dbf91c693566f89a0854cf5eb4899d"
+    },
+    {
+      "path": "data/psgc/2024-2q/diff-from-2024-04.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7655804a1871b3d6aaa70d84d3a0238ffb5f236",
+      "size": 228968,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/d7655804a1871b3d6aaa70d84d3a0238ffb5f236"
+    },
+    {
+      "path": "data/psgc/2024-2q/diff-from-2024-04.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26426c65d856f3eea7ecb30cdce330f3cfeaa2ea",
+      "size": 214935,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/26426c65d856f3eea7ecb30cdce330f3cfeaa2ea"
+    },
+    {
+      "path": "data/psgc/2024-2q/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78bd4210ed0fc9189fdfc37f516598c00b220226",
+      "size": 1855,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/78bd4210ed0fc9189fdfc37f516598c00b220226"
+    },
+    {
+      "path": "data/psgc/2024-2q/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "834439bf90e972a317cf97e0c820e96bd6adec32",
+      "size": 2287,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/834439bf90e972a317cf97e0c820e96bd6adec32"
+    },
+    {
+      "path": "data/psgc/2024-2q/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2024-2q/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d5b665c97992c66a9a5f7811cc6e284826e6480",
+      "size": 2077722,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/1d5b665c97992c66a9a5f7811cc6e284826e6480"
+    },
+    {
+      "path": "data/psgc/2024-2q/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3477d8e07a56f02b86091bc322c77fa92f02154b",
+      "size": 195041,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/3477d8e07a56f02b86091bc322c77fa92f02154b"
+    },
+    {
+      "path": "data/psgc/2024-3q",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3d7522845cfc80b580283a38d4840a86d9d5fc44",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/3d7522845cfc80b580283a38d4840a86d9d5fc44"
+    },
+    {
+      "path": "data/psgc/2024-3q/diff-from-2024-2q.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9034d2048a51c714061979c88824cb035b05f69",
+      "size": 1821,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/a9034d2048a51c714061979c88824cb035b05f69"
+    },
+    {
+      "path": "data/psgc/2024-3q/diff-from-2024-2q.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ff9c9281c30d2b1c83da2645c3605db785ab051",
+      "size": 3107,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/4ff9c9281c30d2b1c83da2645c3605db785ab051"
+    },
+    {
+      "path": "data/psgc/2024-3q/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7dc17c15df946138083c9b4152801bc9c44393a",
+      "size": 1853,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/c7dc17c15df946138083c9b4152801bc9c44393a"
+    },
+    {
+      "path": "data/psgc/2024-3q/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "873fdabb0b03ba608f2e4dca6b7e3275ee32d91a",
+      "size": 2292,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/873fdabb0b03ba608f2e4dca6b7e3275ee32d91a"
+    },
+    {
+      "path": "data/psgc/2024-3q/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2024-3q/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65e8c95509637b66631ae60547aa29eab3036fc0",
+      "size": 2078079,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/65e8c95509637b66631ae60547aa29eab3036fc0"
+    },
+    {
+      "path": "data/psgc/2024-3q/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03544712f4c6d9553dc1a6785a4115d6f468f851",
+      "size": 2221,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/03544712f4c6d9553dc1a6785a4115d6f468f851"
+    },
+    {
+      "path": "data/psgc/2024-4q",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "556ec29791322af837b1ecfb7c50497a427d33cd",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/556ec29791322af837b1ecfb7c50497a427d33cd"
+    },
+    {
+      "path": "data/psgc/2024-4q/diff-from-2024-3q.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33dbd4575166ebd17163c4346def388325a92ec7",
+      "size": 554,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/33dbd4575166ebd17163c4346def388325a92ec7"
+    },
+    {
+      "path": "data/psgc/2024-4q/diff-from-2024-3q.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f03135cc6879f2d64b116b66db7eb455d2620e57",
+      "size": 1974,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/f03135cc6879f2d64b116b66db7eb455d2620e57"
+    },
+    {
+      "path": "data/psgc/2024-4q/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3331930ac7b312830583cc70612cce303e06cbb9",
+      "size": 1855,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/3331930ac7b312830583cc70612cce303e06cbb9"
+    },
+    {
+      "path": "data/psgc/2024-4q/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bec09d1d17399d7bf45177c5657da1c4ba2bf7cc",
+      "size": 2291,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/bec09d1d17399d7bf45177c5657da1c4ba2bf7cc"
+    },
+    {
+      "path": "data/psgc/2024-4q/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2024-4q/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7d010403b8fcef48d9e2160af6ea31b7042326f",
+      "size": 2078077,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/b7d010403b8fcef48d9e2160af6ea31b7042326f"
+    },
+    {
+      "path": "data/psgc/2024-4q/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35d2b72a317cd500b89424f597ee7156dfa61084",
+      "size": 782,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/35d2b72a317cd500b89424f597ee7156dfa61084"
+    },
+    {
+      "path": "data/psgc/2025-07",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e4a306962fe10611eb70bfffb9c94525b9087223",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/e4a306962fe10611eb70bfffb9c94525b9087223"
+    },
+    {
+      "path": "data/psgc/2025-07/diff-from-2025-2q.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "167547d4aa46c98324a71029042779f8bbcd57e3",
+      "size": 73733,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/167547d4aa46c98324a71029042779f8bbcd57e3"
+    },
+    {
+      "path": "data/psgc/2025-07/diff-from-2025-2q.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b228d98a62e9d8183f8995d849c54ac2e0db217f",
+      "size": 73478,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/b228d98a62e9d8183f8995d849c54ac2e0db217f"
+    },
+    {
+      "path": "data/psgc/2025-07/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47b3e827d79bd5d8c3d274ea2017a1722c836298",
+      "size": 1875,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/47b3e827d79bd5d8c3d274ea2017a1722c836298"
+    },
+    {
+      "path": "data/psgc/2025-07/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9047bda5a246e34e7aec5de8374b019ffbb4403e",
+      "size": 2389,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/9047bda5a246e34e7aec5de8374b019ffbb4403e"
+    },
+    {
+      "path": "data/psgc/2025-07/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2025-07/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "984a657f33c51ab17710e44d4635d56f7c9b3217",
+      "size": 2078192,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/984a657f33c51ab17710e44d4635d56f7c9b3217"
+    },
+    {
+      "path": "data/psgc/2025-07/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00cc0cbba685d7999f5ece5175d4c4acc23b75d4",
+      "size": 63504,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/00cc0cbba685d7999f5ece5175d4c4acc23b75d4"
+    },
+    {
+      "path": "data/psgc/2025-1q",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fd572926e9e2779e0de2a6679271ba5c935f568b",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/fd572926e9e2779e0de2a6679271ba5c935f568b"
+    },
+    {
+      "path": "data/psgc/2025-1q/diff-from-2024-4q.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a80ab5732f345f0fd91315665f85f4d69043270d",
+      "size": 1163,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/a80ab5732f345f0fd91315665f85f4d69043270d"
+    },
+    {
+      "path": "data/psgc/2025-1q/diff-from-2024-4q.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "179450d6ed49fd7382bff118b66211bb67734e95",
+      "size": 2525,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/179450d6ed49fd7382bff118b66211bb67734e95"
+    },
+    {
+      "path": "data/psgc/2025-1q/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3993da78086b80bea640ce99017cf9065baf484b",
+      "size": 1852,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/3993da78086b80bea640ce99017cf9065baf484b"
+    },
+    {
+      "path": "data/psgc/2025-1q/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ada46eb8feb7019eb597322de4fc24f7fac9f4c",
+      "size": 2288,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/7ada46eb8feb7019eb597322de4fc24f7fac9f4c"
+    },
+    {
+      "path": "data/psgc/2025-1q/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2025-1q/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ccc063d41741685bb848f7669d88d4d300ce87e",
+      "size": 2078080,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/0ccc063d41741685bb848f7669d88d4d300ce87e"
+    },
+    {
+      "path": "data/psgc/2025-1q/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "579279bbced11b165c48d1e50bbe1d5cb948407f",
+      "size": 1692,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/579279bbced11b165c48d1e50bbe1d5cb948407f"
+    },
+    {
+      "path": "data/psgc/2025-2q",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2b3f0b336762ce39795b4fda1793416e0a18a00e",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/2b3f0b336762ce39795b4fda1793416e0a18a00e"
+    },
+    {
+      "path": "data/psgc/2025-2q/diff-from-2025-1q.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d069c097e64246a3c43971a74eba0fa1329c7fb8",
+      "size": 2123,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/d069c097e64246a3c43971a74eba0fa1329c7fb8"
+    },
+    {
+      "path": "data/psgc/2025-2q/diff-from-2025-1q.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2593ca49695911b968c384fedac9c88feed72f7",
+      "size": 3619,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/d2593ca49695911b968c384fedac9c88feed72f7"
+    },
+    {
+      "path": "data/psgc/2025-2q/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed1851a647809b342a4552feb53c971243ad1917",
+      "size": 1871,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/ed1851a647809b342a4552feb53c971243ad1917"
+    },
+    {
+      "path": "data/psgc/2025-2q/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9640fa346fe2e2f89f7ebd57d1cd527cc3c84405",
+      "size": 2287,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/9640fa346fe2e2f89f7ebd57d1cd527cc3c84405"
+    },
+    {
+      "path": "data/psgc/2025-2q/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2025-2q/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38af98464c300c46c1ade3c942a8eb22e4b3eb08",
+      "size": 2078208,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/38af98464c300c46c1ade3c942a8eb22e4b3eb08"
+    },
+    {
+      "path": "data/psgc/2025-2q/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4480b0cb290d39222f6ca967a5e5aaa5ed27a915",
+      "size": 709,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/4480b0cb290d39222f6ca967a5e5aaa5ed27a915"
+    },
+    {
+      "path": "data/psgc/2025-3q",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "720ac57c2205981e5cca666a3e53fb17d8d69cc4",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/720ac57c2205981e5cca666a3e53fb17d8d69cc4"
+    },
+    {
+      "path": "data/psgc/2025-3q/diff-from-2025-07.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3468ddc37bf74f92245a732747bec06e525a1bf1",
+      "size": 451,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/3468ddc37bf74f92245a732747bec06e525a1bf1"
+    },
+    {
+      "path": "data/psgc/2025-3q/diff-from-2025-07.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deff51fbce761400d9b89f7f559ad7438654cc86",
+      "size": 1934,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/deff51fbce761400d9b89f7f559ad7438654cc86"
+    },
+    {
+      "path": "data/psgc/2025-3q/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "760c988cce520e0e6c1e4044cec31668dfdb8d6c",
+      "size": 1886,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/760c988cce520e0e6c1e4044cec31668dfdb8d6c"
+    },
+    {
+      "path": "data/psgc/2025-3q/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4c6319719a814a4667bcd784780a0460e5f1367",
+      "size": 1742,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/c4c6319719a814a4667bcd784780a0460e5f1367"
+    },
+    {
+      "path": "data/psgc/2025-3q/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2025-3q/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acaa3e6f67252644e579955c4d0b847ebf46ce30",
+      "size": 2078568,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/acaa3e6f67252644e579955c4d0b847ebf46ce30"
+    },
+    {
+      "path": "data/psgc/2025-3q/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dfebb019444db32011157cdc2cbda903e0aad78",
+      "size": 853,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/4dfebb019444db32011157cdc2cbda903e0aad78"
+    },
+    {
+      "path": "data/psgc/2025-4q",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50cfacf555b3e28a2ba02cda9112ab43df1a317f",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/50cfacf555b3e28a2ba02cda9112ab43df1a317f"
+    },
+    {
+      "path": "data/psgc/2025-4q/diff-from-2025-3q.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98b96f0a753e7fdeb197d0f7e3852dcaa0d94f44",
+      "size": 593,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/98b96f0a753e7fdeb197d0f7e3852dcaa0d94f44"
+    },
+    {
+      "path": "data/psgc/2025-4q/diff-from-2025-3q.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aea10549d123bada810354e9638d564eb550b722",
+      "size": 2013,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/aea10549d123bada810354e9638d564eb550b722"
+    },
+    {
+      "path": "data/psgc/2025-4q/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "946ce8d2654f1661ad9588426290f48e52d5435d",
+      "size": 1882,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/946ce8d2654f1661ad9588426290f48e52d5435d"
+    },
+    {
+      "path": "data/psgc/2025-4q/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "649844334d639b79930d6c122b2c7d805cd67457",
+      "size": 1741,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/649844334d639b79930d6c122b2c7d805cd67457"
+    },
+    {
+      "path": "data/psgc/2025-4q/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2025-4q/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e174b6612e761c8d35ab0c8d1eaad3a7eea99e08",
+      "size": 2078566,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/e174b6612e761c8d35ab0c8d1eaad3a7eea99e08"
+    },
+    {
+      "path": "data/psgc/2025-4q/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5a72b879478e570be411fd80dd8aa8312ab55e5",
+      "size": 746,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/d5a72b879478e570be411fd80dd8aa8312ab55e5"
+    },
+    {
+      "path": "data/psgc/2026-1q",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1844a1e7be1efc02ad1e2888f5ef77a551e470d9",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/1844a1e7be1efc02ad1e2888f5ef77a551e470d9"
+    },
+    {
+      "path": "data/psgc/2026-1q/diff-from-2025-4q.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ff5d7534efa34b9c4e50c867ac431aca67d931f",
+      "size": 1443,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/4ff5d7534efa34b9c4e50c867ac431aca67d931f"
+    },
+    {
+      "path": "data/psgc/2026-1q/diff-from-2025-4q.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "022fc254e75b2327f66f034e8a5ec8ceec1da1d4",
+      "size": 2773,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/022fc254e75b2327f66f034e8a5ec8ceec1da1d4"
+    },
+    {
+      "path": "data/psgc/2026-1q/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1231ab25d9fbdcc11a1c488e8f0900fca281aeac",
+      "size": 1879,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/1231ab25d9fbdcc11a1c488e8f0900fca281aeac"
+    },
+    {
+      "path": "data/psgc/2026-1q/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cecd139d53b92ad8913f2f77f6ca0b2a85a0af18",
+      "size": 1738,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/cecd139d53b92ad8913f2f77f6ca0b2a85a0af18"
+    },
+    {
+      "path": "data/psgc/2026-1q/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2026-1q/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "053a66d1977b626de076d473d80c7134fcc161c3",
+      "size": 2078516,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/053a66d1977b626de076d473d80c7134fcc161c3"
+    },
+    {
+      "path": "data/psgc/2026-1q/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cc33fe9386bc045c40884c4de97ef489cb693ef",
+      "size": 2866,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/4cc33fe9386bc045c40884c4de97ef489cb693ef"
+    },
+    {
+      "path": "data/psgc/2026-2q",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4c447762acec81a17d52741ac3e470901a6c3be7",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/4c447762acec81a17d52741ac3e470901a6c3be7"
+    },
+    {
+      "path": "data/psgc/2026-2q/diff-from-2026-1q.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3e6d672e831dd95cc8bded355a98d43866edcc5",
+      "size": 2474,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/f3e6d672e831dd95cc8bded355a98d43866edcc5"
+    },
+    {
+      "path": "data/psgc/2026-2q/diff-from-2026-1q.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fe1aaa1ee50f51afd1263f6bab8bf91aa6339d8",
+      "size": 3726,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/4fe1aaa1ee50f51afd1263f6bab8bf91aa6339d8"
+    },
+    {
+      "path": "data/psgc/2026-2q/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b0383002c921a8cd9294f1d840d121e64f4bedc",
+      "size": 1876,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/3b0383002c921a8cd9294f1d840d121e64f4bedc"
+    },
+    {
+      "path": "data/psgc/2026-2q/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fbf75c2f82063ac44cb29c3ae236e6b358a3549",
+      "size": 1737,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/0fbf75c2f82063ac44cb29c3ae236e6b358a3549"
+    },
+    {
+      "path": "data/psgc/2026-2q/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2026-2q/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "327883d06d3f60f0e5c19148162b39f9c3ac0e86",
+      "size": 2078500,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/327883d06d3f60f0e5c19148162b39f9c3ac0e86"
+    },
+    {
+      "path": "data/psgc/2026-2q/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b10ab5bed1bcc540b12fa596c9a05bc1da5f3c1",
+      "size": 4558,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/9b10ab5bed1bcc540b12fa596c9a05bc1da5f3c1"
+    },
+    {
+      "path": "data/psgc/2026-3q",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e88a4e583f468726211f29d20dba3ba1d5e5b1e",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/0e88a4e583f468726211f29d20dba3ba1d5e5b1e"
+    },
+    {
+      "path": "data/psgc/2026-3q/diff-from-2026-2q.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caf44325bac3e6929326e41c103359104a4638b0",
+      "size": 311,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/caf44325bac3e6929326e41c103359104a4638b0"
+    },
+    {
+      "path": "data/psgc/2026-3q/diff-from-2026-2q.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "513e1a3b28ff3f692c39db2d13ac55859d342ecd",
+      "size": 1813,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/513e1a3b28ff3f692c39db2d13ac55859d342ecd"
+    },
+    {
+      "path": "data/psgc/2026-3q/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a969d338d9692d88a47651e57bdef10dd3af0d5a",
+      "size": 1930,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/a969d338d9692d88a47651e57bdef10dd3af0d5a"
+    },
+    {
+      "path": "data/psgc/2026-3q/national-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e585b64ebcebfdf24f8ae87074ed4c44ab4a4658",
+      "size": 1742,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/e585b64ebcebfdf24f8ae87074ed4c44ab4a4658"
+    },
+    {
+      "path": "data/psgc/2026-3q/prov-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "310d5cf34f8763b3a31bf187294cae315aa34eef",
+      "size": 5590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/310d5cf34f8763b3a31bf187294cae315aa34eef"
+    },
+    {
+      "path": "data/psgc/2026-3q/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "358cce5c15a875d9c407fa697b9b5ebd0e09e533",
+      "size": 2122523,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/358cce5c15a875d9c407fa697b9b5ebd0e09e533"
+    },
+    {
+      "path": "data/psgc/2026-3q/summary-of-changes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffe133626d6889e9e5f37e87e568af9287402291",
+      "size": 608,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/ffe133626d6889e9e5f37e87e568af9287402291"
+    },
+    {
+      "path": "data/sources.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0d2d51fc631fb79d2a7df12574344f7690ac285",
+      "size": 23239,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/e0d2d51fc631fb79d2a7df12574344f7690ac285"
+    },
+    {
+      "path": "dist",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f0654be08ba1b3ef0f2977cc6e42019912bce756",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/f0654be08ba1b3ef0f2977cc6e42019912bce756"
+    },
+    {
+      "path": "dist/PH_Adm0_Country.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c479dbf44e1cdd391752a07cc692c5fd8fcfdd4c",
+      "size": 126721,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/c479dbf44e1cdd391752a07cc692c5fd8fcfdd4c"
+    },
+    {
+      "path": "dist/PH_Adm1_Regions.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16bea0250ec8bc19d67c205806dab5ebe080d26c",
+      "size": 1422,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/16bea0250ec8bc19d67c205806dab5ebe080d26c"
+    },
+    {
+      "path": "dist/PH_Adm2_ProvDists.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "115db3ccd0a07df266aca94d25990f92d65037a0",
+      "size": 6063,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/115db3ccd0a07df266aca94d25990f92d65037a0"
+    },
+    {
+      "path": "dist/PH_Adm3_MuniCities.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cd26070851a250136f65e8a9dad1bf21439438c",
+      "size": 114162,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/9cd26070851a250136f65e8a9dad1bf21439438c"
+    },
+    {
+      "path": "dist/PH_Adm4_BgySubMuns.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c3d4efcdd5aa488dd6da1abef929627cffaae49",
+      "size": 3448506,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/1c3d4efcdd5aa488dd6da1abef929627cffaae49"
+    },
+    {
+      "path": "dist/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9945240aff94620ca1753b4a151ca62362d2ccd",
+      "size": 1286,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/b9945240aff94620ca1753b4a151ca62362d2ccd"
+    },
+    {
+      "path": "dist/complete",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22f36ac61084b46c50023194d38edcb0c331636a",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/22f36ac61084b46c50023194d38edcb0c331636a"
+    },
+    {
+      "path": "dist/complete/PH_Adm4_BgySubMuns.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bce2047fc94694ffe63e21cc975ab23bae344c40",
+      "size": 3448597,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/bce2047fc94694ffe63e21cc975ab23bae344c40"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "08293fa5ab8d1c9f80f16aa729b47b3fdbff38ea",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/08293fa5ab8d1c9f80f16aa729b47b3fdbff38ea"
+    },
+    {
+      "path": "docs/psgc.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f5e20bc2b70be3fb7b1f6fe68fd2700a243adbf",
+      "size": 147989,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/6f5e20bc2b70be3fb7b1f6fe68fd2700a243adbf"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94267cc3a35ea0c0ea178df54ffa20e2f7dd8b92",
+      "size": 7029,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/94267cc3a35ea0c0ea178df54ffa20e2f7dd8b92"
+    },
+    {
+      "path": "releases",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b049c0f77cd35e7ea2725dda9a9cf6e6e5b32f2b",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/b049c0f77cd35e7ea2725dda9a9cf6e6e5b32f2b"
+    },
+    {
+      "path": "releases/2023-4q.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "472d961f21a8528a10e8cbd0957a98546907be49",
+      "size": 17144,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/472d961f21a8528a10e8cbd0957a98546907be49"
+    },
+    {
+      "path": "releases/2026-3q.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdfcac913812bf10a9b6432618102c9fd5e85690",
+      "size": 22100,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/cdfcac913812bf10a9b6432618102c9fd5e85690"
+    },
+    {
+      "path": "renovate.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5db72dd6a94fc07d18b0e6c0cf76e67ce982f1f9",
+      "size": 114,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/5db72dd6a94fc07d18b0e6c0cf76e67ce982f1f9"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a9164ea4053e567fb7fd650390686e09d4ec79f6",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/a9164ea4053e567fb7fd650390686e09d4ec79f6"
+    },
+    {
+      "path": "scripts/approximate_split.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1420ab787b8496e034b2554e72ca5d16cda926c3",
+      "size": 6440,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/1420ab787b8496e034b2554e72ca5d16cda926c3"
+    },
+    {
+      "path": "scripts/check_dist.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf599f8f527e3dd19810ce2fdd968a20106eecf4",
+      "size": 19541,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/cf599f8f527e3dd19810ce2fdd968a20106eecf4"
+    },
+    {
+      "path": "scripts/plot_traverse.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d63b8f97259a1850835b4114d498245a80058900",
+      "size": 11657,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/d63b8f97259a1850835b4114d498245a80058900"
+    },
+    {
+      "path": "scripts/psgc_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6276cc308fb2d4d8e7ce33b9d503adaee8734c6b",
+      "size": 2689,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/6276cc308fb2d4d8e7ce33b9d503adaee8734c6b"
+    },
+    {
+      "path": "scripts/publish_release.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2194defdbcbe9123f8033366357b08aaaf43021",
+      "size": 13663,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/f2194defdbcbe9123f8033366357b08aaaf43021"
+    },
+    {
+      "path": "scripts/regenerate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d83372c0541b6cd42183b4a387ced7a340927260",
+      "size": 2672,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/d83372c0541b6cd42183b4a387ced7a340927260"
+    },
+    {
+      "path": "scripts/sources.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3668e802513437337ffac3349ac16079472134a5",
+      "size": 9455,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/3668e802513437337ffac3349ac16079472134a5"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d3405f08c9241da75a6db279671d782648baa0d8",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/d3405f08c9241da75a6db279671d782648baa0d8"
+    },
+    {
+      "path": "src/ph_psgc_shape",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "81834b14a79be560354b49f017a81c42fe5a02cb",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/81834b14a79be560354b49f017a81c42fe5a02cb"
+    },
+    {
+      "path": "src/ph_psgc_shape/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "229a8aec0dddfbda4167a094338aa4669904c55f",
+      "size": 326,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/229a8aec0dddfbda4167a094338aa4669904c55f"
+    },
+    {
+      "path": "src/ph_psgc_shape/__main__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "766e7418f2aaa51841032b9eb022876be5795e36",
+      "size": 1351,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/766e7418f2aaa51841032b9eb022876be5795e36"
+    },
+    {
+      "path": "src/ph_psgc_shape/debug.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "441191b6c92b714fecc61efc7c2a7109615d77f8",
+      "size": 6248,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/441191b6c92b714fecc61efc7c2a7109615d77f8"
+    },
+    {
+      "path": "src/ph_psgc_shape/geo_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea6e3fd9c816d44f1b1f3dde1b6dfa94d67e8396",
+      "size": 3963,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/ea6e3fd9c816d44f1b1f3dde1b6dfa94d67e8396"
+    },
+    {
+      "path": "src/ph_psgc_shape/geometry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c326bf6d79d9c6615295f146d46b10aa77f9b671",
+      "size": 4804,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/c326bf6d79d9c6615295f146d46b10aa77f9b671"
+    },
+    {
+      "path": "src/ph_psgc_shape/levels.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce0b4eff2a5fc569f860e17cd2975c508ab9f2e2",
+      "size": 18484,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/ce0b4eff2a5fc569f860e17cd2975c508ab9f2e2"
+    },
+    {
+      "path": "src/ph_psgc_shape/matching.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f42082cce32cca8dc426926a66cd5969a3aa4a6",
+      "size": 10192,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/3f42082cce32cca8dc426926a66cd5969a3aa4a6"
+    },
+    {
+      "path": "src/ph_psgc_shape/overrides.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb812cf73485c79ebb4afef9782d3740c161f303",
+      "size": 4711,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/cb812cf73485c79ebb4afef9782d3740c161f303"
+    },
+    {
+      "path": "src/ph_psgc_shape/pipeline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65e3eb87c439539ba079d19f8ef98cf49eebabdc",
+      "size": 3236,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/65e3eb87c439539ba079d19f8ef98cf49eebabdc"
+    },
+    {
+      "path": "src/ph_psgc_shape/psgc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d4c87b98e5da015dbe9b1b9e875a892f693e484",
+      "size": 4746,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/5d4c87b98e5da015dbe9b1b9e875a892f693e484"
+    },
+    {
+      "path": "src/ph_psgc_shape/psgc_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60d7e6678bad2df6b206d51438311cedc81da384",
+      "size": 11829,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/60d7e6678bad2df6b206d51438311cedc81da384"
+    },
+    {
+      "path": "src/ph_psgc_shape/psgc_diff.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf51448755bf89b26e81a4933ddbe9a578b7e37b",
+      "size": 25059,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/cf51448755bf89b26e81a4933ddbe9a578b7e37b"
+    },
+    {
+      "path": "src/ph_psgc_shape/release.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5816e0a4b4da5e33a3ca8648a6f7f8ea0f3d9230",
+      "size": 17407,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/5816e0a4b4da5e33a3ca8648a6f7f8ea0f3d9230"
+    },
+    {
+      "path": "src/ph_psgc_shape/sources.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e68ac04da741db66599146fe92ac171a46cef12",
+      "size": 2738,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/2e68ac04da741db66599146fe92ac171a46cef12"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "716e83d6c30420b17e32edcf0c6722d79dcaaa85",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/716e83d6c30420b17e32edcf0c6722d79dcaaa85"
+    },
+    {
+      "path": "tests/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fc5a548b6b4e0caf8560c6378df54e8f1dbade4",
+      "size": 1603,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/5fc5a548b6b4e0caf8560c6378df54e8f1dbade4"
+    },
+    {
+      "path": "tests/fixtures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c48cc9a8338dab78ae2bf17e4a8151ef3906824c",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/c48cc9a8338dab78ae2bf17e4a8151ef3906824c"
+    },
+    {
+      "path": "tests/fixtures/dist_ok",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e9ce5d6d5a7765bd7b75cf315a6044b73f1ea98",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/0e9ce5d6d5a7765bd7b75cf315a6044b73f1ea98"
+    },
+    {
+      "path": "tests/fixtures/dist_ok/PH_Adm0_Country.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08dfef37efb3f8b959c2239704017fa05f8dd0cd",
+      "size": 72,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/08dfef37efb3f8b959c2239704017fa05f8dd0cd"
+    },
+    {
+      "path": "tests/fixtures/dist_ok/PH_Adm1_Regions.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f620b822016f4165c033aacf72b26fd9483d7572",
+      "size": 146,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/f620b822016f4165c033aacf72b26fd9483d7572"
+    },
+    {
+      "path": "tests/fixtures/dist_ok/PH_Adm2_ProvDists.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd8458a5762934c100fac38af1473c8b8790fc33",
+      "size": 178,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/bd8458a5762934c100fac38af1473c8b8790fc33"
+    },
+    {
+      "path": "tests/fixtures/dist_ok/PH_Adm3_MuniCities.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c459bf7ee50ad5d0f3fd8c005f3cc5711b193b0d",
+      "size": 195,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/c459bf7ee50ad5d0f3fd8c005f3cc5711b193b0d"
+    },
+    {
+      "path": "tests/fixtures/dist_ok/PH_Adm4_BgySubMuns.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94762b1bed7b30601d037a722836230c0c592911",
+      "size": 250,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/94762b1bed7b30601d037a722836230c0c592911"
+    },
+    {
+      "path": "tests/fixtures/psgc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0def2b1dece772f7479123511c8cbad7a5b5966f",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/0def2b1dece772f7479123511c8cbad7a5b5966f"
+    },
+    {
+      "path": "tests/fixtures/psgc/next",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "20517768c650097d21c2179acf6d93604191cbcd",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/20517768c650097d21c2179acf6d93604191cbcd"
+    },
+    {
+      "path": "tests/fixtures/psgc/next/manifest.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f870ff8e19e929668b2f897518a4f82823aeb20a",
+      "size": 1976,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/f870ff8e19e929668b2f897518a4f82823aeb20a"
+    },
+    {
+      "path": "tests/fixtures/psgc/next/psgc.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "046e833c44cad65b9c7f7c8b2242677b1cf42b8e",
+      "size": 242,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/046e833c44cad65b9c7f7c8b2242677b1cf42b8e"
+    },
+    {
+      "path": "tests/fixtures/releases",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7cae2b06d625161c8f293c8f3ee99d94096f6351",
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/trees/7cae2b06d625161c8f293c8f3ee99d94096f6351"
+    },
+    {
+      "path": "tests/fixtures/releases/next.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dfe2683d68bfdf979bb5cccc8ddf1b076c98e96",
+      "size": 16789,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/8dfe2683d68bfdf979bb5cccc8ddf1b076c98e96"
+    },
+    {
+      "path": "tests/test_adm4_parents.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9470455fc0f0c029a333a149c872494d6764e523",
+      "size": 3045,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/9470455fc0f0c029a333a149c872494d6764e523"
+    },
+    {
+      "path": "tests/test_approximate_split.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "943581db5d3878cee55551f308fc2ab8e7dbb5a4",
+      "size": 1277,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/943581db5d3878cee55551f308fc2ab8e7dbb5a4"
+    },
+    {
+      "path": "tests/test_check_dist.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e9be06882e3d87865074d1b1e60db27173a5b44",
+      "size": 15029,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/8e9be06882e3d87865074d1b1e60db27173a5b44"
+    },
+    {
+      "path": "tests/test_dist_contract.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf450b98d4108a4fb258d107e937fa3d5c8b0279",
+      "size": 1060,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/cf450b98d4108a4fb258d107e937fa3d5c8b0279"
+    },
+    {
+      "path": "tests/test_geometry.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e51e622d275ce77018a4d94fc6b90ac6e2edff4e",
+      "size": 10261,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/e51e622d275ce77018a4d94fc6b90ac6e2edff4e"
+    },
+    {
+      "path": "tests/test_levels.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24d66570c69937590509bfb6ad8a81b8796ba875",
+      "size": 3921,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/24d66570c69937590509bfb6ad8a81b8796ba875"
+    },
+    {
+      "path": "tests/test_matching.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab0e4ee86d4d7982ca6e01dfbbb2a9641482ce3e",
+      "size": 5798,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/ab0e4ee86d4d7982ca6e01dfbbb2a9641482ce3e"
+    },
+    {
+      "path": "tests/test_next_release.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51c0f4c7fdbe636a88c4c9247c3d3b226f81cab0",
+      "size": 1834,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/51c0f4c7fdbe636a88c4c9247c3d3b226f81cab0"
+    },
+    {
+      "path": "tests/test_no_lfs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8c6ea2910cf8521691e336572bf63be0cf9c664",
+      "size": 2255,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/a8c6ea2910cf8521691e336572bf63be0cf9c664"
+    },
+    {
+      "path": "tests/test_noop.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30e3b074811ce371f1eddd3eface0e86a654ae01",
+      "size": 650,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/30e3b074811ce371f1eddd3eface0e86a654ae01"
+    },
+    {
+      "path": "tests/test_overrides.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17a65c4be268115a1e8484a61ee87aad3cc1da07",
+      "size": 4075,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/17a65c4be268115a1e8484a61ee87aad3cc1da07"
+    },
+    {
+      "path": "tests/test_plot_traverse.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbd3892daef244496b912ab7d48195e0d895f8df",
+      "size": 2409,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/dbd3892daef244496b912ab7d48195e0d895f8df"
+    },
+    {
+      "path": "tests/test_psgc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b8be96f956b9b523127ce4a248bf094d193c222",
+      "size": 5022,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/3b8be96f956b9b523127ce4a248bf094d193c222"
+    },
+    {
+      "path": "tests/test_psgc_data.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb2ded6c2dde765761e614c1a9139656b8725985",
+      "size": 9102,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/bb2ded6c2dde765761e614c1a9139656b8725985"
+    },
+    {
+      "path": "tests/test_psgc_datafiles.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00d85e393ca5e8505450009b1f4028c3b5697cae",
+      "size": 3802,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/00d85e393ca5e8505450009b1f4028c3b5697cae"
+    },
+    {
+      "path": "tests/test_psgc_diff.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bafcdc7e5dccbb62dfdbb7cc914a993fc10fc31",
+      "size": 10505,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/2bafcdc7e5dccbb62dfdbb7cc914a993fc10fc31"
+    },
+    {
+      "path": "tests/test_publish_release.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94026aeb7b045ac489e0b275274f0d85a6d641ba",
+      "size": 7816,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/94026aeb7b045ac489e0b275274f0d85a6d641ba"
+    },
+    {
+      "path": "tests/test_regenerate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9e7bd74501ff1303960392dece63e26d3d5c9de",
+      "size": 1604,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/e9e7bd74501ff1303960392dece63e26d3d5c9de"
+    },
+    {
+      "path": "tests/test_release.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a79a86e061fd6e44a66be44892eae0942f23ed9e",
+      "size": 10653,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/a79a86e061fd6e44a66be44892eae0942f23ed9e"
+    },
+    {
+      "path": "tests/test_release_2026_3q.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a11cdccd7c8256786056389c86b903d7d5684ab",
+      "size": 2701,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/6a11cdccd7c8256786056389c86b903d7d5684ab"
+    },
+    {
+      "path": "tests/test_sources.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "013ededc0fe262cc9a1430d89ba0d29b02e54cb5",
+      "size": 4479,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/013ededc0fe262cc9a1430d89ba0d29b02e54cb5"
+    },
+    {
+      "path": "tests/test_write_level.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3cb73b575dc5e86ebad710349ff4c94a5ef0c8b",
+      "size": 3037,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/c3cb73b575dc5e86ebad710349ff4c94a5ef0c8b"
+    },
+    {
+      "path": "uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6f008d4fe6431ce03df4ea6946a8f9406c3c74a",
+      "size": 77590,
+      "url": "https://api.github.com/repos/faeldon/philippines-psgc-shapefiles/git/blobs/e6f008d4fe6431ce03df4ea6946a8f9406c3c74a"
+    }
+  ],
+  "truncated": false
+}

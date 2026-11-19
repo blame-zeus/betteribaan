@@ -1,0 +1,1793 @@
+{
+  "sha": "edf53994c8f217d9e1ce3f74c3d0a78025e0812a",
+  "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/edf53994c8f217d9e1ce3f74c3d0a78025e0812a",
+  "tree": [
+    {
+      "path": ".env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4efa08dc32c9df2869be27b83a823fd0c4d1d556",
+      "size": 117,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/4efa08dc32c9df2869be27b83a823fd0c4d1d556"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c2fc9ab33bc703a3b4ca91f751fc3f8d84ae4546",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/c2fc9ab33bc703a3b4ca91f751fc3f8d84ae4546"
+    },
+    {
+      "path": ".github/FUNDING.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "263881df6d6dd3ce06cdbea71cdf033609d35000",
+      "size": 47,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/263881df6d6dd3ce06cdbea71cdf033609d35000"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6092219586cdf2e2f6c33b6f456fff3b1deacc89",
+      "size": 532,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/6092219586cdf2e2f6c33b6f456fff3b1deacc89"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd441d165d6fd99c3ceb45d3c9dcaa699c5da30d",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/dd441d165d6fd99c3ceb45d3c9dcaa699c5da30d"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84e63dbeaf1cb5394442ec2c252d49b75fb25824",
+      "size": 2000,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/84e63dbeaf1cb5394442ec2c252d49b75fb25824"
+    },
+    {
+      "path": ".github/workflows/quarto-pages.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "272c0a8ca8677ba64403950279cb432b1ca0ea28",
+      "size": 1377,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/272c0a8ca8677ba64403950279cb432b1ca0ea28"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c90f48820d0cc9dfc5ad2d8890400dedff5d8aea",
+      "size": 4221,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/c90f48820d0cc9dfc5ad2d8890400dedff5d8aea"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c59ebfc0ec152db3c355b98612d0410308667f3d",
+      "size": 4666,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/c59ebfc0ec152db3c355b98612d0410308667f3d"
+    },
+    {
+      "path": ".python-version",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24ee5b1be9961e38a503c8e764b7385dbb6ba124",
+      "size": 5,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/24ee5b1be9961e38a503c8e764b7385dbb6ba124"
+    },
+    {
+      "path": "2021-08-19",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "12ce8fcd3bef243df4dfed5c5bf78c41e1c69763",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/12ce8fcd3bef243df4dfed5c5bf78c41e1c69763"
+    },
+    {
+      "path": "2021-08-19/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "size": 1,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/8b137891791fe96927ad78e64b0aad7bded08bdc"
+    },
+    {
+      "path": "2022-04-29",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f9e0553fe099676ba66c25df006f7d5f963dd60c",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/f9e0553fe099676ba66c25df006f7d5f963dd60c"
+    },
+    {
+      "path": "2022-04-29/PSGC20202220Summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cf044e552504d386c820f6fdcb6bee45470b9d7",
+      "size": 5401,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/1cf044e552504d386c820f6fdcb6bee45470b9d7"
+    },
+    {
+      "path": "2022-04-29/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dfeb09a414fde5542fed1d398c0d683c09fc6d9",
+      "size": 80928472,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/2dfeb09a414fde5542fed1d398c0d683c09fc6d9"
+    },
+    {
+      "path": "2022-04-29/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fafb667d5a46525a33039d5b4f7aa06702e424aa",
+      "size": 79886263,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/fafb667d5a46525a33039d5b4f7aa06702e424aa"
+    },
+    {
+      "path": "2022-04-29/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b93650ab812d8ad37a9cd08ececddfbc499187bc",
+      "size": 32001377,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/b93650ab812d8ad37a9cd08ececddfbc499187bc"
+    },
+    {
+      "path": "2022-11-08",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bd2bdfac6735d299175dc768ec006f27d0e8e2f3",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/bd2bdfac6735d299175dc768ec006f27d0e8e2f3"
+    },
+    {
+      "path": "2022-11-08/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ff3577fd6c132d18285a1d8a05b27f74b3755f7",
+      "size": 1982983,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/2ff3577fd6c132d18285a1d8a05b27f74b3755f7"
+    },
+    {
+      "path": "2022-11-08/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ce7967f9012ec626db74e6f4e976077f2fb6985",
+      "size": 1922202,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/9ce7967f9012ec626db74e6f4e976077f2fb6985"
+    },
+    {
+      "path": "2022-11-08/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3187248d33bd6cd4cc45c3fdeb6ed59d65e038b3",
+      "size": 835145,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/3187248d33bd6cd4cc45c3fdeb6ed59d65e038b3"
+    },
+    {
+      "path": "2023-04-18",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3ce1f69baff25eced958c4c928145858924659c4",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/3ce1f69baff25eced958c4c928145858924659c4"
+    },
+    {
+      "path": "2023-04-18/PSGC20202320and20Summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3959b2c4ff8b5bc285a9636efb80344f695c27d5",
+      "size": 5450,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/3959b2c4ff8b5bc285a9636efb80344f695c27d5"
+    },
+    {
+      "path": "2023-04-18/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df17b1d70b787cc7d48d08bbca4a2ef711286e57",
+      "size": 56421,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/df17b1d70b787cc7d48d08bbca4a2ef711286e57"
+    },
+    {
+      "path": "2023-04-18/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9364e7fa8196344dcb64b6e72ef595bfb5ccfb77",
+      "size": 54958,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/9364e7fa8196344dcb64b6e72ef595bfb5ccfb77"
+    },
+    {
+      "path": "2023-04-18/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dbd0bf4f623b0b2a1fdf141329cf55bce5317c1",
+      "size": 26439,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/6dbd0bf4f623b0b2a1fdf141329cf55bce5317c1"
+    },
+    {
+      "path": "2023-08-15",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "704cb849dcde2d20fdd031757bf2ec0b254f8f3d",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/704cb849dcde2d20fdd031757bf2ec0b254f8f3d"
+    },
+    {
+      "path": "2023-08-15/PSGC 2Q 2023 National and Provincial Summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88f3f1c5fef71550153e698bc79c6a325d308d06",
+      "size": 5449,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/88f3f1c5fef71550153e698bc79c6a325d308d06"
+    },
+    {
+      "path": "2023-08-15/PSGC-Q2-2023-Updates-Press-Release.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "794a5c3d64ac7c2228a91173e59a9a1a958e5d40",
+      "size": 6683,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/794a5c3d64ac7c2228a91173e59a9a1a958e5d40"
+    },
+    {
+      "path": "2023-08-15/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae6951c83639cbb97d461eb78d730e004a675f55",
+      "size": 32408,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/ae6951c83639cbb97d461eb78d730e004a675f55"
+    },
+    {
+      "path": "2023-08-15/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c997dbe5c6cfa5318949f06425d79b6bad0a393e",
+      "size": 30065,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/c997dbe5c6cfa5318949f06425d79b6bad0a393e"
+    },
+    {
+      "path": "2023-08-15/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f540fb822fea6d3d16d80155c562172a49bc236",
+      "size": 15266,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/0f540fb822fea6d3d16d80155c562172a49bc236"
+    },
+    {
+      "path": "2023-10-24",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "465e603bcf0d72858ba46f05bc387ae33a792b98",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/465e603bcf0d72858ba46f05bc387ae33a792b98"
+    },
+    {
+      "path": "2023-10-24/PSGC 3Q 2023 National and Provincial Summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb5d128c3d345ee410e237dca854b474c85ff6d7",
+      "size": 5454,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/bb5d128c3d345ee410e237dca854b474c85ff6d7"
+    },
+    {
+      "path": "2023-10-24/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f070f8e076e08d0e559e4ea723cba0015ee96ebe",
+      "size": 94974,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/f070f8e076e08d0e559e4ea723cba0015ee96ebe"
+    },
+    {
+      "path": "2023-10-24/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fe15b42ae4c6c164b5579088e2a1dee6b2d7d1b",
+      "size": 90694,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/1fe15b42ae4c6c164b5579088e2a1dee6b2d7d1b"
+    },
+    {
+      "path": "2023-10-24/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ee71272fba2d8fc6c6f49b716a28770f75ac6d8",
+      "size": 40018,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/1ee71272fba2d8fc6c6f49b716a28770f75ac6d8"
+    },
+    {
+      "path": "2023-10-24/enriched_t0p005",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cf04aaead40ef3fbef8cf48dc6e89e707bb35fff",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/cf04aaead40ef3fbef8cf48dc6e89e707bb35fff"
+    },
+    {
+      "path": "2023-10-24/enriched_t0p005/adm0.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77d9a0c1af1d58b5be750b4fc7537a9ccf602d74",
+      "size": 4429773,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/77d9a0c1af1d58b5be750b4fc7537a9ccf602d74"
+    },
+    {
+      "path": "2023-10-24/enriched_t0p005/adm1.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eff3c84c381fb331ee48cc190e1b071a32a5c92c",
+      "size": 2954414,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/eff3c84c381fb331ee48cc190e1b071a32a5c92c"
+    },
+    {
+      "path": "2023-10-24/enriched_t0p005/adm2.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b3874a0957344dddf5e1a6d7899a0107b5f291c",
+      "size": 3238904,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/0b3874a0957344dddf5e1a6d7899a0107b5f291c"
+    },
+    {
+      "path": "2023-10-24/enriched_t0p005/adm3.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80a5f63d0c11a145c6f5ad96ad0c7b00b88d19cf",
+      "size": 6560407,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/80a5f63d0c11a145c6f5ad96ad0c7b00b88d19cf"
+    },
+    {
+      "path": "2023-10-24/enriched_t0p005/adm4.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90012f8d6a940badcbc99eca9303628be03e244a",
+      "size": 62988300,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/90012f8d6a940badcbc99eca9303628be03e244a"
+    },
+    {
+      "path": "2023-10-24/enriched_t0p005/diff.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5186eb02457843cc81618efe24d5780232db340a",
+      "size": 11717,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/5186eb02457843cc81618efe24d5780232db340a"
+    },
+    {
+      "path": "2023-10-24/enriched_t0p005/summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0422ae0e0de5a1b7aa1f63386798cc7664f27ed8",
+      "size": 539,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/0422ae0e0de5a1b7aa1f63386798cc7664f27ed8"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "64de7b11dc06251ae591627631b16051cce25357",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/64de7b11dc06251ae591627631b16051cce25357"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/barangays.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d80623cf518b54c5c87fc55c08cf4aa1520f4d83",
+      "size": 66937084,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/d80623cf518b54c5c87fc55c08cf4aa1520f4d83"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/classification_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c0d27c56d077a472a7e3b5f4ca472b10b325f4b",
+      "size": 31115,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/1c0d27c56d077a472a7e3b5f4ca472b10b325f4b"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/component_cities.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d517e92c020f76b285f8151ebe3b8a4804f0139",
+      "size": 487789,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/5d517e92c020f76b285f8151ebe3b8a4804f0139"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/country.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0b9bebe29c691a31ada900cb3d0f35638a882d9",
+      "size": 4666534,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/a0b9bebe29c691a31ada900cb3d0f35638a882d9"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/highly_urbanized_cities.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5682a1c424f3748958e52cecfe0c1f38c65dc4b3",
+      "size": 175318,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/5682a1c424f3748958e52cecfe0c1f38c65dc4b3"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/independent_component_cities.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82bf84e1556227c3306bb061fffe2b56d610f07e",
+      "size": 24588,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/82bf84e1556227c3306bb061fffe2b56d610f07e"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/municipalities.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1da6cc78902802888ecd8a67ec3a67cb6435e147",
+      "size": 5973581,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/1da6cc78902802888ecd8a67ec3a67cb6435e147"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/non_administrative.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "083d73042564006eb398c6b029cff9e9284d960c",
+      "size": 43773,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/083d73042564006eb398c6b029cff9e9284d960c"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/provinces.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e57f3a2a9f0799e31b8d14967264894463663bb5",
+      "size": 3205680,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/e57f3a2a9f0799e31b8d14967264894463663bb5"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/regions.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "102ae562c8690c4d13bdd2f7d4ed01f5162b2a4c",
+      "size": 2955658,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/102ae562c8690c4d13bdd2f7d4ed01f5162b2a4c"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/special_geographic_areas.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "229d923e8ba23cc58173074d8683010593f8f02d",
+      "size": 44938,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/229d923e8ba23cc58173074d8683010593f8f02d"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/submunicipalities.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a742a736b9a72bd5c0153304903e977047432b02",
+      "size": 340,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/a742a736b9a72bd5c0153304903e977047432b02"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93791f5c1f600dd7309f5d31c6645edb0127d585",
+      "size": 10240,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/93791f5c1f600dd7309f5d31c6645edb0127d585"
+    },
+    {
+      "path": "2023-10-24/hierarchical_t0p005/unresolved.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bfe1deb8e5877fd22b98244dd64bca920c648ce",
+      "size": 18444,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/1bfe1deb8e5877fd22b98244dd64bca920c648ce"
+    },
+    {
+      "path": "2023-10-24/raw_t0p005",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "92a2e5d979c510d561966942fbdb51f52ecbc0b2",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/92a2e5d979c510d561966942fbdb51f52ecbc0b2"
+    },
+    {
+      "path": "2023-10-24/raw_t0p005/adm0.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0e857f4564c4ea0ece41661e43c3bf754e2313e",
+      "size": 2107598,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/f0e857f4564c4ea0ece41661e43c3bf754e2313e"
+    },
+    {
+      "path": "2023-10-24/raw_t0p005/adm1.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baee3ef0fbc4b1eafcdb4b188d9bbd912ee75c81",
+      "size": 1213665,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/baee3ef0fbc4b1eafcdb4b188d9bbd912ee75c81"
+    },
+    {
+      "path": "2023-10-24/raw_t0p005/adm2.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f73dfc5cb16b7e3e7250be6c84ae91103023bcc",
+      "size": 1350548,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/0f73dfc5cb16b7e3e7250be6c84ae91103023bcc"
+    },
+    {
+      "path": "2023-10-24/raw_t0p005/adm3.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ec074cdc7df5d225417fb01c041552ee9ba9b1e",
+      "size": 3064308,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/3ec074cdc7df5d225417fb01c041552ee9ba9b1e"
+    },
+    {
+      "path": "2023-10-24/raw_t0p005/adm4.geojson",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a91b524708b6c7f0d6f2dcae1c001498e490b05",
+      "size": 34304626,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/8a91b524708b6c7f0d6f2dcae1c001498e490b05"
+    },
+    {
+      "path": "2023-10-24/raw_t0p005/diff.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62640c7588d9f29c3611a8464eec5a740fb955ff",
+      "size": 285089,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/62640c7588d9f29c3611a8464eec5a740fb955ff"
+    },
+    {
+      "path": "2023-10-24/raw_t0p005/huc_adm2_mapping.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d85d5086c03b8f6213e4b73c1f48fdc685f31d76",
+      "size": 7004,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/d85d5086c03b8f6213e4b73c1f48fdc685f31d76"
+    },
+    {
+      "path": "2023-10-24/raw_t0p005/summary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cd039ec7ef575cd2abd45fed68cc4fa1d57d896",
+      "size": 541,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/8cd039ec7ef575cd2abd45fed68cc4fa1d57d896"
+    },
+    {
+      "path": "2024-01-23",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37e5049c579a0b3cf39a2e4ce4cf5eb18e266b14",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/37e5049c579a0b3cf39a2e4ce4cf5eb18e266b14"
+    },
+    {
+      "path": "2024-01-23/Press-Release-No-Change-in-4th-Quarter-2023-PSGC.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c0aaf17eded8a5830e5546e385101ac64ecfbeb",
+      "size": 2563,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/1c0aaf17eded8a5830e5546e385101ac64ecfbeb"
+    },
+    {
+      "path": "2024-01-23/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f46d3e4f3ed85b4feadd9988b31e060d919e3a5e",
+      "size": 26381,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/f46d3e4f3ed85b4feadd9988b31e060d919e3a5e"
+    },
+    {
+      "path": "2024-01-23/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47055cdd2fcab43659008652551dc4c4088ac221",
+      "size": 25747,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/47055cdd2fcab43659008652551dc4c4088ac221"
+    },
+    {
+      "path": "2024-01-23/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b45a58e5b500cf0a26519aee06c36a17fe3ca82",
+      "size": 12783,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/5b45a58e5b500cf0a26519aee06c36a17fe3ca82"
+    },
+    {
+      "path": "2024-04-23",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4443f13576b40b535754cf0dbf1d218869fceb24",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/4443f13576b40b535754cf0dbf1d218869fceb24"
+    },
+    {
+      "path": "2024-04-23/Final-Press-Release-1Q2024PSGC.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3632cab791d2a051cab5123130541be79edf7d96",
+      "size": 5521,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/3632cab791d2a051cab5123130541be79edf7d96"
+    },
+    {
+      "path": "2024-04-23/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3640f9417aa5931a170ce5f4d33950491c5d7167",
+      "size": 26323,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/3640f9417aa5931a170ce5f4d33950491c5d7167"
+    },
+    {
+      "path": "2024-04-23/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f919dfc376e031e443c4644a7e0c0f5cca14cd8",
+      "size": 24690,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/5f919dfc376e031e443c4644a7e0c0f5cca14cd8"
+    },
+    {
+      "path": "2024-04-23/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4199ab276cede7626eaa348b7868b85eb639c390",
+      "size": 12210,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/4199ab276cede7626eaa348b7868b85eb639c390"
+    },
+    {
+      "path": "2024-05-08",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c5390cbc50a05c468a09513263a46f050d842027",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/c5390cbc50a05c468a09513263a46f050d842027"
+    },
+    {
+      "path": "2024-05-08/Press-Release-Eight-New-Mun-in-BARMM-April 2024.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "643294338abbfad7691518a53e5909161a79fda8",
+      "size": 2902,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/643294338abbfad7691518a53e5909161a79fda8"
+    },
+    {
+      "path": "2024-05-08/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59670027ce60fe2041f6d763905006148506febc",
+      "size": 94109,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/59670027ce60fe2041f6d763905006148506febc"
+    },
+    {
+      "path": "2024-05-08/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "954558987ca242c4b58e78b70684d6441fbb2123",
+      "size": 87209,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/954558987ca242c4b58e78b70684d6441fbb2123"
+    },
+    {
+      "path": "2024-05-08/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a682b07eff60ed160d5f16481981c64ecaf6d64",
+      "size": 43340,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/8a682b07eff60ed160d5f16481981c64ecaf6d64"
+    },
+    {
+      "path": "2024-07-12",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e907727ee08d9f00e5e5e943372a071635d9ae2",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/8e907727ee08d9f00e5e5e943372a071635d9ae2"
+    },
+    {
+      "path": "2024-07-12/Press-Release-June2024PSGC.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00060f45dc8d41a6f8d78dba8699a2ce7f5b2952",
+      "size": 3784,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/00060f45dc8d41a6f8d78dba8699a2ce7f5b2952"
+    },
+    {
+      "path": "2024-07-12/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56788346b3358903162471be738f362c7e8e91a2",
+      "size": 4837556,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/56788346b3358903162471be738f362c7e8e91a2"
+    },
+    {
+      "path": "2024-07-12/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1b10d31c9129bf90785a6dd77e7781d7d2115cd",
+      "size": 4699306,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/e1b10d31c9129bf90785a6dd77e7781d7d2115cd"
+    },
+    {
+      "path": "2024-07-12/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e102fa1a66682a11e7f6518adae06d74b188e4c",
+      "size": 2042375,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/5e102fa1a66682a11e7f6518adae06d74b188e4c"
+    },
+    {
+      "path": "2024-10-18",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a76e28f21b1b086d6c5b6643660f89b36142ac47",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/a76e28f21b1b086d6c5b6643660f89b36142ac47"
+    },
+    {
+      "path": "2024-10-18/Press-Release-3Q-2024-PSGC.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45ee10029a85725f7c8e0ba21fb04627ff6d65ee",
+      "size": 3686,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/45ee10029a85725f7c8e0ba21fb04627ff6d65ee"
+    },
+    {
+      "path": "2024-10-18/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afe882a19c9872661dea2f8bd97ef5f607bc4eb7",
+      "size": 24910,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/afe882a19c9872661dea2f8bd97ef5f607bc4eb7"
+    },
+    {
+      "path": "2024-10-18/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86b1f362c204323a5a87b30f428ac0ecb65fbbf2",
+      "size": 23574,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/86b1f362c204323a5a87b30f428ac0ecb65fbbf2"
+    },
+    {
+      "path": "2024-10-18/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a6a579645b52d4dd964e4eb4a068f905f843fe4",
+      "size": 11138,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/5a6a579645b52d4dd964e4eb4a068f905f843fe4"
+    },
+    {
+      "path": "2025-01-30",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ef0fecb68d3db9d0780fd2ed1147790ec15a975",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/7ef0fecb68d3db9d0780fd2ed1147790ec15a975"
+    },
+    {
+      "path": "2025-01-30/Press Release 4Q PSGC Updates.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f3eaa63f0d1f74f69db8dba057080b4330dcc3d",
+      "size": 2457,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/1f3eaa63f0d1f74f69db8dba057080b4330dcc3d"
+    },
+    {
+      "path": "2025-01-30/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "576011bfe3a2cd92548ba1fbf2c86f5ed95d7ea3",
+      "size": 7799,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/576011bfe3a2cd92548ba1fbf2c86f5ed95d7ea3"
+    },
+    {
+      "path": "2025-01-30/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36927db2af33f8f88e4ae42d7e3f42c4823935e7",
+      "size": 7515,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/36927db2af33f8f88e4ae42d7e3f42c4823935e7"
+    },
+    {
+      "path": "2025-01-30/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8863ef11cd618bc5ea1a5b356e006ab82763c88",
+      "size": 3466,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/a8863ef11cd618bc5ea1a5b356e006ab82763c88"
+    },
+    {
+      "path": "2025-04-23",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c19157cad0a6e1651c87037b81d21de2a260e469",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/c19157cad0a6e1651c87037b81d21de2a260e469"
+    },
+    {
+      "path": "2025-04-23/Press-Release-1Q-2025-PSGC.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b6b052afb9740bf2311c3479bb50ed05e21448d",
+      "size": 3261,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/4b6b052afb9740bf2311c3479bb50ed05e21448d"
+    },
+    {
+      "path": "2025-04-23/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c62cb3ac27a21b9b24a3f4634bc54091aba717f4",
+      "size": 18863,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/c62cb3ac27a21b9b24a3f4634bc54091aba717f4"
+    },
+    {
+      "path": "2025-04-23/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af1f3d65c77e37c0a0818b00a9c3e066627b5e41",
+      "size": 18103,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/af1f3d65c77e37c0a0818b00a9c3e066627b5e41"
+    },
+    {
+      "path": "2025-04-23/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "234a55a0dc976844ef3481b5f308f2457fdc73a4",
+      "size": 8067,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/234a55a0dc976844ef3481b5f308f2457fdc73a4"
+    },
+    {
+      "path": "2025-08-29",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1c8674f996f8f49b306b3b5007886fdc013dd52c",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/1c8674f996f8f49b306b3b5007886fdc013dd52c"
+    },
+    {
+      "path": "2025-08-29/Press-Release-July2025PSGC_0.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aefff646ac654ca70b17ec31629937eeabe5d7cb",
+      "size": 2778,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/aefff646ac654ca70b17ec31629937eeabe5d7cb"
+    },
+    {
+      "path": "2025-08-29/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be568b8951d0ec15de0a9ddda5bf79e645e34d1a",
+      "size": 1046385,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/be568b8951d0ec15de0a9ddda5bf79e645e34d1a"
+    },
+    {
+      "path": "2025-08-29/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af17648dbda3d996e674ba78755ac930f6cdc94b",
+      "size": 1016366,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/af17648dbda3d996e674ba78755ac930f6cdc94b"
+    },
+    {
+      "path": "2025-08-29/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e94b3f63bacd928d5409851bb7daf678497139d8",
+      "size": 450692,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/e94b3f63bacd928d5409851bb7daf678497139d8"
+    },
+    {
+      "path": "2025-10-13",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5128171482e74c4a950e6280b2fa75ed3c9a20ae",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/5128171482e74c4a950e6280b2fa75ed3c9a20ae"
+    },
+    {
+      "path": "2025-10-13/Press-Release-3Q-2025-PSGC.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0318cadc57e024d47d66f134eb44fbf9eb873dd0",
+      "size": 2856,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/0318cadc57e024d47d66f134eb44fbf9eb873dd0"
+    },
+    {
+      "path": "2025-10-13/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b53c0f2841c2e8e085ea44982c154399e798da50",
+      "size": 1697,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/b53c0f2841c2e8e085ea44982c154399e798da50"
+    },
+    {
+      "path": "2025-10-13/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3234d1e4b5c63ecd61a14508f9ebf5b55adb6ae",
+      "size": 1618,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/c3234d1e4b5c63ecd61a14508f9ebf5b55adb6ae"
+    },
+    {
+      "path": "2025-10-13/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a784d392c4c12c408f41b662f01597ccd0b9d3a",
+      "size": 923,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/2a784d392c4c12c408f41b662f01597ccd0b9d3a"
+    },
+    {
+      "path": "2026-01-13",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "95d00148f02d34359fb05162a0825127d397dbc9",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/95d00148f02d34359fb05162a0825127d397dbc9"
+    },
+    {
+      "path": "2026-01-13/Press-Release-4Q-2025-PSGC.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "970d59c1b4748911459ec0e25e41c60b5ba229b2",
+      "size": 2631,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/970d59c1b4748911459ec0e25e41c60b5ba229b2"
+    },
+    {
+      "path": "2026-01-13/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62a6a7b6450251a4d3e58b3a3b0374205d149a89",
+      "size": 3722,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/62a6a7b6450251a4d3e58b3a3b0374205d149a89"
+    },
+    {
+      "path": "2026-01-13/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9eec6ca163702fc593c03b65ead7ca2d64144a19",
+      "size": 3544,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/9eec6ca163702fc593c03b65ead7ca2d64144a19"
+    },
+    {
+      "path": "2026-01-13/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "250be23bde1dd3521fa4c4bdf059708aba680877",
+      "size": 2064,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/250be23bde1dd3521fa4c4bdf059708aba680877"
+    },
+    {
+      "path": "2026-04-13",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ed4ea60b1c39f0525df6984776cb3a5617a90cf9",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/ed4ea60b1c39f0525df6984776cb3a5617a90cf9"
+    },
+    {
+      "path": "2026-04-13/Press-Release-1Q-2026-PSGC.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2300aa53b3772495a29a3578fd74a6abdadf8ca",
+      "size": 4851,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/a2300aa53b3772495a29a3578fd74a6abdadf8ca"
+    },
+    {
+      "path": "2026-04-13/delta.jsonld",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9918596ef28947f0222c9cfda73da5e6ba782f1a",
+      "size": 25132,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/9918596ef28947f0222c9cfda73da5e6ba782f1a"
+    },
+    {
+      "path": "2026-04-13/delta.nt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "644cad05c4da7802b0dd5ef5aa513535d5f1f7b7",
+      "size": 23578,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/644cad05c4da7802b0dd5ef5aa513535d5f1f7b7"
+    },
+    {
+      "path": "2026-04-13/delta.ttl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e78e2ae5f5c7524e0db1a757de73017a13e94a4a",
+      "size": 10781,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/e78e2ae5f5c7524e0db1a757de73017a13e94a4a"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbd8b0c96f76580919996b52d91094b193eb4fe9",
+      "size": 9110,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/bbd8b0c96f76580919996b52d91094b193eb4fe9"
+    },
+    {
+      "path": "CITATION.cff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b2186e47761da0ee80df402c50a57629275f5ff",
+      "size": 1877,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/3b2186e47761da0ee80df402c50a57629275f5ff"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bcc340669bd89ff3c5163dad94c06916c309776",
+      "size": 1072,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/9bcc340669bd89ff3c5163dad94c06916c309776"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e71e3fc3089dc7d0ddd0fa79e8212fec30e84ed7",
+      "size": 11694,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/e71e3fc3089dc7d0ddd0fa79e8212fec30e84ed7"
+    },
+    {
+      "path": "barangay_boundaries_repository",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b8647ce3ac0499d598ab7757f726ff860cfc6acd",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/b8647ce3ac0499d598ab7757f726ff860cfc6acd"
+    },
+    {
+      "path": "barangay_boundaries_repository/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "barangay_boundaries_repository/__main__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34030508e572d5cc685bb8aa4520cde5c43de33a",
+      "size": 58,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/34030508e572d5cc685bb8aa4520cde5c43de33a"
+    },
+    {
+      "path": "barangay_boundaries_repository/agent",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "613d2cb403f1c2a59b53de0f3f1b37541ed35bf2",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/613d2cb403f1c2a59b53de0f3f1b37541ed35bf2"
+    },
+    {
+      "path": "barangay_boundaries_repository/agent/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "barangay_boundaries_repository/agent/client.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8707da9c00df0f515087b204d71d22f1acafcfd",
+      "size": 2980,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/f8707da9c00df0f515087b204d71d22f1acafcfd"
+    },
+    {
+      "path": "barangay_boundaries_repository/agent/pipeline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a957bc8f00a9b91863b5ceaf02dcc54960859fee",
+      "size": 8532,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/a957bc8f00a9b91863b5ceaf02dcc54960859fee"
+    },
+    {
+      "path": "barangay_boundaries_repository/classifier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eee73ce962fe15384e100247791f34359fb28278",
+      "size": 10553,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/eee73ce962fe15384e100247791f34359fb28278"
+    },
+    {
+      "path": "barangay_boundaries_repository/cli.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7b6f80fdb219250522ebee63bf0df0cb31b9de3",
+      "size": 20852,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/d7b6f80fdb219250522ebee63bf0df0cb31b9de3"
+    },
+    {
+      "path": "barangay_boundaries_repository/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98c93351194fbd6ff6145a6e43e777bfab2abdc5",
+      "size": 737,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/98c93351194fbd6ff6145a6e43e777bfab2abdc5"
+    },
+    {
+      "path": "barangay_boundaries_repository/coverage.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "606999919048af9986205c174a85ec033cb9ff3c",
+      "size": 11918,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/606999919048af9986205c174a85ec033cb9ff3c"
+    },
+    {
+      "path": "barangay_boundaries_repository/enrich.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27c892d63054eccec464596c61e062b1780494ed",
+      "size": 18136,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/27c892d63054eccec464596c61e062b1780494ed"
+    },
+    {
+      "path": "barangay_boundaries_repository/generate_huc_mapping.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31c607f10dcb6d4549f19e0ab1118ab72ed3fd73",
+      "size": 8756,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/31c607f10dcb6d4549f19e0ab1118ab72ed3fd73"
+    },
+    {
+      "path": "barangay_boundaries_repository/geojson_pipeline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d594f4b8c3fbf704d7bfa9cb891cd9afdb288711",
+      "size": 6970,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/d594f4b8c3fbf704d7bfa9cb891cd9afdb288711"
+    },
+    {
+      "path": "barangay_boundaries_repository/hierarchical.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4e2e43f869705db422f71e625dfdfcee2f658ab",
+      "size": 9987,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/d4e2e43f869705db422f71e625dfdfcee2f658ab"
+    },
+    {
+      "path": "barangay_boundaries_repository/ingest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "92a9c6a18ecbf836a84831b6758aaca7f321422c",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/92a9c6a18ecbf836a84831b6758aaca7f321422c"
+    },
+    {
+      "path": "barangay_boundaries_repository/ingest/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "barangay_boundaries_repository/ingest/pdf_parser.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19dcb61596de8025b189660d655fb2de6fd1f4e1",
+      "size": 390,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/19dcb61596de8025b189660d655fb2de6fd1f4e1"
+    },
+    {
+      "path": "barangay_boundaries_repository/ingest/scanner.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f49b24439fd642847b9f49cb590983c87db8f1f2",
+      "size": 2921,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/f49b24439fd642847b9f49cb590983c87db8f1f2"
+    },
+    {
+      "path": "barangay_boundaries_repository/ingest/xlsx_parser.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de6a8023498d504d36bb6064130162ef2d390c90",
+      "size": 9301,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/de6a8023498d504d36bb6064130162ef2d390c90"
+    },
+    {
+      "path": "barangay_boundaries_repository/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c011e87e8a519883a3430f4c531b3da1963e2256",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/c011e87e8a519883a3430f4c531b3da1963e2256"
+    },
+    {
+      "path": "barangay_boundaries_repository/models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "barangay_boundaries_repository/models/schemas.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01471baa3877993412150b5d804f5658256c918d",
+      "size": 1846,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/01471baa3877993412150b5d804f5658256c918d"
+    },
+    {
+      "path": "barangay_boundaries_repository/namria",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "317921649f078b9337818cc573edafcbea3ed4c0",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/317921649f078b9337818cc573edafcbea3ed4c0"
+    },
+    {
+      "path": "barangay_boundaries_repository/namria/huc_adm2_mapping.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d85d5086c03b8f6213e4b73c1f48fdc685f31d76",
+      "size": 7004,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/d85d5086c03b8f6213e4b73c1f48fdc685f31d76"
+    },
+    {
+      "path": "barangay_boundaries_repository/namria_converter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb432519d001e77942e3bdd9e313ab565231e444",
+      "size": 2753,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/eb432519d001e77942e3bdd9e313ab565231e444"
+    },
+    {
+      "path": "barangay_boundaries_repository/prompts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fcf655d6907a8320986abd3465ff7d3bd8ac67f4",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/fcf655d6907a8320986abd3465ff7d3bd8ac67f4"
+    },
+    {
+      "path": "barangay_boundaries_repository/prompts/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "barangay_boundaries_repository/prompts/base.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6fab872c5054912ce40521610b5d9983b77f067",
+      "size": 1138,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/b6fab872c5054912ce40521610b5d9983b77f067"
+    },
+    {
+      "path": "barangay_boundaries_repository/rdf",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "58a898622430057afc9ec8b2dbe6ef0cde95b112",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/58a898622430057afc9ec8b2dbe6ef0cde95b112"
+    },
+    {
+      "path": "barangay_boundaries_repository/rdf/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "barangay_boundaries_repository/rdf/builder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a514247f7ab9dd07559e20cda019ef4d8cb12f4",
+      "size": 8575,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/3a514247f7ab9dd07559e20cda019ef4d8cb12f4"
+    },
+    {
+      "path": "barangay_boundaries_repository/rdf/delta.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c4f067816102b7972fb1e78ff3eefabc1361da8",
+      "size": 15037,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/8c4f067816102b7972fb1e78ff3eefabc1361da8"
+    },
+    {
+      "path": "barangay_boundaries_repository/splitter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a4db9aca5bbda84f8065843afde75403d4ec8a0",
+      "size": 13823,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/2a4db9aca5bbda84f8065843afde75403d4ec8a0"
+    },
+    {
+      "path": "diff.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24745a397df0252620cf618b1dc6d4fba586c485",
+      "size": 284970,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/24745a397df0252620cf618b1dc6d4fba586c485"
+    },
+    {
+      "path": "main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9abc88f101b1a9fcd164ac8223ab631f8f079e03",
+      "size": 89,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/9abc88f101b1a9fcd164ac8223ab631f8f079e03"
+    },
+    {
+      "path": "prompts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bd032274893b708ebe1edf590229d6ba14047d0d",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/bd032274893b708ebe1edf590229d6ba14047d0d"
+    },
+    {
+      "path": "prompts/extract_change_events.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a25f6157fcdce22c1c1e341d69e73661c758ab78",
+      "size": 3079,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/a25f6157fcdce22c1c1e341d69e73661c758ab78"
+    },
+    {
+      "path": "prompts/extract_psgc_entities.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f15bf4edf2f777d34d8c8fe3aac6ad4c2f62cc6b",
+      "size": 3051,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/f15bf4edf2f777d34d8c8fe3aac6ad4c2f62cc6b"
+    },
+    {
+      "path": "prompts/map_to_org_rdf.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c65f4c51127ae779c90d2465b1bb60d12187dc87",
+      "size": 3050,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/c65f4c51127ae779c90d2465b1bb60d12187dc87"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf04db85c9f58e8a43c05af21a56d0299fa1bd13",
+      "size": 1737,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/cf04db85c9f58e8a43c05af21a56d0299fa1bd13"
+    },
+    {
+      "path": "quarto-docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "59aa9f34bbfc834eece50a2d9ae157248a8541b3",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/59aa9f34bbfc834eece50a2d9ae157248a8541b3"
+    },
+    {
+      "path": "quarto-docs/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17ffcd3cae42d6e3f5c6332fba4e96ff7c9576ab",
+      "size": 69,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/17ffcd3cae42d6e3f5c6332fba4e96ff7c9576ab"
+    },
+    {
+      "path": "quarto-docs/DEPLOYMENT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85c1b99f4b7a14b81bf67b22f82d13cfb208d756",
+      "size": 4326,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/85c1b99f4b7a14b81bf67b22f82d13cfb208d756"
+    },
+    {
+      "path": "quarto-docs/_metadata.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b70d6539fd52c0650a3de9f968898f45e3fe8d9",
+      "size": 61,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/7b70d6539fd52c0650a3de9f968898f45e3fe8d9"
+    },
+    {
+      "path": "quarto-docs/_quarto.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9305fe680acb0098c6097c3149e8f3baace54113",
+      "size": 4004,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/9305fe680acb0098c6097c3149e8f3baace54113"
+    },
+    {
+      "path": "quarto-docs/_static",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "27bf4db8ab65d01511d83736b15a99b56cdcec8b",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/27bf4db8ab65d01511d83736b15a99b56cdcec8b"
+    },
+    {
+      "path": "quarto-docs/_static/custom.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d85022483edd27d8ef796071a3650088c546bf9",
+      "size": 1842,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/2d85022483edd27d8ef796071a3650088c546bf9"
+    },
+    {
+      "path": "quarto-docs/_static/favicon.png",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b4fba496b928cc7e80981fccfe50225bfb6426ce",
+      "size": 157035,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/b4fba496b928cc7e80981fccfe50225bfb6426ce"
+    },
+    {
+      "path": "quarto-docs/_static/favicon.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "526e2efcc2941a5dedfe67516144be823ca10244",
+      "size": 290,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/526e2efcc2941a5dedfe67516144be823ca10244"
+    },
+    {
+      "path": "quarto-docs/_static/logo.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "526e2efcc2941a5dedfe67516144be823ca10244",
+      "size": 290,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/526e2efcc2941a5dedfe67516144be823ca10244"
+    },
+    {
+      "path": "quarto-docs/_static/styles.scss",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e8bba9b03aaa2161e62bf9df4edae8f3d3278be",
+      "size": 329,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/8e8bba9b03aaa2161e62bf9df4edae8f3d3278be"
+    },
+    {
+      "path": "quarto-docs/boundaries",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1fb367a899f25c44a18740db73c2e023d145fa5c",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/1fb367a899f25c44a18740db73c2e023d145fa5c"
+    },
+    {
+      "path": "quarto-docs/boundaries/barangays.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7613c183b72a871db078fdb293dd172b18841d3d",
+      "size": 2538,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/7613c183b72a871db078fdb293dd172b18841d3d"
+    },
+    {
+      "path": "quarto-docs/boundaries/cities.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c998ad98dcb7f5f87eb35bfaeb41bcdde9dd837",
+      "size": 2655,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/1c998ad98dcb7f5f87eb35bfaeb41bcdde9dd837"
+    },
+    {
+      "path": "quarto-docs/boundaries/coverage.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03494ab6c7c45c36bef886f638f49156e6871087",
+      "size": 1912,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/03494ab6c7c45c36bef886f638f49156e6871087"
+    },
+    {
+      "path": "quarto-docs/boundaries/download.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19e0c0b18bd177b49700f8e788ac2aa8569bb347",
+      "size": 3877,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/19e0c0b18bd177b49700f8e788ac2aa8569bb347"
+    },
+    {
+      "path": "quarto-docs/boundaries/enriched.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b37d429b06107f3f5b46f585fe4b45561eaa3b6e",
+      "size": 2174,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/b37d429b06107f3f5b46f585fe4b45561eaa3b6e"
+    },
+    {
+      "path": "quarto-docs/boundaries/index.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d318e76567aa5d410147151f70133df753b15cc",
+      "size": 2775,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/2d318e76567aa5d410147151f70133df753b15cc"
+    },
+    {
+      "path": "quarto-docs/boundaries/municipalities.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d82fe1d222a7ac6b912cfa5edc6bc83e1b9feb8",
+      "size": 1940,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/9d82fe1d222a7ac6b912cfa5edc6bc83e1b9feb8"
+    },
+    {
+      "path": "quarto-docs/boundaries/properties.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5cf18b8defbad16ce9337800d9a816966aafc09",
+      "size": 1435,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/b5cf18b8defbad16ce9337800d9a816966aafc09"
+    },
+    {
+      "path": "quarto-docs/boundaries/provinces.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f46c2553f610bee857231b752c5639332cae9bc",
+      "size": 1713,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/6f46c2553f610bee857231b752c5639332cae9bc"
+    },
+    {
+      "path": "quarto-docs/boundaries/raw.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e8589e4b27b753d2ac49a471595dab99688628f",
+      "size": 2018,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/7e8589e4b27b753d2ac49a471595dab99688628f"
+    },
+    {
+      "path": "quarto-docs/boundaries/regions.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aab9b09701369fe7f40e46326f0cc62f520c0397",
+      "size": 1626,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/aab9b09701369fe7f40e46326f0cc62f520c0397"
+    },
+    {
+      "path": "quarto-docs/boundaries/special-geographic-areas.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1434d27836632b2d18c889366453c65186e3046a",
+      "size": 2286,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/1434d27836632b2d18c889366453c65186e3046a"
+    },
+    {
+      "path": "quarto-docs/changelog.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "824cb63e05fddf3bf61af7f999b22397dc5c2c23",
+      "size": 1676,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/824cb63e05fddf3bf61af7f999b22397dc5c2c23"
+    },
+    {
+      "path": "quarto-docs/index.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "080c5796d3a7a285e24b7d470f9a10570a4091b7",
+      "size": 6043,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/080c5796d3a7a285e24b7d470f9a10570a4091b7"
+    },
+    {
+      "path": "quarto-docs/llms.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6d259d19c00bdb184e17be92875ecf40762fd37",
+      "size": 5879,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/d6d259d19c00bdb184e17be92875ecf40762fd37"
+    },
+    {
+      "path": "quarto-docs/rdf",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "39ddd9b14ba5752c440497663ce69773dde89717",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/39ddd9b14ba5752c440497663ce69773dde89717"
+    },
+    {
+      "path": "quarto-docs/rdf/event-types.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ffee29d8992e943cb97bbcc99a4d6d2ee4ce8a1",
+      "size": 2547,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/3ffee29d8992e943cb97bbcc99a4d6d2ee4ce8a1"
+    },
+    {
+      "path": "quarto-docs/rdf/index.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56c0b5046302416b9bc40d02d8fd3af2894930e2",
+      "size": 3962,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/56c0b5046302416b9bc40d02d8fd3af2894930e2"
+    },
+    {
+      "path": "quarto-docs/rdf/ontology.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04c34c3b2bc6ec393aab298ccbfa377a6b332850",
+      "size": 3076,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/04c34c3b2bc6ec393aab298ccbfa377a6b332850"
+    },
+    {
+      "path": "quarto-docs/rdf/querying.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3ce7cc6cbf8f9977ef221cb4b8bc3ff0865f7ef",
+      "size": 2747,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/e3ce7cc6cbf8f9977ef221cb4b8bc3ff0865f7ef"
+    },
+    {
+      "path": "quarto-docs/rdf/serialisations.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18e39e3c5c9dea2ae2af3a942a7e67aacf0b7332",
+      "size": 1793,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/18e39e3c5c9dea2ae2af3a942a7e67aacf0b7332"
+    },
+    {
+      "path": "quarto-docs/rdf/snapshots.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "890acbf215ea296aeb0618fa4e00f844d061de95",
+      "size": 2856,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/890acbf215ea296aeb0618fa4e00f844d061de95"
+    },
+    {
+      "path": "quarto-docs/rdf/uris.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3369d5223acbf79624300f10c3315465334040ad",
+      "size": 3477,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/3369d5223acbf79624300f10c3315465334040ad"
+    },
+    {
+      "path": "quarto-docs/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f4f5d77b9b40887e205baf9f611d052491397a66",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/f4f5d77b9b40887e205baf9f611d052491397a66"
+    },
+    {
+      "path": "quarto-docs/references/citation.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59a277edbc7fb39a63619ed5cc78b4940730e102",
+      "size": 1831,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/59a277edbc7fb39a63619ed5cc78b4940730e102"
+    },
+    {
+      "path": "quarto-docs/references/huc-mapping.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2668cb82bd09baa29051567934ed4005c175ded",
+      "size": 2904,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/a2668cb82bd09baa29051567934ed4005c175ded"
+    },
+    {
+      "path": "quarto-docs/references/index.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41d97ecc68bf89784043b7f9e72a0b864c70dfc9",
+      "size": 695,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/41d97ecc68bf89784043b7f9e72a0b864c70dfc9"
+    },
+    {
+      "path": "quarto-docs/references/psgc.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea55febe176c0cca3c2870fdcf1ff9a6d58e47b8",
+      "size": 2424,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/ea55febe176c0cca3c2870fdcf1ff9a6d58e47b8"
+    },
+    {
+      "path": "quarto-docs/robots.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ad4092ee8b09b55fa7df010f8b476e5de0daa6e",
+      "size": 298,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/5ad4092ee8b09b55fa7df010f8b476e5de0daa6e"
+    },
+    {
+      "path": "quarto-docs/toolchain",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a3a84c207cca1e0e3ffebaa916ca62dd474a0cf8",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/a3a84c207cca1e0e3ffebaa916ca62dd474a0cf8"
+    },
+    {
+      "path": "quarto-docs/toolchain/cli.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e5e051c6be23214104d38cef7512a58cd720ae5",
+      "size": 2655,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/7e5e051c6be23214104d38cef7512a58cd720ae5"
+    },
+    {
+      "path": "quarto-docs/toolchain/configuration.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b70c6d20d806d41a85e7e90376f825c9a7fb8b7",
+      "size": 2220,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/9b70c6d20d806d41a85e7e90376f825c9a7fb8b7"
+    },
+    {
+      "path": "quarto-docs/toolchain/huc-mapping.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0db4f261600d295938edff0301191331c1462f2a",
+      "size": 3073,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/0db4f261600d295938edff0301191331c1462f2a"
+    },
+    {
+      "path": "quarto-docs/toolchain/index.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4342e564a27b7e32349c02e554671dd6cadbdb96",
+      "size": 3355,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/4342e564a27b7e32349c02e554671dd6cadbdb96"
+    },
+    {
+      "path": "quarto-docs/toolchain/pipeline-geo.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cec58beee40d58e2bc713ee47cfa9fa74fac34a",
+      "size": 2833,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/4cec58beee40d58e2bc713ee47cfa9fa74fac34a"
+    },
+    {
+      "path": "quarto-docs/toolchain/pipeline-rdf.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13c4e60c8ca6fabcf08aca544676e8448502a8fb",
+      "size": 2524,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/13c4e60c8ca6fabcf08aca544676e8448502a8fb"
+    },
+    {
+      "path": "quarto-docs/toolchain/repo-layout.qmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b573423c9084870dd4442b15f22e1e822997611",
+      "size": 3425,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/7b573423c9084870dd4442b15f22e1e822997611"
+    },
+    {
+      "path": "recon_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be94e59891306067cb73799c5a194b70cf14f2e8",
+      "size": 7539,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/be94e59891306067cb73799c5a194b70cf14f2e8"
+    },
+    {
+      "path": "recon_report2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be94e59891306067cb73799c5a194b70cf14f2e8",
+      "size": 7539,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/be94e59891306067cb73799c5a194b70cf14f2e8"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de0794eb700babdaecca205196bddcc85e7392ee",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/de0794eb700babdaecca205196bddcc85e7392ee"
+    },
+    {
+      "path": "scripts/build_release_artifacts.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "bebefa343007e26dbdcb06a2c33965896f7bb416",
+      "size": 4048,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/bebefa343007e26dbdcb06a2c33965896f7bb416"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "276eb24a7f674b3e3f657e5d12c0e18369c6e90e",
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/trees/276eb24a7f674b3e3f657e5d12c0e18369c6e90e"
+    },
+    {
+      "path": "tests/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8801e586094c9227943933b7c930ba7632819d4",
+      "size": 1518,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/d8801e586094c9227943933b7c930ba7632819d4"
+    },
+    {
+      "path": "tests/test_classifier.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00abec425e4028318106c755fe5267d7e63cd518",
+      "size": 5934,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/00abec425e4028318106c755fe5267d7e63cd518"
+    },
+    {
+      "path": "tests/test_hierarchical.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4da108ce26be429e0c60e2152465de991c6ef6e5",
+      "size": 3330,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/4da108ce26be429e0c60e2152465de991c6ef6e5"
+    },
+    {
+      "path": "tests/test_splitter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d0dcd9fbf8c5272c8a5a5b8b66141b8dc5d92df",
+      "size": 3697,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/4d0dcd9fbf8c5272c8a5a5b8b66141b8dc5d92df"
+    },
+    {
+      "path": "uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da17fd7c79421a6d016ce8fe04df6902f4fd3858",
+      "size": 430353,
+      "url": "https://api.github.com/repos/bendlikeabamboo/barangay-boundaries-repository/git/blobs/da17fd7c79421a6d016ce8fe04df6902f4fd3858"
+    }
+  ],
+  "truncated": false
+}
