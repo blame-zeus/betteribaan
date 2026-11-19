@@ -4,48 +4,87 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Astro v5.16.6">
-    <title>Not found, Better Ibaan · Better Ibaan</title>
-    <meta name="description" content="That page is not in this directory.">
+    <title>Page not found · Better Ibaan</title>
+    <meta name="description" content="That page is not part of the Ibaan field guide.">
+    <meta name="author" content="Better Ibaan">
     <meta name="theme-color" content="#fbfbfa" data-theme-color>
     <link rel="canonical" href="http://localhost:4321/404/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Not found, Better Ibaan · Better Ibaan">
-    <meta property="og:description" content="That page is not in this directory.">
-    <meta property="og:url" content="http://localhost:4321/404/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="sitemap" href="/sitemap.xml">
+    <link rel="alternate" type="application/json" href="/data/iba-an.json" title="Ibaan open data">
+    <meta name="robots" content="noindex, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Better Ibaan">
+    <meta property="og:title" content="Page not found · Better Ibaan">
+    <meta property="og:description" content="That page is not part of the Ibaan field guide.">
+    <meta property="og:url" content="http://localhost:4321/404/">
+    <meta property="og:locale" content="en_PH">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Page not found · Better Ibaan">
+    <meta name="twitter:description" content="That page is not part of the Ibaan field guide.">
+
     <script>
       try {
         const saved = localStorage.getItem('bi-theme');
         if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
       } catch (_) {}
     </script>
-  <link rel="stylesheet" href="/_astro/about.BPGTClBc.css"></head>
+  <link rel="stylesheet" href="/_astro/about.ra1QzuvQ.css"></head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
 
     <div class="independence">
-      <div class="frame">
-        <strong>Independent community project.</strong>
-        <span>Not an official government website.</span>
-        <a href="/sources">How we source the directory →</a>
+      <div class="frame independence-inner">
+        <strong>Independent civic project</strong>
+        <span>Not an official website of the Municipality of Ibaan.</span>
+        <a href="/about">Read the method <span aria-hidden="true">→</span></a>
       </div>
     </div>
 
-    <header class="site-header">
-  <div class="frame">
-    <a class="wordmark" href="/" aria-label="Better Ibaan, home">Better<span>Ibaan</span></a>
+    <header class="site-header" data-header>
+  <div class="frame header-inner">
+    <a class="brand" href="/" aria-label="Better Ibaan home">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M20.3 3.7C12.6 3.8 5.2 7.1 5.2 14.2c0 2.1 1.2 4 3.1 5 7.3-.2 11.6-6.4 12-15.5Z"></path>
+        <path d="M3.6 21c1.2-5.3 4.2-8.7 8.6-10.7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+      </svg>
+      <span class="brand-name">Better <span>Ibaan</span></span>
+    </a>
 
-    <nav class="nav-bar" id="primary-nav" aria-label="Primary">
-      <a href="/directory">Directory</a><a href="/regions">Regions</a><a href="/budget-portals">Budget portals</a><a href="/guide">Start a portal</a>
-      <a href="/about">About</a>
-      <a href="/sources">Sources</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle>
+      Menu
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <a href="/geography">Geography</a><a href="/heritage">Heritage</a><a href="/about">About</a><a href="/sources">Sources</a>
+      <a class="nav-mobile-official" href="https://www.ibaan.gov.ph/" target="_blank" rel="noopener noreferrer">
+        Official town site <span aria-hidden="true">↗</span>
+      </a>
     </nav>
 
     <div class="header-actions">
-      <button class="search-toggle" type="button" data-open-search aria-label="Search the directory (Ctrl K)">Search <span aria-hidden="true">⌕</span></button>
-      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme">Theme</button>
-      <a class="header-link" href="https://github.com/jmacj/better-lgu-directory/issues/new" rel="noopener">Add your LGU ↗</a>
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <button class="icon-button search-toggle" type="button" data-open-search aria-label="Search this guide">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+          <path d="m15.5 15.5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+        </svg>
+        <span class="search-label">Search</span>
+      </button>
+
+      <a class="official-link" href="https://www.ibaan.gov.ph/" target="_blank" rel="noopener noreferrer">
+        Official site <span aria-hidden="true">↗</span>
+      </a>
+
+      <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20 15.2A8.4 8.4 0 0 1 8.8 4a8.4 8.4 0 1 0 11.2 11.2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"></circle>
+          <path d="M12 2.4v2.2M12 19.4v2.2M2.4 12h2.2M19.4 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
@@ -54,25 +93,21 @@
       
       
   <header class="page-head">
-  <div class="frame">
-    <div>
-      <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a>
-        <span aria-hidden="true"> / </span><span aria-current="page">Not found</span>
-      </nav>
-      <h1>This page is not in the register.</h1>
-    </div>
-    <div>
-      <p class="page-intro">The address may have changed, or the entry may never have existed. The directory is the best place to restart.</p>
+  <div class="frame page-head-inner">
+    <h1>That page is not on the map.</h1>
+    <div class="page-head-copy">
+      <p class="page-intro">The address may have changed, or the page may never have existed. The barangay map and the town guide are the best places to restart.</p>
+      
       
     </div>
   </div>
 </header>
-  <section class="section section-tight">
+
+  <section class="section-tight">
     <div class="frame">
-      <div class="ledger-actions">
-        <a class="btn" href="/directory">Open the directory</a>
-        <a class="btn btn-quiet" href="/">Return home</a>
+      <div class="not-found-actions">
+        <a class="btn" href="/">Return to Iba ang Ibaan</a>
+        <a class="text-link" href="/geography">Open the geography guide <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
@@ -80,42 +115,75 @@
     </main>
 
     <footer class="site-footer">
-  <div class="frame">
-    <div class="footer-top">
-      <p>Better Ibaan is an independent community directory of Better LGU portals.</p>
-      <p>Not an official government website. Data checked against public sources.</p>
-      <p><a href="#main">Back to top ↑</a></p>
+  <div class="frame footer-inner">
+    <div class="footer-lead">
+      <a class="footer-display" href="/">Iba ang Ibaan.</a>
+      <p class="footer-summary">
+        A field guide to the town, its 26 barangays, and the tree that gave it a name.
+      </p>
     </div>
 
-    <div class="footer-display">
-      <a href="https://github.com/jmacj/better-lgu-directory/issues/new" rel="noopener">Add your LGU ↗</a>
+    <div class="footer-columns">
+      <div>
+        <h2>Read</h2>
+        <ul>
+          <li><a href="/geography">Geography</a></li><li><a href="/heritage">Heritage</a></li><li><a href="/about">About</a></li><li><a href="/sources">Sources</a></li>
+          <li><a href="/#barangays">Barangay map</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Official</h2>
+        <ul>
+          <li><a href="https://www.ibaan.gov.ph/general-information/" target="_blank" rel="noopener noreferrer">Municipal profile <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.ibaan.gov.ph/heritage/detail/iba-tree/" target="_blank" rel="noopener noreferrer">Iba Tree <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.ibaan.gov.ph/government-officials/" target="_blank" rel="noopener noreferrer">Elected officials <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.ibaan.gov.ph/bids-awards/" target="_blank" rel="noopener noreferrer">Bids and awards <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="/about">About this guide</a></li>
+          <li><a href="/sources">Sources and credits</a></li>
+          <li><a href="/data/iba-an.json">Open data</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
     </div>
 
-    <nav class="footer-links" aria-label="Footer">
-      <a href="/directory">Directory</a><a href="/regions">Regions</a><a href="/budget-portals">Budget portals</a><a href="/guide">Start a portal</a><a href="/about">About</a><a href="/sources">Sources</a>
-      <a href="https://lgu.bettergov.ph" rel="noopener">Directory source ↗</a>
-      <a href="/sitemap.xml">Sitemap</a>
-      <a href="/data/portals.json">Open data</a>
-    </nav>
-
-    <div class="footer-meta">
-      <span>Independent community project · 2026</span>
-      <span>Pictures: Ibaan, Batangas by LMP 2001 and Ralff Nestor Nacor, CC BY-SA 4.0; 1749 map by Pedro Murillo Velarde, public domain, via Wikimedia Commons</span>
-      <span><a href="/sources">Credits & sources</a></span>
+    <div class="footer-base">
+      <p>
+        <strong>Better Ibaan</strong> is an independent civic project. It is not an official website of the
+        Municipality of Ibaan.
+      </p>
+      <p>
+        Photographs by LMP 2001 and Ralff Nestor Nacor, CC BY-SA 4.0; Iba tree photograph by the
+        Municipality of Ibaan. Map boundaries from PSA/NAMRIA 2023, simplified.
+        <a href="/sources">Full credits</a>.
+      </p>
+      <p class="footer-top-link"><a href="#main">Back to top ↑</a><span> · 2026</span></p>
     </div>
   </div>
 </footer>
-    <dialog class="search-dialog" data-search-dialog aria-label="Search the directory">
+    <dialog class="search-dialog" data-search-dialog aria-labelledby="search-title">
   <div class="search-panel">
-    <button class="search-close btn btn-quiet" type="button" data-close-search>Close</button>
-    <label for="site-search">Find an LGU portal</label>
-    <input id="site-search" type="search" placeholder="Try Batangas, Cebu, or a region" autocomplete="off" data-search-input>
-    <p class="small search-hint">Searches the Better Ibaan directory snapshot.</p>
+    <div class="search-top">
+      <h2 id="search-title">Search the guide</h2>
+      <button class="search-close" type="button" data-close-search aria-label="Close search">Close</button>
+    </div>
+
+    <label class="visually-hidden" for="site-search">Search pages and barangays</label>
+    <input id="site-search" type="search" placeholder="Try Bago, geography, or Iba tree" autocomplete="off" data-search-input>
+
+    <p class="search-hint" data-search-hint>
+      5 pages and 26 barangays. Press <kbd>Ctrl</kbd> <kbd>K</kbd> to open this anywhere.
+    </p>
+
     <ul class="search-results" data-search-results aria-live="polite">
-      <li class="small">Start typing to search 174 registered LGUs.</li>
+      <li class="search-empty">Start typing to find a page or barangay.</li>
     </ul>
   </div>
 </dialog>
-    <script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.DqCdZwJF.js"></script>
+    <script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.va40EwLm.js"></script>
   </body>
 </html>

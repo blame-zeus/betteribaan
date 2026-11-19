@@ -1,0 +1,215 @@
+/*
+ * Design tokens, carried over from the BetterCalatagan reference project so
+ * the two sites share a family resemblance: a near-white paper ground, soft
+ * panels, near-black ink in a high-contrast display serif, and one deep navy
+ * accent for everything interactive. Colour beyond that is reserved for data.
+ *
+ * Every colour is defined in both theme blocks. The theme is explicit, never
+ * inferred from prefers-color-scheme, and applied before paint in Base.astro.
+ */
+
+:root {
+  color-scheme: light;
+
+  --c-bg: #fbfbfa;
+  --c-bg-alt: #f2f2ef;
+  --c-surface: #ffffff;
+  --c-raised: #ffffff;
+  --c-sunk: #ebebe7;
+  --c-panel: #efefec;
+  --c-panel-2: #f7f7f5;
+
+  --c-ink: #0b1220;
+  --c-ink-2: #151d2b;
+  --c-muted: #5d6472;
+
+  --c-navy: #0b1220;
+  --c-accent: #1b3c8c;
+  --c-accent-strong: #102a66;
+  --c-accent-wash: #e8edf8;
+  --c-accent-line: #b7c5e6;
+  --c-teal: #0a6660;
+  --c-teal-wash: #e1f1ee;
+  --c-gold: #c9971c;
+  --c-gold-ink: #7d5700;
+  --c-clay: #9a3b1b;
+  --c-clay-wash: #f7e9e2;
+
+  --c-line: #e3e3de;
+  --c-line-strong: #cbcbc4;
+  --c-control: #767c87;
+
+  --c-map-top: #f7f7f5;
+  --c-map-side: #d2d6df;
+  --c-map-side-active: #9db2dd;
+
+  --c-ok: #16733f;
+  --c-ok-wash: #e3f3e8;
+  --c-warn: #8a5a00;
+  --c-warn-bg: #fff6de;
+  --c-warn-line: #d79f22;
+  --c-danger: #a3261b;
+
+  --c-band: #efefec;
+  --c-band-2: #f7f7f5;
+  --c-band-ink: #0b1220;
+  --c-band-muted: #4a5160;
+  --c-band-line: rgb(11 18 32 / 0.1);
+  --c-band-accent: #1b3c8c;
+  --c-band-gold: #7d5700;
+  --contour: rgb(11 18 32 / 0.07);
+  --contour-major: rgb(27 60 140 / 0.1);
+  --beam: rgb(201 151 28 / 0.1);
+
+  --c-ink-panel: #0b1220;
+  --c-ink-panel-text: #f3f5f8;
+
+  --c-s1: #1b3c8c;
+  --c-s2: #0f8a80;
+  --c-s3: #d79f22;
+  --c-s4: #b4502c;
+  --c-s5: #8fa3c8;
+
+  --go-bg: #0b2a6b;
+  --go-ink: #ffffff;
+  --go-hover: #081f52;
+  --hit-hover: var(--c-bg-alt);
+  --check-ink: #0a6660;
+  --logo-ink: #1a3aa8;
+  --logo-bg: #ffffff;
+  --c-wash-raised: #e8edf8;
+  --c-sunk-raised: #ebebe7;
+
+  --font-serif: 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Public Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  --fs-2xs: 0.8125rem;
+  --fs-xs: 0.8125rem;
+  --fs-sm: 1rem;
+  --fs-base: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --fs-md: clamp(1.125rem, 1.06rem + 0.3vw, 1.3125rem);
+  --fs-lg: clamp(1.25rem, 1.14rem + 0.5vw, 1.5rem);
+  --fs-xl: clamp(1.5rem, 1.3rem + 0.9vw, 2.125rem);
+  --fs-2xl: clamp(2rem, 1.5rem + 2.2vw, 3.25rem);
+  --fs-3xl: clamp(2.5rem, 1.7rem + 3.6vw, 4.75rem);
+  --fs-display: clamp(3rem, 1.6rem + 6.4vw, 7.25rem);
+  --fs-hero: clamp(3rem, 8.3vw, 8rem);
+  --fs-manifesto: clamp(2.125rem, 1.2rem + 4.2vw, 5.25rem);
+
+  --lh-tight: 1.04;
+  --lh-snug: 1.25;
+  --lh-body: 1.62;
+  --track-display: -0.035em;
+
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+  --sp-10: 8rem;
+  --section-y: clamp(4rem, 2.5rem + 5vw, 8rem);
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-2xl: clamp(24px, 1rem + 2vw, 44px);
+
+  --shadow-sm: 0 1px 2px rgb(11 18 32 / 0.04), 0 4px 12px -4px rgb(11 18 32 / 0.08);
+  --shadow-md: 0 2px 6px rgb(11 18 32 / 0.04), 0 18px 40px -18px rgb(11 18 32 / 0.25);
+  --shadow-lg: 0 4px 12px rgb(11 18 32 / 0.05), 0 36px 70px -24px rgb(11 18 32 / 0.35);
+  --shadow-bar: 0 10px 40px -8px rgb(11 18 32 / 0.22), 0 2px 6px rgb(11 18 32 / 0.06);
+
+  --w-prose: 68ch;
+  --w-content: 76rem;
+  --w-wide: 90rem;
+  --gutter: clamp(1rem, 0.5rem + 2.4vw, 2.5rem);
+  --header-h: 4.5rem;
+  --tap: 44px;
+  --focus: 3px solid var(--c-accent);
+  --focus-offset: 2px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 140ms;
+  --dur-2: 260ms;
+  --dur-3: 800ms;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --c-bg: #0a0f17;
+  --c-bg-alt: #0f1621;
+  --c-surface: #121a26;
+  --c-raised: #172130;
+  --c-sunk: #1a2433;
+  --c-panel: #111925;
+  --c-panel-2: #0d141e;
+
+  --c-ink: #eef1f5;
+  --c-ink-2: #e6eaf0;
+  --c-muted: #9aa3b0;
+
+  --c-navy: #f3f5f8;
+  --c-accent: #9db7f2;
+  --c-accent-strong: #c3d3f7;
+  --c-accent-wash: #16223b;
+  --c-accent-line: #2d4478;
+  --c-teal: #5fd0c3;
+  --c-teal-wash: #0e3434;
+  --c-gold: #e6b448;
+  --c-gold-ink: #f0c66b;
+  --c-clay: #f0a07c;
+  --c-clay-wash: #3a2016;
+
+  --c-line: #222c3a;
+  --c-line-strong: #334052;
+  --c-control: #6c7888;
+
+  --c-map-top: #121c2a;
+  --c-map-side: #26364d;
+  --c-map-side-active: #405b8b;
+
+  --c-ok: #74d39a;
+  --c-ok-wash: #11301f;
+  --c-warn: #f0c66b;
+  --c-warn-bg: #2a220f;
+  --c-warn-line: #8f6f25;
+  --c-danger: #ff9d8f;
+
+  --c-band: #111925;
+  --c-band-2: #0d141e;
+  --c-band-ink: #eef1f5;
+  --c-band-muted: #b3bcc8;
+  --c-band-line: rgb(238 241 245 / 0.1);
+  --c-band-accent: #9db7f2;
+  --c-band-gold: #f0c66b;
+  --contour: rgb(238 241 245 / 0.06);
+  --contour-major: rgb(157 183 242 / 0.12);
+  --beam: rgb(240 198 107 / 0.08);
+
+  --c-ink-panel: #05080d;
+  --c-ink-panel-text: #f3f5f8;
+
+  --c-s1: #9db7f2;
+  --c-s2: #5fd0c3;
+  --c-s3: #e6b448;
+  --c-s4: #f0a07c;
+  --c-s5: #5b6f96;
+
+  --go-bg: #9db7f2;
+  --go-ink: #0a0f17;
+  --go-hover: #c3d3f7;
+  --hit-hover: rgb(255 255 255 / 0.04);
+  --check-ink: #0a6660;
+  --logo-ink: #9db7f2;
+  --logo-bg: #0f1622;
+  --c-wash-raised: #26344d;
+  --c-sunk-raised: #242f42;
+}

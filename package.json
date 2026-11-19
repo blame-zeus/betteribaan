@@ -1,0 +1,28 @@
+{
+  "name": "betteribaan",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Better Ibaan — a sourced civic field guide to Ibaan, Batangas: its 26 barangays, geography, heritage, and public record.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check && npm run test && npm run build",
+    "test": "vitest run",
+    "data:map": "node scripts/build-map-data.mjs",
+    "lint": "node scripts/lint.mjs"
+  },
+  "dependencies": {
+    "astro": "5.16.6"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.5",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

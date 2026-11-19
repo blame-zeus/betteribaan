@@ -1,0 +1,789 @@
+{
+ "url": "http://127.0.0.1:4322/geography/",
+ "at": "2026-11-19T18:09:21.806Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.55,
+    0.97,
+    0.97,
+    0.43,
+    0.26,
+    0.97,
+    0.84,
+    0.92,
+    0.99
+   ],
+   "motion": {
+    "elements": 34,
+    "css": 0,
+    "transitions": 34,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 7046,
+     "screens": 8.3,
+     "words": 666,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 6,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "A small town, drawn plainly.",
+     "words": 5,
+     "chars": 28,
+     "lines": 2,
+     "size": 50.7,
+     "vw": 13,
+     "font": "Source Serif 4",
+     "weight": 600,
+     "tracking": -0.06,
+     "leading": 0.88,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.84,
+     "top": 230,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "A small town, drawn plainly.",
+     "words": 5,
+     "lines": 2,
+     "size": 50.7,
+     "font": "Source Serif 4"
+    },
+    "headings": [
+     {
+      "text": "A small town, drawn plainly.",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 50.7,
+      "vw": 13,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.88,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 230,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "58,507",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 27.2,
+      "vw": 7,
+      "font": "Source Serif 4",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 614,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "14,837",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 27.2,
+      "vw": 7,
+      "font": "Source Serif 4",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 614,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "26",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 27.2,
+      "vw": 7,
+      "font": "Source Serif 4",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 689,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "68.99",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 27.2,
+      "vw": 7,
+      "font": "Source Serif 4",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 689,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "2.21%",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 27.2,
+      "vw": 7,
+      "font": "Source Serif 4",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 764,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "13 km",
+      "words": 2,
+      "chars": 5,
+      "lines": 1,
+      "size": 27.2,
+      "vw": 7,
+      "font": "Source Serif 4",
+      "weight": 400,
+      "tracking": -0.045,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 764,
+      "tag": "dt",
+      "kind": "heading"
+     },
+     {
+      "text": "The 26 barangays.",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 39,
+      "vw": 10,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 923,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Barangay list",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 32.6,
+      "vw": 8.4,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 2608,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Where Ibaan sits.",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 37.1,
+      "vw": 9.5,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.62,
+      "top": 4286,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Boundary notes",
+      "words": 2,
+      "chars": 14,
+      "lines": 1,
+      "size": 32.6,
+      "vw": 8.4,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 5312,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Iba ang Ibaan.",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 50.7,
+      "vw": 13,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.88,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.68,
+      "top": 6118,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Public Sans",
+       "share": 0.89,
+       "mono": false
+      },
+      {
+       "family": "ui-monospace",
+       "share": 0.06,
+       "mono": false
+      },
+      {
+       "family": "Source Serif 4",
+       "share": 0.05,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      13,
+      14,
+      16,
+      17,
+      18,
+      27,
+      33,
+      37,
+      39,
+      51
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Public Sans",
+      "size": 16.1,
+      "leading": 1.62,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.7
+     },
+     "measureChars": 55,
+     "max": {
+      "size": 50.7,
+      "vw": 13,
+      "font": "Source Serif 4",
+      "text": "A small town, drawn plainly."
+     },
+     "monoShare": 0.06,
+     "monoProseShare": 0,
+     "monoFamilies": [
+      "ui-monospace"
+     ],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Pangao",
+      "above": "Barangay list",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 16,
+      "top": 2560
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fbfbfa",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.11,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#efefec",
+       "top": 859,
+       "hsl": {
+        "h": 60,
+        "s": 0.09,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 1173,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f2f2ef",
+       "top": 1862,
+       "hsl": {
+        "h": 60,
+        "s": 0.1,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#0b1220",
+       "top": 6062,
+       "hsl": {
+        "h": 220,
+        "s": 0.49,
+        "l": 0.08
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#151d2b",
+       "share": 0.34
+      },
+      {
+       "color": "#5d6472",
+       "share": 0.28
+      },
+      {
+       "color": "#0b1220",
+       "share": 0.2
+      },
+      {
+       "color": "#f4f5f9",
+       "share": 0.07
+      },
+      {
+       "color": "#f3f5f8",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#0b2a6b",
+      "hsl": {
+       "h": 221,
+       "s": 0.81,
+       "l": 0.23
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 8,
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to main content"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 3,
+     "boxRadius": 20,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 60,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "source serif 4",
+     "public sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 7046,
+    "margins": {
+     "left": 17,
+     "right": 28
+    },
+    "sections": [
+     {
+      "sel": "header.page-head",
+      "tag": "header",
+      "top": 190,
+      "height": 381,
+      "words": 55,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A small town, drawn plainly.",
+       "size": 51,
+       "tag": "h1"
+      },
+      "left": 17,
+      "right": 17,
+      "textLeft": 17,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section-tight",
+      "tag": "section",
+      "top": 570,
+      "height": 288,
+      "words": 23,
+      "media": 0,
+      "middle": 48,
+      "heading": {
+       "text": "58,507",
+       "size": 27,
+       "tag": "dt"
+      },
+      "left": 17,
+      "right": 33,
+      "textLeft": 17,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#barangays.section.map-section",
+      "tag": "section",
+      "top": 859,
+      "height": 1706,
+      "words": 136,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "The 26 barangays.",
+       "size": 39,
+       "tag": "h2"
+      },
+      "left": 17,
+      "right": 29,
+      "textLeft": 17,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section-tight",
+      "tag": "section",
+      "top": 2564,
+      "height": 1658,
+      "words": 115,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Barangay list",
+       "size": 33,
+       "tag": "h2"
+      },
+      "left": 17,
+      "right": 21,
+      "textLeft": 17,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.context-section",
+      "tag": "section",
+      "top": 4222,
+      "height": 1024,
+      "words": 71,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Where Ibaan sits.",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 17,
+      "right": 28,
+      "textLeft": 17,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#boundary-notes.section-tight",
+      "tag": "section",
+      "top": 5246,
+      "height": 816,
+      "words": 104,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Boundary notes",
+       "size": 33,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 41,
+      "textLeft": 40,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 6062,
+      "height": 984,
+      "words": 100,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Iba ang Ibaan.",
+       "size": 51,
+       "tag": "a"
+      },
+      "left": 17,
+      "right": 28,
+      "textLeft": 17,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "A small town, drawn plainly.",
+      "size": 51,
+      "top": 230,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 17,
+      "n": 9
+     },
+     {
+      "x": 40,
+      "n": 9
+     }
+    ],
+    "leftBlocks": 18,
+    "bodySize": 13,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 390,
+   "message": "1 eyebrow/kicker label(s) above headings: \"Pangao\" above \"Barangay list\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence."
+  },
+  {
+   "level": "WARN",
+   "id": "font-count",
+   "width": 390,
+   "message": "3 typefaces in use (Public Sans, ui-monospace, Source Serif 4).",
+   "fix": "Two at most."
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 390,
+   "message": "10 different font sizes (13, 14, 16, 17, 18, 27, 33, 37, 39, 51).",
+   "fix": "A page needs about five: display, heading, lead, body, small."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "C:\\Users\\jjzeu\\Documents\\Personal Projects\\betteribaan\\betteribaan\\.taste-skill\\gate2-geo-390\\mobile-fold.jpg",
+   "pages": [
+    "C:\\Users\\jjzeu\\Documents\\Personal Projects\\betteribaan\\betteribaan\\.taste-skill\\gate2-geo-390\\mobile-page-01.jpg",
+    "C:\\Users\\jjzeu\\Documents\\Personal Projects\\betteribaan\\betteribaan\\.taste-skill\\gate2-geo-390\\mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

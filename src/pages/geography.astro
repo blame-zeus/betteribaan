@@ -1,0 +1,170 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import BarangayMap from '../components/BarangayMap.astro';
+import BatangasMap from '../components/BatangasMap.astro';
+import { BARANGAYS, MAP, NEIGHBOURS, TOWN } from '../data/town';
+import { formatNumber } from '../lib/format';
+---
+
+<Base
+  title="Geography"
+  description="Ibaan’s 26 barangays, its boundary, its five neighbours, and notes on the map."
+  crumbs={[{ label: 'Geography' }]}
+>
+  <PageHeader
+    title="A small town, drawn plainly."
+    intro="Ibaan is one of the municipalities of Batangas, with 26 barangays and a boundary it shares with five neighbours. This page keeps the map and the caveats together."
+    note="Official figures below come from the Municipality of Ibaan’s profile. The barangay map is a simplified orientation map, not a survey."
+  />
+
+  <section class="section-tight">
+    <div class="frame">
+      <dl class="stats-grid">
+        <div>
+          <dt>{formatNumber(TOWN.population)}</dt>
+          <dd>residents, 2020 census</dd>
+        </div>
+        <div>
+          <dt>{formatNumber(TOWN.households)}</dt>
+          <dd>households, 2020 census</dd>
+        </div>
+        <div>
+          <dt>{TOWN.barangayCount}</dt>
+          <dd>barangays</dd>
+        </div>
+        <div>
+          <dt>{TOWN.landAreaKm2}</dt>
+          <dd>square kilometres</dd>
+        </div>
+        <div>
+          <dt>{TOWN.landAreaShare}%</dt>
+          <dd>of Batangas land area</dd>
+        </div>
+        <div>
+          <dt>{TOWN.distanceToBatangasCityKm} km</dt>
+          <dd>from Batangas City</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section map-section" id="barangays">
+    <div class="frame">
+      <div class="section-head">
+        <h2>The 26 barangays.</h2>
+        <div class="section-copy">
+          <p>
+            The map is generated from the PSA and NAMRIA 2023 administrative boundary file. The
+            file is simplified at roughly 500 metres, so the outlines are for orientation only.
+            Raised faces show mapped area, not population.
+          </p>
+          <p class="section-link"><a href="#boundary-notes">Skip to the boundary notes <span aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+      <BarangayMap />
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="frame">
+      <div class="table-head">
+        <h2>Barangay list</h2>
+        <p>PSGC codes are from the same 2023 boundary file. Names are listed alphabetically.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <caption class="visually-hidden">The 26 barangays of Ibaan, Batangas, with PSGC codes</caption>
+          <thead>
+            <tr>
+              <th scope="col">Barangay</th>
+              <th scope="col">PSGC code</th>
+            </tr>
+          </thead>
+          <tbody>
+            {BARANGAYS.map((barangay) => (
+              <tr>
+                <th scope="row">{barangay.name}</th>
+                <td><code>{barangay.code}</code></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">
+        The mapped area of the simplified barangay file sums to about 70.32 km², while the
+        municipal profile gives 68.99 km². The difference comes from generalisation; the official
+        land area is the figure used on this site.
+      </p>
+    </div>
+  </section>
+
+  <section class="section context-section">
+    <div class="frame context-grid">
+      <div class="context-copy">
+        <h2>Where Ibaan sits.</h2>
+        <p class="context-intro">
+          The municipality is at {TOWN.coordinates.dms}. The municipal profile places it
+          {TOWN.distanceToBatangasCityKm} kilometres from Batangas City and names five neighbours.
+        </p>
+
+        <dl class="neighbour-ledger">
+          {NEIGHBOURS.map((place) => (
+            <div>
+              <dt>{place.direction}</dt>
+              <dd>{place.name}</dd>
+            </div>
+          ))}
+        </dl>
+
+        <p class="context-note">
+          Directions follow the municipal profile. The context map uses the same simplified
+          PSA/NAMRIA file as the barangay map.
+        </p>
+      </div>
+
+      <div class="context-map-wrap">
+        <BatangasMap />
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="boundary-notes">
+    <div class="frame">
+      <div class="note-panel">
+        <h2>Boundary notes</h2>
+        <div class="note-grid">
+          <div>
+            <h3>Approximate, not surveyed</h3>
+            <p>
+              The outlines on this site are simplified administrative boundaries. They do not
+              settle property lines, barangay jurisdiction, or any legal boundary question.
+            </p>
+          </div>
+          <div>
+            <h3>Two map scales</h3>
+            <p>
+              The barangay map is a local view of Ibaan. The Batangas map is a provincial
+              orientation view. Neither map uses a survey-grade projection or a printed scale bar.
+            </p>
+          </div>
+          <div>
+            <h3>Source</h3>
+            <p>
+              PSA and NAMRIA 2023 administrative boundaries, published in the
+              <a href={MAP.source.barangays} target="_blank" rel="noopener noreferrer">barangay-boundaries-repository</a>.
+              The repository is MIT-licensed.
+            </p>
+          </div>
+          <div>
+            <h3>Official land area</h3>
+            <p>
+              Use the municipal profile’s {TOWN.landAreaKm2} km² figure for the town’s land area.
+              The simplified map geometry is not a replacement for it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

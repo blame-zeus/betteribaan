@@ -1,0 +1,29 @@
+---
+import { BARANGAYS, PAGES } from '../data/town';
+---
+
+<dialog class="search-dialog" data-search-dialog aria-labelledby="search-title">
+  <div class="search-panel">
+    <div class="search-top">
+      <h2 id="search-title">Search the guide</h2>
+      <button class="search-close" type="button" data-close-search aria-label="Close search">Close</button>
+    </div>
+
+    <label class="visually-hidden" for="site-search">Search pages and barangays</label>
+    <input
+      id="site-search"
+      type="search"
+      placeholder="Try Bago, geography, or Iba tree"
+      autocomplete="off"
+      data-search-input
+    />
+
+    <p class="search-hint" data-search-hint>
+      {PAGES.length} pages and {BARANGAYS.length} barangays. Press <kbd>Ctrl</kbd> <kbd>K</kbd> to open this anywhere.
+    </p>
+
+    <ul class="search-results" data-search-results aria-live="polite">
+      <li class="search-empty">Start typing to find a page or barangay.</li>
+    </ul>
+  </div>
+</dialog>

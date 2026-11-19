@@ -1,0 +1,94 @@
+---
+import '../styles/global.css';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import SearchDialog from '../components/SearchDialog.astro';
+import { SITE } from '../lib/site';
+
+interface Crumb {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  title: string;
+  description?: string;
+  crumbs?: Crumb[];
+  noindex?: boolean;
+}
+
+const { title, description = SITE.description, crumbs = [], noindex = false } = Astro.props;
+const fullTitle = title === SITE.name ? title : `${title} · ${SITE.name}`;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={SITE.name} />
+    <meta name="theme-color" content="#fbfbfa" data-theme-color />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap.xml" />
+    <link rel="alternate" type="application/json" href="/data/iba-an.json" title="Ibaan open data" />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="en_PH" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+
+    <script is:inline>
+      try {
+        const saved = localStorage.getItem('bi-theme');
+        if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
+      } catch (_) {}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div class="independence">
+      <div class="frame independence-inner">
+        <strong>Independent civic project</strong>
+        <span>Not an official website of the Municipality of Ibaan.</span>
+        <a href="/about">Read the method <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <SiteHeader />
+
+    <main id="main" tabindex="-1">
+      {crumbs.length > 0 && (
+        <div class="frame">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            {crumbs.map((crumb) => (
+              <span class="crumb">
+                <span aria-hidden="true"> / </span>
+                {crumb.href ? <a href={crumb.href}>{crumb.label}</a> : <span>{crumb.label}</span>}
+              </span>
+            ))}
+          </nav>
+        </div>
+      )}
+      <slot />
+    </main>
+
+    <SiteFooter />
+    <SearchDialog />
+    <script>
+      import '../scripts/ui.ts';
+    </script>
+  </body>
+</html>

@@ -1,1 +1,188 @@
-[{"name":"Aborlan, Palawan","slug":"aborlan-palawan","region":"MIMAROPA Region","province":"Palawan","status":"active","portal":"https://betteraborlan.org"},{"name":"Agoo, La Union","slug":"agoo-la-union","region":"Ilocos Region","province":"La Union","status":"work-in-progress","portal":"https://betteragoo.org/"},{"name":"Aklan Province","slug":"aklan-province","region":"Western Visayas","province":"Aklan","status":"active","portal":"https://betteraklan.org/"},{"name":"Alaminos City, Pangasinan","slug":"alaminos-city-pangasinan","region":"Ilocos Region","province":"Pangasinan","status":"active","portal":"https://betteralaminoscity.org"},{"name":"Alangalang, Leyte","slug":"alangalang-leyte","region":"Eastern Visayas","province":"Leyte","status":"work-in-progress","portal":null},{"name":"Albay Province","slug":"albay-province","region":"Bicol Region","province":"Albay","status":"work-in-progress","portal":null},{"name":"Aleosan, Cotabato","slug":"aleosan-cotabato","region":"SOCCSKSARGEN","province":"Cotabato","status":"planned","portal":null},{"name":"Allen, Northern Samar","slug":"allen-northern-samar","region":"Eastern Visayas","province":"Northern Samar","status":"active","portal":"https://betterallen.org"},{"name":"Angeles City, Pampanga","slug":"angeles-city-pampanga","region":"Central Luzon","province":"Pampanga","status":"work-in-progress","portal":null},{"name":"Angono, Rizal","slug":"angono-rizal","region":"CALABARZON","province":"Rizal","status":"work-in-progress","portal":null},{"name":"Antipolo City, Rizal","slug":"antipolo-city-rizal","region":"CALABARZON","province":"Rizal","status":"planned","portal":null},{"name":"Aparri, Cagayan","slug":"aparri-cagayan","region":"Cagayan Valley","province":"Cagayan","status":"active","portal":"https://betteraparri.org/"},{"name":"Atimonan, Quezon","slug":"atimonan-quezon","region":"CALABARZON","province":"Quezon","status":"work-in-progress","portal":null},{"name":"Aurora, Zamboanga del Sur","slug":"aurora-zamboanga-del-sur","region":"Zamboanga Peninsula","province":"Zamboanga del Sur","status":"active","portal":"https://betteraurora.org"},{"name":"Baao, Camarines Sur","slug":"baao-camarines-sur","region":"Bicol Region","province":"Camarines Sur","status":"planned","portal":null},{"name":"Bacolod City, Negros Occidental","slug":"bacolod-city-negros-occidental","region":"NIR","province":"Negros Occidental","status":"active","portal":"https://betterbacolod.org"},{"name":"Bacoor City, Cavite","slug":"bacoor-city-cavite","region":"CALABARZON","province":"Cavite","status":"active","portal":"https://www.betterbacoor.org/"},{"name":"Bagac, Bataan","slug":"bagac-bataan","region":"Central Luzon","province":"Bataan","status":"active","portal":"https://betterbagac.org"},{"name":"Baguio City, Benguet","slug":"baguio-city-benguet","region":"CAR","province":"Benguet","status":"active","portal":"https://betterbaguio.org"},{"name":"Balanga City, Bataan","slug":"balanga-city-bataan","region":"Central Luzon","province":"Bataan","status":"work-in-progress","portal":"https://betterbalanga.org/"},{"name":"Baler, Aurora","slug":"baler-aurora","region":"Central Luzon","province":"Aurora","status":"active","portal":"https://betterbaler.org/"},{"name":"Basista, Pangasinan","slug":"basista-pangasinan","region":"Ilocos Region","province":"Pangasinan","status":"work-in-progress","portal":null},{"name":"Batangas City, Batangas","slug":"batangas-city-batangas","region":"CALABARZON","province":"Batangas","status":"work-in-progress","portal":"https://betterbatangascity.org"},{"name":"Bauan, Batangas","slug":"bauan-batangas","region":"CALABARZON","province":"Batangas","status":"work-in-progress","portal":"https://betterbauan.vercel.app"},{"name":"Bauang, La Union","slug":"bauang-la-union","region":"Ilocos Region","province":"La Union","status":"work-in-progress","portal":null},{"name":"Bayawan City, Negros Oriental","slug":"bayawan-city-negros-oriental","region":"NIR","province":"Negros Oriental","status":"active","portal":"https://betterbayawan.org/"},{"name":"Bayombong, Nueva Vizcaya","slug":"bayombong-nueva-vizcaya","region":"Cagayan Valley","province":"Nueva Vizcaya","status":"work-in-progress","portal":null},{"name":"Bicol Region","slug":"bicol-region","region":"Bicol Region","province":null,"status":"active","portal":"https://betterbicol.org"},{"name":"Biñan City, Laguna","slug":"binan-city-laguna","region":"CALABARZON","province":"Laguna","status":"active","portal":"https://betterbinan.vercel.app/"},{"name":"Binangonan, Rizal","slug":"binangonan-rizal","region":"CALABARZON","province":"Rizal","status":"active","portal":"https://betterbinangonan.org"},{"name":"Bocaue, Bulacan","slug":"bocaue-bulacan","region":"Central Luzon","province":"Bulacan","status":"work-in-progress","portal":null},{"name":"Botolan, Zambales","slug":"botolan-zambales","region":"Central Luzon","province":"Zambales","status":"work-in-progress","portal":null},{"name":"Bukidnon Province","slug":"bukidnon-province","region":"Northern Mindanao","province":"Bukidnon","status":"active","portal":"https://betterbukidnon.org"},{"name":"Bulakan, Bulacan","slug":"bulakan-bulacan","region":"Central Luzon","province":"Bulacan","status":"active","portal":"https://betterbulakan.org/"},{"name":"Butuan City, Agusan del Norte","slug":"butuan-city-agusan-del-norte","region":"Caraga","province":"Agusan del Norte","status":"planned","portal":null},{"name":"Cabanatuan City, Nueva Ecija","slug":"cabanatuan-city-nueva-ecija","region":"Central Luzon","province":"Nueva Ecija","status":"active","portal":"https://bettercabanatuan.org"},{"name":"Cabuyao City, Laguna","slug":"cabuyao-city-laguna","region":"CALABARZON","province":"Laguna","status":"active","portal":"https://bettercabuyao.org/"},{"name":"Cainta, Rizal","slug":"cainta-rizal","region":"CALABARZON","province":"Rizal","status":"active","portal":"https://bettercainta.org"},{"name":"Calamba City, Laguna","slug":"calamba-city-laguna","region":"CALABARZON","province":"Laguna","status":"work-in-progress","portal":null},{"name":"Calapan City, Oriental Mindoro","slug":"calapan-city-oriental-mindoro","region":"MIMAROPA Region","province":"Oriental Mindoro","status":"active","portal":"https://bettercalapan.org"},{"name":"Calatagan, Batangas","slug":"calatagan-batangas","region":"CALABARZON","province":"Batangas","status":"active","portal":"https://bettercalatagan.vercel.app"},{"name":"Calauan, Laguna","slug":"calauan-laguna","region":"CALABARZON","province":"Laguna","status":"active","portal":"https://bettercalauan.org"},{"name":"Caloocan City, Metro Manila","slug":"caloocan-city-metro-manila","region":"NCR","province":"Metro Manila","status":"active","portal":"https://www.bettercaloocan.org/"},{"name":"Candaba, Pampanga","slug":"candaba-pampanga","region":"Central Luzon","province":"Pampanga","status":"work-in-progress","portal":null},{"name":"Carigara, Leyte","slug":"carigara-leyte","region":"Eastern Visayas","province":"Leyte","status":"work-in-progress","portal":"https://bettercarigara.org"},{"name":"Carmona City, Cavite","slug":"carmona-city-cavite","region":"CALABARZON","province":"Cavite","status":"active","portal":"https://bettercarmona.org"},{"name":"Catanduanes Province","slug":"catanduanes-province","region":"Bicol Region","province":"Catanduanes","status":"active","portal":"https://bettercatanduanes.org"},{"name":"Catarman, Northern Samar","slug":"catarman-northern-samar","region":"Eastern Visayas","province":"Northern Samar","status":"active","portal":"https://bettercatarman.org/"},{"name":"Catbalogan City, Samar","slug":"catbalogan-city-samar","region":"Eastern Visayas","province":"Samar","status":"planned","portal":null},{"name":"Cavinti, Laguna","slug":"cavinti-laguna","region":"CALABARZON","province":"Laguna","status":"active","portal":"https://bettercavinti.org"},{"name":"Cavite City, Cavite","slug":"cavite-city-cavite","region":"CALABARZON","province":"Cavite","status":"active","portal":"https://bettercavitecity.org"},{"name":"Cebu City, Cebu","slug":"cebu-city-cebu","region":"Central Visayas","province":"Cebu","status":"work-in-progress","portal":null},{"name":"Claver, Surigao del Norte","slug":"claver-surigao-del-norte","region":"Caraga","province":"Surigao del Norte","status":"planned","portal":null},{"name":"Corella, Bohol","slug":"corella-bohol","region":"Central Visayas","province":"Bohol","status":"active","portal":"https://bettercorella.vercel.app"},{"name":"Dagupan City, Pangasinan","slug":"dagupan-city-pangasinan","region":"Ilocos Region","province":"Pangasinan","status":"work-in-progress","portal":null},{"name":"Dasmariñas City, Cavite","slug":"dasmarinas-city-cavite","region":"CALABARZON","province":"Cavite","status":"active","portal":"https://betterdasmarinas.org"},{"name":"Davao City, Davao del Sur","slug":"davao-city-davao-del-sur","region":"Davao Region","province":"Davao del Sur","status":"work-in-progress","portal":null},{"name":"Davao del Sur Province","slug":"davao-del-sur-province","region":"Davao Region","province":"Davao del Sur","status":"work-in-progress","portal":null},{"name":"Dinalupihan, Bataan","slug":"dinalupihan-bataan","region":"Central Luzon","province":"Bataan","status":"planned","portal":null},{"name":"Dipolog City, Zamboanga del Norte","slug":"dipolog-city-zamboanga-del-norte","region":"Zamboanga Peninsula","province":"Zamboanga del Norte","status":"work-in-progress","portal":null},{"name":"Dumaguete City, Negros Oriental","slug":"dumaguete-city-negros-oriental","region":"NIR","province":"Negros Oriental","status":"planned","portal":null},{"name":"Gattaran, Cagayan","slug":"gattaran-cagayan","region":"Cagayan Valley","province":"Cagayan","status":"work-in-progress","portal":"https://bettergattaran.org"},{"name":"General Mariano Alvarez, Cavite","slug":"general-mariano-alvarez-cavite","region":"CALABARZON","province":"Cavite","status":"work-in-progress","portal":null},{"name":"General Santos City, South Cotabato","slug":"general-santos-city-south-cotabato","region":"SOCCSKSARGEN","province":"South Cotabato","status":"active","portal":"https://bettergensan.org"},{"name":"General Trias City, Cavite","slug":"general-trias-city-cavite","region":"CALABARZON","province":"Cavite","status":"active","portal":"https://www.bettergeneraltrias.org/"},{"name":"Hermosa, Bataan","slug":"hermosa-bataan","region":"Central Luzon","province":"Bataan","status":"active","portal":"https://betterhermosa.org"},{"name":"Hilongos, Leyte","slug":"hilongos-leyte","region":"Eastern Visayas","province":"Leyte","status":"work-in-progress","portal":null},{"name":"Iligan City, Lanao del Norte","slug":"iligan-city-lanao-del-norte","region":"Northern Mindanao","province":"Lanao del Norte","status":"active","portal":"https://betteriligancity.org/"},{"name":"Ilocos Norte Province","slug":"ilocos-norte-province","region":"Ilocos Region","province":"Ilocos Norte","status":"work-in-progress","portal":null},{"name":"Inabanga, Bohol","slug":"inabanga-bohol","region":"Central Visayas","province":"Bohol","status":"work-in-progress","portal":"https://betterinabanga.vercel.app"},{"name":"Indang, Cavite","slug":"indang-cavite","region":"CALABARZON","province":"Cavite","status":"active","portal":"https://betterindang.org"},{"name":"Infanta, Quezon","slug":"infanta-quezon","region":"CALABARZON","province":"Quezon","status":"active","portal":"https://betterinfantaquezon.org/"},{"name":"Iriga City, Camarines Sur","slug":"iriga-city-camarines-sur","region":"Bicol Region","province":"Camarines Sur","status":"active","portal":"https://betteririga.org"},{"name":"Kabankalan City, Negros Occidental","slug":"kabankalan-city-negros-occidental","region":"NIR","province":"Negros Occidental","status":"active","portal":"https://betterkabankalan.org"},{"name":"Kabugao, Apayao","slug":"kabugao-apayao","region":"CAR","province":"Apayao","status":"active","portal":"https://betterkabugao.org"},{"name":"Koronadal City, South Cotabato","slug":"koronadal-city-south-cotabato","region":"SOCCSKSARGEN","province":"South Cotabato","status":"work-in-progress","portal":"https://betterkoronadal.org"},{"name":"Labo, Camarines Norte","slug":"labo-camarines-norte","region":"Bicol Region","province":"Camarines Norte","status":"work-in-progress","portal":"https://betterlabo.vercel.app"},{"name":"Lal-lo, Cagayan","slug":"lal-lo-cagayan","region":"Cagayan Valley","province":"Cagayan","status":"active","portal":"https://betterlallo.org"},{"name":"Lapu-Lapu City, Cebu","slug":"lapu-lapu-city-cebu","region":"Central Visayas","province":"Cebu","status":"active","portal":"https://betterlapulapu.org"},{"name":"Las Piñas City, Metro Manila","slug":"las-pinas-city-metro-manila","region":"NCR","province":"Metro Manila","status":"active","portal":"https://betterlaspinas.org"},{"name":"Leganes, Iloilo","slug":"leganes-iloilo","region":"Western Visayas","province":"Iloilo","status":"work-in-progress","portal":null},{"name":"Legazpi City, Albay","slug":"legazpi-city-albay","region":"Bicol Region","province":"Albay","status":"active","portal":"https://www.betterlegazpi.org/"},{"name":"Libmanan, Camarines Sur","slug":"libmanan-camarines-sur","region":"Bicol Region","province":"Camarines Sur","status":"work-in-progress","portal":"https://betterlibmanan.org"},{"name":"Liliw, Laguna","slug":"liliw-laguna","region":"CALABARZON","province":"Laguna","status":"work-in-progress","portal":null},{"name":"Limay, Bataan","slug":"limay-bataan","region":"Central Luzon","province":"Bataan","status":"active","portal":"https://betterlimay.org/"},{"name":"Lingayen, Pangasinan","slug":"lingayen-pangasinan","region":"Ilocos Region","province":"Pangasinan","status":"planned","portal":null},{"name":"Lipa City, Batangas","slug":"lipa-city-batangas","region":"CALABARZON","province":"Batangas","status":"work-in-progress","portal":"https://betterlipaportal.netlify.app"},{"name":"Llanera, Nueva Ecija","slug":"llanera-nueva-ecija","region":"Central Luzon","province":"Nueva Ecija","status":"planned","portal":null},{"name":"Lopez, Quezon","slug":"lopez-quezon","region":"CALABARZON","province":"Quezon","status":"work-in-progress","portal":null},{"name":"Los Baños, Laguna","slug":"los-banos-laguna","region":"CALABARZON","province":"Laguna","status":"active","portal":"https://betterlb.org"},{"name":"Lucena City, Quezon","slug":"lucena-city-quezon","region":"CALABARZON","province":"Quezon","status":"work-in-progress","portal":null},{"name":"Lumban, Laguna","slug":"lumban-laguna","region":"CALABARZON","province":"Laguna","status":"planned","portal":null},{"name":"Maasin City, Southern Leyte","slug":"maasin-city-southern-leyte","region":"Eastern Visayas","province":"Southern Leyte","status":"work-in-progress","portal":"https://bettermaasin.netlify.app"},{"name":"Maddela, Quirino","slug":"maddela-quirino","region":"Cagayan Valley","province":"Quirino","status":"active","portal":"https://bettermaddela.vercel.app/"},{"name":"Magallanes, Sorsogon","slug":"magallanes-sorsogon","region":"Bicol Region","province":"Sorsogon","status":"planned","portal":null},{"name":"Makati City, Metro Manila","slug":"makati-city-metro-manila","region":"NCR","province":"Metro Manila","status":"active","portal":"https://bettermakati.org"},{"name":"Malaybalay City, Bukidnon","slug":"malaybalay-city-bukidnon","region":"Northern Mindanao","province":"Bukidnon","status":"active","portal":"https://www.bettermalaybalay.cloud"},{"name":"Malinao, Albay","slug":"malinao-albay","region":"Bicol Region","province":"Albay","status":"work-in-progress","portal":null},{"name":"Malolos City, Bulacan","slug":"malolos-city-bulacan","region":"Central Luzon","province":"Bulacan","status":"active","portal":"https://bettermalolos.org/"},{"name":"Mandaue City, Cebu","slug":"mandaue-city-cebu","region":"Central Visayas","province":"Cebu","status":"planned","portal":null},{"name":"Manila City, Metro Manila","slug":"manila-city-metro-manila","region":"NCR","province":"Metro Manila","status":"work-in-progress","portal":"https://bettermanila.org"},{"name":"Mapandan, Pangasinan","slug":"mapandan-pangasinan","region":"Ilocos Region","province":"Pangasinan","status":"active","portal":"https://www.bettermapandan.org/"},{"name":"Marawi City, Lanao del Sur","slug":"marawi-city-lanao-del-sur","region":"BARMM","province":"Lanao del Sur","status":"work-in-progress","portal":null},{"name":"Marikina City, Metro Manila","slug":"marikina-city-metro-manila","region":"NCR","province":"Metro Manila","status":"active","portal":"https://www.bettermarikina.org"},{"name":"Marinduque Province","slug":"marinduque-province","region":"MIMAROPA Region","province":"Marinduque","status":"work-in-progress","portal":"https://bettermarinduque.vercel.app"},{"name":"Mati City, Davao Oriental","slug":"mati-city-davao-oriental","region":"Davao Region","province":"Davao Oriental","status":"work-in-progress","portal":null},{"name":"Meycauayan City, Bulacan","slug":"meycauayan-city-bulacan","region":"Central Luzon","province":"Bulacan","status":"active","portal":"https://bettermeycauayan.org"},{"name":"Miagao, Iloilo","slug":"miagao-iloilo","region":"Western Visayas","province":"Iloilo","status":"active","portal":"https://bettermiagao.org"},{"name":"Midsayap, Cotabato","slug":"midsayap-cotabato","region":"SOCCSKSARGEN","province":"Cotabato","status":"planned","portal":null},{"name":"Minalabac, Camarines Sur","slug":"minalabac-camarines-sur","region":"Bicol Region","province":"Camarines Sur","status":"planned","portal":null},{"name":"Morong, Rizal","slug":"morong-rizal","region":"CALABARZON","province":"Rizal","status":"active","portal":"https://bettermorong.org/"},{"name":"Naguilian, La Union","slug":"naguilian-la-union","region":"Ilocos Region","province":"La Union","status":"work-in-progress","portal":"https://betternaguilianlu.vercel.app"},{"name":"Naic, Cavite","slug":"naic-cavite","region":"CALABARZON","province":"Cavite","status":"active","portal":"https://betternaic.vercel.app"},{"name":"Obando, Bulacan","slug":"obando-bulacan","region":"Central Luzon","province":"Bulacan","status":"active","portal":"https://betterobando.vercel.app"},{"name":"Ocampo, Camarines Sur","slug":"ocampo-camarines-sur","region":"Bicol Region","province":"Camarines Sur","status":"work-in-progress","portal":null},{"name":"Olongapo City, Zambales","slug":"olongapo-city-zambales","region":"Central Luzon","province":"Zambales","status":"active","portal":"https://betterolongapo.org/"},{"name":"Oriental Mindoro Province","slug":"oriental-mindoro-province","region":"MIMAROPA Region","province":"Oriental Mindoro","status":"active","portal":"https://betterorientalmindoro.org"},{"name":"Ormoc City, Leyte","slug":"ormoc-city-leyte","region":"Eastern Visayas","province":"Leyte","status":"active","portal":"https://www.betterormoc.org/en"},{"name":"Pagbilao, Quezon","slug":"pagbilao-quezon","region":"CALABARZON","province":"Quezon","status":"active","portal":"https://betterpagbilao.org"},{"name":"Pagsanjan, Laguna","slug":"pagsanjan-laguna","region":"CALABARZON","province":"Laguna","status":"work-in-progress","portal":null},{"name":"Palo, Leyte","slug":"palo-leyte","region":"Eastern Visayas","province":"Leyte","status":"work-in-progress","portal":"https://betterpalo.betterpalogov.workers.dev"},{"name":"Panabo City, Davao del Norte","slug":"panabo-city-davao-del-norte","region":"Davao Region","province":"Davao del Norte","status":"work-in-progress","portal":"https://citizensconnectnabotech.vercel.app/"},{"name":"Pangasinan Province","slug":"pangasinan-province","region":"Ilocos Region","province":"Pangasinan","status":"work-in-progress","portal":null},{"name":"Paombong, Bulacan","slug":"paombong-bulacan","region":"Central Luzon","province":"Bulacan","status":"planned","portal":null},{"name":"Pasay City, Metro Manila","slug":"pasay-city-metro-manila","region":"NCR","province":"Metro Manila","status":"planned","portal":null},{"name":"Pasig City, Metro Manila","slug":"pasig-city-metro-manila","region":"NCR","province":"Metro Manila","status":"work-in-progress","portal":null},{"name":"Piat, Cagayan","slug":"piat-cagayan","region":"Cagayan Valley","province":"Cagayan","status":"work-in-progress","portal":null},{"name":"Pila, Laguna","slug":"pila-laguna","region":"CALABARZON","province":"Laguna","status":"work-in-progress","portal":null},{"name":"Plaridel, Bulacan","slug":"plaridel-bulacan","region":"Central Luzon","province":"Bulacan","status":"work-in-progress","portal":"https://betterplaridel-two.vercel.app/"},{"name":"Puerto Princesa City, Palawan","slug":"puerto-princesa-city-palawan","region":"MIMAROPA Region","province":"Palawan","status":"active","portal":"https://betterpuertoprincesa.org"},{"name":"Quezon City, Metro Manila","slug":"quezon-city-metro-manila","region":"NCR","province":"Metro Manila","status":"planned","portal":null},{"name":"Ramon, Isabela","slug":"ramon-isabela","region":"Cagayan Valley","province":"Isabela","status":"active","portal":"https://betterramon.pages.dev"},{"name":"Rizal, Nueva Ecija","slug":"rizal-nueva-ecija","region":"Central Luzon","province":"Nueva Ecija","status":"work-in-progress","portal":null},{"name":"Roxas City, Capiz","slug":"roxas-city-capiz","region":"Western Visayas","province":"Capiz","status":"planned","portal":null},{"name":"Samal, Bataan","slug":"samal-bataan","region":"Central Luzon","province":"Bataan","status":"planned","portal":null},{"name":"San Carlos City, Pangasinan","slug":"san-carlos-city-pangasinan","region":"Ilocos Region","province":"Pangasinan","status":"active","portal":"https://bettersancarlos.vercel.app/"},{"name":"San Fernando City, La Union","slug":"san-fernando-city-la-union","region":"Ilocos Region","province":"La Union","status":"active","portal":"https://bettersanfernando.pages.dev/"},{"name":"San Fernando City, Pampanga","slug":"san-fernando-city-pampanga","region":"Central Luzon","province":"Pampanga","status":"active","portal":"https://bettersanfernando.org"},{"name":"San Jose, Antique","slug":"san-jose-antique","region":"Western Visayas","province":"Antique","status":"work-in-progress","portal":null},{"name":"San Jose City, Nueva Ecija","slug":"san-jose-city-nueva-ecija","region":"Central Luzon","province":"Nueva Ecija","status":"work-in-progress","portal":"https://sanjose.betternuevaecija.org"},{"name":"San Jose del Monte City, Bulacan","slug":"san-jose-del-monte-city-bulacan","region":"Central Luzon","province":"Bulacan","status":"work-in-progress","portal":null},{"name":"San Mariano, Isabela","slug":"san-mariano-isabela","region":"Cagayan Valley","province":"Isabela","status":"planned","portal":null},{"name":"San Pablo City, Laguna","slug":"san-pablo-city-laguna","region":"CALABARZON","province":"Laguna","status":"active","portal":"https://www.bettersanpablo.org/"},{"name":"San Pascual, Masbate","slug":"san-pascual-masbate","region":"Bicol Region","province":"Masbate","status":"work-in-progress","portal":null},{"name":"San Pedro City, Laguna","slug":"san-pedro-city-laguna","region":"CALABARZON","province":"Laguna","status":"active","portal":"https://bettersanpedro.org"},{"name":"Santa Barbara, Pangasinan","slug":"santa-barbara-pangasinan","region":"Ilocos Region","province":"Pangasinan","status":"work-in-progress","portal":null},{"name":"Santa Cruz, Laguna","slug":"santa-cruz-laguna","region":"CALABARZON","province":"Laguna","status":"work-in-progress","portal":null},{"name":"Santa Maria, Bulacan","slug":"santa-maria-bulacan","region":"Central Luzon","province":"Bulacan","status":"work-in-progress","portal":null},{"name":"Santa Rosa City, Laguna","slug":"santa-rosa-city-laguna","region":"CALABARZON","province":"Laguna","status":"work-in-progress","portal":"https://bettersantarosacity.pages.dev"},{"name":"Santo Domingo, Ilocos Sur","slug":"santo-domingo-ilocos-sur","region":"Ilocos Region","province":"Ilocos Sur","status":"planned","portal":null},{"name":"Santo Tomas, Pangasinan","slug":"santo-tomas-pangasinan","region":"Ilocos Region","province":"Pangasinan","status":"planned","portal":null},{"name":"Sara, Iloilo","slug":"sara-iloilo","region":"Western Visayas","province":"Iloilo","status":"work-in-progress","portal":null},{"name":"Siquijor Province","slug":"siquijor-province","region":"NIR","province":"Siquijor","status":"active","portal":"https://bettersiquijor.vercel.app/"},{"name":"Solano, Nueva Vizcaya","slug":"solano-nueva-vizcaya","region":"Cagayan Valley","province":"Nueva Vizcaya","status":"active","portal":"https://bettersolano.org"},{"name":"Surallah, South Cotabato","slug":"surallah-south-cotabato","region":"SOCCSKSARGEN","province":"South Cotabato","status":"active","portal":"https://bettersurallah.org"},{"name":"Taal, Batangas","slug":"taal-batangas","region":"CALABARZON","province":"Batangas","status":"work-in-progress","portal":null},{"name":"Tabaco City, Albay","slug":"tabaco-city-albay","region":"Bicol Region","province":"Albay","status":"work-in-progress","portal":null},{"name":"Tacloban City, Leyte","slug":"tacloban-city-leyte","region":"Eastern Visayas","province":"Leyte","status":"planned","portal":null},{"name":"Tagaytay City, Cavite","slug":"tagaytay-city-cavite","region":"CALABARZON","province":"Cavite","status":"active","portal":"https://www.bettertagaytay.org/"},{"name":"Tago, Surigao del Sur","slug":"tago-surigao-del-sur","region":"Caraga","province":"Surigao del Sur","status":"work-in-progress","portal":"https://www.bettertago.org"},{"name":"Taguig City, Metro Manila","slug":"taguig-city-metro-manila","region":"NCR","province":"Metro Manila","status":"work-in-progress","portal":"https://bettertaguig.org/"},{"name":"Talavera, Nueva Ecija","slug":"talavera-nueva-ecija","region":"Central Luzon","province":"Nueva Ecija","status":"work-in-progress","portal":null},{"name":"Talibon, Bohol","slug":"talibon-bohol","region":"Central Visayas","province":"Bohol","status":"work-in-progress","portal":null},{"name":"Tampakan, South Cotabato","slug":"tampakan-south-cotabato","region":"SOCCSKSARGEN","province":"South Cotabato","status":"work-in-progress","portal":"https://bettertampakan.org"},{"name":"Tanay, Rizal","slug":"tanay-rizal","region":"CALABARZON","province":"Rizal","status":"active","portal":"https://bettertanay.org"},{"name":"Tandag City, Surigao del Sur","slug":"tandag-city-surigao-del-sur","region":"Caraga","province":"Surigao del Sur","status":"work-in-progress","portal":null},{"name":"Tanza, Cavite","slug":"tanza-cavite","region":"CALABARZON","province":"Cavite","status":"work-in-progress","portal":null},{"name":"Taytay, Rizal","slug":"taytay-rizal","region":"CALABARZON","province":"Rizal","status":"work-in-progress","portal":null},{"name":"Teresa, Rizal","slug":"teresa-rizal","region":"CALABARZON","province":"Rizal","status":"work-in-progress","portal":null},{"name":"Trece Martires City, Cavite","slug":"trece-martires-city-cavite","region":"CALABARZON","province":"Cavite","status":"active","portal":"https://bettertrecemartires.org"},{"name":"Tuguegarao City, Cagayan","slug":"tuguegarao-city-cagayan","region":"Cagayan Valley","province":"Cagayan","status":"work-in-progress","portal":null},{"name":"Urdaneta City, Pangasinan","slug":"urdaneta-city-pangasinan","region":"Ilocos Region","province":"Pangasinan","status":"work-in-progress","portal":null},{"name":"Valenzuela City, Metro Manila","slug":"valenzuela-city-metro-manila","region":"NCR","province":"Metro Manila","status":"work-in-progress","portal":null},{"name":"Zamboanga City, Zamboanga del Sur","slug":"zamboanga-city-zamboanga-del-sur","region":"Zamboanga Peninsula","province":"Zamboanga del Sur","status":"work-in-progress","portal":"https://betterzamboangacity.vercel.app"}]
+[
+  {
+    "title": "Iba ang Ibaan",
+    "description": "The field guide’s front page: the town, the map, the tree, and the public record.",
+    "href": "/",
+    "section": "Start here"
+  },
+  {
+    "title": "Geography",
+    "description": "The 26 barangays, the municipal boundary, the five neighbours, and notes on the map.",
+    "href": "/geography",
+    "section": "The town"
+  },
+  {
+    "title": "Heritage",
+    "description": "The Iba tree: the town’s namesake, its uses, and the local effort to bring it back.",
+    "href": "/heritage",
+    "section": "The town"
+  },
+  {
+    "title": "About Better Ibaan",
+    "description": "What this field guide is, what it is not, and how it is sourced.",
+    "href": "/about",
+    "section": "This project"
+  },
+  {
+    "title": "Sources and credits",
+    "description": "Official municipal pages, map boundaries, image credits, and unresolved figures.",
+    "href": "/sources",
+    "section": "This project"
+  },
+  {
+    "title": "Bago",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010001",
+    "href": "/geography#barangay-bago",
+    "section": "Barangay"
+  },
+  {
+    "title": "Balanga",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010002",
+    "href": "/geography#barangay-balanga",
+    "section": "Barangay"
+  },
+  {
+    "title": "Bungahan",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010003",
+    "href": "/geography#barangay-bungahan",
+    "section": "Barangay"
+  },
+  {
+    "title": "Calamias",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010004",
+    "href": "/geography#barangay-calamias",
+    "section": "Barangay"
+  },
+  {
+    "title": "Catandala",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010005",
+    "href": "/geography#barangay-catandala",
+    "section": "Barangay"
+  },
+  {
+    "title": "Coliat",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010006",
+    "href": "/geography#barangay-coliat",
+    "section": "Barangay"
+  },
+  {
+    "title": "Dayapan",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010007",
+    "href": "/geography#barangay-dayapan",
+    "section": "Barangay"
+  },
+  {
+    "title": "Lapu-lapu",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010008",
+    "href": "/geography#barangay-lapu-lapu",
+    "section": "Barangay"
+  },
+  {
+    "title": "Lucsuhin",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010009",
+    "href": "/geography#barangay-lucsuhin",
+    "section": "Barangay"
+  },
+  {
+    "title": "Mabalor",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010010",
+    "href": "/geography#barangay-mabalor",
+    "section": "Barangay"
+  },
+  {
+    "title": "Malainin",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010011",
+    "href": "/geography#barangay-malainin",
+    "section": "Barangay"
+  },
+  {
+    "title": "Matala",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010012",
+    "href": "/geography#barangay-matala",
+    "section": "Barangay"
+  },
+  {
+    "title": "Munting-Tubig",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010013",
+    "href": "/geography#barangay-munting-tubig",
+    "section": "Barangay"
+  },
+  {
+    "title": "Palindan",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010014",
+    "href": "/geography#barangay-palindan",
+    "section": "Barangay"
+  },
+  {
+    "title": "Pangao",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010015",
+    "href": "/geography#barangay-pangao",
+    "section": "Barangay"
+  },
+  {
+    "title": "Panghayaan",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010016",
+    "href": "/geography#barangay-panghayaan",
+    "section": "Barangay"
+  },
+  {
+    "title": "Poblacion",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010017",
+    "href": "/geography#barangay-poblacion",
+    "section": "Barangay"
+  },
+  {
+    "title": "Quilo",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010018",
+    "href": "/geography#barangay-quilo",
+    "section": "Barangay"
+  },
+  {
+    "title": "Sabang",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010019",
+    "href": "/geography#barangay-sabang",
+    "section": "Barangay"
+  },
+  {
+    "title": "Salaban I",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010020",
+    "href": "/geography#barangay-salaban-i",
+    "section": "Barangay"
+  },
+  {
+    "title": "Salaban II",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010028",
+    "href": "/geography#barangay-salaban-ii",
+    "section": "Barangay"
+  },
+  {
+    "title": "San Agustin",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010022",
+    "href": "/geography#barangay-san-agustin",
+    "section": "Barangay"
+  },
+  {
+    "title": "Sandalan",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010023",
+    "href": "/geography#barangay-sandalan",
+    "section": "Barangay"
+  },
+  {
+    "title": "Santo Niño",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010024",
+    "href": "/geography#barangay-santo-nino",
+    "section": "Barangay"
+  },
+  {
+    "title": "Talaibon",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010025",
+    "href": "/geography#barangay-talaibon",
+    "section": "Barangay"
+  },
+  {
+    "title": "Tulay Na Patpat",
+    "description": "Barangay in Ibaan, Batangas · PSGC 0401010027",
+    "href": "/geography#barangay-tulay-na-patpat",
+    "section": "Barangay"
+  }
+]

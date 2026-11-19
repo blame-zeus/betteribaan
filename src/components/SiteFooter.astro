@@ -1,0 +1,57 @@
+---
+import { NAV, OFFICIAL, SITE } from '../lib/site';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="frame footer-inner">
+    <div class="footer-lead">
+      <a class="footer-display" href="/">Iba ang Ibaan.</a>
+      <p class="footer-summary">
+        A field guide to the town, its 26 barangays, and the tree that gave it a name.
+      </p>
+    </div>
+
+    <div class="footer-columns">
+      <div>
+        <h2>Read</h2>
+        <ul>
+          {NAV.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+          <li><a href="/#barangays">Barangay map</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Official</h2>
+        <ul>
+          <li><a href={OFFICIAL.profile} target="_blank" rel="noopener noreferrer">Municipal profile <span aria-hidden="true">↗</span></a></li>
+          <li><a href={OFFICIAL.ibaTree} target="_blank" rel="noopener noreferrer">Iba Tree <span aria-hidden="true">↗</span></a></li>
+          <li><a href={OFFICIAL.officials} target="_blank" rel="noopener noreferrer">Elected officials <span aria-hidden="true">↗</span></a></li>
+          <li><a href={OFFICIAL.bids} target="_blank" rel="noopener noreferrer">Bids and awards <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="/about">About this guide</a></li>
+          <li><a href="/sources">Sources and credits</a></li>
+          <li><a href="/data/iba-an.json">Open data</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-base">
+      <p>
+        <strong>{SITE.name}</strong> is an independent civic project. It is not an official website of the
+        Municipality of Ibaan.
+      </p>
+      <p>
+        Photographs by LMP 2001 and Ralff Nestor Nacor, CC BY-SA 4.0; Iba tree photograph by the
+        Municipality of Ibaan. Map boundaries from PSA/NAMRIA 2023, simplified.
+        <a href="/sources">Full credits</a>.
+      </p>
+      <p class="footer-top-link"><a href="#main">Back to top ↑</a><span> · {year}</span></p>
+    </div>
+  </div>
+</footer>

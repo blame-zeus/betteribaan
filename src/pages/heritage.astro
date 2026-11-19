@@ -1,0 +1,162 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { HERITAGE } from '../data/town';
+import ibaTree from '../assets/images/iba-tree-ibaan.webp';
+---
+
+<Base
+  title="Heritage"
+  description="The Iba tree: Ibaan’s namesake, its uses, its decline, and the local effort to bring it back."
+  crumbs={[{ label: 'Heritage' }]}
+>
+  <PageHeader
+    title="The tree that named the town."
+    intro="Ibaan is named for the Iba. The municipal heritage page records a tree that was once abundant here, became a symbol of the community, and is now locally rare."
+    note="The municipal page is written in Filipino. The English here is a summary, not an official translation."
+  />
+
+  <section class="heritage-feature">
+    <div class="frame heritage-feature-grid">
+      <figure class="heritage-feature-figure">
+        <Image
+          src={ibaTree}
+          alt="The Iba tree in Ibaan"
+          widths={[520, 760, 980]}
+          sizes="(max-width: 60rem) 92vw, 46vw"
+          format="webp"
+          quality={86}
+          loading="eager"
+          fetchpriority="high"
+        />
+        <figcaption>
+          <span>The Iba tree, Ibaan.</span>
+          <span>Municipality of Ibaan · <a href={HERITAGE.source} target="_blank" rel="noopener noreferrer">heritage page <span aria-hidden="true">↗</span></a></span>
+        </figcaption>
+      </figure>
+
+      <div class="heritage-feature-copy">
+        <h2>What the page records</h2>
+        <p class="lede">{HERITAGE.summary}</p>
+        <dl class="heritage-name-list">
+          <div>
+            <dt>Local name</dt>
+            <dd><span lang="fil">Iba</span></dd>
+          </div>
+          <div>
+            <dt>English name</dt>
+            <dd>{HERITAGE.englishName}</dd>
+          </div>
+          <div>
+            <dt>Compared to</dt>
+            <dd>{HERITAGE.comparison}</dd>
+          </div>
+          <div>
+            <dt>Location</dt>
+            <dd>Vicinity of Ibaan</dd>
+          </div>
+        </dl>
+        <p class="heritage-source">
+          Source: <a href={HERITAGE.source} target="_blank" rel="noopener noreferrer">{HERITAGE.sourceLabel} <span aria-hidden="true">↗</span></a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Five things to notice.</h2>
+        <div class="section-copy">
+          <p>
+            These are the observations on the municipal heritage page, kept close to the original
+            wording. The page describes the flower, leaf, fruit, scent, and kitchen uses.
+          </p>
+        </div>
+      </div>
+
+      <ol class="characteristics">
+        {HERITAGE.characteristics.map((item, index) => (
+          <li>
+            <span class="characteristic-index" aria-hidden="true">{index + 1}</span>
+            <div>
+              <h3>{item.label}</h3>
+              <p>{item.copy}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="heritage-dark">
+    <div class="frame heritage-dark-grid">
+      <h2>Why it matters.</h2>
+      <div class="heritage-significance">
+        {HERITAGE.significance.map((item) => (
+          <div>
+            <h3>{item.label}</h3>
+            <p>{item.copy}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="frame">
+      <div class="section-head">
+        <h2>A tree that is locally rare.</h2>
+        <div class="section-copy">
+          <p>{HERITAGE.conservation.status}</p>
+        </div>
+      </div>
+
+      <div class="conservation-grid">
+        <div class="conservation-block">
+          <h3>What put it under pressure</h3>
+          <ul>
+            {HERITAGE.conservation.pressures.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+        <div class="conservation-block">
+          <h3>What is being done</h3>
+          <ul>
+            {HERITAGE.conservation.actions.map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+      </div>
+
+      <div class="heritage-quote">
+        <p lang="fil">“Iba-lik ang Kasaysayan”</p>
+        <p>
+          The name of the Rotary Club of Metro Ibaan’s legacy project. The municipal page describes
+          it as an effort to rebuild the tree population and reintroduce the Iba to Ibaan residents.
+        </p>
+      </div>
+
+      <div class="heritage-note">
+        <h3>What the page does not say</h3>
+        <p>
+          The municipal page does not give a tree count or a survey of remaining trees. This guide
+          does not invent one. It also does not repeat the page’s national conservation programme
+          section, which is broader than Ibaan.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="frame">
+      <div class="note-panel">
+        <h2>Read the source</h2>
+        <p>
+          The full entry, including the Filipino text and the municipality’s photographs, is on the
+          official Ibaan website.
+        </p>
+        <p><a class="btn" href={HERITAGE.source} target="_blank" rel="noopener noreferrer">Open the Iba Tree page <span aria-hidden="true">↗</span></a></p>
+      </div>
+    </div>
+  </section>
+</Base>

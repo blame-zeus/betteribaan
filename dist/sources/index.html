@@ -4,155 +4,334 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Astro v5.16.6">
-    <title>Sources, Better Ibaan · Better Ibaan</title>
-    <meta name="description" content="Where Better Ibaan gets its data, guide facts, fonts and photographs, with full image credits and licences.">
+    <title>Sources and credits · Better Ibaan</title>
+    <meta name="description" content="Official Ibaan sources, map data, image credits, and the figures this guide leaves out.">
+    <meta name="author" content="Better Ibaan">
     <meta name="theme-color" content="#fbfbfa" data-theme-color>
     <link rel="canonical" href="http://localhost:4321/sources/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Sources, Better Ibaan · Better Ibaan">
-    <meta property="og:description" content="Where Better Ibaan gets its data, guide facts, fonts and photographs, with full image credits and licences.">
-    <meta property="og:url" content="http://localhost:4321/sources/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="sitemap" href="/sitemap.xml">
+    <link rel="alternate" type="application/json" href="/data/iba-an.json" title="Ibaan open data">
+    
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Better Ibaan">
+    <meta property="og:title" content="Sources and credits · Better Ibaan">
+    <meta property="og:description" content="Official Ibaan sources, map data, image credits, and the figures this guide leaves out.">
+    <meta property="og:url" content="http://localhost:4321/sources/">
+    <meta property="og:locale" content="en_PH">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sources and credits · Better Ibaan">
+    <meta name="twitter:description" content="Official Ibaan sources, map data, image credits, and the figures this guide leaves out.">
+
     <script>
       try {
         const saved = localStorage.getItem('bi-theme');
         if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
       } catch (_) {}
     </script>
-  <link rel="stylesheet" href="/_astro/about.BPGTClBc.css"></head>
+  <link rel="stylesheet" href="/_astro/about.ra1QzuvQ.css"></head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
 
     <div class="independence">
-      <div class="frame">
-        <strong>Independent community project.</strong>
-        <span>Not an official government website.</span>
-        <a href="/sources">How we source the directory →</a>
+      <div class="frame independence-inner">
+        <strong>Independent civic project</strong>
+        <span>Not an official website of the Municipality of Ibaan.</span>
+        <a href="/about">Read the method <span aria-hidden="true">→</span></a>
       </div>
     </div>
 
-    <header class="site-header">
-  <div class="frame">
-    <a class="wordmark" href="/" aria-label="Better Ibaan, home">Better<span>Ibaan</span></a>
+    <header class="site-header" data-header>
+  <div class="frame header-inner">
+    <a class="brand" href="/" aria-label="Better Ibaan home">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M20.3 3.7C12.6 3.8 5.2 7.1 5.2 14.2c0 2.1 1.2 4 3.1 5 7.3-.2 11.6-6.4 12-15.5Z"></path>
+        <path d="M3.6 21c1.2-5.3 4.2-8.7 8.6-10.7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+      </svg>
+      <span class="brand-name">Better <span>Ibaan</span></span>
+    </a>
 
-    <nav class="nav-bar" id="primary-nav" aria-label="Primary">
-      <a href="/directory">Directory</a><a href="/regions">Regions</a><a href="/budget-portals">Budget portals</a><a href="/guide">Start a portal</a>
-      <a href="/about">About</a>
-      <a href="/sources" aria-current="page">Sources</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle>
+      Menu
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <a href="/geography">Geography</a><a href="/heritage">Heritage</a><a href="/about">About</a><a href="/sources" aria-current="page">Sources</a>
+      <a class="nav-mobile-official" href="https://www.ibaan.gov.ph/" target="_blank" rel="noopener noreferrer">
+        Official town site <span aria-hidden="true">↗</span>
+      </a>
     </nav>
 
     <div class="header-actions">
-      <button class="search-toggle" type="button" data-open-search aria-label="Search the directory (Ctrl K)">Search <span aria-hidden="true">⌕</span></button>
-      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme">Theme</button>
-      <a class="header-link" href="https://github.com/jmacj/better-lgu-directory/issues/new" rel="noopener">Add your LGU ↗</a>
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <button class="icon-button search-toggle" type="button" data-open-search aria-label="Search this guide">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+          <path d="m15.5 15.5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+        </svg>
+        <span class="search-label">Search</span>
+      </button>
+
+      <a class="official-link" href="https://www.ibaan.gov.ph/" target="_blank" rel="noopener noreferrer">
+        Official site <span aria-hidden="true">↗</span>
+      </a>
+
+      <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20 15.2A8.4 8.4 0 0 1 8.8 4a8.4 8.4 0 1 0 11.2 11.2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"></circle>
+          <path d="M12 2.4v2.2M12 19.4v2.2M2.4 12h2.2M19.4 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
 
     <main id="main" tabindex="-1">
-      
+      <div class="frame">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="crumb">
+                <span aria-hidden="true"> / </span>
+                <span>Sources</span>
+              </span>
+          </nav>
+        </div>
       
   <header class="page-head">
-  <div class="frame">
-    <div>
-      <nav class="crumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a>
-        <span aria-hidden="true"> / </span><span aria-current="page">Sources</span>
-      </nav>
-      <h1>Every fact has a trail.</h1>
-    </div>
-    <div>
-      <p class="page-intro">This project does not invent portal details. Below is the provenance of the register, the guide and the photographs used in the design.</p>
+  <div class="frame page-head-inner">
+    <h1>Sources, credits, and the figures left out.</h1>
+    <div class="page-head-copy">
+      <p class="page-intro">A civic guide is only as good as its paper trail. This page records where the facts, maps, and photographs come from, and where the official record disagrees with itself.</p>
+      <p class="page-note">Last reviewed against the municipal site in November 2026. Official pages can change without notice.</p>
       
     </div>
   </div>
 </header>
 
-  <section class="section" aria-labelledby="sources-data">
-    <div class="page-grid">
-      <h2 class="section-heading" id="sources-data">Data</h2>
-      <div class="prose narrow">
-        <p>
-          The LGU list, statuses, regions and check date are generated from the public
-          <a href="https://github.com/jmacj/better-lgu-directory">better-lgu-directory</a> register. The local snapshot was checked on
-          <time datetime="2026-11-19">Nov 19, 2026</time>; refresh it with <code>npm run data:sync</code>.
-        </p>
-        <p>
-          Budget portal entries come from the register's <code>BUDGET.md</code>. Region names and codes follow the
-          Philippine Standard Geographic Code list published in the same repository.
-        </p>
-        <ul>
-          <li><a href="https://lgu.bettergov.ph">Better LGU Directory, live register</a></li>
-          <li><a href="https://github.com/jmacj/better-lgu-directory">better-lgu-directory, source repository</a></li>
-          <li><a href="https://lgu.bettergov.ph/guide">Better LGU Guide, contributor instructions</a></li>
-          <li><a href="https://bettergov.ph">BetterGov.ph, the wider initiative</a></li>
-        </ul>
+  <section class="section-tight">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Two figures not published here.</h2>
+        <div class="section-copy">
+          <p>
+            The Municipality of Ibaan publishes two profile pages. They do not agree on elevation or
+            on the distance to Manila. Rather than choose one silently, this guide leaves both out.
+          </p>
+        </div>
+      </div>
+
+      <div class="figure-notes">
+        <div>
+            <h3>Elevation</h3>
+            <p>The municipal profile gives 178 metres above sea level. The geography section of the same site gives 124 metres. This guide leaves both out until the municipality resolves the discrepancy.</p>
+          </div><div>
+            <h3>Distance to Manila</h3>
+            <p>The municipal profile gives 96 kilometres. The geography section gives 118 kilometres. This guide leaves both out and keeps the shorter, consistent distance to Batangas City: 13 kilometres.</p>
+          </div>
+      </div>
+
+      <p class="source-note">
+        The distance to Batangas City, 13 kilometres, appears in the
+        municipal profile and does not conflict across the two pages. It is the only distance figure
+        used on this site.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="frame">
+      <div class="section-head">
+        <h2>The source groups.</h2>
+        <div class="section-copy">
+          <p>
+            Every factual claim on this site should be traceable to one of these groups. If you find
+            something that is not, treat it as a mistake and check the official page.
+          </p>
+        </div>
+      </div>
+
+      <div class="source-groups">
+        <section>
+            <h3>Municipal profile and public record</h3>
+            <p>All municipal facts on this site come from pages published by the Municipality of Ibaan. Population and household figures are the 2020 census values as stated in the municipal profile.</p>
+            <ul>
+              <li>
+                  <a href="https://www.ibaan.gov.ph/general-information/" target="_blank" rel="noopener noreferrer">
+                    General information <span aria-hidden="true">↗</span>
+                  </a>
+                </li><li>
+                  <a href="https://www.ibaan.gov.ph/government-officials/" target="_blank" rel="noopener noreferrer">
+                    Elected officials <span aria-hidden="true">↗</span>
+                  </a>
+                </li><li>
+                  <a href="https://www.ibaan.gov.ph/bids-awards/" target="_blank" rel="noopener noreferrer">
+                    Bids and awards <span aria-hidden="true">↗</span>
+                  </a>
+                </li><li>
+                  <a href="https://www.ibaan.gov.ph/cultural-map/" target="_blank" rel="noopener noreferrer">
+                    Cultural map <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+            </ul>
+          </section><section>
+            <h3>Heritage</h3>
+            <p>The Iba tree summary is drawn from the municipality’s heritage entry, which is written in Filipino. The English here is a summary, not an official translation.</p>
+            <ul>
+              <li>
+                  <a href="https://www.ibaan.gov.ph/heritage/detail/iba-tree/" target="_blank" rel="noopener noreferrer">
+                    Iba Tree <span aria-hidden="true">↗</span>
+                  </a>
+                </li><li>
+                  <a href="https://www.ibaan.gov.ph/heritage/natural/" target="_blank" rel="noopener noreferrer">
+                    Natural heritage register <span aria-hidden="true">↗</span>
+                  </a>
+                </li><li>
+                  <a href="https://www.ibaan.gov.ph/cultural-map/" target="_blank" rel="noopener noreferrer">
+                    Heritage of Ibaan <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+            </ul>
+          </section><section>
+            <h3>Map boundaries</h3>
+            <p>The barangay and Batangas maps use the PSA/NAMRIA 2023 administrative boundaries published in the barangay-boundaries-repository. The polygons are simplified for the web, so they are for orientation, not survey work.</p>
+            <ul>
+              <li>
+                  <a href="https://github.com/bendlikeabamboo/barangay-boundaries-repository" target="_blank" rel="noopener noreferrer">
+                    Boundary repository <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+            </ul>
+          </section>
       </div>
     </div>
   </section>
 
-  <section class="section section-tint" aria-labelledby="sources-images">
-    <div class="page-grid">
-      <h2 class="section-heading" id="sources-images">Image credits</h2>
-      <div>
-        <p class="ledger-copy">
-          Photographs are used with attribution and are <strong>not presented as project-owned</strong>. Each title below
-          links to its source page.
-        </p>
-        <ul class="credit-list">
-          <li>
-              <a class="credit-title" href="https://commons.wikimedia.org/w/index.php?curid=131949813">St. James the Greater Shrine-Parish (Ibaan, Batangas) 2023-04-30</a>
-              <span class="credit-meta">
-                LMP 2001 · Wikimedia Commons · 
-                <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-              </span>
-            </li><li>
-              <a class="credit-title" href="https://commons.wikimedia.org/w/index.php?curid=130458631">Good Friday Procession in Ibaan Batangas 2023-04-07</a>
-              <span class="credit-meta">
-                LMP 2001 · Wikimedia Commons · 
-                <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-              </span>
-            </li><li>
-              <a class="credit-title" href="https://commons.wikimedia.org/w/index.php?curid=147355588">STAR Tollway Ibaan Batangas 2024-04-14</a>
-              <span class="credit-meta">
-                LMP 2001 · Wikimedia Commons · 
-                <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-              </span>
-            </li><li>
-              <a class="credit-title" href="https://commons.wikimedia.org/w/index.php?curid=142860895">Panuluyan sa Ibaan Batangas 2023-12-24</a>
-              <span class="credit-meta">
-                LMP 2001 · Wikimedia Commons · 
-                <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
-              </span>
-            </li><li>
-              <a class="credit-title" href="https://commons.wikimedia.org/wiki/File:Lipa-Ibaan_Road,_Ibaan,_Batangas,_Sep_2026.jpg">Lipa-Ibaan Road, Ibaan, Batangas, Sep 2026</a>
-              <span class="credit-meta">
-                Ralff Nestor Nacor · Wikimedia Commons · 
-                <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
-              </span>
-            </li><li>
-              <a class="credit-title" href="https://commons.wikimedia.org/wiki/File:Philippines_Map_1749_historiadelaprov00muri_0005.jpg">Philippines Map 1749 historiadelaprov00muri 0005</a>
-              <span class="credit-meta">
-                Pedro Murillo Velarde · Wikimedia Commons · 
-                <a href="https://creativecommons.org/publicdomain/mark/1.0/">public domain</a>
-              </span>
-            </li>
-        </ul>
+  <section class="section-tight">
+    <div class="frame">
+      <div class="note-panel">
+        <h2>Map generation</h2>
+        <div class="note-grid">
+          <div>
+            <h3>Source</h3>
+            <p>
+              PSA/NAMRIA 2023 administrative boundaries, published in the
+              <a href="https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/hierarchical_t0p005/barangays.geojson" target="_blank" rel="noopener noreferrer">barangay-boundaries-repository</a>.
+              The repository is MIT-licensed.
+            </p>
+          </div>
+          <div>
+            <h3>Simplification</h3>
+            <p>
+              The boundary file is published at roughly 500-metre simplification. It is suitable for
+              orientation, but not for measuring land, settling jurisdiction, or drawing a legal
+              boundary.
+            </p>
+          </div>
+          <div>
+            <h3>Ibaan view</h3>
+            <p>
+              The 26 barangay polygons are projected into a local SVG viewBox. The raised faces are
+              extruded SVG paths: their height follows the mapped area in that simplified file, not
+              official land area or population. Switch to the flat view for the plain outline.
+            </p>
+          </div>
+          <div>
+            <h3>Batangas view</h3>
+            <p>
+              The provincial context map combines the 29 municipalities and 5 component cities of
+              Batangas in the same source release. Ibaan is highlighted; the five neighbouring
+              local governments are labelled.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="sources-other">
-    <div class="page-grid">
-      <h2 class="section-heading" id="sources-other">Type & independence</h2>
-      <div class="prose narrow">
+  <section class="section-tight">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Photograph credits.</h2>
+        <div class="section-copy">
+          <p>
+            The photographs are of Ibaan. The Iba tree photograph comes from the municipality’s
+            heritage page; the rest are Creative Commons photographs from Wikimedia Commons.
+          </p>
+        </div>
+      </div>
+
+      <ul class="credit-list">
+        <li>
+            <span class="credit-title">Iba Tree, Ibaan</span>
+            <span class="credit-meta">
+              Municipality of Ibaan · Official municipal photograph; no licence stated · Iba Tree heritage page
+            </span>
+            <a href="https://www.ibaan.gov.ph/heritage/detail/iba-tree/" target="_blank" rel="noopener noreferrer">View the source <span aria-hidden="true">↗</span></a>
+          </li><li>
+            <span class="credit-title">Ben R. Medrano Plaza, Ibaan, Batangas, Sep 2026</span>
+            <span class="credit-meta">
+              Ralff Nestor Nacor · CC BY-SA 4.0 · Wikimedia Commons
+            </span>
+            <a href="https://commons.wikimedia.org/wiki/File:Ben_R._Medrano_Plaza,_Ibaan,_Batangas,_Sep_2026_(1).jpg" target="_blank" rel="noopener noreferrer">View the source <span aria-hidden="true">↗</span></a>
+          </li><li>
+            <span class="credit-title">J. Pastor St., Ibaan, Batangas, Sep 2026</span>
+            <span class="credit-meta">
+              Ralff Nestor Nacor · CC BY-SA 4.0 · Wikimedia Commons
+            </span>
+            <a href="https://commons.wikimedia.org/wiki/File:J._Pastor_St.,_Ibaan,_Batangas,_Sep_2026.jpg" target="_blank" rel="noopener noreferrer">View the source <span aria-hidden="true">↗</span></a>
+          </li><li>
+            <span class="credit-title">St. James the Greater Shrine-Parish (Ibaan, Batangas) 2023-04-30</span>
+            <span class="credit-meta">
+              LMP 2001 · CC BY-SA 4.0 · Wikimedia Commons
+            </span>
+            <a href="https://commons.wikimedia.org/w/index.php?curid=131949813" target="_blank" rel="noopener noreferrer">View the source <span aria-hidden="true">↗</span></a>
+          </li><li>
+            <span class="credit-title">Good Friday Procession in Ibaan Batangas 2023-04-07</span>
+            <span class="credit-meta">
+              LMP 2001 · CC BY-SA 4.0 · Wikimedia Commons
+            </span>
+            <a href="https://commons.wikimedia.org/w/index.php?curid=130458631" target="_blank" rel="noopener noreferrer">View the source <span aria-hidden="true">↗</span></a>
+          </li><li>
+            <span class="credit-title">Panuluyan sa Ibaan Batangas 2023-12-24</span>
+            <span class="credit-meta">
+              LMP 2001 · CC BY-SA 4.0 · Wikimedia Commons
+            </span>
+            <a href="https://commons.wikimedia.org/w/index.php?curid=142860895" target="_blank" rel="noopener noreferrer">View the source <span aria-hidden="true">↗</span></a>
+          </li><li>
+            <span class="credit-title">Ibaan Church Grotto, Batangas, Sep 2026</span>
+            <span class="credit-meta">
+              Ralff Nestor Nacor · CC BY-SA 4.0 · Wikimedia Commons
+            </span>
+            <a href="https://commons.wikimedia.org/wiki/File:Ibaan_Church_Grotto,_Batangas,_Sep_2026.jpg" target="_blank" rel="noopener noreferrer">View the source <span aria-hidden="true">↗</span></a>
+          </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="frame">
+      <div class="prose-wide">
+        <h2>Typefaces</h2>
         <p>
-          The typefaces are the OFL-licensed families used by the reference Better Calatagan site, bundled locally in
-          <code>public/fonts</code>. The historical map of the Philippines (1749) is by Pedro Murillo Velarde and is in
-          the public domain; it is used as a historical illustration, not as a current boundary map.
+          The site uses Source Serif 4 for display and Public Sans for text, both self-hosted. Both
+          are open-source typefaces released under the SIL Open Font License.
         </p>
-        <p>Better Ibaan is an independent community project. It is not an official government website and is not affiliated with, endorsed by, or operated by any local government unit or government agency.</p>
+
+        <h2>Open data</h2>
+        <p>
+          The town profile, barangay list, and map-derived fields are available as
+          <a href="/data/iba-an.json">JSON</a>. The map data is generated from the boundary source
+          above and carries the same caveat: approximate geometry for orientation.
+        </p>
+
+        <h2>Independence</h2>
+        <p>
+          Better Ibaan is not affiliated with the Municipality of Ibaan. It is not an official
+          government website. It has no advertising, no analytics, and no user accounts.
+        </p>
       </div>
     </div>
   </section>
@@ -160,42 +339,75 @@
     </main>
 
     <footer class="site-footer">
-  <div class="frame">
-    <div class="footer-top">
-      <p>Better Ibaan is an independent community directory of Better LGU portals.</p>
-      <p>Not an official government website. Data checked against public sources.</p>
-      <p><a href="#main">Back to top ↑</a></p>
+  <div class="frame footer-inner">
+    <div class="footer-lead">
+      <a class="footer-display" href="/">Iba ang Ibaan.</a>
+      <p class="footer-summary">
+        A field guide to the town, its 26 barangays, and the tree that gave it a name.
+      </p>
     </div>
 
-    <div class="footer-display">
-      <a href="https://github.com/jmacj/better-lgu-directory/issues/new" rel="noopener">Add your LGU ↗</a>
+    <div class="footer-columns">
+      <div>
+        <h2>Read</h2>
+        <ul>
+          <li><a href="/geography">Geography</a></li><li><a href="/heritage">Heritage</a></li><li><a href="/about">About</a></li><li><a href="/sources">Sources</a></li>
+          <li><a href="/#barangays">Barangay map</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Official</h2>
+        <ul>
+          <li><a href="https://www.ibaan.gov.ph/general-information/" target="_blank" rel="noopener noreferrer">Municipal profile <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.ibaan.gov.ph/heritage/detail/iba-tree/" target="_blank" rel="noopener noreferrer">Iba Tree <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.ibaan.gov.ph/government-officials/" target="_blank" rel="noopener noreferrer">Elected officials <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.ibaan.gov.ph/bids-awards/" target="_blank" rel="noopener noreferrer">Bids and awards <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="/about">About this guide</a></li>
+          <li><a href="/sources">Sources and credits</a></li>
+          <li><a href="/data/iba-an.json">Open data</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
     </div>
 
-    <nav class="footer-links" aria-label="Footer">
-      <a href="/directory">Directory</a><a href="/regions">Regions</a><a href="/budget-portals">Budget portals</a><a href="/guide">Start a portal</a><a href="/about">About</a><a href="/sources">Sources</a>
-      <a href="https://lgu.bettergov.ph" rel="noopener">Directory source ↗</a>
-      <a href="/sitemap.xml">Sitemap</a>
-      <a href="/data/portals.json">Open data</a>
-    </nav>
-
-    <div class="footer-meta">
-      <span>Independent community project · 2026</span>
-      <span>Pictures: Ibaan, Batangas by LMP 2001 and Ralff Nestor Nacor, CC BY-SA 4.0; 1749 map by Pedro Murillo Velarde, public domain, via Wikimedia Commons</span>
-      <span><a href="/sources">Credits & sources</a></span>
+    <div class="footer-base">
+      <p>
+        <strong>Better Ibaan</strong> is an independent civic project. It is not an official website of the
+        Municipality of Ibaan.
+      </p>
+      <p>
+        Photographs by LMP 2001 and Ralff Nestor Nacor, CC BY-SA 4.0; Iba tree photograph by the
+        Municipality of Ibaan. Map boundaries from PSA/NAMRIA 2023, simplified.
+        <a href="/sources">Full credits</a>.
+      </p>
+      <p class="footer-top-link"><a href="#main">Back to top ↑</a><span> · 2026</span></p>
     </div>
   </div>
 </footer>
-    <dialog class="search-dialog" data-search-dialog aria-label="Search the directory">
+    <dialog class="search-dialog" data-search-dialog aria-labelledby="search-title">
   <div class="search-panel">
-    <button class="search-close btn btn-quiet" type="button" data-close-search>Close</button>
-    <label for="site-search">Find an LGU portal</label>
-    <input id="site-search" type="search" placeholder="Try Batangas, Cebu, or a region" autocomplete="off" data-search-input>
-    <p class="small search-hint">Searches the Better Ibaan directory snapshot.</p>
+    <div class="search-top">
+      <h2 id="search-title">Search the guide</h2>
+      <button class="search-close" type="button" data-close-search aria-label="Close search">Close</button>
+    </div>
+
+    <label class="visually-hidden" for="site-search">Search pages and barangays</label>
+    <input id="site-search" type="search" placeholder="Try Bago, geography, or Iba tree" autocomplete="off" data-search-input>
+
+    <p class="search-hint" data-search-hint>
+      5 pages and 26 barangays. Press <kbd>Ctrl</kbd> <kbd>K</kbd> to open this anywhere.
+    </p>
+
     <ul class="search-results" data-search-results aria-live="polite">
-      <li class="small">Start typing to search 174 registered LGUs.</li>
+      <li class="search-empty">Start typing to find a page or barangay.</li>
     </ul>
   </div>
 </dialog>
-    <script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.DqCdZwJF.js"></script>
+    <script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.va40EwLm.js"></script>
   </body>
 </html>

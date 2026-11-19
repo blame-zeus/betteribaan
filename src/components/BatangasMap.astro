@@ -1,0 +1,47 @@
+---
+import { MAP, NEIGHBOURS } from '../data/town';
+
+const { viewBox, municipalities, neighbourLabels, ibaanLabel } = MAP.batangas;
+---
+
+<figure class="context-map">
+  <svg
+    class="batangas-map"
+    viewBox={viewBox}
+    role="img"
+    aria-labelledby="batangas-map-title batangas-map-desc"
+  >
+    <title id="batangas-map-title">Ibaan within Batangas</title>
+    <desc id="batangas-map-desc">
+      A simplified map of the municipalities and cities of Batangas. Ibaan is highlighted near the centre.
+      Its neighbours are San Jose to the northwest, Lipa City to the northeast, Rosario to the east,
+      Taysan to the southeast, and Batangas City to the southwest.
+    </desc>
+
+    <g class="context-shapes">
+      {municipalities.map((place) => (
+        <path
+          class:list={['context-shape', { 'is-ibaan': place.isIbaan }]}
+          d={place.path}
+          data-place={place.slug}
+        />
+      ))}
+    </g>
+
+    <g class="context-neighbours" aria-hidden="true">
+      {neighbourLabels.map((label) => (
+        <text x={label.x} y={label.y}>{label.name}</text>
+      ))}
+    </g>
+
+    <g class="context-ibaan" aria-hidden="true">
+      <circle cx={ibaanLabel.x} cy={ibaanLabel.y - 17} r="4.5" />
+      <text x={ibaanLabel.x} y={ibaanLabel.y + 2}>Ibaan</text>
+    </g>
+  </svg>
+
+  <figcaption>
+    <span>Ibaan in Batangas</span>
+    <span>Approximate boundaries. Neighbours: {NEIGHBOURS.map((place) => place.name).join(', ')}.</span>
+  </figcaption>
+</figure>

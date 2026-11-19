@@ -1,0 +1,171 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import { CREDITS, FIGURE_NOTES, MAP, SOURCE_GROUPS, TOWN } from '../data/town';
+---
+
+<Base
+  title="Sources and credits"
+  description="Official Ibaan sources, map data, image credits, and the figures this guide leaves out."
+  crumbs={[{ label: 'Sources' }]}
+>
+  <PageHeader
+    title="Sources, credits, and the figures left out."
+    intro="A civic guide is only as good as its paper trail. This page records where the facts, maps, and photographs come from, and where the official record disagrees with itself."
+    note="Last reviewed against the municipal site in November 2026. Official pages can change without notice."
+  />
+
+  <section class="section-tight">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Two figures not published here.</h2>
+        <div class="section-copy">
+          <p>
+            The Municipality of Ibaan publishes two profile pages. They do not agree on elevation or
+            on the distance to Manila. Rather than choose one silently, this guide leaves both out.
+          </p>
+        </div>
+      </div>
+
+      <div class="figure-notes">
+        {FIGURE_NOTES.map((note) => (
+          <div>
+            <h3>{note.title}</h3>
+            <p>{note.copy}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="source-note">
+        The distance to Batangas City, {TOWN.distanceToBatangasCityKm} kilometres, appears in the
+        municipal profile and does not conflict across the two pages. It is the only distance figure
+        used on this site.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="frame">
+      <div class="section-head">
+        <h2>The source groups.</h2>
+        <div class="section-copy">
+          <p>
+            Every factual claim on this site should be traceable to one of these groups. If you find
+            something that is not, treat it as a mistake and check the official page.
+          </p>
+        </div>
+      </div>
+
+      <div class="source-groups">
+        {SOURCE_GROUPS.map((group) => (
+          <section>
+            <h3>{group.title}</h3>
+            <p>{group.note}</p>
+            <ul>
+              {group.links.map((link) => (
+                <li>
+                  <a href={link.href} target="_blank" rel="noopener noreferrer">
+                    {link.label} <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="frame">
+      <div class="note-panel">
+        <h2>Map generation</h2>
+        <div class="note-grid">
+          <div>
+            <h3>Source</h3>
+            <p>
+              PSA/NAMRIA 2023 administrative boundaries, published in the
+              <a href={MAP.source.barangays} target="_blank" rel="noopener noreferrer">barangay-boundaries-repository</a>.
+              The repository is MIT-licensed.
+            </p>
+          </div>
+          <div>
+            <h3>Simplification</h3>
+            <p>
+              The boundary file is published at roughly 500-metre simplification. It is suitable for
+              orientation, but not for measuring land, settling jurisdiction, or drawing a legal
+              boundary.
+            </p>
+          </div>
+          <div>
+            <h3>Ibaan view</h3>
+            <p>
+              The 26 barangay polygons are projected into a local SVG viewBox. The raised faces are
+              extruded SVG paths: their height follows the mapped area in that simplified file, not
+              official land area or population. Switch to the flat view for the plain outline.
+            </p>
+          </div>
+          <div>
+            <h3>Batangas view</h3>
+            <p>
+              The provincial context map combines the 29 municipalities and 5 component cities of
+              Batangas in the same source release. Ibaan is highlighted; the five neighbouring
+              local governments are labelled.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Photograph credits.</h2>
+        <div class="section-copy">
+          <p>
+            The photographs are of Ibaan. The Iba tree photograph comes from the municipality’s
+            heritage page; the rest are Creative Commons photographs from Wikimedia Commons.
+          </p>
+        </div>
+      </div>
+
+      <ul class="credit-list">
+        {CREDITS.map((credit) => (
+          <li>
+            <span class="credit-title">{credit.title}</span>
+            <span class="credit-meta">
+              {credit.creator} · {credit.license} · {credit.via}
+            </span>
+            <a href={credit.href} target="_blank" rel="noopener noreferrer">View the source <span aria-hidden="true">↗</span></a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="frame">
+      <div class="prose-wide">
+        <h2>Typefaces</h2>
+        <p>
+          The site uses Source Serif 4 for display and Public Sans for text, both self-hosted. Both
+          are open-source typefaces released under the SIL Open Font License.
+        </p>
+
+        <h2>Open data</h2>
+        <p>
+          The town profile, barangay list, and map-derived fields are available as
+          <a href="/data/iba-an.json">JSON</a>. The map data is generated from the boundary source
+          above and carries the same caveat: approximate geometry for orientation.
+        </p>
+
+        <h2>Independence</h2>
+        <p>
+          Better Ibaan is not affiliated with the Municipality of Ibaan. It is not an official
+          government website. It has no advertising, no analytics, and no user accounts.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>

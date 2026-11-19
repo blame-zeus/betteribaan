@@ -1,0 +1,61 @@
+---
+import { NAV, OFFICIAL, SITE } from '../lib/site';
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isCurrent = (href: string) => path === href || (href !== '/' && path.startsWith(`${href}/`));
+---
+
+<header class="site-header" data-header>
+  <div class="frame header-inner">
+    <a class="brand" href="/" aria-label={`${SITE.name} home`}>
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M20.3 3.7C12.6 3.8 5.2 7.1 5.2 14.2c0 2.1 1.2 4 3.1 5 7.3-.2 11.6-6.4 12-15.5Z" />
+        <path d="M3.6 21c1.2-5.3 4.2-8.7 8.6-10.7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </svg>
+      <span class="brand-name">Better <span>Ibaan</span></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+      data-menu-toggle
+    >
+      Menu
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      {NAV.map((item) => (
+        <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>
+      ))}
+      <a class="nav-mobile-official" href={OFFICIAL.home} target="_blank" rel="noopener noreferrer">
+        Official town site <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button search-toggle" type="button" data-open-search aria-label="Search this guide">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+          <path d="m15.5 15.5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+        <span class="search-label">Search</span>
+      </button>
+
+      <a class="official-link" href={OFFICIAL.home} target="_blank" rel="noopener noreferrer">
+        Official site <span aria-hidden="true">↗</span>
+      </a>
+
+      <button class="icon-button theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20 15.2A8.4 8.4 0 0 1 8.8 4a8.4 8.4 0 1 0 11.2 11.2Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7" />
+          <path d="M12 2.4v2.2M12 19.4v2.2M2.4 12h2.2M19.4 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
