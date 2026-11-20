@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
+import { NAV_GROUPS } from '../lib/site';
 ---
 
 <Base
@@ -10,15 +11,23 @@ import PageHeader from '../components/PageHeader.astro';
 >
   <PageHeader
     title="That page is not on the map."
-    intro="The address may have changed, or the page may never have existed. The barangay map and the town guide are the best places to restart."
+    intro="The address may have changed, or the page may never have existed. The guide is grouped into six sections, and every one of them starts below."
   />
 
   <section class="section-tight">
     <div class="frame">
-      <div class="not-found-actions">
-        <a class="btn" href="/">Return to Iba ang Ibaan</a>
-        <a class="text-link" href="/geography">Open the geography guide <span aria-hidden="true">→</span></a>
+      <div class="nav-card-grid">
+        {NAV_GROUPS.map((group) => (
+          <a class="nav-card" href={group.href}>
+            <strong>{group.label}</strong>
+            <span>{group.blurb}</span>
+          </a>
+        ))}
       </div>
+      <p class="table-note">
+        The full route list is on the <a href="/sitemap">sitemap</a>. The
+        <a href="/barangays">barangay map</a> is also a good place to restart.
+      </p>
     </div>
   </section>
 </Base>

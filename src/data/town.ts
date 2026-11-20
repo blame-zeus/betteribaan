@@ -1,23 +1,42 @@
 import mapData from './iba-an-map.json';
-import { OFFICIAL, MAP_REPOSITORY } from '../lib/site';
+import { NAV_GROUPS, OFFICIAL, MAP_REPOSITORY } from '../lib/site';
 
 export interface Barangay {
   name: string;
   slug: string;
   code: string;
   areaKm2: number;
-  /** SVG units, derived from mapped area in the simplified boundary file. */
-  height: number;
-  /** Centroid Y, used to paint far towers before near ones. */
-  depth: number;
+  /** Flat SVG outline for the no-script fallback. */
   path: string;
-  sidePath: string;
   label: { x: number; y: number };
   showLabel: boolean;
 }
 
+export interface BarangayFeature {
+  type: 'Feature';
+  id: string;
+  properties: {
+    name: string;
+    slug: string;
+    code: string;
+    areaKm2: number;
+    center: [number, number];
+  };
+  geometry: {
+    type: 'Polygon' | 'MultiPolygon';
+    coordinates: number[][][] | number[][][][];
+  };
+}
+
+export interface BarangayGeoJSON {
+  type: 'FeatureCollection';
+  bbox: [number, number, number, number];
+  features: BarangayFeature[];
+}
+
 export const BARANGAYS = mapData.ibaan.barangays as Barangay[];
 export const MAP = mapData;
+export const IBAAN_GEOJSON = MAP.ibaan.geojson as BarangayGeoJSON;
 
 export const TOWN = {
   name: 'Ibaan',
@@ -155,35 +174,25 @@ export const PUBLIC_RECORD = [
 ] as const;
 
 export const PAGES = [
-  {
-    title: 'Iba ang Ibaan',
-    description: 'The field guide’s front page: the town, the map, the tree, and the public record.',
-    href: '/',
-    section: 'Start here',
-  },
+  ...NAV_GROUPS.flatMap((group) =>
+    group.items.map((item) => ({
+      title: item.label,
+      description: item.blurb,
+      href: item.href,
+      section: group.label,
+    })),
+  ),
   {
     title: 'Geography',
-    description: 'The 26 barangays, the municipal boundary, the five neighbours, and notes on the map.',
+    description: 'The 26 barangays, the municipal boundary, the five neighbours, and map notes.',
     href: '/geography',
-    section: 'The town',
+    section: 'Government',
   },
   {
     title: 'Heritage',
-    description: 'The Iba tree: the town’s namesake, its uses, and the local effort to bring it back.',
+    description: 'The Iba tree: the town’s namesake, its uses, and the effort to bring it back.',
     href: '/heritage',
-    section: 'The town',
-  },
-  {
-    title: 'About Better Ibaan',
-    description: 'What this field guide is, what it is not, and how it is sourced.',
-    href: '/about',
-    section: 'This project',
-  },
-  {
-    title: 'Sources and credits',
-    description: 'Official municipal pages, map boundaries, image credits, and unresolved figures.',
-    href: '/sources',
-    section: 'This project',
+    section: 'Government',
   },
 ] as const;
 
@@ -212,6 +221,15 @@ export const SOURCE_GROUPS = [
     note: 'The barangay and Batangas maps use the PSA/NAMRIA 2023 administrative boundaries published in the barangay-boundaries-repository. The polygons are simplified for the web, so they are for orientation, not survey work.',
     links: [
       { label: 'Boundary repository', href: MAP_REPOSITORY },
+    ],
+  },
+  {
+    title: 'Interactive map tiles',
+    note: 'The interactive map loads OpenStreetMap data through OpenFreeMap vector tiles. Its 3D view also requests elevation tiles from the Mapzen Terrain Tiles dataset on AWS. Those services receive ordinary tile requests when a reader opens the map; this site has no analytics or user accounts. The 3D view shows real terrain and building height, not population or land-area figures.',
+    links: [
+      { label: 'OpenFreeMap', href: 'https://openfreemap.org/' },
+      { label: 'OpenStreetMap copyright', href: 'https://www.openstreetmap.org/copyright' },
+      { label: 'Mapzen Terrain Tiles on AWS', href: 'https://registry.opendata.aws/terrain-tiles/' },
     ],
   },
 ] as const;

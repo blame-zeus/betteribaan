@@ -1,0 +1,106 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import GapPanel from '../components/GapPanel.astro';
+import { GAPS, SOURCE, type GapEntry } from '../data/ibaan-record';
+import { OFFICIAL } from '../lib/site';
+
+const documentGaps = GAPS.filter(
+  (gap) =>
+    gap.fact.includes('budgets') ||
+    gap.fact.includes('ordinances') ||
+    gap.fact.includes('history'),
+) as GapEntry[];
+---
+
+<Base
+  title="Archive"
+  description="Official Ibaan archives and the document types that could not be verified as public files."
+  crumbs={[{ label: 'Transparency' }, { label: 'Archive' }]}
+>
+  <PageHeader
+    title="What the town keeps online."
+    intro="The municipal site has archives for announcements and events, plus procurement results. It does not present a consolidated public document repository, so this page indexes the archives and names the missing record types."
+    note="An archive entry is not a downloadable document. This guide does not convert notices into files it did not receive."
+  >
+    <Toc
+      items={[
+        { id: 'archives', label: 'Official archives' },
+        { id: 'procurement-records', label: 'Procurement records' },
+        { id: 'missing-documents', label: 'Missing documents' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="archives">
+    <div class="frame">
+      <div class="directory-grid">
+        <div class="directory-card">
+          <h3>Announcements</h3>
+          <p class="card-meta">Municipality of Ibaan archive</p>
+          <a href={OFFICIAL.announcements} target="_blank" rel="noopener noreferrer">Open the archive <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Events</h3>
+          <p class="card-meta">Municipality of Ibaan archive</p>
+          <a href={OFFICIAL.events} target="_blank" rel="noopener noreferrer">Open the archive <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Achievements and awards</h3>
+          <p class="card-meta">Municipality of Ibaan notices</p>
+          <a href={OFFICIAL.awards} target="_blank" rel="noopener noreferrer">Open the notices <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <SourceNote
+        sources={[SOURCE.announcements, SOURCE.events, SOURCE.awards]}
+        title="Municipal archives"
+        data="Official announcement, event, and award pages"
+        note="Archives are dynamic and may cover only the years served by the municipal site."
+        refresh="Re-check the official archives for newer notices"
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="procurement-records">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Procurement records</h2>
+        <div class="section-copy">
+          <p>
+            Bid results are the closest thing to a structured public record found on the municipal
+            site. They are indexed on the procurement and infrastructure pages.
+          </p>
+        </div>
+      </div>
+      <div class="directory-grid">
+        <div class="directory-card">
+          <h3>Bid results</h3>
+          <p class="card-meta">Municipality of Ibaan</p>
+          <a href="/procurement">Open the procurement guide <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Project index</h3>
+          <p class="card-meta">Projects named in bid titles</p>
+          <a href="/infrastructure">Open the infrastructure guide <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Invitation to Bid</h3>
+          <p class="card-meta">Official municipal page</p>
+          <a href={OFFICIAL.invitations} target="_blank" rel="noopener noreferrer">Open the official page <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="missing-documents">
+    <div class="frame">
+      <GapPanel
+        items={documentGaps}
+        title="Document types not found"
+        intro="No Ibaan budget, audited financial statement, local ordinance, or narrative history document was verified for this guide."
+      />
+    </div>
+  </section>
+</Base>

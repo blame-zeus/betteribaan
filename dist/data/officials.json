@@ -1,0 +1,107 @@
+{
+  "verifiedOn": "2026-11-20",
+  "note": "Roles and committees follow the municipal Elected Officials page. The CMCI mayor field conflicts and is not used here.",
+  "officials": [
+    {
+      "name": "Hon. Jane A. Casas",
+      "role": "Municipal Mayor"
+    },
+    {
+      "name": "Hon. Edralyn Joy A. Salvame",
+      "role": "Municipal Vice Mayor",
+      "committees": [
+        "Internal Rules and Procedures",
+        "Education and Culture",
+        "Housing and Land Utilization",
+        "Transportation",
+        "ADHOC"
+      ]
+    },
+    {
+      "name": "Hon. Juvy M. Mendoza",
+      "role": "Councilor 1",
+      "committees": [
+        "Finance, Budget and Appropriation",
+        "Sanitation, Health and Environmental Protection",
+        "Women, Men and Family",
+        "Good Governance, Public Ethics and Accountability",
+        "Slaughterhouse"
+      ]
+    },
+    {
+      "name": "Hon. John Henry N. Cabatay",
+      "role": "Councilor 2",
+      "committees": [
+        "Peace and Order, Public Safety, Drug Prevention and Control",
+        "Public Utilities"
+      ]
+    },
+    {
+      "name": "Hon. Erwin C. Andal",
+      "role": "Councilor 3",
+      "committees": [
+        "Games and Amusement",
+        "Public Market"
+      ]
+    },
+    {
+      "name": "Hon. Eloise Jan S. Tejada",
+      "role": "Councilor 4",
+      "committees": [
+        "Agriculture",
+        "Trade, Commerce and Industry",
+        "Tourism",
+        "Ways and Means"
+      ]
+    },
+    {
+      "name": "Hon. Sixto I. Yabyabin",
+      "role": "Councilor 5",
+      "committees": [
+        "Public Works",
+        "Livelihood"
+      ]
+    },
+    {
+      "name": "Hon. Arsenio Ricero",
+      "role": "Councilor 6",
+      "committees": [
+        "Laws, Ordinances and Other Legal Matters",
+        "Senior Citizens and PWD"
+      ]
+    },
+    {
+      "name": "Hon. Eddie L. Pasia",
+      "role": "Councilor 7",
+      "committees": [
+        "Cooperatives",
+        "Public Service and Social Welfare"
+      ]
+    },
+    {
+      "name": "Hon. Phill Joshua G. Caringal",
+      "role": "Councilor 8",
+      "committees": [
+        "Human Rights, Rights and Welfare of Ibaan Child"
+      ]
+    },
+    {
+      "name": "Hon. Kevin G. Palma",
+      "role": "LnB President",
+      "committees": [
+        "Barangay Affairs"
+      ]
+    },
+    {
+      "name": "Hon. Maricar Joy M. Paner",
+      "role": "SKF President",
+      "committees": [
+        "Youth and Sports Development"
+      ]
+    }
+  ],
+  "sources": [
+    "https://www.ibaan.gov.ph/government-officials/",
+    "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Ibaan&year=2024"
+  ]
+}

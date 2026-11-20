@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 import BarangayMap from '../components/BarangayMap.astro';
 import BatangasMap from '../components/BatangasMap.astro';
 import { HERO_FACTS, NEIGHBOURS, PUBLIC_RECORD, TOWN } from '../data/town';
-import { OFFICIAL, SITE } from '../lib/site';
+import { NAV_GROUPS, OFFICIAL, SITE } from '../lib/site';
 
 import heroPhoto from '../assets/images/ben-r-medrano-plaza-ibaan-batangas-2026.jpg';
 import ibaTree from '../assets/images/iba-tree-ibaan.webp';
@@ -109,14 +109,37 @@ const gallery = [
     </div>
   </section>
 
+  <section class="section-tight">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Browse the whole guide.</h2>
+        <div class="section-copy">
+          <p>
+            Six sections cover the public record: services, government, statistics, transparency,
+            and the sources behind them. Every figure stays tied to its page.
+          </p>
+        </div>
+      </div>
+      <div class="nav-card-grid">
+        {NAV_GROUPS.map((group) => (
+          <a class="nav-card" href={group.href}>
+            <strong>{group.label}</strong>
+            <span>{group.blurb}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <section class="section map-section" id="barangays">
     <div class="frame">
       <div class="section-head">
         <h2>Twenty-six barangays, one town.</h2>
         <div class="section-copy">
           <p>
-            Ibaan is a second-class municipality in Batangas. The map is drawn from PSA and
-            NAMRIA boundaries simplified for the web. Raised faces show mapped area, not population.
+            Ibaan is a second-class municipality in Batangas. Approximate PSA and NAMRIA boundaries
+            sit over an OpenStreetMap-based map. Switch between a flat view and a tilted 3D view of
+            terrain and buildings.
           </p>
           <p class="section-link"><a href="/geography">Open the geography guide <span aria-hidden="true">→</span></a></p>
         </div>

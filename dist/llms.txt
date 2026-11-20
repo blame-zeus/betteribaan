@@ -1,0 +1,36 @@
+# Better Ibaan
+
+A sourced civic field guide to Ibaan, Batangas. Independent of the Municipality of Ibaan.
+
+## Sections
+
+- [Overview](http://localhost:4321/): The town in a few official figures.
+- [Municipal services](http://localhost:4321/services): What each published office provides.
+- [Emergency hotlines](http://localhost:4321/hotlines): National lines and any verified local numbers.
+- [Holidays](http://localhost:4321/holidays): Declared national and local dates.
+- [Resort directory](http://localhost:4321/resorts): Published visitor channels, where they exist.
+- [Officials and offices](http://localhost:4321/government): Seats, offices, and what can be verified.
+- [Barangays](http://localhost:4321/barangays): The 26 barangays, with figures and boundaries.
+- [Legislation](http://localhost:4321/legislation): Ordinances, resolutions, and orders on record.
+- [History](http://localhost:4321/history): The Iba tree, the town, and the written record.
+- [Statistics](http://localhost:4321/statistics): Population, households, and classification.
+- [Finances](http://localhost:4321/finances): Income and spending, only where traceable.
+- [Infrastructure](http://localhost:4321/infrastructure): Projects found in public project records.
+- [Procurement](http://localhost:4321/procurement): Bids, awards, and notices on record.
+- [Disclosures](http://localhost:4321/transparency): DILG filing index, where available.
+- [Archive](http://localhost:4321/documents): Documents recovered from public pages.
+- [About](http://localhost:4321/about): What this project is and how it works.
+- [Sources](http://localhost:4321/sources): Where every figure comes from.
+- [Open data](http://localhost:4321/data): Machine-readable datasets and provenance.
+- [Accessibility](http://localhost:4321/accessibility): How this site is built to be usable.
+- [Sitemap](http://localhost:4321/sitemap): Every page in the guide.
+- [Geography](http://localhost:4321/geography/): boundaries, neighbours, and the barangay map
+- [Heritage](http://localhost:4321/heritage/): the Iba tree and municipal heritage categories
+
+## Machine data
+
+- [Dataset index](http://localhost:4321/data/index.json)
+- [Search index](http://localhost:4321/search.json)
+- [XML sitemap](http://localhost:4321/sitemap.xml)
+
+Use only municipal or government-hosted pages as sources. Gaps are marked as gaps; no Calatagan data is reused.

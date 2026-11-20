@@ -1,0 +1,74 @@
+{
+  "verifiedOn": "2026-11-20",
+  "note": "CMCI-specific values. The CMCI population and mayor fields conflict with the municipal site and are not included.",
+  "ranks": [
+    {
+      "year": 2015,
+      "rank": "283rd"
+    },
+    {
+      "year": 2016,
+      "rank": "224th"
+    },
+    {
+      "year": 2017,
+      "rank": "295th"
+    },
+    {
+      "year": 2018,
+      "rank": "416th"
+    },
+    {
+      "year": 2019,
+      "rank": "356th"
+    },
+    {
+      "year": 2020,
+      "rank": "376th"
+    },
+    {
+      "year": 2021,
+      "rank": "417th"
+    },
+    {
+      "year": 2022,
+      "rank": "455th"
+    },
+    {
+      "year": 2023,
+      "rank": "441st"
+    },
+    {
+      "year": 2024,
+      "rank": "366th"
+    }
+  ],
+  "pillars2024": [
+    {
+      "name": "Economic Dynamism",
+      "rank": "234th",
+      "score": 3.3713
+    },
+    {
+      "name": "Government Efficiency",
+      "rank": "423rd",
+      "score": 7.2961
+    },
+    {
+      "name": "Infrastructure",
+      "rank": "246th",
+      "score": 2.441
+    },
+    {
+      "name": "Resiliency",
+      "rank": "444th",
+      "score": 10.8023
+    },
+    {
+      "name": "Innovation",
+      "rank": "281st",
+      "score": 4.9024
+    }
+  ],
+  "source": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Ibaan&year=2024"
+}

@@ -1,0 +1,66 @@
+{
+  "verifiedOn": "2026-11-20",
+  "invitationStatus": "No projects available for bidding on the checked page",
+  "note": "Bid results shown under the 2026 filter when checked. No ABC, contract price, or supplier was visible in the extracted text.",
+  "bids": [
+    {
+      "title": "Data validation and digitizing, Office of the Municipal Mayor",
+      "status": "Bidded",
+      "award": "On process for award"
+    },
+    {
+      "title": "Establishment of Real Property GIS System, Office of the Municipal Assessor",
+      "status": "Bidded",
+      "award": "On process for award"
+    },
+    {
+      "title": "Purchase of GIS system for disaster mapping",
+      "status": "Bidded",
+      "award": "On process for award"
+    },
+    {
+      "title": "Supply and delivery of office equipment, Municipal Health Officer",
+      "status": "Bidded",
+      "award": "On process for award"
+    },
+    {
+      "title": "Supply and delivery of medical equipment, Municipal Health Officer",
+      "status": "Bidded",
+      "award": "On process for award"
+    },
+    {
+      "title": "Improvement of German S. Guerra Memorial Cemetery, Brgy. Sandalan",
+      "status": "Bidded",
+      "award": "On process for award"
+    },
+    {
+      "title": "Improvement of Colegio de Ibaan, Brgy. Poblacion",
+      "status": "Bidded",
+      "award": "On process for award"
+    },
+    {
+      "title": "Improvement of public cemetery, Brgy. Poblacion",
+      "status": "Bidded",
+      "award": "On process for award"
+    },
+    {
+      "title": "Supply of sub-base and base course materials for barangay road maintenance",
+      "status": "Bidded",
+      "award": "On process for award"
+    },
+    {
+      "title": "Construction of local road, Brgy. Santo Niño",
+      "status": "Bidded",
+      "award": "On process for award"
+    },
+    {
+      "title": "Improvement of historical monument and rotunda, Brgy. Poblacion",
+      "status": "Bidded",
+      "award": "On process for award"
+    }
+  ],
+  "sources": [
+    "https://www.ibaan.gov.ph/bids-awards/invitation/",
+    "https://www.ibaan.gov.ph/bids-awards/results/"
+  ]
+}

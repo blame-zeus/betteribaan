@@ -1,0 +1,107 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import { RESORTS, SOURCE } from '../data/ibaan-record';
+import { OFFICIAL } from '../lib/site';
+---
+
+<Base
+  title="Resort directory"
+  description="Resorts and accommodations listed by the Municipality of Ibaan, with published contact channels only."
+  crumbs={[{ label: 'Services' }, { label: 'Resort directory' }]}
+>
+  <PageHeader
+    title="Places the town publishes."
+    intro={`The municipal tourism page lists ${RESORTS.length} resorts and accommodations. This directory repeats only the fields shown there: location, hours, contact name, phone, and social link.`}
+    note="A listing is not a recommendation, rating, or confirmation of current availability. Check the official page before travelling."
+  >
+    <Toc
+      items={[
+        { id: 'directory', label: 'Directory' },
+        { id: 'empty-sections', label: 'Empty sections' },
+        { id: 'sources', label: 'Sources' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="directory">
+    <div class="frame">
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Resorts and accommodations listed by the Municipality of Ibaan</caption>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Location</th>
+              <th scope="col">Hours</th>
+              <th scope="col">Contact</th>
+              <th scope="col">Published link</th>
+            </tr>
+          </thead>
+          <tbody>
+            {RESORTS.map((resort) => (
+              <tr>
+                <th scope="row"><strong>{resort.name}</strong></th>
+                <td>{resort.location}</td>
+                <td>{resort.hours}</td>
+                <td>
+                  {resort.contact && <span>{resort.contact}<br /></span>}
+                  {resort.phones.map((phone) => <span class="num">{phone}<br /></span>)}
+                </td>
+                <td><a href={resort.facebook} target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">
+        “Brgy. Tulay” and “Purok Ibaba, Brgy. Santo Niño” are kept exactly as the municipal listing
+        states them. No barangay code is assigned where the page does not give one.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-tight" id="empty-sections">
+    <div class="frame">
+      <div class="callout">
+        <strong>Restaurants and products</strong>
+        <p>
+          The municipal restaurant and products pages showed no records when checked. The homepage
+          mentions local food and weave traditions, but that is not a directory and is not copied
+          into one here.
+        </p>
+      </div>
+      <div class="directory-grid">
+        <div class="directory-card">
+          <h3>Restaurants</h3>
+          <p class="card-meta">No records shown when checked</p>
+          <a href={OFFICIAL.restaurants} target="_blank" rel="noopener noreferrer">Check the official page <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Products and foods</h3>
+          <p class="card-meta">No records shown when checked</p>
+          <a href={OFFICIAL.products} target="_blank" rel="noopener noreferrer">Check the official page <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Resorts and accommodations</h3>
+          <p class="card-meta">{RESORTS.length} published listings</p>
+          <a href={OFFICIAL.resorts} target="_blank" rel="noopener noreferrer">Check the official page <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="sources">
+    <div class="frame">
+      <SourceNote
+        sources={[SOURCE.resorts, SOURCE.restaurants, SOURCE.products]}
+        title="Tourism listings"
+        data="Municipal tourism pages, checked as published"
+        note="Hours and contacts are reproduced from the official directory. They can change without notice."
+        refresh="Re-check before using a listing for travel"
+      />
+    </div>
+  </section>
+</Base>

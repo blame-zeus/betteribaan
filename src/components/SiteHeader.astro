@@ -1,8 +1,10 @@
 ---
-import { NAV, OFFICIAL, SITE } from '../lib/site';
+import { NAV_GROUPS, OFFICIAL, SITE } from '../lib/site';
 
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const isCurrent = (href: string) => path === href || (href !== '/' && path.startsWith(`${href}/`));
+const groupIsCurrent = (group: (typeof NAV_GROUPS)[number]) =>
+  group.items.some((item) => isCurrent(item.href)) || isCurrent(group.href);
 ---
 
 <header class="site-header" data-header>
@@ -26,8 +28,28 @@ const isCurrent = (href: string) => path === href || (href !== '/' && path.start
     </button>
 
     <nav class="primary-nav" id="primary-nav" aria-label="Primary">
-      {NAV.map((item) => (
-        <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>
+      {NAV_GROUPS.map((group) => (
+        <details class="nav-group" data-current={groupIsCurrent(group) ? 'true' : undefined}>
+          <summary>
+            <span>{group.label}</span>
+            <svg viewBox="0 0 12 12" aria-hidden="true" focusable="false">
+              <path d="m2.2 4.2 3.8 3.8 3.8-3.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </summary>
+          <div class="nav-drop">
+            <p class="nav-drop-blurb">{group.blurb}</p>
+            <ul>
+              {group.items.map((item) => (
+                <li>
+                  <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+                    <strong>{item.label}</strong>
+                    <span>{item.blurb}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </details>
       ))}
       <a class="nav-mobile-official" href={OFFICIAL.home} target="_blank" rel="noopener noreferrer">
         Official town site <span aria-hidden="true">↗</span>

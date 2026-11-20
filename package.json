@@ -18,7 +18,8 @@
     "lint": "node scripts/lint.mjs"
   },
   "dependencies": {
-    "astro": "5.16.6"
+    "astro": "5.16.6",
+    "maplibre-gl": "^5.24.1"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.5",

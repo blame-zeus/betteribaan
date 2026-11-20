@@ -1,0 +1,154 @@
+{
+  "title": "Better Ibaan datasets",
+  "note": "Static datasets for Ibaan, Batangas. Values are included only when tied to a checked source. Gaps are listed with their status.",
+  "verifiedOn": "2026-11-20",
+  "datasets": [
+    {
+      "id": "municipality",
+      "path": "/data/municipality.json",
+      "records": 1,
+      "status": "Verified"
+    },
+    {
+      "id": "services",
+      "path": "/data/services.json",
+      "offices": 19,
+      "services": 176,
+      "status": "Verified"
+    },
+    {
+      "id": "officials",
+      "path": "/data/officials.json",
+      "records": 12,
+      "status": "Verified"
+    },
+    {
+      "id": "resorts",
+      "path": "/data/resorts.json",
+      "records": 9,
+      "status": "Verified"
+    },
+    {
+      "id": "bids",
+      "path": "/data/bids.json",
+      "records": 11,
+      "status": "Verified"
+    },
+    {
+      "id": "infrastructure",
+      "path": "/data/infrastructure.json",
+      "records": 11,
+      "status": "Verified"
+    },
+    {
+      "id": "competitiveness",
+      "path": "/data/competitiveness.json",
+      "years": 10,
+      "pillars": 5,
+      "status": "Verified"
+    },
+    {
+      "id": "barangays-geojson",
+      "path": "/data/barangays.geojson",
+      "features": 26,
+      "status": "Approximate geometry"
+    },
+    {
+      "id": "iba-an",
+      "path": "/data/iba-an.json",
+      "status": "Combined profile"
+    },
+    {
+      "id": "financials",
+      "path": "/data/financials.json",
+      "status": "Not published"
+    },
+    {
+      "id": "fdp-filings",
+      "path": "/data/fdp-filings.json",
+      "status": "Could not verify"
+    },
+    {
+      "id": "documents",
+      "path": "/data/documents.json",
+      "status": "Index only"
+    },
+    {
+      "id": "holidays",
+      "path": "/data/holidays.json",
+      "status": "Not published"
+    }
+  ],
+  "provenance": {
+    "population": 2020,
+    "sources": {
+      "profile": "https://www.ibaan.gov.ph/general-information/",
+      "officials": "https://www.ibaan.gov.ph/government-officials/",
+      "departments": "https://www.ibaan.gov.ph/",
+      "bids": "https://www.ibaan.gov.ph/bids-awards/results/",
+      "invitations": "https://www.ibaan.gov.ph/bids-awards/invitation/",
+      "hotlines": "https://www.ibaan.gov.ph/info/group/hotlines/",
+      "resorts": "https://www.ibaan.gov.ph/tourism/resorts/",
+      "restaurants": "https://www.ibaan.gov.ph/tourism/restaurants/",
+      "products": "https://www.ibaan.gov.ph/tourism/products/",
+      "announcements": "https://www.ibaan.gov.ph/archive/announcements/",
+      "events": "https://www.ibaan.gov.ph/archive/events/",
+      "vision": "https://www.ibaan.gov.ph/vision-mission/",
+      "awards": "https://www.ibaan.gov.ph/info/group/awards/",
+      "cmci": "https://cmci.dti.gov.ph/lgu-profile.php?lgu=Ibaan&year=2024",
+      "cmciAbout": "https://cmci.dti.gov.ph/about-index.php",
+      "cmciDocs": "https://cmci.dti.gov.ph/download-lgu-docs.php",
+      "psgc": "https://psa.gov.ph/classification/psgc",
+      "census": "https://psa.gov.ph/statistics/census/population-and-housing",
+      "fdpp": "https://fdpp.dilg.gov.ph/",
+      "online": "https://online.ibaan.gov.ph/Ibaan/OnlineServices/"
+    }
+  },
+  "withheld": [
+    {
+      "fact": "PSGC codes for Ibaan and its barangays",
+      "status": "Could not verify",
+      "note": "PSA classification pages were not reachable from this build. No PSGC code appears on the official Ibaan pages."
+    },
+    {
+      "fact": "Effective date and issuance for the second-class income classification",
+      "status": "Could not verify",
+      "note": "Both the municipal profile and CMCI state second class, but neither gives an effective date or issuing order."
+    },
+    {
+      "fact": "Barangay-level population and household counts",
+      "status": "Could not verify",
+      "note": "The municipal profile publishes only town-level 2020 census figures. PSA census tables were not reachable from this build."
+    },
+    {
+      "fact": "Local holiday calendar",
+      "status": "Not published",
+      "note": "No dedicated holiday list was found in the municipal navigation, announcements, or advisories."
+    },
+    {
+      "fact": "Local ordinances, resolutions, and executive orders",
+      "status": "Not published",
+      "note": "No Ibaan-specific local legislation repository was found. The CMCI document library did not show Ibaan entries when checked."
+    },
+    {
+      "fact": "Narrative town history with dates",
+      "status": "Not published",
+      "note": "The municipal site has profile and heritage pages, but no history page. This guide does not import unsourced historical claims."
+    },
+    {
+      "fact": "Annual budgets, financial statements, and audit reports",
+      "status": "Not published",
+      "note": "No public finance documents were found in the municipal navigation or archive pages."
+    },
+    {
+      "fact": "DILG Full Disclosure Policy filings",
+      "status": "Could not verify",
+      "note": "The DILG disclosure portal did not resolve from this build, and no local mirror was found on the municipal site."
+    },
+    {
+      "fact": "Emergency hotline numbers",
+      "status": "Could not verify",
+      "note": "The municipality publishes its hotline list as an image. The numbers are not transcribed here because they cannot be checked as text."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import GapPanel from '../components/GapPanel.astro';
+import { GAPS, SOURCE, type GapEntry } from '../data/ibaan-record';
+import { OFFICIAL } from '../lib/site';
+
+const legislationGap = GAPS.filter((gap) => gap.fact.includes('ordinances')) as GapEntry[];
+---
+
+<Base
+  title="Legislation"
+  description="Where Ibaan local legislation can be checked, with the missing repository marked as a gap."
+  crumbs={[{ label: 'Government' }, { label: 'Legislation' }]}
+>
+  <PageHeader
+    title="Local legislation, not invented."
+    intro="No Ibaan-specific repository of ordinances, resolutions, or executive orders was found. This page names the pages that were checked and leaves the local legal record where it belongs."
+    note="This guide is not a legal source. For a binding text, use the municipal or competent government record."
+  >
+    <Toc
+      items={[
+        { id: 'repository', label: 'Repository check' },
+        { id: 'other-records', label: 'Other public records' },
+        { id: 'gap', label: 'The open gap' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="repository">
+    <div class="frame">
+      <div class="status-card" data-ui>
+        <h3>No verified Ibaan local legislation repository</h3>
+        <p>
+          The municipal site does not present an ordinance or resolution archive in its navigation.
+          The DTI CMCI document library was checked and did not show Ibaan entries.
+        </p>
+      </div>
+      <SourceNote
+        sources={[SOURCE.cmciDocs, SOURCE.departments]}
+        title="Repository check"
+        data="CMCI document library and the municipal site"
+        note="DILG issuances are national documents. They are not substituted for Ibaan local legislation here."
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="other-records">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Records that are published.</h2>
+        <div class="section-copy">
+          <p>These pages are public, but they are not a substitute for a certified ordinance text.</p>
+        </div>
+      </div>
+      <div class="directory-grid">
+        <div class="directory-card">
+          <h3>Announcements</h3>
+          <p class="card-meta">Municipality of Ibaan</p>
+          <a href={OFFICIAL.announcements} target="_blank" rel="noopener noreferrer">Open the archive <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Bids and awards</h3>
+          <p class="card-meta">Procurement notices and results</p>
+          <a href={OFFICIAL.bids} target="_blank" rel="noopener noreferrer">Open the official page <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Vision and mission</h3>
+          <p class="card-meta">Municipal policy statement</p>
+          <a href={OFFICIAL.vision} target="_blank" rel="noopener noreferrer">Open the official page <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="gap">
+    <div class="frame">
+      <GapPanel items={legislationGap} title="The open gap" intro="One legislation record remains unresolved." />
+    </div>
+  </section>
+</Base>

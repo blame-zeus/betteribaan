@@ -1,5 +1,5 @@
 ---
-import { NAV, OFFICIAL, SITE } from '../lib/site';
+import { NAV_GROUPS, OFFICIAL, SITE } from '../lib/site';
 
 const year = new Date().getFullYear();
 ---
@@ -9,36 +9,40 @@ const year = new Date().getFullYear();
     <div class="footer-lead">
       <a class="footer-display" href="/">Iba ang Ibaan.</a>
       <p class="footer-summary">
-        A field guide to the town, its 26 barangays, and the tree that gave it a name.
+        An independent civic guide to the public record of Ibaan, Batangas.
       </p>
     </div>
 
-    <div class="footer-columns">
-      <div>
-        <h2>Read</h2>
+    <nav class="footer-directory" aria-label="Footer">
+      {NAV_GROUPS.map((group) => (
+        <section class="footer-group">
+          <h2>{group.label}</h2>
+          <ul>
+            {group.items.map((item) => (
+              <li><a href={item.href}>{item.label}</a></li>
+            ))}
+          </ul>
+        </section>
+      ))}
+      <section class="footer-group">
+        <h2>Keep reading</h2>
         <ul>
-          {NAV.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
-          <li><a href="/#barangays">Barangay map</a></li>
+          <li><a href="/geography">Geography and boundary map</a></li>
+          <li><a href="/heritage">The Iba tree</a></li>
+          <li><a href="/sitemap.xml">XML sitemap</a></li>
+          <li><a href="/data/iba-an.json">Ibaan dataset</a></li>
         </ul>
-      </div>
-      <div>
-        <h2>Official</h2>
-        <ul>
-          <li><a href={OFFICIAL.profile} target="_blank" rel="noopener noreferrer">Municipal profile <span aria-hidden="true">↗</span></a></li>
-          <li><a href={OFFICIAL.ibaTree} target="_blank" rel="noopener noreferrer">Iba Tree <span aria-hidden="true">↗</span></a></li>
-          <li><a href={OFFICIAL.officials} target="_blank" rel="noopener noreferrer">Elected officials <span aria-hidden="true">↗</span></a></li>
-          <li><a href={OFFICIAL.bids} target="_blank" rel="noopener noreferrer">Bids and awards <span aria-hidden="true">↗</span></a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Project</h2>
-        <ul>
-          <li><a href="/about">About this guide</a></li>
-          <li><a href="/sources">Sources and credits</a></li>
-          <li><a href="/data/iba-an.json">Open data</a></li>
-          <li><a href="/sitemap.xml">Sitemap</a></li>
-        </ul>
-      </div>
+      </section>
+    </nav>
+
+    <div class="footer-official">
+      <h2>Official sources</h2>
+      <ul>
+        <li><a href={OFFICIAL.home} target="_blank" rel="noopener noreferrer">Municipality of Ibaan <span aria-hidden="true">↗</span></a></li>
+        <li><a href={OFFICIAL.profile} target="_blank" rel="noopener noreferrer">General information <span aria-hidden="true">↗</span></a></li>
+        <li><a href={OFFICIAL.officials} target="_blank" rel="noopener noreferrer">Elected officials <span aria-hidden="true">↗</span></a></li>
+        <li><a href={OFFICIAL.bids} target="_blank" rel="noopener noreferrer">Bids and awards <span aria-hidden="true">↗</span></a></li>
+      </ul>
     </div>
 
     <div class="footer-base">
@@ -47,9 +51,8 @@ const year = new Date().getFullYear();
         Municipality of Ibaan.
       </p>
       <p>
-        Photographs by LMP 2001 and Ralff Nestor Nacor, CC BY-SA 4.0; Iba tree photograph by the
-        Municipality of Ibaan. Map boundaries from PSA/NAMRIA 2023, simplified.
-        <a href="/sources">Full credits</a>.
+        Every figure is tied to a source, and gaps are marked as gaps. Photographs and boundary data are
+        credited on the <a href="/sources">sources page</a>.
       </p>
       <p class="footer-top-link"><a href="#main">Back to top ↑</a><span> · {year}</span></p>
     </div>

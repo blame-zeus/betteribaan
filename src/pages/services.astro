@@ -1,0 +1,107 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import { OFFICES, OFFICE_COUNT, SERVICE_COUNT, SOURCE } from '../data/ibaan-record';
+import { OFFICIAL } from '../lib/site';
+---
+
+<Base
+  title="Municipal services"
+  description="The service entries listed by the Municipality of Ibaan, grouped by office and linked to the official pages."
+  crumbs={[{ label: 'Services' }]}
+>
+  <PageHeader
+    title="Services, as the town lists them."
+    intro={`The municipal site publishes ${SERVICE_COUNT} service entries under ${OFFICE_COUNT} offices. This page keeps that directory readable and sends every service back to its official page.`}
+    note="Requirements, fees, and forms live on the municipal pages. Many service pages are image-only, so they are not transcribed here."
+  >
+    <Toc
+      items={[
+        { id: 'office-directory', label: 'Office directory' },
+        { id: 'online-services', label: 'Online services' },
+        { id: 'what-is-missing', label: 'What is missing' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="office-directory">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Browse by office.</h2>
+        <div class="section-copy">
+          <p>
+            Counts follow the Services menu on the municipal site. Open an office to see every linked
+            service entry. Titles are kept as published.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        {OFFICES.map((office, index) => (
+          <details class="service-office" data-ui open={index < 2}>
+            <summary>
+              <strong>{office.name}</strong>
+              <span>{office.services.length} {office.services.length === 1 ? 'entry' : 'entries'}</span>
+            </summary>
+            <ol>
+              {office.services.map((service) => (
+                <li>
+                  <a href={service.href} target="_blank" rel="noopener noreferrer">
+                    {service.title} <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </details>
+        ))}
+      </div>
+
+      <SourceNote
+        sources={[SOURCE.departments]}
+        title="Services directory"
+        data="Office and service titles from the municipal Services menu"
+        note="Service detail pages were checked as published. Where a page is an image rather than text, no fee or requirement is inferred from it."
+        refresh="Re-check when the municipal site changes its Services menu"
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="online-services">
+    <div class="frame">
+      <div class="note-panel">
+        <h2>Online services</h2>
+        <p>
+          The municipality links to a separate Online Services System for account-based transactions.
+          This guide does not host a login or collect applications.
+        </p>
+        <p class="note-actions">
+          <a class="btn" href={OFFICIAL.online} target="_blank" rel="noopener noreferrer">
+            Open the official portal <span aria-hidden="true">↗</span>
+          </a>
+          <a class="text-link" href="/government">See the offices behind these services <span aria-hidden="true">→</span></a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="what-is-missing">
+    <div class="frame">
+      <div class="callout">
+        <strong>What is missing</strong>
+        <p>
+          Several service pages publish requirements as images only. Those images are not converted
+          into text here, because a transcription could not be checked against the source. Use the
+          official links for the current requirements and fees.
+        </p>
+      </div>
+      <SourceNote
+        sources={[SOURCE.online]}
+        title="Online portal"
+        data="Official portal link from the municipal site"
+        note="An account may be required by the portal. This site cannot see application status."
+      />
+    </div>
+  </section>
+</Base>

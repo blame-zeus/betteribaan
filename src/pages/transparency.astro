@@ -1,0 +1,87 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import GapPanel from '../components/GapPanel.astro';
+import { GAPS, SOURCE, type GapEntry } from '../data/ibaan-record';
+import { NAV_GROUPS } from '../lib/site';
+
+const transparencyGroup = NAV_GROUPS.find((group) => group.label === 'Transparency');
+const transparencyPages = transparencyGroup?.items ?? [];
+const disclosureGaps = GAPS.filter(
+  (gap) =>
+    gap.fact.includes('budgets') ||
+    gap.fact.includes('Full Disclosure') ||
+    gap.fact.includes('ordinances'),
+) as GapEntry[];
+---
+
+<Base
+  title="Transparency"
+  description="A map of Ibaan's public-record sections, with unavailable disclosures marked as gaps."
+  crumbs={[{ label: 'Transparency' }]}
+>
+  <PageHeader
+    title="The public record, in sections."
+    intro="This guide separates what the town publishes from what could not be verified. Procurement and project notices have official pages; budgets, audit reports, and DILG filings do not have checked local sources here."
+    note="A missing record is shown as a gap, never as a zero value or a copied figure from another town."
+  >
+    <Toc
+      items={[
+        { id: 'sections', label: 'Record sections' },
+        { id: 'disclosures', label: 'Disclosure gaps' },
+        { id: 'method', label: 'How to read this' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="sections">
+    <div class="frame">
+      <div class="nav-card-grid">
+        {transparencyPages.map((item) => (
+          <a class="nav-card" href={item.href}>
+            <strong>{item.label}</strong>
+            <span>{item.blurb}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="disclosures">
+    <div class="frame">
+      <GapPanel
+        items={disclosureGaps}
+        title="Disclosures we cannot show"
+        intro="These are the public-finance and legal-record fields that need a reachable primary source."
+      />
+      <SourceNote
+        sources={[SOURCE.fdpp, SOURCE.bids, SOURCE.cmciDocs]}
+        title="Disclosure check"
+        data="DILG portal, municipal bids, and CMCI document library"
+        note="The DILG portal did not resolve from this build. No local mirror was found on the municipal site."
+        refresh="Re-check when a local disclosure portal or document archive becomes reachable"
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="method">
+    <div class="frame">
+      <div class="prose-wide">
+        <h2>How to read this section</h2>
+        <p>
+          Every entry on this site is linked to a municipal or government-hosted page. If a fact is
+          not linked, it should not be treated as verified. Where two official pages disagree, the
+          disagreement is recorded on the <a href="/sources">sources page</a>.
+        </p>
+        <p>
+          The vocabulary is deliberately narrow: Verified means checked against the linked page;
+          Reported means the source states it but it is not independently confirmed; Unverified
+          means the fact is not published here. The source note on each page states the checked date
+          separately from the data's own as-of date.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>

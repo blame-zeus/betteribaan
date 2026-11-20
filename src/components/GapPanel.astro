@@ -1,0 +1,37 @@
+---
+import { GAPS, SOURCE, type GapEntry } from '../data/ibaan-record';
+
+interface Props {
+  items?: readonly GapEntry[];
+  title?: string;
+  intro?: string;
+}
+
+const {
+  items = GAPS,
+  title = 'What we could not verify',
+  intro = 'These records are not presented as facts on this site. Each line names the best public page to check next.',
+} = Astro.props;
+---
+
+<section class="gap-panel" data-ui>
+  <h2>{title}</h2>
+  <p class="gap-intro">{intro}</p>
+  <ul class="gap-list">
+    {items.map((gap) => {
+      const source = SOURCE[gap.sourceKey];
+      return (
+        <li>
+          <div class="gap-top">
+            <h3>{gap.fact}</h3>
+            <span class="gap-status">{gap.status}</span>
+          </div>
+          <p>{gap.note}</p>
+          <a href={source.url} target="_blank" rel="noopener noreferrer">
+            {source.label} <span aria-hidden="true">↗</span>
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</section>

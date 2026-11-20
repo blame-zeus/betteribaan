@@ -1,0 +1,90 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import BarangayMap from '../components/BarangayMap.astro';
+import { BID_RESULTS, SOURCE } from '../data/ibaan-record';
+---
+
+<Base
+  title="Infrastructure"
+  description="Infrastructure projects named in Ibaan's published bid results, with the map used only for orientation."
+  crumbs={[{ label: 'Transparency' }, { label: 'Infrastructure' }]}
+>
+  <PageHeader
+    title="Projects named in the bid record."
+    intro="The municipal bid results list these projects under the 2026 filter. The list shows titles and processing status only; no budget or contract price is visible in the extracted page text."
+    note="A bid result is not proof of completion. The map below is an orientation aid, not a project location map."
+  >
+    <Toc
+      items={[
+        { id: 'projects', label: 'Project index' },
+        { id: 'map', label: 'Orientation map' },
+        { id: 'limits', label: 'What the record omits' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="projects">
+    <div class="frame">
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Infrastructure-related projects in Ibaan's 2026 bid results</caption>
+          <thead>
+            <tr>
+              <th scope="col">Project as listed</th>
+              <th scope="col">Bidding status</th>
+              <th scope="col">Award status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {BID_RESULTS.map((bid) => (
+              <tr>
+                <th scope="row">{bid.title}</th>
+                <td>{bid.status}</td>
+                <td>{bid.award}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <SourceNote
+        sources={[SOURCE.bids]}
+        title="Bid results"
+        data="2026-filtered municipal bid results, checked as published"
+        note="Titles are kept as listed. Where a barangay is named, it is part of the title and not a geocoded project location."
+        refresh="Re-check the results page after each filtering change"
+      />
+    </div>
+  </section>
+
+  <section class="section map-section" id="map">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Orientation, not a project map.</h2>
+        <div class="section-copy">
+          <p>
+            Use this map to find the barangays named in the bid titles. It does not plot project
+            sites, show completion, or encode any amount of money in terrain height.
+          </p>
+          <p class="section-link"><a href="/barangays">Open the full barangay guide <span aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+      <BarangayMap />
+    </div>
+  </section>
+
+  <section class="section-tight" id="limits">
+    <div class="frame">
+      <div class="callout">
+        <strong>What the bid record omits</strong>
+        <p>
+          No approved budget, contract price, Notice of Award date, completion date, or as-built
+          status was visible on the checked results page. Those fields are left blank rather than
+          inferred from the project title.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>

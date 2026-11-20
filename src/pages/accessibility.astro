@@ -1,0 +1,95 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import { NAV_GROUPS } from '../lib/site';
+---
+
+<Base
+  title="Accessibility"
+  description="How Better Ibaan is built to be usable with keyboard, reduced motion, and map fallbacks."
+  crumbs={[{ label: 'About' }, { label: 'Accessibility' }]}
+>
+  <PageHeader
+    title="Usable without the extra effects."
+    intro="This page describes the accessibility choices in Better Ibaan. It is a working note, not a formal conformance claim."
+    note="If something on this site blocks you, the underlying municipal source is always linked and can be used directly."
+  >
+    <Toc
+      items={[
+        { id: 'navigation', label: 'Navigation' },
+        { id: 'map', label: 'Map fallback' },
+        { id: 'motion', label: 'Motion and contrast' },
+        { id: 'limits', label: 'Limits' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="navigation">
+    <div class="frame">
+      <div class="prose-wide">
+        <h2>Keyboard and landmarks</h2>
+        <p>
+          The header, main content, navigation, and footer are separate landmarks. A skip link is
+          available before the header. Menus, search, source notes, and service lists use native
+          buttons and disclosure elements, so they work with a keyboard without custom key handlers.
+        </p>
+        <p>
+          Every page is reachable from the header menu and the footer directory. The
+          <a href="/sitemap">sitemap</a> lists the same routes in one place.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="map">
+    <div class="frame">
+      <div class="prose-wide">
+        <h2>Map fallback</h2>
+        <p>
+          The interactive barangay map needs WebGL and tile access. If either is unavailable, the
+          page keeps a flat SVG outline of the same 26 barangays with a text index. The 2D view is
+          also available from the map toolbar in the WebGL view.
+        </p>
+        <p>
+          Map controls have text labels and state changes are announced through pressed states. The
+          map is an orientation aid; all barangay names are also available as a table on the
+          <a href="/barangays">barangays page</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="motion">
+    <div class="frame">
+      <div class="prose-wide">
+        <h2>Motion and contrast</h2>
+        <p>
+          When reduced motion is requested, entrance animations and smooth scrolling are disabled.
+          The light and dark themes are explicit choices and both use high-contrast text on quiet
+          backgrounds. Type is self-hosted so the page does not depend on a third-party font service.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="limits">
+    <div class="frame">
+      <div class="callout">
+        <strong>Limits of this note</strong>
+        <p>
+          No automated accessibility audit is claimed here. External municipal pages and social
+          links follow their own accessibility practices and are outside this site.
+        </p>
+      </div>
+      <div class="nav-card-grid">
+        {NAV_GROUPS.map((group) => (
+          <a class="nav-card" href={group.href}>
+            <strong>{group.label}</strong>
+            <span>{group.blurb}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

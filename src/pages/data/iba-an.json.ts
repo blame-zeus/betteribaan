@@ -1,9 +1,10 @@
 import type { APIRoute } from 'astro';
 import { BARANGAYS, MAP, NEIGHBOURS, TOWN } from '../../data/town';
 import { OFFICIAL } from '../../lib/site';
+import { jsonResponse } from '../../lib/json';
 
-export const GET: APIRoute = () => {
-  const payload = {
+export const GET: APIRoute = () =>
+  jsonResponse({
     generated: MAP.generated,
     about:
       'Ibaan, Batangas: a sourced town profile, barangay list, and simplified map geometry for orientation.',
@@ -26,13 +27,13 @@ export const GET: APIRoute = () => {
     barangays: BARANGAYS.map((barangay) => ({
       name: barangay.name,
       slug: barangay.slug,
-      psgc: barangay.code,
+      boundaryCode: barangay.code,
       mapAreaKm2: barangay.areaKm2,
       mapPath: barangay.path,
       mapLabel: barangay.label,
     })),
     mapNote:
-      'Map geometry is from PSA/NAMRIA 2023 administrative boundaries, simplified at roughly 500 m. It is for orientation only. The mapped area of the 26 simplified polygons sums to about 70.32 km2; the official municipal land area is 68.99 km2.',
+      'Map geometry is from PSA/NAMRIA 2023 administrative boundaries, simplified at roughly 500 m. It is for orientation only. Boundary codes come from that file and are not presented as verified PSGC codes. The mapped area of the 26 simplified polygons sums to about 70.32 km2; the official municipal land area is 68.99 km2.',
     sources: {
       municipalProfile: OFFICIAL.profile,
       municipalHome: OFFICIAL.home,
@@ -40,12 +41,4 @@ export const GET: APIRoute = () => {
       naturalHeritage: OFFICIAL.naturalHeritage,
       boundaries: MAP.source.barangays,
     },
-  };
-
-  return new Response(`${JSON.stringify(payload, null, 2)}\n`, {
-    headers: {
-      'Content-Type': 'application/json; charset=utf-8',
-      'Cache-Control': 'public, max-age=3600',
-    },
   });
-};

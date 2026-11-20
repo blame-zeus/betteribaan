@@ -1,0 +1,139 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import GapPanel from '../components/GapPanel.astro';
+import { TOWN } from '../data/town';
+import {
+  CMCI_PILLARS_2024,
+  CMCI_RANKS,
+  GAPS,
+  SOURCE,
+  type GapEntry,
+} from '../data/ibaan-record';
+import { formatNumber } from '../lib/format';
+
+const statGaps = GAPS.filter(
+  (gap) =>
+    gap.fact.includes('PSGC') ||
+    gap.fact.includes('Barangay-level') ||
+    gap.fact.includes('income classification') ||
+    gap.fact.includes('Economy'),
+) as GapEntry[];
+---
+
+<Base
+  title="Statistics"
+  description="Ibaan's published census figures and CMCI rank history, with conflicting figures named."
+  crumbs={[{ label: 'Statistics' }]}
+>
+  <PageHeader
+    title="Counts that can be checked."
+    intro="The municipal profile gives one census snapshot and one land-area figure. The DTI CMCI adds a ten-year competitiveness rank series, with its own population field."
+    note="The CMCI population field conflicts with the municipal census figure. It is kept inside the CMCI section only."
+  >
+    <Toc
+      items={[
+        { id: 'profile', label: 'Municipal profile' },
+        { id: 'cmci', label: 'Competitiveness ranks' },
+        { id: 'pillars', label: '2024 pillars' },
+        { id: 'gaps', label: 'Unverified figures' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="profile">
+    <div class="frame">
+      <dl class="stats-grid">
+        <div><dt>{formatNumber(TOWN.population)}</dt><dd>residents, 2020 census</dd></div>
+        <div><dt>{formatNumber(TOWN.households)}</dt><dd>households, 2020 census</dd></div>
+        <div><dt>{TOWN.barangayCount}</dt><dd>barangays</dd></div>
+        <div><dt>{TOWN.landAreaKm2}</dt><dd>square kilometres</dd></div>
+        <div><dt>{TOWN.landAreaShare}%</dt><dd>of Batangas land area</dd></div>
+        <div><dt>2nd class</dt><dd>municipality</dd></div>
+      </dl>
+      <SourceNote
+        sources={[SOURCE.profile]}
+        title="Municipal profile figures"
+        data="2020 census values and land area as stated by the municipality"
+        note="Elevation and distance to Manila conflict within the same official profile, so neither is published here."
+        refresh="Re-check after a new census or a revised municipal profile"
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="cmci">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Ten years of ranks.</h2>
+        <div class="section-copy">
+          <p>
+            The CMCI rank series follows the DTI profile for Ibaan. Ranks are shown as published;
+            no overall score is added where the profile does not show one.
+          </p>
+        </div>
+      </div>
+      <ul class="timeline">
+        {CMCI_RANKS.map((entry) => (
+          <li>
+            <strong>{entry.year}</strong>
+            <p>{entry.rank} in the Cities and Municipalities Competitive Index</p>
+          </li>
+        ))}
+      </ul>
+      <SourceNote
+        sources={[SOURCE.cmci]}
+        title="CMCI rank history"
+        data="DTI LGU profiles for Ibaan, 2015 to 2024"
+        note="CMCI methodology changed across years. Rank movement is not a like-for-like score series. The CMCI population field is not used for municipal statistics here."
+        refresh="Re-check after each CMCI release"
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="pillars">
+    <div class="frame">
+      <div class="section-head">
+        <h2>The 2024 pillars.</h2>
+        <div class="section-copy">
+          <p>
+            The 2024 profile records five pillars, each weighted at twenty percent. Ranks and scores
+            below are CMCI-specific values.
+          </p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Ibaan's 2024 CMCI pillar ranks and scores</caption>
+          <thead>
+            <tr>
+              <th scope="col">Pillar</th>
+              <th scope="col">Rank</th>
+              <th scope="col">Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            {CMCI_PILLARS_2024.map((pillar) => (
+              <tr>
+                <th scope="row">{pillar.name}</th>
+                <td class="num">{pillar.rank}</td>
+                <td class="num">{pillar.score.toFixed(4)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="gaps">
+    <div class="frame">
+      <GapPanel
+        items={statGaps}
+        title="Statistics not published here"
+        intro="These fields need a reachable primary table before they can be shown as Ibaan facts."
+      />
+    </div>
+  </section>
+</Base>

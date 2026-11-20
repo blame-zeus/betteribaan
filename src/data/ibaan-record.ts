@@ -1,0 +1,1372 @@
+/**
+ * Ibaan public-record data. Every entry here was read from an official Ibaan
+ * or government-hosted page on 2026-11-20. Values that could not be
+ * confirmed are listed under GAPS and are never rendered as facts.
+ */
+import { OFFICIAL } from '../lib/site';
+
+export const VERIFIED_ON = '2026-11-20';
+
+export const SOURCE = {
+  profile: {
+    label: 'Municipality of Ibaan · General Information',
+    publisher: 'Municipality of Ibaan',
+    url: OFFICIAL.profile,
+    accessed: VERIFIED_ON,
+  },
+  officials: {
+    label: 'Municipality of Ibaan · Municipal Government Officials',
+    publisher: 'Municipality of Ibaan',
+    url: OFFICIAL.officials,
+    accessed: VERIFIED_ON,
+  },
+  departments: {
+    label: 'Municipality of Ibaan · Departments / Offices',
+    publisher: 'Municipality of Ibaan',
+    url: 'https://www.ibaan.gov.ph/',
+    accessed: VERIFIED_ON,
+  },
+  bids: {
+    label: 'Municipality of Ibaan · Bid Results',
+    publisher: 'Municipality of Ibaan',
+    url: 'https://www.ibaan.gov.ph/bids-awards/results/',
+    accessed: VERIFIED_ON,
+  },
+  invitations: {
+    label: 'Municipality of Ibaan · Invitation to Bid',
+    publisher: 'Municipality of Ibaan',
+    url: 'https://www.ibaan.gov.ph/bids-awards/invitation/',
+    accessed: VERIFIED_ON,
+  },
+  hotlines: {
+    label: 'Municipality of Ibaan · Hotlines',
+    publisher: 'Municipality of Ibaan',
+    url: 'https://www.ibaan.gov.ph/info/group/hotlines/',
+    accessed: VERIFIED_ON,
+  },
+  resorts: {
+    label: 'Municipality of Ibaan · Resorts and Accommodations',
+    publisher: 'Municipality of Ibaan',
+    url: 'https://www.ibaan.gov.ph/tourism/resorts/',
+    accessed: VERIFIED_ON,
+  },
+  restaurants: {
+    label: 'Municipality of Ibaan · Restaurants',
+    publisher: 'Municipality of Ibaan',
+    url: 'https://www.ibaan.gov.ph/tourism/restaurants/',
+    accessed: VERIFIED_ON,
+  },
+  products: {
+    label: 'Municipality of Ibaan · Products / Foods',
+    publisher: 'Municipality of Ibaan',
+    url: 'https://www.ibaan.gov.ph/tourism/products/',
+    accessed: VERIFIED_ON,
+  },
+  announcements: {
+    label: 'Municipality of Ibaan · Announcements archive',
+    publisher: 'Municipality of Ibaan',
+    url: 'https://www.ibaan.gov.ph/archive/announcements/',
+    accessed: VERIFIED_ON,
+  },
+  events: {
+    label: 'Municipality of Ibaan · Events archive',
+    publisher: 'Municipality of Ibaan',
+    url: 'https://www.ibaan.gov.ph/archive/events/',
+    accessed: VERIFIED_ON,
+  },
+  vision: {
+    label: 'Municipality of Ibaan · Vision and Mission',
+    publisher: 'Municipality of Ibaan',
+    url: 'https://www.ibaan.gov.ph/vision-mission/',
+    accessed: VERIFIED_ON,
+  },
+  awards: {
+    label: 'Municipality of Ibaan · Achievements and Awards',
+    publisher: 'Municipality of Ibaan',
+    url: 'https://www.ibaan.gov.ph/info/group/awards/',
+    accessed: VERIFIED_ON,
+  },
+  cmci: {
+    label: 'DTI · Cities and Municipalities Competitive Index, Ibaan 2024',
+    publisher: 'Department of Trade and Industry',
+    url: 'https://cmci.dti.gov.ph/lgu-profile.php?lgu=Ibaan&year=2024',
+    accessed: VERIFIED_ON,
+  },
+  cmciAbout: {
+    label: 'DTI · About the CMCI',
+    publisher: 'Department of Trade and Industry',
+    url: 'https://cmci.dti.gov.ph/about-index.php',
+    accessed: VERIFIED_ON,
+  },
+  cmciDocs: {
+    label: 'DTI · Local Ordinances and Resolutions',
+    publisher: 'Department of Trade and Industry',
+    url: 'https://cmci.dti.gov.ph/download-lgu-docs.php',
+    accessed: VERIFIED_ON,
+  },
+  psgc: {
+    label: 'Philippine Statistics Authority · PSGC',
+    publisher: 'Philippine Statistics Authority',
+    url: 'https://psa.gov.ph/classification/psgc',
+    accessed: VERIFIED_ON,
+  },
+  census: {
+    label: 'Philippine Statistics Authority · Census and Housing',
+    publisher: 'Philippine Statistics Authority',
+    url: 'https://psa.gov.ph/statistics/census/population-and-housing',
+    accessed: VERIFIED_ON,
+  },
+  fdpp: {
+    label: 'DILG · Full Disclosure Policy Portal',
+    publisher: 'Department of the Interior and Local Government',
+    url: 'https://fdpp.dilg.gov.ph/',
+    accessed: VERIFIED_ON,
+  },
+  online: {
+    label: 'Municipality of Ibaan · Online Services System',
+    publisher: 'Municipality of Ibaan',
+    url: 'https://online.ibaan.gov.ph/Ibaan/OnlineServices/',
+    accessed: VERIFIED_ON,
+  },
+} as const;
+
+export type SourceKey = keyof typeof SOURCE;
+
+export interface SourceRef {
+  label: string;
+  publisher: string;
+  url: string;
+  accessed: string;
+}
+
+export interface ServiceEntry {
+  title: string;
+  href: string;
+}
+
+export interface OfficeEntry {
+  name: string;
+  services: ServiceEntry[];
+}
+
+export interface OfficialEntry {
+  name: string;
+  role: string;
+  committees?: string[];
+}
+
+export interface ResortEntry {
+  name: string;
+  location: string;
+  hours: string;
+  contact?: string;
+  phones: string[];
+  facebook: string;
+}
+
+export interface BidEntry {
+  title: string;
+  status: string;
+  award: string;
+}
+
+export interface RankEntry {
+  year: number;
+  rank: string;
+}
+
+export interface PillarEntry {
+  name: string;
+  rank: string;
+  score: number;
+}
+
+export interface GapEntry {
+  fact: string;
+  status: 'Not published' | 'Could not verify';
+  note: string;
+  sourceKey: SourceKey;
+}
+
+export const OFFICES: OfficeEntry[] = [
+  {
+    "name": "Office of the Municipal Accountant",
+    "services": [
+      {
+        "title": "Issuance of BIR Forms 2306, 2307 to local supplier of goods and services",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-bir-forms-23062307-to-local-supplier-of-goods-and-services/"
+      },
+      {
+        "title": "Issuance of Guaranty Deposits, Retention Fees to local supplier of goods and services",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-guaranty-deposits-retention-fees-to-local-supplier-of-goods-and-services/"
+      },
+      {
+        "title": "Submission of Disbursement Vouchers (Barangay Transactions)",
+        "href": "https://www.ibaan.gov.ph/info/submission-of-disbursement-vouchers-barangay-transactions/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the Municipal Agriculturist",
+    "services": [
+      {
+        "title": "Conduct of Pre-Marriage Orientation",
+        "href": "https://www.ibaan.gov.ph/info/conduct-of-pre-marriage-orientation/"
+      },
+      {
+        "title": "Implementation of Cattle Fattening Project",
+        "href": "https://www.ibaan.gov.ph/info/implementation-of-cattle-fattening-project/"
+      },
+      {
+        "title": "Implementation of Cattle Dispersal and Re-dispersal Project",
+        "href": "https://www.ibaan.gov.ph/info/implementation-of-cattle-dispersal-and-re-dispersal-project/"
+      },
+      {
+        "title": "Issuance of Inspection Certificates",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-inspection-certificates/"
+      },
+      {
+        "title": "Organization and Capability Building of Farmers, Fisherfolks, Women and Youth",
+        "href": "https://www.ibaan.gov.ph/info/organization-and-capability-building-of-farmers-fisherfolks-women-and-youth/"
+      },
+      {
+        "title": "Provision of Agricultural Data",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-agricultural-data/"
+      },
+      {
+        "title": "Provision of Animal Biologics",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-animal-biologics/"
+      },
+      {
+        "title": "Provision of Animal Consultation and Treatment Services",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-animal-consultation-and-treatment-services/"
+      },
+      {
+        "title": "Provision of Animal Vaccination (Mass Vaccination)",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-animal-vaccination-mass-vaccination/"
+      },
+      {
+        "title": "Provision of Animal Vaccination (Walk-in)",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-animal-vaccination-walk-in/"
+      },
+      {
+        "title": "Provision of Assistance to Farmers Filing for Insurance",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-assistance-to-farmers-filing-for-insurance/"
+      },
+      {
+        "title": "Provision of Certification",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-certification/"
+      },
+      {
+        "title": "Provision of Farm Equipment and Tools (Free of Use)",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-farm-equipment-and-tools-free-of-use/"
+      },
+      {
+        "title": "Provision of Farming Inputs",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-farming-inputs/"
+      },
+      {
+        "title": "Provision of Technical and Extension Services",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-technical-and-extension-services/"
+      },
+      {
+        "title": "Operation of Biosecurity Checkpoints",
+        "href": "https://www.ibaan.gov.ph/info/operation-of-biosecurity-checkpoints/"
+      },
+      {
+        "title": "Disease Surveillance",
+        "href": "https://www.ibaan.gov.ph/info/disease-surveillance/"
+      },
+      {
+        "title": "Issuance of Certification (Land Reclassification)",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-certification-land-reclassification/"
+      },
+      {
+        "title": "Seasonal Farm Workers to Korea",
+        "href": "https://www.ibaan.gov.ph/info/seasonal-farm-workers-to-korea/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the Municipal Assessor",
+    "services": [
+      {
+        "title": "Annotation , Cancellation of Mortgage",
+        "href": "https://www.ibaan.gov.ph/info/annotation-cancellation-of-mortgage/"
+      },
+      {
+        "title": "Issuance of certifications such as property holdings,land holdings, no property, declared owner, no improvement, no obligations, other certifications related to real properties",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-certifications-such-as-property-holdingsland-holdings-no-property-declared-owner-no-improvement-no-obligations-other-certifications-related-to-real-properties/"
+      },
+      {
+        "title": "Issuance of New Tax Declaration (Newly Declared Building, Machineries, Other Improvement)",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-new-tax-declaration-newly-declared-building-machineries-other-improvement/"
+      },
+      {
+        "title": "Issuance of Tax Declaration for Transfer of Ownership",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-tax-declaration-for-transfer-of-ownership/"
+      },
+      {
+        "title": "Issuance of Vicinity Map, Sketch Map",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-vicinity-mapsketch-map/"
+      },
+      {
+        "title": "Issuance of Certified True Copy of Tax Declaration and other Documents on File Related to Real Properties (Research Fee)",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-certified-true-copy-of-tax-declaration-and-other-documents-on-file-related-to-real-properties-research-fee/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the Municipal Budget Officer",
+    "services": [
+      {
+        "title": "Processing of Obligation Request Form (OBR)",
+        "href": "https://www.ibaan.gov.ph/info/processing-of-obligation-request-form-obr/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the Municipal Engineer",
+    "services": [
+      {
+        "title": "Verification of PD 1096 compliance thru Clearance Form For New Business Permit Application",
+        "href": "https://www.ibaan.gov.ph/info/verification-of-pd-1096-compliance-thru-clearance-form-for-new-business-permit-application/"
+      },
+      {
+        "title": "Verification of PD 1096 compliance thru Clearance Form For Renewal Business Permit",
+        "href": "https://www.ibaan.gov.ph/info/verification-of-pd-1096-compliance-thru-clearance-form-for-renewal-business-permit/"
+      },
+      {
+        "title": "Issuance of Building Permit (excluding PTTIs)",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-building-permit-excluding-pttis/"
+      },
+      {
+        "title": "Issuance of Certificate of Annual Inspection",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-certificate-of-annual-inspection/"
+      },
+      {
+        "title": "Issuance of Excavation Permit (Water Supply)",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-excavation-permit-water-supply/"
+      },
+      {
+        "title": "Issuance of Wiring Permit",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-wiring-permit/"
+      },
+      {
+        "title": "Prepare Bidding Documents (Barangay)",
+        "href": "https://www.ibaan.gov.ph/info/prepare-bidding-documents-barangay/"
+      },
+      {
+        "title": "Prepare Progress Billing, Inspection Report, Post Completion Report, Completion Report, Turn-Over and Acceptance (Barangay)",
+        "href": "https://www.ibaan.gov.ph/info/prepare-progress-billing-inspection-report-post-completion-report-completion-report-turn-over-and-acceptance-barangay/"
+      },
+      {
+        "title": "Prepare Progress Billing, Inspection Report, Post-Completion Report, Completion Report , Turn-Over and Acceptance (Local)",
+        "href": "https://www.ibaan.gov.ph/info/prepare-progress-billing-inspection-report-post-completion-report-completion-report-turn-over-and-acceptance-local/"
+      },
+      {
+        "title": "Prepare Program of Works and,or Purchase Request, Detailed Estimates, Plans and Drawings (Local)",
+        "href": "https://www.ibaan.gov.ph/info/prepare-program-of-works-andor-purchase-request-detailed-estimates-plans-and-drawings-local/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the GSO",
+    "services": [
+      {
+        "title": "Issuance of Equipment, Supplies and Materials for Donation",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-equipment-supplies-and-materials-for-donation/"
+      },
+      {
+        "title": "Rentals of Equipment and Machineries",
+        "href": "https://www.ibaan.gov.ph/info/rentals-of-equipment-and-machineries/"
+      },
+      {
+        "title": "Waste Management Operations",
+        "href": "https://www.ibaan.gov.ph/info/waste-management-operations/"
+      },
+      {
+        "title": "Events Logistical Assistance",
+        "href": "https://www.ibaan.gov.ph/info/events-logistical-assistance/"
+      },
+      {
+        "title": "Disposal of unserviceable properties and waste materials",
+        "href": "https://www.ibaan.gov.ph/info/disposal-of-unserviceable-properties-and-waste-materials/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the HRMO",
+    "services": [
+      {
+        "title": "Accepting Applicants for Vacant Positions in the LGU - (Walk-In and Online)",
+        "href": "https://www.ibaan.gov.ph/info/accepting-applicants-for-vacant-positions-in-the-lgu-walk-in-and-online/"
+      },
+      {
+        "title": "Accepting Job Order Employees",
+        "href": "https://www.ibaan.gov.ph/info/accepting-job-order-employees/"
+      },
+      {
+        "title": "Accepting On-The-Job Trainee (OJT), Immersion Students",
+        "href": "https://www.ibaan.gov.ph/info/accepting-on-the-job-trainee-ojt-immersion-students/"
+      },
+      {
+        "title": "Accepting the Submission of Statement of Assets, Liabilities and Net worth (SALN) of Barangay Officials",
+        "href": "https://www.ibaan.gov.ph/info/accepting-the-submission-of-statement-of-assets-liabilities-and-net-worth-saln-of-barangay-officials/"
+      },
+      {
+        "title": "Issuance of Certificate of Completion for OJT, Immersion Students",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-certificate-of-completion-for-ojt-immersion-students/"
+      },
+      {
+        "title": "Issuance of Service Record, Certificate of Employment and Other HRMO-related document to separated employees of the LGU",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-service-record-certificate-of-employment-and-other-hrmo-related-document-to-separated-employees-of-the-lgu/"
+      },
+      {
+        "title": "Processing of Application for Terminal Leave Benefits",
+        "href": "https://www.ibaan.gov.ph/info/processing-of-application-for-terminal-leave-benefits/"
+      },
+      {
+        "title": "Processing of Complaints Filed at the Public Assistant and Complaints Desk",
+        "href": "https://www.ibaan.gov.ph/info/processing-of-complaints-filed-at-the-public-assistant-and-complaints-desk/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the Local DRRM Officer",
+    "services": [
+      {
+        "title": "Disaster Response Services – Emergency Assistance and Rescue Operations",
+        "href": "https://www.ibaan.gov.ph/info/disaster-response-services-emergency-assistance-and-rescue-operations-1/"
+      },
+      {
+        "title": "Early Warning and Risk Reduction Services",
+        "href": "https://www.ibaan.gov.ph/info/early-warning-and-risk-reduction-services/"
+      },
+      {
+        "title": "Disaster Rehabilitation and Recovery Assistance",
+        "href": "https://www.ibaan.gov.ph/info/disaster-rehabilitation-and-recovery-assistance/"
+      },
+      {
+        "title": "Provision of Disaster Tools and Equipment",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-disaster-tools-and-equipment/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the Municipal Civil Registrar",
+    "services": [
+      {
+        "title": "Adoption",
+        "href": "https://www.ibaan.gov.ph/info/adoption/"
+      },
+      {
+        "title": "Application and Issuance of Marriage License",
+        "href": "https://www.ibaan.gov.ph/info/application-and-issuance-of-marriage-license/"
+      },
+      {
+        "title": "Court Order,Decree for Correction of Entry in the Civil Registry Documents",
+        "href": "https://www.ibaan.gov.ph/info/court-orderdecree-for-correction-of-entry-in-the-civil-registry-documents/"
+      },
+      {
+        "title": "Delayed Registration of Certificate of Death and Issuance of Certified Machine Copy of Certificate of Death",
+        "href": "https://www.ibaan.gov.ph/info/delayed-registration-of-certificate-of-death-and-issuance-of-certified-machine-copy-of-certificate-of-death/"
+      },
+      {
+        "title": "Delayed Registration of Certificate of Live Birth and Issuance of Certified Copy of Certificate of Live Birth (COLB) – (Illegitimate Child with AUSF)",
+        "href": "https://www.ibaan.gov.ph/info/delayed-registration-of-certificate-of-live-birth-and-issuance-of-certified-copy-of-certificate-of-live-birth-colb-illegitimate-child-with-ausf/"
+      },
+      {
+        "title": "Delayed Registration of Certificate of Live Birth and Issuance Certified Copy of Certificate of Live Birth (COLB) - (Illegitimate Child: Unknown Father)",
+        "href": "https://www.ibaan.gov.ph/info/delayed-registration-of-certificate-of-live-birth-and-issuance-certified-copy-of-certificate-of-live-birth-colb-1/"
+      },
+      {
+        "title": "Delayed Registration of Certificate of Live Birth and Issuance of Certified Copy of Certificate of Live Birth (COLB) – Legitimate Child",
+        "href": "https://www.ibaan.gov.ph/info/delayed-registration-of-certificate-of-live-birth-and-issuance-of-certified-copy-of-certificate-of-live-birth-colb-legitimate-child/"
+      },
+      {
+        "title": "Delayed Registration of Certificate of Marriage and Issuance of Certified copy of Certificate of Marriage",
+        "href": "https://www.ibaan.gov.ph/info/delayed-registration-of-certificate-of-marriage-and-issuance-of-certified-copy-of-certificate-of-marriage/"
+      },
+      {
+        "title": "Endorsements,Piecemeal of Civil Registry Documents with Annotations",
+        "href": "https://www.ibaan.gov.ph/info/endorsementspiecemeal-of-civil-registry-documents-with-annotations/"
+      },
+      {
+        "title": "Issuance of Certified Machine Copies,Certification of Civil Registry Documents",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-certified-machine-copiescertification-of-civil-registry-documents/"
+      },
+      {
+        "title": "Legitimation by Subsequent Marriage of Parents",
+        "href": "https://www.ibaan.gov.ph/info/legitimation-by-subsequent-marriage-of-parents/"
+      },
+      {
+        "title": "Petition for Change of First Name (RA 9048)",
+        "href": "https://www.ibaan.gov.ph/info/petition-for-change-of-first-name-ra-9048/"
+      },
+      {
+        "title": "Petition for Correction of Clerical Error under RA No. 10172",
+        "href": "https://www.ibaan.gov.ph/info/petition-for-correction-of-clerical-error-under-ra-no-10172/"
+      },
+      {
+        "title": "Registration of Certificate of Death",
+        "href": "https://www.ibaan.gov.ph/info/registration-of-certificate-of-death/"
+      },
+      {
+        "title": "Registration of Certificate of Fatal Death",
+        "href": "https://www.ibaan.gov.ph/info/registration-of-certificate-of-fatal-death/"
+      },
+      {
+        "title": "Registration of Certificate of Live Birth and Issuance of Certified Machine Copy of Certificate of Live Birth (COLB) – Timely Registration (Legitimate Child)",
+        "href": "https://www.ibaan.gov.ph/info/registration-of-certificate-of-live-birth-and-issuance-of-certified-machine-copy-of-certificate-of-live-birth-colb-timely-registration-legitimate-child/"
+      },
+      {
+        "title": "Registration of Certificate of Marriage",
+        "href": "https://www.ibaan.gov.ph/info/registration-of-certificate-of-marriage/"
+      },
+      {
+        "title": "Rule 12 of Administrative Order No. 1 Series of 2001 of the Implementing Rules and Regulations of RA No. 9048",
+        "href": "https://www.ibaan.gov.ph/info/rule-12-of-administrative-order-no-1-series-of-2001-of-the-implementing-rules-and-regulations-of-ra-no-9048/"
+      },
+      {
+        "title": "Second Endorsement of Civil Registry Documents",
+        "href": "https://www.ibaan.gov.ph/info/second-endorsement-of-civil-registry-documents/"
+      },
+      {
+        "title": "Supplemental Report for Birth, Death and Marriage",
+        "href": "https://www.ibaan.gov.ph/info/supplemental-report-for-birth-death-and-marriage/"
+      },
+      {
+        "title": "Batch Request System (BREQS)",
+        "href": "https://www.ibaan.gov.ph/info/batch-request-system-breqs/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the Municipal Health Officer",
+    "services": [
+      {
+        "title": "Provision of Out-patient Consultation",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-out-patient-consultation/"
+      },
+      {
+        "title": "Application for Operational Permit for New Water Refilling Stations",
+        "href": "https://www.ibaan.gov.ph/info/application-for-operational-permit-for-new-water-refilling-stations/"
+      },
+      {
+        "title": "Issuance of Sanitary Permit",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-sanitary-permit/"
+      },
+      {
+        "title": "Issuance of Health Certificate",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-health-certificate/"
+      },
+      {
+        "title": "Issuance of Medical Certificates",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-medical-certificates/"
+      },
+      {
+        "title": "Provision of Laboratory Services",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-laboratory-services/"
+      },
+      {
+        "title": "Provision of X-Ray Services-",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-x-ray-services/"
+      },
+      {
+        "title": "Provision of Immunization Service",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-immunization-service/"
+      },
+      {
+        "title": "Provision of Maternal Care (Prenatal Check-up)",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-maternal-care-prenatal-check-up/"
+      },
+      {
+        "title": "Provision of Maternal Care (During Delivery)",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-maternal-care-during-delivery/"
+      },
+      {
+        "title": "Provision of Maternal Care (During Postpartum Period)",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-maternal-care-during-postpartum-period/"
+      },
+      {
+        "title": "Provision of Tuberculosis Control Service",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-tuberculosis-control-service/"
+      },
+      {
+        "title": "Provision of Dental Consultation",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-dental-consultation/"
+      },
+      {
+        "title": "Provision of Family Planning Program Service",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-family-planning-program-service/"
+      },
+      {
+        "title": "Provision of Services in time of Disaster and Health Crisis",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-services-in-time-of-disaster-and-health-crisis/"
+      },
+      {
+        "title": "Anti-Rabies Vaccination",
+        "href": "https://www.ibaan.gov.ph/info/anti-rabies-vaccination/"
+      },
+      {
+        "title": "Issuance of Death Certificate",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-death-certificate/"
+      },
+      {
+        "title": "Issuance of Permit to Transfer of Cadaver",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-permit-to-transfer-of-cadaver/"
+      },
+      {
+        "title": "Issuance of Permit to Disinter and Rebury",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-permit-to-disinter-and-rebury/"
+      },
+      {
+        "title": "Pharmacy",
+        "href": "https://www.ibaan.gov.ph/info/pharmacy/"
+      },
+      {
+        "title": "Provision of Phil health Assistance Services (Express Lane Process)",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-phil-health-assistance-services-express-lane-process/"
+      },
+      {
+        "title": "Provision of Phil health Assistance Services (Regular Process)",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-phil-health-assistance-services-regular-process/"
+      },
+      {
+        "title": "Medical Assistance",
+        "href": "https://www.ibaan.gov.ph/info/medical-assistance/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the MPDC",
+    "services": [
+      {
+        "title": "Issuance of Locational Clearance",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-locational-clearance/"
+      },
+      {
+        "title": "Issuance of Zoning Certificate",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-zoning-certificate/"
+      },
+      {
+        "title": "Issuance of Zoning Viability",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-zoning-viability/"
+      },
+      {
+        "title": "Land Reclassification",
+        "href": "https://www.ibaan.gov.ph/info/land-reclassification/"
+      },
+      {
+        "title": "Preliminary Approval",
+        "href": "https://www.ibaan.gov.ph/info/preliminary-approval/"
+      },
+      {
+        "title": "Preparation of Final Approval, Development Permit",
+        "href": "https://www.ibaan.gov.ph/info/preparation-of-final-approvaldevelopment-permit/"
+      },
+      {
+        "title": "Provision of Consultation,Interview Related to Work",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-consultationinterview-related-to-work/"
+      },
+      {
+        "title": "Provision of Municipal Data, Maps & other Related Information",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-municipal-data-maps-other-related-information/"
+      },
+      {
+        "title": "Provision of Municipal Tricycle Operator’s Permit",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-municipal-tricycle-operators-permit/"
+      },
+      {
+        "title": "Issuance of Notice of Violation",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-notice-of-violation/"
+      },
+      {
+        "title": "Request for Document Printouts",
+        "href": "https://www.ibaan.gov.ph/info/request-for-document-printouts/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the Social Welfare",
+    "services": [
+      {
+        "title": "Early Childhood Care and Development Program",
+        "href": "https://www.ibaan.gov.ph/info/early-childhood-care-and-development-program/"
+      },
+      {
+        "title": "Emergency Relief Assistance",
+        "href": "https://www.ibaan.gov.ph/info/emergency-relief-assistance/"
+      },
+      {
+        "title": "Issuance of Certificate of Indigency",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-certificate-of-indigency/"
+      },
+      {
+        "title": "Issuance of Person with Disability ID And Purchase Slip Booklet",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-person-with-disability-id-and-purchase-slip-booklet/"
+      },
+      {
+        "title": "Issuance of Referral Letter",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-referral-letter/"
+      },
+      {
+        "title": "Issuance of Social Case Study Report",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-social-case-study-report/"
+      },
+      {
+        "title": "Pre-Marriage Orientation and Counselling",
+        "href": "https://www.ibaan.gov.ph/info/pre-marriage-orientation-and-counselling/"
+      },
+      {
+        "title": "Provision of Assistance to Individual in Crisis Situation",
+        "href": "https://www.ibaan.gov.ph/info/provision-of-assistance-to-individual-in-crisis-situation/"
+      },
+      {
+        "title": "Self-Employment Assistance,Livelihood Program",
+        "href": "https://www.ibaan.gov.ph/info/self-employment-assistancelivelihood-program/"
+      },
+      {
+        "title": "Special Services",
+        "href": "https://www.ibaan.gov.ph/info/special-services/"
+      },
+      {
+        "title": "Assistance to Children in Conflict with the Law",
+        "href": "https://www.ibaan.gov.ph/info/assistance-to-children-in-conflict-with-the-law/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the Municipal Treasurer",
+    "services": [
+      {
+        "title": "Collection of Real Property Tax (over the counter payment)",
+        "href": "https://www.ibaan.gov.ph/info/collection-of-real-property-tax-over-the-counter-payment/"
+      },
+      {
+        "title": "Collection of Real Property Tax (online payment)",
+        "href": "https://www.ibaan.gov.ph/info/collection-of-real-property-tax-online-payment/"
+      },
+      {
+        "title": "Collection of Slaughter and Coral Fees",
+        "href": "https://www.ibaan.gov.ph/info/collection-of-slaughter-and-coral-fees/"
+      },
+      {
+        "title": "Disbursement of Salaries, Wages, Honorariums",
+        "href": "https://www.ibaan.gov.ph/info/disbursement-of-salaries-wages-honorariums/"
+      },
+      {
+        "title": "Issuance of Accountable Form No. 51 to Barangays",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-accountable-form-no-51-to-barangays/"
+      },
+      {
+        "title": "Issuance of Cash Tickets",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-cash-tickets/"
+      },
+      {
+        "title": "Issuance of Certificate of RPT Payment",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-certificate-of-rpt-payment/"
+      },
+      {
+        "title": "Issuance of Checks as Payment of Obligations to Claimant",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-checks-as-payment-of-obligations-to-claimant/"
+      },
+      {
+        "title": "Issuance of Community Tax Certificate",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-community-tax-certificate/"
+      },
+      {
+        "title": "Issuance of Police Clearance",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-police-clearance/"
+      },
+      {
+        "title": "Issuance of Professional Tax Receipt (PTR)",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-professional-tax-receipt-ptr/"
+      },
+      {
+        "title": "Payment of Mayor’s Permit on Business (over the counter)",
+        "href": "https://www.ibaan.gov.ph/info/payment-of-mayors-permit-on-business-over-the-counter/"
+      },
+      {
+        "title": "Payment of Mayor’s Permit on Business (online payment)",
+        "href": "https://www.ibaan.gov.ph/info/payment-of-mayors-permit-on-business-online-payment/"
+      },
+      {
+        "title": "Payment of Service Charge for Garbage Collection",
+        "href": "https://www.ibaan.gov.ph/info/payment-of-service-charge-for-garbage-collection/"
+      },
+      {
+        "title": "Payment Fee for Testing, Calibrating and Sealing of Fuel Pump",
+        "href": "https://www.ibaan.gov.ph/info/payment-fee-for-testing-calibrating-and-sealing-of-fuel-pump/"
+      },
+      {
+        "title": "Payment of Certification for Closure of Business and Other Certifications Pertaining to Business Permits",
+        "href": "https://www.ibaan.gov.ph/info/payment-of-certification-for-closure-of-business-and-other-certifications-pertaining-to-business-permits/"
+      },
+      {
+        "title": "Payment of Rental Fees for Rental of Municipal Cemetery Lots",
+        "href": "https://www.ibaan.gov.ph/info/payment-of-rental-fees-for-rental-of-municipal-cemetery-lots/"
+      },
+      {
+        "title": "Payment of Fees with Order of Payment",
+        "href": "https://www.ibaan.gov.ph/info/payment-of-fees-with-order-of-payment/"
+      },
+      {
+        "title": "Payment of Penalties for Municipal Ordinance Violations",
+        "href": "https://www.ibaan.gov.ph/info/payment-of-penalties-for-municipal-ordinance-violations/"
+      },
+      {
+        "title": "Payment of Stall Rental",
+        "href": "https://www.ibaan.gov.ph/info/payment-of-stall-rental/"
+      }
+    ]
+  },
+  {
+    "name": "Office of the Mayor",
+    "services": [
+      {
+        "title": "Issuance of Endorsement Letter (Financial,Medical Assistance)",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-endorsement-letter-financialmedical-assistance/"
+      },
+      {
+        "title": "Issuance of Unemployment Certificate",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-unemployment-certificate/"
+      },
+      {
+        "title": "Filing of Complaints for Walk-In Clients",
+        "href": "https://www.ibaan.gov.ph/info/filing-of-complaints-for-walk-in-clients/"
+      }
+    ]
+  },
+  {
+    "name": "OM - Business Permits & Licenses",
+    "services": [
+      {
+        "title": "Amendment of Business , Mayor’s Permit",
+        "href": "https://www.ibaan.gov.ph/info/amendment-of-business-mayors-permit/"
+      },
+      {
+        "title": "Annual Inspection of Business Establishment",
+        "href": "https://www.ibaan.gov.ph/info/annual-inspection-of-business-establishment/"
+      },
+      {
+        "title": "Issuance of Business Retirement",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-business-retirement/"
+      },
+      {
+        "title": "Issuance of Certification",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-certification/"
+      },
+      {
+        "title": "Issuance of Certified True Copy of Business , Mayor’s Permit",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-certified-true-copy-of-businessmayors-permit/"
+      },
+      {
+        "title": "Application and Issuance of Business , Mayor’s Permit (Renewal)",
+        "href": "https://www.ibaan.gov.ph/info/application-and-issuance-of-business-mayors-permit-renewal-1/"
+      },
+      {
+        "title": "Issuance of Permits",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-permits/"
+      },
+      {
+        "title": "Issuance of Permits for Cell Sites",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-permits-for-cell-sites/"
+      },
+      {
+        "title": "Issuance of Special Permit",
+        "href": "https://www.ibaan.gov.ph/info/issuance-of-special-permit/"
+      },
+      {
+        "title": "Receiving of complaints in connection with business , Mayor’s permit",
+        "href": "https://www.ibaan.gov.ph/info/receiving-of-complaints-in-connection-w-businessmayors-permit/"
+      },
+      {
+        "title": "Online Application of Business Permits and License (Renewal)",
+        "href": "https://www.ibaan.gov.ph/info/online-application-of-business-permits-and-license-renewal/"
+      },
+      {
+        "title": "Online Application of Business Permit and License (New)",
+        "href": "https://www.ibaan.gov.ph/info/online-application-of-business-permit-and-license-new/"
+      }
+    ]
+  },
+  {
+    "name": "OM - Operation of Cemetery",
+    "services": [
+      {
+        "title": "Ibaan Public Cemetery",
+        "href": "https://www.ibaan.gov.ph/info/ibaan-public-cemetery/"
+      },
+      {
+        "title": "Exhumation of Remains of the Expired Niches",
+        "href": "https://www.ibaan.gov.ph/info/exhumation-of-remains-of-the-expired-niches/"
+      },
+      {
+        "title": "Notification of the Expired Niches’ Contract",
+        "href": "https://www.ibaan.gov.ph/info/notification-of-the-expired-niches-contract/"
+      }
+    ]
+  },
+  {
+    "name": "OM - Operation of Market & Slaughterhouse",
+    "services": [
+      {
+        "title": "Granting of Lease Stall",
+        "href": "https://www.ibaan.gov.ph/info/granting-of-lease-stall/"
+      },
+      {
+        "title": "Sealing and Testing of Instruments Weights",
+        "href": "https://www.ibaan.gov.ph/info/sealing-and-testing-of-instruments-weights/"
+      },
+      {
+        "title": "Calibration of the Confiscated Weighing Scale Found to be Defective",
+        "href": "https://www.ibaan.gov.ph/info/calibration-of-the-confiscated-weighing-scale-found-to-be-defective/"
+      },
+      {
+        "title": "Collection of Pay Parking Fees",
+        "href": "https://www.ibaan.gov.ph/info/collection-of-pay-parking-fees/"
+      },
+      {
+        "title": "Collection of Slaughter and Coral Fee",
+        "href": "https://www.ibaan.gov.ph/info/collection-of-slaughter-and-coral-fee/"
+      }
+    ]
+  },
+  {
+    "name": "OM - Operation of Waterworks",
+    "services": [
+      {
+        "title": "Application of New Service Connection",
+        "href": "https://www.ibaan.gov.ph/info/application-of-new-service-connection/"
+      },
+      {
+        "title": "Defective Meter Replacement",
+        "href": "https://www.ibaan.gov.ph/info/defective-meter-replacement/"
+      },
+      {
+        "title": "Disconnection of Water Service",
+        "href": "https://www.ibaan.gov.ph/info/disconnection-of-water-service/"
+      },
+      {
+        "title": "Payment of Bills",
+        "href": "https://www.ibaan.gov.ph/info/payment-of-bills/"
+      },
+      {
+        "title": "Receiving of Request, Complaints",
+        "href": "https://www.ibaan.gov.ph/info/receiving-of-requestcomplaints/"
+      },
+      {
+        "title": "Reconnection of Water Service",
+        "href": "https://www.ibaan.gov.ph/info/reconnection-of-water-service/"
+      }
+    ]
+  },
+  {
+    "name": "Office of Sangguniang Bayan",
+    "services": [
+      {
+        "title": "Accreditation of Non-Governmental Organizations or Civil Society Organizations",
+        "href": "https://www.ibaan.gov.ph/info/accreditation-of-non-governmental-organizations-or-civil-society-organizations/"
+      },
+      {
+        "title": "Application and/or Renewal of Tricycle Franchise",
+        "href": "https://www.ibaan.gov.ph/info/application-andor-renewal-of-tricycle-franchise/"
+      },
+      {
+        "title": "Disciplinary Actions",
+        "href": "https://www.ibaan.gov.ph/info/disciplinary-actions/"
+      },
+      {
+        "title": "Reclassification of Lands",
+        "href": "https://www.ibaan.gov.ph/info/reclassification-of-lands/"
+      },
+      {
+        "title": "Secretary’s Fees",
+        "href": "https://www.ibaan.gov.ph/info/secretarys-fees/"
+      }
+    ]
+  }
+];
+
+export const SERVICE_COUNT = OFFICES.reduce((sum, office) => sum + office.services.length, 0);
+export const OFFICE_COUNT = OFFICES.length;
+
+export const OFFICIALS: OfficialEntry[] = [
+  {
+    "name": "Hon. Jane A. Casas",
+    "role": "Municipal Mayor"
+  },
+  {
+    "name": "Hon. Edralyn Joy A. Salvame",
+    "role": "Municipal Vice Mayor",
+    "committees": [
+      "Internal Rules and Procedures",
+      "Education and Culture",
+      "Housing and Land Utilization",
+      "Transportation",
+      "ADHOC"
+    ]
+  },
+  {
+    "name": "Hon. Juvy M. Mendoza",
+    "role": "Councilor 1",
+    "committees": [
+      "Finance, Budget and Appropriation",
+      "Sanitation, Health and Environmental Protection",
+      "Women, Men and Family",
+      "Good Governance, Public Ethics and Accountability",
+      "Slaughterhouse"
+    ]
+  },
+  {
+    "name": "Hon. John Henry N. Cabatay",
+    "role": "Councilor 2",
+    "committees": [
+      "Peace and Order, Public Safety, Drug Prevention and Control",
+      "Public Utilities"
+    ]
+  },
+  {
+    "name": "Hon. Erwin C. Andal",
+    "role": "Councilor 3",
+    "committees": [
+      "Games and Amusement",
+      "Public Market"
+    ]
+  },
+  {
+    "name": "Hon. Eloise Jan S. Tejada",
+    "role": "Councilor 4",
+    "committees": [
+      "Agriculture",
+      "Trade, Commerce and Industry",
+      "Tourism",
+      "Ways and Means"
+    ]
+  },
+  {
+    "name": "Hon. Sixto I. Yabyabin",
+    "role": "Councilor 5",
+    "committees": [
+      "Public Works",
+      "Livelihood"
+    ]
+  },
+  {
+    "name": "Hon. Arsenio Ricero",
+    "role": "Councilor 6",
+    "committees": [
+      "Laws, Ordinances and Other Legal Matters",
+      "Senior Citizens and PWD"
+    ]
+  },
+  {
+    "name": "Hon. Eddie L. Pasia",
+    "role": "Councilor 7",
+    "committees": [
+      "Cooperatives",
+      "Public Service and Social Welfare"
+    ]
+  },
+  {
+    "name": "Hon. Phill Joshua G. Caringal",
+    "role": "Councilor 8",
+    "committees": [
+      "Human Rights, Rights and Welfare of Ibaan Child"
+    ]
+  },
+  {
+    "name": "Hon. Kevin G. Palma",
+    "role": "LnB President",
+    "committees": [
+      "Barangay Affairs"
+    ]
+  },
+  {
+    "name": "Hon. Maricar Joy M. Paner",
+    "role": "SKF President",
+    "committees": [
+      "Youth and Sports Development"
+    ]
+  }
+];
+
+export const RESORTS: ResortEntry[] = [
+  {
+    "name": "Villafranca Resort",
+    "location": "Brgy. Coliat",
+    "hours": "6:00 AM to 6:00 PM",
+    "contact": "Dina Patal",
+    "phones": [
+      "0997 402 2508"
+    ],
+    "facebook": "https://www.facebook.com/share/1JsYQ8X1Fc/"
+  },
+  {
+    "name": "The Greenhive Hotel",
+    "location": "Metro-Rey Business Park, Brgy. Palindan",
+    "hours": "24 hours",
+    "contact": "Sheilah Nuyles",
+    "phones": [
+      "0921 503 2619"
+    ],
+    "facebook": "https://www.facebook.com/share/1CagACrfUB/"
+  },
+  {
+    "name": "Endaya's Private Resort",
+    "location": "Brgy. Sto. Niño",
+    "hours": "6:00 AM to 5:00 PM",
+    "contact": "Belinda Endaya",
+    "phones": [
+      "0920 917 5061"
+    ],
+    "facebook": "https://www.facebook.com/share/1AoQQPgsom/"
+  },
+  {
+    "name": "Kilyawan Farm Resort",
+    "location": "Brgy. Tulay",
+    "hours": "8:00 AM to 5:00 PM",
+    "contact": "Tina Ganzon-Ozaeta",
+    "phones": [
+      "0917 500 2251"
+    ],
+    "facebook": "https://www.facebook.com/KilyawanFarmResort"
+  },
+  {
+    "name": "Villa Grace Private Resort",
+    "location": "Brgy. San Agustin",
+    "hours": "9:00 AM to 6:00 PM",
+    "contact": "Cha De Castro",
+    "phones": [
+      "0999 196 1619"
+    ],
+    "facebook": "https://www.facebook.com/villagraceprivateresort"
+  },
+  {
+    "name": "Halati Resort",
+    "location": "Brgy. Lucsuhin",
+    "hours": "24 hours",
+    "contact": "Ramon Magtibay",
+    "phones": [
+      "0995 892 1951"
+    ],
+    "facebook": "https://www.facebook.com/share/1UFzm9MMct/"
+  },
+  {
+    "name": "Eson's Resort",
+    "location": "Purok Ibaba, Brgy. Santo Niño",
+    "hours": "8:00 AM to 5:00 PM",
+    "contact": "Rose Regular",
+    "phones": [
+      "0916 798 8100"
+    ],
+    "facebook": "https://www.facebook.com/share/1CpJWDhB7q/"
+  },
+  {
+    "name": "The Palms Peak Resort",
+    "location": "Brgy. Sandalan",
+    "hours": "8:00 AM to 6:00 PM",
+    "contact": "Mary Charm C. Ocampo",
+    "phones": [
+      "0998 410 3466"
+    ],
+    "facebook": "https://www.facebook.com/share/18RmHKggJx/"
+  },
+  {
+    "name": "Villanueva Resort",
+    "location": "Don Pedro Subdivision, Talaibon",
+    "hours": "8:00 AM to 5:00 PM",
+    "phones": [
+      "0992 899 9700"
+    ],
+    "facebook": "https://www.facebook.com/share/1AxPpFSaWi/"
+  }
+];
+
+export const BID_RESULTS: BidEntry[] = [
+  {
+    "title": "Data validation and digitizing, Office of the Municipal Mayor",
+    "status": "Bidded",
+    "award": "On process for award"
+  },
+  {
+    "title": "Establishment of Real Property GIS System, Office of the Municipal Assessor",
+    "status": "Bidded",
+    "award": "On process for award"
+  },
+  {
+    "title": "Purchase of GIS system for disaster mapping",
+    "status": "Bidded",
+    "award": "On process for award"
+  },
+  {
+    "title": "Supply and delivery of office equipment, Municipal Health Officer",
+    "status": "Bidded",
+    "award": "On process for award"
+  },
+  {
+    "title": "Supply and delivery of medical equipment, Municipal Health Officer",
+    "status": "Bidded",
+    "award": "On process for award"
+  },
+  {
+    "title": "Improvement of German S. Guerra Memorial Cemetery, Brgy. Sandalan",
+    "status": "Bidded",
+    "award": "On process for award"
+  },
+  {
+    "title": "Improvement of Colegio de Ibaan, Brgy. Poblacion",
+    "status": "Bidded",
+    "award": "On process for award"
+  },
+  {
+    "title": "Improvement of public cemetery, Brgy. Poblacion",
+    "status": "Bidded",
+    "award": "On process for award"
+  },
+  {
+    "title": "Supply of sub-base and base course materials for barangay road maintenance",
+    "status": "Bidded",
+    "award": "On process for award"
+  },
+  {
+    "title": "Construction of local road, Brgy. Santo Niño",
+    "status": "Bidded",
+    "award": "On process for award"
+  },
+  {
+    "title": "Improvement of historical monument and rotunda, Brgy. Poblacion",
+    "status": "Bidded",
+    "award": "On process for award"
+  }
+];
+
+export const CMCI_RANKS: RankEntry[] = [
+  {
+    "year": 2015,
+    "rank": "283rd"
+  },
+  {
+    "year": 2016,
+    "rank": "224th"
+  },
+  {
+    "year": 2017,
+    "rank": "295th"
+  },
+  {
+    "year": 2018,
+    "rank": "416th"
+  },
+  {
+    "year": 2019,
+    "rank": "356th"
+  },
+  {
+    "year": 2020,
+    "rank": "376th"
+  },
+  {
+    "year": 2021,
+    "rank": "417th"
+  },
+  {
+    "year": 2022,
+    "rank": "455th"
+  },
+  {
+    "year": 2023,
+    "rank": "441st"
+  },
+  {
+    "year": 2024,
+    "rank": "366th"
+  }
+];
+
+export const CMCI_PILLARS_2024: PillarEntry[] = [
+  {
+    "name": "Economic Dynamism",
+    "rank": "234th",
+    "score": 3.3713
+  },
+  {
+    "name": "Government Efficiency",
+    "rank": "423rd",
+    "score": 7.2961
+  },
+  {
+    "name": "Infrastructure",
+    "rank": "246th",
+    "score": 2.441
+  },
+  {
+    "name": "Resiliency",
+    "rank": "444th",
+    "score": 10.8023
+  },
+  {
+    "name": "Innovation",
+    "rank": "281st",
+    "score": 4.9024
+  }
+];
+
+export const GAPS: GapEntry[] = [
+  {
+    "fact": "PSGC codes for Ibaan and its barangays",
+    "status": "Could not verify",
+    "note": "PSA classification pages were not reachable from this build. No PSGC code appears on the official Ibaan pages.",
+    "sourceKey": "psgc"
+  },
+  {
+    "fact": "Effective date and issuance for the second-class income classification",
+    "status": "Could not verify",
+    "note": "Both the municipal profile and CMCI state second class, but neither gives an effective date or issuing order.",
+    "sourceKey": "profile"
+  },
+  {
+    "fact": "Barangay-level population and household counts",
+    "status": "Could not verify",
+    "note": "The municipal profile publishes only town-level 2020 census figures. PSA census tables were not reachable from this build.",
+    "sourceKey": "census"
+  },
+  {
+    "fact": "Local holiday calendar",
+    "status": "Not published",
+    "note": "No dedicated holiday list was found in the municipal navigation, announcements, or advisories.",
+    "sourceKey": "announcements"
+  },
+  {
+    "fact": "Local ordinances, resolutions, and executive orders",
+    "status": "Not published",
+    "note": "No Ibaan-specific local legislation repository was found. The CMCI document library did not show Ibaan entries when checked.",
+    "sourceKey": "cmciDocs"
+  },
+  {
+    "fact": "Narrative town history with dates",
+    "status": "Not published",
+    "note": "The municipal site has profile and heritage pages, but no history page. This guide does not import unsourced historical claims.",
+    "sourceKey": "profile"
+  },
+  {
+    "fact": "Annual budgets, financial statements, and audit reports",
+    "status": "Not published",
+    "note": "No public finance documents were found in the municipal navigation or archive pages.",
+    "sourceKey": "bids"
+  },
+  {
+    "fact": "DILG Full Disclosure Policy filings",
+    "status": "Could not verify",
+    "note": "The DILG disclosure portal did not resolve from this build, and no local mirror was found on the municipal site.",
+    "sourceKey": "fdpp"
+  },
+  {
+    "fact": "Emergency hotline numbers",
+    "status": "Could not verify",
+    "note": "The municipality publishes its hotline list as an image. The numbers are not transcribed here because they cannot be checked as text.",
+    "sourceKey": "hotlines"
+  }
+];

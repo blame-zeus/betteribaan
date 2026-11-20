@@ -1,0 +1,36 @@
+{
+  "verifiedOn": "2026-11-20",
+  "status": "Archive index only",
+  "note": "No consolidated Ibaan document repository was verified. These are official archive pages, not local copies.",
+  "pages": [
+    {
+      "label": "Announcements archive",
+      "url": "https://www.ibaan.gov.ph/archive/announcements/"
+    },
+    {
+      "label": "Events archive",
+      "url": "https://www.ibaan.gov.ph/archive/events/"
+    },
+    {
+      "label": "Achievements and awards",
+      "url": "https://www.ibaan.gov.ph/info/group/awards/"
+    },
+    {
+      "label": "Bid results",
+      "url": "https://www.ibaan.gov.ph/bids-awards/results/"
+    }
+  ],
+  "notPublished": [
+    "Local ordinances",
+    "Resolutions",
+    "Executive orders",
+    "Budgets",
+    "Audit reports"
+  ],
+  "sources": [
+    "https://www.ibaan.gov.ph/archive/announcements/",
+    "https://www.ibaan.gov.ph/archive/events/",
+    "https://www.ibaan.gov.ph/info/group/awards/",
+    "https://www.ibaan.gov.ph/bids-awards/results/"
+  ]
+}

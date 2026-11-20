@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import { NAV_GROUPS } from '../lib/site';
+---
+
+<Base
+  title="Sitemap"
+  description="Every page in the Better Ibaan civic guide, grouped by section."
+  crumbs={[{ label: 'About' }, { label: 'Sitemap' }]}
+>
+  <PageHeader
+    title="Every page, in order."
+    intro="The guide follows six top-level sections. Geography and heritage are linked from Government and remain as their own pages."
+    note="For machine clients, the XML sitemap is at /sitemap.xml and the dataset catalogue is at /data."
+  >
+    <Toc items={NAV_GROUPS.map((group) => ({ id: group.label.toLowerCase(), label: group.label }))} />
+  </PageHeader>
+
+  <section class="section-tight">
+    <div class="frame">
+      {NAV_GROUPS.map((group) => (
+        <section class="section" id={group.label.toLowerCase()}>
+          <div class="section-head">
+            <h2>{group.label}</h2>
+            <div class="section-copy"><p>{group.blurb}</p></div>
+          </div>
+          <div class="directory-grid">
+            {group.items.map((item) => (
+              <div class="directory-card">
+                <h3>{item.label}</h3>
+                <p>{item.blurb}</p>
+                <a href={item.href}>Open the page <span aria-hidden="true">→</span></a>
+              </div>
+            ))}
+            {group.label === 'Government' && (
+              <>
+                <div class="directory-card">
+                  <h3>Geography</h3>
+                  <p>The boundary, the five neighbours, and the 26 barangays in context.</p>
+                  <a href="/geography">Open the page <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="directory-card">
+                  <h3>Heritage</h3>
+                  <p>The Iba tree and the municipal heritage categories.</p>
+                  <a href="/heritage">Open the page <span aria-hidden="true">→</span></a>
+                </div>
+              </>
+            )}
+          </div>
+        </section>
+      ))}
+    </div>
+  </section>
+</Base>

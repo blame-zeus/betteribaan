@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 /**
- * Build the two map figures used by the site:
+ * Build the map data used by the site:
  *
- *   - 26 barangay outlines for Ibaan, projected to a local SVG viewBox;
+ *   - 26 barangay outlines for Ibaan, projected to a local SVG viewBox for
+ *     the no-script fallback;
+ *   - the same outlines as GeoJSON for the OpenStreetMap-based interactive map;
  *   - Ibaan inside the municipalities and component cities of Batangas.
  *
  * Source: PSA/NAMRIA 2023 administrative boundaries, as published in the
@@ -97,31 +99,6 @@ const pathFor = (geometry, project) =>
     })
     .join('');
 
-/** The outer ring only: holes stay flat, so no side wall is drawn inside a barangay. */
-function outerRingPoints(geometry, project) {
-  const points = largestRing(geometry).map(project);
-  if (
-    points.length > 1 &&
-    points[0][0] === points[points.length - 1][0] &&
-    points[0][1] === points[points.length - 1][1]
-  ) {
-    points.splice(-1, 1);
-  }
-  return points;
-}
-
-/** A vertical extrusion: each edge becomes a quadrilateral from the base to the raised top. */
-function sidePathFor(geometry, project, height) {
-  const points = outerRingPoints(geometry, project);
-  if (points.length < 3) return '';
-  return points
-    .map(([x1, y1], index) => {
-      const [x2, y2] = points[(index + 1) % points.length];
-      return `M${x1} ${y1}L${x2} ${y2}L${x2} ${y2 - height}L${x1} ${y1 - height}Z`;
-    })
-    .join('');
-}
-
 function centroidOf(geometry, project) {
   const ring = largestRing(geometry);
   if (!ring.length) return [0, 0];
@@ -143,6 +120,29 @@ function centroidOf(geometry, project) {
     return [(Math.min(...xs) + Math.max(...xs)) / 2, (Math.min(...ys) + Math.max(...ys)) / 2];
   }
   return [cx / (3 * twiceArea), cy / (3 * twiceArea)];
+}
+
+/** Longitude/latitude centroid, used only for interactive map labels. */
+function geoCentroid(geometry) {
+  const ring = largestRing(geometry);
+  if (!ring.length) return [0, 0];
+  let twiceArea = 0;
+  let x = 0;
+  let y = 0;
+  for (let index = 0; index < ring.length - 1; index += 1) {
+    const [x1, y1] = ring[index];
+    const [x2, y2] = ring[index + 1];
+    const factor = x1 * y2 - x2 * y1;
+    twiceArea += factor;
+    x += (x1 + x2) * factor;
+    y += (y1 + y2) * factor;
+  }
+  if (Math.abs(twiceArea) < 1e-12) {
+    const lons = ring.map(([lon]) => lon);
+    const lats = ring.map(([, lat]) => lat);
+    return [(Math.min(...lons) + Math.max(...lons)) / 2, (Math.min(...lats) + Math.max(...lats)) / 2];
+  }
+  return [x / (3 * twiceArea), y / (3 * twiceArea)];
 }
 
 const slugify = (value) =>
@@ -180,36 +180,55 @@ const labelsShown = new Set([
   'Salaban II', 'San Agustin', 'Santo Niño',
 ]);
 
-const maxIbaanArea = Math.max(...ibaanFeatures.map((feature) => Number(feature.area)));
-const topPad = 72;
+const allPoints = ibaanFeatures.flatMap((feature) => ringsOf(feature.geometry).flat());
+const bounds = [
+  Math.min(...allPoints.map(([lon]) => lon)),
+  Math.min(...allPoints.map(([, lat]) => lat)),
+  Math.max(...allPoints.map(([lon]) => lon)),
+  Math.max(...allPoints.map(([, lat]) => lat)),
+].map((value) => +value.toFixed(6));
 
-const ibaan = {
-  viewBox: `0 -${topPad} ${ibaanProjection.vbWidth} ${ibaanProjection.vbHeight + topPad}`,
-  heightNote:
-    'Tower height is a visual index of mapped area in the simplified boundary file, not official land area or population.',
-  barangays: ibaanFeatures.map((feature) => {
-    const [x, y] = centroidOf(feature.geometry, ibaanProjection.project);
-    const area = Number(feature.area);
-    const height = +(10 + (area / maxIbaanArea) * 50).toFixed(1);
+const geojson = {
+  type: 'FeatureCollection',
+  bbox: bounds,
+  features: ibaanFeatures.map((feature) => {
+    const [lon, lat] = geoCentroid(feature.geometry);
     return {
-      name: feature.name,
-      slug: slugify(feature.name),
-      code: feature.code,
-      areaKm2: +area.toFixed(2),
-      height,
-      depth: +y.toFixed(1),
-      path: pathFor(feature.geometry, ibaanProjection.project),
-      sidePath: sidePathFor(feature.geometry, ibaanProjection.project, height),
-      label: { x: +x.toFixed(1), y: +(y - height).toFixed(1) },
-      showLabel: labelsShown.has(feature.name),
+      type: 'Feature',
+      id: feature.code,
+      properties: {
+        name: feature.name,
+        slug: slugify(feature.name),
+        code: feature.code,
+        areaKm2: +Number(feature.area).toFixed(2),
+        center: [+lon.toFixed(6), +lat.toFixed(6)],
+      },
+      geometry: feature.geometry,
     };
   }),
 };
 
-/** Paint far barangays first so nearer towers overlap them correctly. */
-ibaan.drawOrder = [...ibaan.barangays]
-  .sort((a, b) => a.depth - b.depth || a.name.localeCompare(b.name))
-  .map((barangay) => barangay.slug);
+const ibaan = {
+  viewBox: `0 0 ${ibaanProjection.vbWidth} ${ibaanProjection.vbHeight}`,
+  bounds,
+  center: [
+    +((bounds[0] + bounds[2]) / 2).toFixed(6),
+    +((bounds[1] + bounds[3]) / 2).toFixed(6),
+  ],
+  geojson,
+  barangays: ibaanFeatures.map((feature) => {
+    const [x, y] = centroidOf(feature.geometry, ibaanProjection.project);
+    return {
+      name: feature.name,
+      slug: slugify(feature.name),
+      code: feature.code,
+      areaKm2: +Number(feature.area).toFixed(2),
+      path: pathFor(feature.geometry, ibaanProjection.project),
+      label: { x: +x.toFixed(1), y: +y.toFixed(1) },
+      showLabel: labelsShown.has(feature.name),
+    };
+  }),
+};
 
 const batangasFeatures = [
   ...municipalities.features,

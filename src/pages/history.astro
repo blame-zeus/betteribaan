@@ -1,0 +1,104 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import GapPanel from '../components/GapPanel.astro';
+import { HERITAGE } from '../data/town';
+import { GAPS, SOURCE, type GapEntry } from '../data/ibaan-record';
+import { OFFICIAL } from '../lib/site';
+
+const historyGap = GAPS.filter((gap) => gap.fact.includes('history')) as GapEntry[];
+---
+
+<Base
+  title="History"
+  description="The written Ibaan history available on official pages, centred on the Iba tree, with unsourced dates left out."
+  crumbs={[{ label: 'Government' }, { label: 'History' }]}
+>
+  <PageHeader
+    title="History where the town writes it."
+    intro="The municipal site has no dedicated history page. The clearest official historical account here is the heritage entry for the Iba tree, which the town connects to its own name."
+    note="Unsourced dates, founding stories, and copied encyclopaedia text are not added to this page."
+  >
+    <Toc
+      items={[
+        { id: 'iba-tree', label: 'Iba tree account' },
+        { id: 'heritage-categories', label: 'Heritage categories' },
+        { id: 'gap', label: 'Narrative gap' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="iba-tree">
+    <div class="frame">
+      <div class="prose-wide">
+        <h2>The name and the tree</h2>
+        <p>{HERITAGE.summary}</p>
+        <p>
+          The municipal heritage page records the fruit as a souring ingredient for fish and as the
+          base for vinegar, wine, and sweets. It also describes a local planting programme that has
+          reached every barangay.
+        </p>
+        <p>
+          This is the municipality’s account, summarised in English. It is not an official
+          translation, and it does not supply a chronology for the town.
+        </p>
+      </div>
+      <div class="coverage-grid">
+        {HERITAGE.significance.map((item) => (
+          <div class="coverage-cell">
+            <strong>{item.label}</strong>
+            <span>{item.copy}</span>
+          </div>
+        ))}
+      </div>
+      <SourceNote
+        sources={[SOURCE.profile]}
+        title="Iba tree heritage entry"
+        data="Municipal heritage page, summarised"
+        note="The original entry is in Filipino. See the full heritage guide for the tree’s characteristics and conservation notes."
+      />
+      <p class="table-note">
+        <a href="/heritage">Read the full Iba tree profile <span aria-hidden="true">→</span></a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section-tight" id="heritage-categories">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Four heritage categories.</h2>
+        <div class="section-copy">
+          <p>
+            The municipal cultural map groups heritage as natural, immovable, intangible, and
+            movable. It is the official structure for the town’s heritage listings.
+          </p>
+        </div>
+      </div>
+      <div class="directory-grid">
+        <div class="directory-card">
+          <h3>Cultural map</h3>
+          <p class="card-meta">Municipality of Ibaan</p>
+          <a href={OFFICIAL.culturalMap} target="_blank" rel="noopener noreferrer">Open the official map <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Natural heritage</h3>
+          <p class="card-meta">Municipality of Ibaan</p>
+          <a href={OFFICIAL.naturalHeritage} target="_blank" rel="noopener noreferrer">Open the official register <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Iba Tree</h3>
+          <p class="card-meta">Municipality of Ibaan</p>
+          <a href={HERITAGE.source} target="_blank" rel="noopener noreferrer">Open the official entry <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="gap">
+    <div class="frame">
+      <GapPanel items={historyGap} title="The narrative gap" intro="One history record remains unresolved." />
+    </div>
+  </section>
+</Base>

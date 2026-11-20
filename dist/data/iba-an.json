@@ -46,291 +46,291 @@
     {
       "name": "Bago",
       "slug": "bago",
-      "psgc": "0401010001",
+      "boundaryCode": "0401010001",
       "mapAreaKm2": 1.28,
       "mapPath": "M224 516L283.3 550.4L191.9 629.9L143.1 587.4L224 516Z",
       "mapLabel": {
         "x": 211.2,
-        "y": 549.4
+        "y": 571.2
       }
     },
     {
       "name": "Balanga",
       "slug": "balanga",
-      "psgc": "0401010002",
+      "boundaryCode": "0401010002",
       "mapAreaKm2": 2.27,
       "mapPath": "M408.2 549.1L456.9 564.9L444 682.4L332.3 713.9L408.2 549.1Z",
       "mapLabel": {
         "x": 406,
-        "y": 604.2
+        "y": 635.1
       }
     },
     {
       "name": "Bungahan",
       "slug": "bungahan",
-      "psgc": "0401010003",
+      "boundaryCode": "0401010003",
       "mapAreaKm2": 3.51,
       "mapPath": "M327.4 548.2L335.3 712L203.1 734.7L209 601.8L327.4 548.2Z",
       "mapLabel": {
         "x": 271.2,
-        "y": 607.5
+        "y": 649.8
       }
     },
     {
       "name": "Calamias",
       "slug": "calamias",
-      "psgc": "0401010004",
+      "boundaryCode": "0401010004",
       "mapAreaKm2": 2.3,
       "mapPath": "M436.9 44.9L558.2 84.8L560.7 180.4L435.2 149.2L436.9 44.9Z",
       "mapLabel": {
         "x": 496.7,
-        "y": 83.6
+        "y": 114.8
       }
     },
     {
       "name": "Catandala",
       "slug": "catandala",
-      "psgc": "0401010005",
+      "boundaryCode": "0401010005",
       "mapAreaKm2": 3.41,
       "mapPath": "M377.4 726.6L586.2 648.2L465.7 848.1L377.4 726.6Z",
       "mapLabel": {
         "x": 476.4,
-        "y": 699.6
+        "y": 741
       }
     },
     {
       "name": "Coliat",
       "slug": "coliat",
-      "psgc": "0401010006",
+      "boundaryCode": "0401010006",
       "mapAreaKm2": 1.18,
       "mapPath": "M270.7 435.8L327.1 543.4L205 512.6L270.7 435.8Z",
       "mapLabel": {
         "x": 267.6,
-        "y": 476.4
+        "y": 497.3
       }
     },
     {
       "name": "Dayapan",
       "slug": "dayapan",
-      "psgc": "0401010007",
+      "boundaryCode": "0401010007",
       "mapAreaKm2": 2.38,
       "mapPath": "M444.8 496.9L557.2 507.9L444 682.4L444.8 496.9Z",
       "mapLabel": {
         "x": 482,
-        "y": 530.4
+        "y": 562.4
       }
     },
     {
       "name": "Lapu-lapu",
       "slug": "lapu-lapu",
-      "psgc": "0401010008",
+      "boundaryCode": "0401010008",
       "mapAreaKm2": 1.99,
       "mapPath": "M301.5 235L414.1 264.3L353.6 354.9L250.1 340L301.5 235Z",
       "mapLabel": {
         "x": 329.5,
-        "y": 268.8
+        "y": 297.2
       }
     },
     {
       "name": "Lucsuhin",
       "slug": "lucsuhin",
-      "psgc": "0401010009",
+      "boundaryCode": "0401010009",
       "mapAreaKm2": 3.38,
       "mapPath": "M570.6 477.8L662.5 499.5L619.9 673.9L511.2 649.1L570.6 477.8Z",
       "mapLabel": {
         "x": 590.3,
-        "y": 536.3
+        "y": 577.4
       }
     },
     {
       "name": "Mabalor",
       "slug": "mabalor",
-      "psgc": "0401010010",
+      "boundaryCode": "0401010010",
       "mapAreaKm2": 4.57,
       "mapPath": "M603.9 655.2L688.7 710.8L558.9 921.3L475.7 850.5L603.9 655.2Z",
       "mapLabel": {
         "x": 581.5,
-        "y": 733.7
+        "y": 785.8
       }
     },
     {
       "name": "Malainin",
       "slug": "malainin",
-      "psgc": "0401010011",
+      "boundaryCode": "0401010011",
       "mapAreaKm2": 3.07,
       "mapPath": "M190.1 227.4L295.3 232.4L270.7 435.8L167.2 537.8L190.1 227.4Z",
       "mapLabel": {
         "x": 227.2,
-        "y": 319.3
+        "y": 357.6
       }
     },
     {
       "name": "Matala",
       "slug": "matala",
-      "psgc": "0401010012",
+      "boundaryCode": "0401010012",
       "mapAreaKm2": 1.7,
       "mapPath": "M506.5 325.5L551.1 485.7L463.3 484L506.5 325.5Z",
       "mapLabel": {
         "x": 507,
-        "y": 406.1
+        "y": 431.7
       }
     },
     {
       "name": "Munting-Tubig",
       "slug": "munting-tubig",
-      "psgc": "0401010013",
+      "boundaryCode": "0401010013",
       "mapAreaKm2": 1.9,
       "mapPath": "M577 92.8L639 217.4L611.1 294.5L542.1 221.3L577 92.8Z",
       "mapLabel": {
         "x": 590.3,
-        "y": 174.8
+        "y": 202.3
       }
     },
     {
       "name": "Palindan",
       "slug": "palindan",
-      "psgc": "0401010014",
+      "boundaryCode": "0401010014",
       "mapAreaKm2": 1.72,
       "mapPath": "M242.1 406.4L353.6 354.9L323 481.5L242.1 406.4Z",
       "mapLabel": {
         "x": 306.2,
-        "y": 388.5
+        "y": 414.3
       }
     },
     {
       "name": "Pangao",
       "slug": "pangao",
-      "psgc": "0401010015",
+      "boundaryCode": "0401010015",
       "mapAreaKm2": 3.01,
       "mapPath": "M505.6 333.5L454 555.8L408.2 549.1L356.8 449.2L505.6 333.5Z",
       "mapLabel": {
         "x": 434.4,
-        "y": 418.2
+        "y": 455.9
       }
     },
     {
       "name": "Panghayaan",
       "slug": "panghayaan",
-      "psgc": "0401010016",
+      "boundaryCode": "0401010016",
       "mapAreaKm2": 5.23,
       "mapPath": "M689.5 712.1L764 785.3L788 924.9L734.9 965.6L558.9 921.3L689.5 712.1Z",
       "mapLabel": {
         "x": 689.8,
-        "y": 800.8
+        "y": 859
       }
     },
     {
       "name": "Poblacion",
       "slug": "poblacion",
-      "psgc": "0401010017",
+      "boundaryCode": "0401010017",
       "mapAreaKm2": 0.65,
       "mapPath": "M314.2 491.4L376.2 490.8L327.1 543.4L314.2 491.4Z",
       "mapLabel": {
         "x": 339.2,
-        "y": 492.5
+        "y": 508.5
       }
     },
     {
       "name": "Quilo",
       "slug": "quilo",
-      "psgc": "0401010018",
+      "boundaryCode": "0401010018",
       "mapAreaKm2": 5.43,
       "mapPath": "M184.2 257.1L194 438.8L143.2 588.8L52 439.4L107 268.5L184.2 257.1Z",
       "mapLabel": {
         "x": 132.4,
-        "y": 345.9
+        "y": 405.9
       }
     },
     {
       "name": "Sabang",
       "slug": "sabang",
-      "psgc": "0401010019",
+      "boundaryCode": "0401010019",
       "mapAreaKm2": 3.8,
       "mapPath": "M126.7 580.4L206 735.9L28 734.5L48.2 597.6L126.7 580.4Z",
       "mapLabel": {
         "x": 105.8,
-        "y": 626
+        "y": 671
       }
     },
     {
       "name": "Salaban I",
       "slug": "salaban-i",
-      "psgc": "0401010020",
+      "boundaryCode": "0401010020",
       "mapAreaKm2": 2.14,
       "mapPath": "M298.4 56.5L289.7 207.2L149.1 169.3L234.2 66.1L298.4 56.5Z",
       "mapLabel": {
         "x": 241.8,
-        "y": 104.6
+        "y": 134.3
       }
     },
     {
       "name": "Salaban II",
       "slug": "salaban-ii",
-      "psgc": "0401010028",
+      "boundaryCode": "0401010028",
       "mapAreaKm2": 1.37,
       "mapPath": "M155.7 172.4L271.7 197.1L295.3 232.4L107 268.5L155.7 172.4Z",
       "mapLabel": {
         "x": 195.7,
-        "y": 197.6
+        "y": 220.2
       }
     },
     {
       "name": "San Agustin",
       "slug": "san-agustin",
-      "psgc": "0401010022",
+      "boundaryCode": "0401010022",
       "mapAreaKm2": 2.76,
       "mapPath": "M617.6 303.5L645.1 367.5L655.4 485L551.8 476.3L539.1 419.8L546 315.8L617.6 303.5Z",
       "mapLabel": {
         "x": 595.2,
-        "y": 363.6
+        "y": 399
       }
     },
     {
       "name": "Sandalan",
       "slug": "sandalan",
-      "psgc": "0401010023",
+      "boundaryCode": "0401010023",
       "mapAreaKm2": 1.1,
       "mapPath": "M376.7 526.5L361.5 684.8L336.5 710.2L321.1 554.2L376.7 526.5Z",
       "mapLabel": {
         "x": 348.6,
-        "y": 589.1
+        "y": 609.2
       }
     },
     {
       "name": "Santo Niño",
       "slug": "santo-nino",
-      "psgc": "0401010024",
+      "boundaryCode": "0401010024",
       "mapAreaKm2": 4.97,
       "mapPath": "M299.4 34.4L436.6 78.8L414.1 264.3L295.3 232.4L274.5 126L299.4 34.4Z",
       "mapLabel": {
         "x": 355.2,
-        "y": 92.6
+        "y": 148.4
       }
     },
     {
       "name": "Talaibon",
       "slug": "talaibon",
-      "psgc": "0401010025",
+      "boundaryCode": "0401010025",
       "mapAreaKm2": 2.42,
       "mapPath": "M379.2 282.3L506.5 325.5L355.3 455.3L379.2 282.3Z",
       "mapLabel": {
         "x": 413.7,
-        "y": 322.1
+        "y": 354.4
       }
     },
     {
       "name": "Tulay Na Patpat",
       "slug": "tulay-na-patpat",
-      "psgc": "0401010027",
+      "boundaryCode": "0401010027",
       "mapAreaKm2": 2.78,
       "mapPath": "M447.8 155.3L560.7 180.4L542.3 318.5L414.1 264.3L447.8 155.3Z",
       "mapLabel": {
         "x": 492.7,
-        "y": 196.3
+        "y": 231.9
       }
     }
   ],
-  "mapNote": "Map geometry is from PSA/NAMRIA 2023 administrative boundaries, simplified at roughly 500 m. It is for orientation only. The mapped area of the 26 simplified polygons sums to about 70.32 km2; the official municipal land area is 68.99 km2.",
+  "mapNote": "Map geometry is from PSA/NAMRIA 2023 administrative boundaries, simplified at roughly 500 m. It is for orientation only. Boundary codes come from that file and are not presented as verified PSGC codes. The mapped area of the 26 simplified polygons sums to about 70.32 km2; the official municipal land area is 68.99 km2.",
   "sources": {
     "municipalProfile": "https://www.ibaan.gov.ph/general-information/",
     "municipalHome": "https://www.ibaan.gov.ph/",

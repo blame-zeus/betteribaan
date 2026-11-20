@@ -1,188 +1,1652 @@
 [
   {
-    "title": "Iba ang Ibaan",
-    "description": "The field guide’s front page: the town, the map, the tree, and the public record.",
+    "title": "Overview",
+    "description": "The town in a few official figures.",
     "href": "/",
-    "section": "Start here"
+    "section": "Overview"
+  },
+  {
+    "title": "Municipal services",
+    "description": "What each published office provides.",
+    "href": "/services",
+    "section": "Services"
+  },
+  {
+    "title": "Emergency hotlines",
+    "description": "National lines and any verified local numbers.",
+    "href": "/hotlines",
+    "section": "Services"
+  },
+  {
+    "title": "Holidays",
+    "description": "Declared national and local dates.",
+    "href": "/holidays",
+    "section": "Services"
+  },
+  {
+    "title": "Resort directory",
+    "description": "Published visitor channels, where they exist.",
+    "href": "/resorts",
+    "section": "Services"
+  },
+  {
+    "title": "Officials and offices",
+    "description": "Seats, offices, and what can be verified.",
+    "href": "/government",
+    "section": "Government"
+  },
+  {
+    "title": "Barangays",
+    "description": "The 26 barangays, with figures and boundaries.",
+    "href": "/barangays",
+    "section": "Government"
+  },
+  {
+    "title": "Legislation",
+    "description": "Ordinances, resolutions, and orders on record.",
+    "href": "/legislation",
+    "section": "Government"
+  },
+  {
+    "title": "History",
+    "description": "The Iba tree, the town, and the written record.",
+    "href": "/history",
+    "section": "Government"
+  },
+  {
+    "title": "Statistics",
+    "description": "Population, households, and classification.",
+    "href": "/statistics",
+    "section": "Statistics"
+  },
+  {
+    "title": "Finances",
+    "description": "Income and spending, only where traceable.",
+    "href": "/finances",
+    "section": "Statistics"
+  },
+  {
+    "title": "Infrastructure",
+    "description": "Projects found in public project records.",
+    "href": "/infrastructure",
+    "section": "Transparency"
+  },
+  {
+    "title": "Procurement",
+    "description": "Bids, awards, and notices on record.",
+    "href": "/procurement",
+    "section": "Transparency"
+  },
+  {
+    "title": "Disclosures",
+    "description": "DILG filing index, where available.",
+    "href": "/transparency",
+    "section": "Transparency"
+  },
+  {
+    "title": "Archive",
+    "description": "Documents recovered from public pages.",
+    "href": "/documents",
+    "section": "Transparency"
+  },
+  {
+    "title": "About",
+    "description": "What this project is and how it works.",
+    "href": "/about",
+    "section": "About"
+  },
+  {
+    "title": "Sources",
+    "description": "Where every figure comes from.",
+    "href": "/sources",
+    "section": "About"
+  },
+  {
+    "title": "Open data",
+    "description": "Machine-readable datasets and provenance.",
+    "href": "/data",
+    "section": "About"
+  },
+  {
+    "title": "Accessibility",
+    "description": "How this site is built to be usable.",
+    "href": "/accessibility",
+    "section": "About"
+  },
+  {
+    "title": "Sitemap",
+    "description": "Every page in the guide.",
+    "href": "/sitemap",
+    "section": "About"
   },
   {
     "title": "Geography",
-    "description": "The 26 barangays, the municipal boundary, the five neighbours, and notes on the map.",
+    "description": "The 26 barangays, the municipal boundary, the five neighbours, and map notes.",
     "href": "/geography",
-    "section": "The town"
+    "section": "Government"
   },
   {
     "title": "Heritage",
-    "description": "The Iba tree: the town’s namesake, its uses, and the local effort to bring it back.",
+    "description": "The Iba tree: the town’s namesake, its uses, and the effort to bring it back.",
     "href": "/heritage",
-    "section": "The town"
-  },
-  {
-    "title": "About Better Ibaan",
-    "description": "What this field guide is, what it is not, and how it is sourced.",
-    "href": "/about",
-    "section": "This project"
-  },
-  {
-    "title": "Sources and credits",
-    "description": "Official municipal pages, map boundaries, image credits, and unresolved figures.",
-    "href": "/sources",
-    "section": "This project"
+    "section": "Government"
   },
   {
     "title": "Bago",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010001",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-bago",
     "section": "Barangay"
   },
   {
     "title": "Balanga",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010002",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-balanga",
     "section": "Barangay"
   },
   {
     "title": "Bungahan",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010003",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-bungahan",
     "section": "Barangay"
   },
   {
     "title": "Calamias",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010004",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-calamias",
     "section": "Barangay"
   },
   {
     "title": "Catandala",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010005",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-catandala",
     "section": "Barangay"
   },
   {
     "title": "Coliat",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010006",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-coliat",
     "section": "Barangay"
   },
   {
     "title": "Dayapan",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010007",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-dayapan",
     "section": "Barangay"
   },
   {
     "title": "Lapu-lapu",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010008",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-lapu-lapu",
     "section": "Barangay"
   },
   {
     "title": "Lucsuhin",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010009",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-lucsuhin",
     "section": "Barangay"
   },
   {
     "title": "Mabalor",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010010",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-mabalor",
     "section": "Barangay"
   },
   {
     "title": "Malainin",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010011",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-malainin",
     "section": "Barangay"
   },
   {
     "title": "Matala",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010012",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-matala",
     "section": "Barangay"
   },
   {
     "title": "Munting-Tubig",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010013",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-munting-tubig",
     "section": "Barangay"
   },
   {
     "title": "Palindan",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010014",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-palindan",
     "section": "Barangay"
   },
   {
     "title": "Pangao",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010015",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-pangao",
     "section": "Barangay"
   },
   {
     "title": "Panghayaan",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010016",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-panghayaan",
     "section": "Barangay"
   },
   {
     "title": "Poblacion",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010017",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-poblacion",
     "section": "Barangay"
   },
   {
     "title": "Quilo",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010018",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-quilo",
     "section": "Barangay"
   },
   {
     "title": "Sabang",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010019",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-sabang",
     "section": "Barangay"
   },
   {
     "title": "Salaban I",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010020",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-salaban-i",
     "section": "Barangay"
   },
   {
     "title": "Salaban II",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010028",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-salaban-ii",
     "section": "Barangay"
   },
   {
     "title": "San Agustin",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010022",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-san-agustin",
     "section": "Barangay"
   },
   {
     "title": "Sandalan",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010023",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-sandalan",
     "section": "Barangay"
   },
   {
     "title": "Santo Niño",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010024",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-santo-nino",
     "section": "Barangay"
   },
   {
     "title": "Talaibon",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010025",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-talaibon",
     "section": "Barangay"
   },
   {
     "title": "Tulay Na Patpat",
-    "description": "Barangay in Ibaan, Batangas · PSGC 0401010027",
+    "description": "Barangay in Ibaan, Batangas · see the boundary map",
     "href": "/geography#barangay-tulay-na-patpat",
     "section": "Barangay"
+  },
+  {
+    "title": "Office of the Municipal Accountant",
+    "description": "3 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the Municipal Agriculturist",
+    "description": "19 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the Municipal Assessor",
+    "description": "6 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the Municipal Budget Officer",
+    "description": "1 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the Municipal Engineer",
+    "description": "10 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the GSO",
+    "description": "5 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the HRMO",
+    "description": "8 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the Local DRRM Officer",
+    "description": "4 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the Municipal Civil Registrar",
+    "description": "21 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the Municipal Health Officer",
+    "description": "23 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the MPDC",
+    "description": "11 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the Social Welfare",
+    "description": "11 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the Municipal Treasurer",
+    "description": "20 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of the Mayor",
+    "description": "3 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "OM - Business Permits & Licenses",
+    "description": "12 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "OM - Operation of Cemetery",
+    "description": "3 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "OM - Operation of Market & Slaughterhouse",
+    "description": "5 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "OM - Operation of Waterworks",
+    "description": "6 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Office of Sangguniang Bayan",
+    "description": "5 service entries listed by the municipality",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of BIR Forms 2306, 2307 to local supplier of goods and services",
+    "description": "Service listed by Office of the Municipal Accountant",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Guaranty Deposits, Retention Fees to local supplier of goods and services",
+    "description": "Service listed by Office of the Municipal Accountant",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Submission of Disbursement Vouchers (Barangay Transactions)",
+    "description": "Service listed by Office of the Municipal Accountant",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Conduct of Pre-Marriage Orientation",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Implementation of Cattle Fattening Project",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Implementation of Cattle Dispersal and Re-dispersal Project",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Inspection Certificates",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Organization and Capability Building of Farmers, Fisherfolks, Women and Youth",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Agricultural Data",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Animal Biologics",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Animal Consultation and Treatment Services",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Animal Vaccination (Mass Vaccination)",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Animal Vaccination (Walk-in)",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Assistance to Farmers Filing for Insurance",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Certification",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Farm Equipment and Tools (Free of Use)",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Farming Inputs",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Technical and Extension Services",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Operation of Biosecurity Checkpoints",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Disease Surveillance",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Certification (Land Reclassification)",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Seasonal Farm Workers to Korea",
+    "description": "Service listed by Office of the Municipal Agriculturist",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Annotation , Cancellation of Mortgage",
+    "description": "Service listed by Office of the Municipal Assessor",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of certifications such as property holdings,land holdings, no property, declared owner, no improvement, no obligations, other certifications related to real properties",
+    "description": "Service listed by Office of the Municipal Assessor",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of New Tax Declaration (Newly Declared Building, Machineries, Other Improvement)",
+    "description": "Service listed by Office of the Municipal Assessor",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Tax Declaration for Transfer of Ownership",
+    "description": "Service listed by Office of the Municipal Assessor",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Vicinity Map, Sketch Map",
+    "description": "Service listed by Office of the Municipal Assessor",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Certified True Copy of Tax Declaration and other Documents on File Related to Real Properties (Research Fee)",
+    "description": "Service listed by Office of the Municipal Assessor",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Processing of Obligation Request Form (OBR)",
+    "description": "Service listed by Office of the Municipal Budget Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Verification of PD 1096 compliance thru Clearance Form For New Business Permit Application",
+    "description": "Service listed by Office of the Municipal Engineer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Verification of PD 1096 compliance thru Clearance Form For Renewal Business Permit",
+    "description": "Service listed by Office of the Municipal Engineer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Building Permit (excluding PTTIs)",
+    "description": "Service listed by Office of the Municipal Engineer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Certificate of Annual Inspection",
+    "description": "Service listed by Office of the Municipal Engineer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Excavation Permit (Water Supply)",
+    "description": "Service listed by Office of the Municipal Engineer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Wiring Permit",
+    "description": "Service listed by Office of the Municipal Engineer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Prepare Bidding Documents (Barangay)",
+    "description": "Service listed by Office of the Municipal Engineer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Prepare Progress Billing, Inspection Report, Post Completion Report, Completion Report, Turn-Over and Acceptance (Barangay)",
+    "description": "Service listed by Office of the Municipal Engineer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Prepare Progress Billing, Inspection Report, Post-Completion Report, Completion Report , Turn-Over and Acceptance (Local)",
+    "description": "Service listed by Office of the Municipal Engineer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Prepare Program of Works and,or Purchase Request, Detailed Estimates, Plans and Drawings (Local)",
+    "description": "Service listed by Office of the Municipal Engineer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Equipment, Supplies and Materials for Donation",
+    "description": "Service listed by Office of the GSO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Rentals of Equipment and Machineries",
+    "description": "Service listed by Office of the GSO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Waste Management Operations",
+    "description": "Service listed by Office of the GSO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Events Logistical Assistance",
+    "description": "Service listed by Office of the GSO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Disposal of unserviceable properties and waste materials",
+    "description": "Service listed by Office of the GSO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Accepting Applicants for Vacant Positions in the LGU - (Walk-In and Online)",
+    "description": "Service listed by Office of the HRMO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Accepting Job Order Employees",
+    "description": "Service listed by Office of the HRMO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Accepting On-The-Job Trainee (OJT), Immersion Students",
+    "description": "Service listed by Office of the HRMO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Accepting the Submission of Statement of Assets, Liabilities and Net worth (SALN) of Barangay Officials",
+    "description": "Service listed by Office of the HRMO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Certificate of Completion for OJT, Immersion Students",
+    "description": "Service listed by Office of the HRMO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Service Record, Certificate of Employment and Other HRMO-related document to separated employees of the LGU",
+    "description": "Service listed by Office of the HRMO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Processing of Application for Terminal Leave Benefits",
+    "description": "Service listed by Office of the HRMO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Processing of Complaints Filed at the Public Assistant and Complaints Desk",
+    "description": "Service listed by Office of the HRMO",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Disaster Response Services – Emergency Assistance and Rescue Operations",
+    "description": "Service listed by Office of the Local DRRM Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Early Warning and Risk Reduction Services",
+    "description": "Service listed by Office of the Local DRRM Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Disaster Rehabilitation and Recovery Assistance",
+    "description": "Service listed by Office of the Local DRRM Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Disaster Tools and Equipment",
+    "description": "Service listed by Office of the Local DRRM Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Adoption",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Application and Issuance of Marriage License",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Court Order,Decree for Correction of Entry in the Civil Registry Documents",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Delayed Registration of Certificate of Death and Issuance of Certified Machine Copy of Certificate of Death",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Delayed Registration of Certificate of Live Birth and Issuance of Certified Copy of Certificate of Live Birth (COLB) – (Illegitimate Child with AUSF)",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Delayed Registration of Certificate of Live Birth and Issuance Certified Copy of Certificate of Live Birth (COLB) - (Illegitimate Child: Unknown Father)",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Delayed Registration of Certificate of Live Birth and Issuance of Certified Copy of Certificate of Live Birth (COLB) – Legitimate Child",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Delayed Registration of Certificate of Marriage and Issuance of Certified copy of Certificate of Marriage",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Endorsements,Piecemeal of Civil Registry Documents with Annotations",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Certified Machine Copies,Certification of Civil Registry Documents",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Legitimation by Subsequent Marriage of Parents",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Petition for Change of First Name (RA 9048)",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Petition for Correction of Clerical Error under RA No. 10172",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Registration of Certificate of Death",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Registration of Certificate of Fatal Death",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Registration of Certificate of Live Birth and Issuance of Certified Machine Copy of Certificate of Live Birth (COLB) – Timely Registration (Legitimate Child)",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Registration of Certificate of Marriage",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Rule 12 of Administrative Order No. 1 Series of 2001 of the Implementing Rules and Regulations of RA No. 9048",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Second Endorsement of Civil Registry Documents",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Supplemental Report for Birth, Death and Marriage",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Batch Request System (BREQS)",
+    "description": "Service listed by Office of the Municipal Civil Registrar",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Out-patient Consultation",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Application for Operational Permit for New Water Refilling Stations",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Sanitary Permit",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Health Certificate",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Medical Certificates",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Laboratory Services",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of X-Ray Services-",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Immunization Service",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Maternal Care (Prenatal Check-up)",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Maternal Care (During Delivery)",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Maternal Care (During Postpartum Period)",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Tuberculosis Control Service",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Dental Consultation",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Family Planning Program Service",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Services in time of Disaster and Health Crisis",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Anti-Rabies Vaccination",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Death Certificate",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Permit to Transfer of Cadaver",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Permit to Disinter and Rebury",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Pharmacy",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Phil health Assistance Services (Express Lane Process)",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Phil health Assistance Services (Regular Process)",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Medical Assistance",
+    "description": "Service listed by Office of the Municipal Health Officer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Locational Clearance",
+    "description": "Service listed by Office of the MPDC",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Zoning Certificate",
+    "description": "Service listed by Office of the MPDC",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Zoning Viability",
+    "description": "Service listed by Office of the MPDC",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Land Reclassification",
+    "description": "Service listed by Office of the MPDC",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Preliminary Approval",
+    "description": "Service listed by Office of the MPDC",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Preparation of Final Approval, Development Permit",
+    "description": "Service listed by Office of the MPDC",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Consultation,Interview Related to Work",
+    "description": "Service listed by Office of the MPDC",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Municipal Data, Maps & other Related Information",
+    "description": "Service listed by Office of the MPDC",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Municipal Tricycle Operator’s Permit",
+    "description": "Service listed by Office of the MPDC",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Notice of Violation",
+    "description": "Service listed by Office of the MPDC",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Request for Document Printouts",
+    "description": "Service listed by Office of the MPDC",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Early Childhood Care and Development Program",
+    "description": "Service listed by Office of the Social Welfare",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Emergency Relief Assistance",
+    "description": "Service listed by Office of the Social Welfare",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Certificate of Indigency",
+    "description": "Service listed by Office of the Social Welfare",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Person with Disability ID And Purchase Slip Booklet",
+    "description": "Service listed by Office of the Social Welfare",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Referral Letter",
+    "description": "Service listed by Office of the Social Welfare",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Social Case Study Report",
+    "description": "Service listed by Office of the Social Welfare",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Pre-Marriage Orientation and Counselling",
+    "description": "Service listed by Office of the Social Welfare",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Provision of Assistance to Individual in Crisis Situation",
+    "description": "Service listed by Office of the Social Welfare",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Self-Employment Assistance,Livelihood Program",
+    "description": "Service listed by Office of the Social Welfare",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Special Services",
+    "description": "Service listed by Office of the Social Welfare",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Assistance to Children in Conflict with the Law",
+    "description": "Service listed by Office of the Social Welfare",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Collection of Real Property Tax (over the counter payment)",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Collection of Real Property Tax (online payment)",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Collection of Slaughter and Coral Fees",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Disbursement of Salaries, Wages, Honorariums",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Accountable Form No. 51 to Barangays",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Cash Tickets",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Certificate of RPT Payment",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Checks as Payment of Obligations to Claimant",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Community Tax Certificate",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Police Clearance",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Professional Tax Receipt (PTR)",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Payment of Mayor’s Permit on Business (over the counter)",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Payment of Mayor’s Permit on Business (online payment)",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Payment of Service Charge for Garbage Collection",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Payment Fee for Testing, Calibrating and Sealing of Fuel Pump",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Payment of Certification for Closure of Business and Other Certifications Pertaining to Business Permits",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Payment of Rental Fees for Rental of Municipal Cemetery Lots",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Payment of Fees with Order of Payment",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Payment of Penalties for Municipal Ordinance Violations",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Payment of Stall Rental",
+    "description": "Service listed by Office of the Municipal Treasurer",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Endorsement Letter (Financial,Medical Assistance)",
+    "description": "Service listed by Office of the Mayor",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Unemployment Certificate",
+    "description": "Service listed by Office of the Mayor",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Filing of Complaints for Walk-In Clients",
+    "description": "Service listed by Office of the Mayor",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Amendment of Business , Mayor’s Permit",
+    "description": "Service listed by OM - Business Permits & Licenses",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Annual Inspection of Business Establishment",
+    "description": "Service listed by OM - Business Permits & Licenses",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Business Retirement",
+    "description": "Service listed by OM - Business Permits & Licenses",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Certification",
+    "description": "Service listed by OM - Business Permits & Licenses",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Certified True Copy of Business , Mayor’s Permit",
+    "description": "Service listed by OM - Business Permits & Licenses",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Application and Issuance of Business , Mayor’s Permit (Renewal)",
+    "description": "Service listed by OM - Business Permits & Licenses",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Permits",
+    "description": "Service listed by OM - Business Permits & Licenses",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Permits for Cell Sites",
+    "description": "Service listed by OM - Business Permits & Licenses",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Issuance of Special Permit",
+    "description": "Service listed by OM - Business Permits & Licenses",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Receiving of complaints in connection with business , Mayor’s permit",
+    "description": "Service listed by OM - Business Permits & Licenses",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Online Application of Business Permits and License (Renewal)",
+    "description": "Service listed by OM - Business Permits & Licenses",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Online Application of Business Permit and License (New)",
+    "description": "Service listed by OM - Business Permits & Licenses",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Ibaan Public Cemetery",
+    "description": "Service listed by OM - Operation of Cemetery",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Exhumation of Remains of the Expired Niches",
+    "description": "Service listed by OM - Operation of Cemetery",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Notification of the Expired Niches’ Contract",
+    "description": "Service listed by OM - Operation of Cemetery",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Granting of Lease Stall",
+    "description": "Service listed by OM - Operation of Market & Slaughterhouse",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Sealing and Testing of Instruments Weights",
+    "description": "Service listed by OM - Operation of Market & Slaughterhouse",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Calibration of the Confiscated Weighing Scale Found to be Defective",
+    "description": "Service listed by OM - Operation of Market & Slaughterhouse",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Collection of Pay Parking Fees",
+    "description": "Service listed by OM - Operation of Market & Slaughterhouse",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Collection of Slaughter and Coral Fee",
+    "description": "Service listed by OM - Operation of Market & Slaughterhouse",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Application of New Service Connection",
+    "description": "Service listed by OM - Operation of Waterworks",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Defective Meter Replacement",
+    "description": "Service listed by OM - Operation of Waterworks",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Disconnection of Water Service",
+    "description": "Service listed by OM - Operation of Waterworks",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Payment of Bills",
+    "description": "Service listed by OM - Operation of Waterworks",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Receiving of Request, Complaints",
+    "description": "Service listed by OM - Operation of Waterworks",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Reconnection of Water Service",
+    "description": "Service listed by OM - Operation of Waterworks",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Accreditation of Non-Governmental Organizations or Civil Society Organizations",
+    "description": "Service listed by Office of Sangguniang Bayan",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Application and/or Renewal of Tricycle Franchise",
+    "description": "Service listed by Office of Sangguniang Bayan",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Disciplinary Actions",
+    "description": "Service listed by Office of Sangguniang Bayan",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Reclassification of Lands",
+    "description": "Service listed by Office of Sangguniang Bayan",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Secretary’s Fees",
+    "description": "Service listed by Office of Sangguniang Bayan",
+    "href": "/services#office-directory",
+    "section": "Services"
+  },
+  {
+    "title": "Hon. Jane A. Casas",
+    "description": "Municipal Mayor · Municipality of Ibaan",
+    "href": "/government#officials",
+    "section": "Government"
+  },
+  {
+    "title": "Hon. Edralyn Joy A. Salvame",
+    "description": "Municipal Vice Mayor · Municipality of Ibaan",
+    "href": "/government#officials",
+    "section": "Government"
+  },
+  {
+    "title": "Hon. Juvy M. Mendoza",
+    "description": "Councilor 1 · Municipality of Ibaan",
+    "href": "/government#officials",
+    "section": "Government"
+  },
+  {
+    "title": "Hon. John Henry N. Cabatay",
+    "description": "Councilor 2 · Municipality of Ibaan",
+    "href": "/government#officials",
+    "section": "Government"
+  },
+  {
+    "title": "Hon. Erwin C. Andal",
+    "description": "Councilor 3 · Municipality of Ibaan",
+    "href": "/government#officials",
+    "section": "Government"
+  },
+  {
+    "title": "Hon. Eloise Jan S. Tejada",
+    "description": "Councilor 4 · Municipality of Ibaan",
+    "href": "/government#officials",
+    "section": "Government"
+  },
+  {
+    "title": "Hon. Sixto I. Yabyabin",
+    "description": "Councilor 5 · Municipality of Ibaan",
+    "href": "/government#officials",
+    "section": "Government"
+  },
+  {
+    "title": "Hon. Arsenio Ricero",
+    "description": "Councilor 6 · Municipality of Ibaan",
+    "href": "/government#officials",
+    "section": "Government"
+  },
+  {
+    "title": "Hon. Eddie L. Pasia",
+    "description": "Councilor 7 · Municipality of Ibaan",
+    "href": "/government#officials",
+    "section": "Government"
+  },
+  {
+    "title": "Hon. Phill Joshua G. Caringal",
+    "description": "Councilor 8 · Municipality of Ibaan",
+    "href": "/government#officials",
+    "section": "Government"
+  },
+  {
+    "title": "Hon. Kevin G. Palma",
+    "description": "LnB President · Municipality of Ibaan",
+    "href": "/government#officials",
+    "section": "Government"
+  },
+  {
+    "title": "Hon. Maricar Joy M. Paner",
+    "description": "SKF President · Municipality of Ibaan",
+    "href": "/government#officials",
+    "section": "Government"
+  },
+  {
+    "title": "Villafranca Resort",
+    "description": "Published tourism listing · Brgy. Coliat",
+    "href": "/resorts#directory",
+    "section": "Resorts"
+  },
+  {
+    "title": "The Greenhive Hotel",
+    "description": "Published tourism listing · Metro-Rey Business Park, Brgy. Palindan",
+    "href": "/resorts#directory",
+    "section": "Resorts"
+  },
+  {
+    "title": "Endaya's Private Resort",
+    "description": "Published tourism listing · Brgy. Sto. Niño",
+    "href": "/resorts#directory",
+    "section": "Resorts"
+  },
+  {
+    "title": "Kilyawan Farm Resort",
+    "description": "Published tourism listing · Brgy. Tulay",
+    "href": "/resorts#directory",
+    "section": "Resorts"
+  },
+  {
+    "title": "Villa Grace Private Resort",
+    "description": "Published tourism listing · Brgy. San Agustin",
+    "href": "/resorts#directory",
+    "section": "Resorts"
+  },
+  {
+    "title": "Halati Resort",
+    "description": "Published tourism listing · Brgy. Lucsuhin",
+    "href": "/resorts#directory",
+    "section": "Resorts"
+  },
+  {
+    "title": "Eson's Resort",
+    "description": "Published tourism listing · Purok Ibaba, Brgy. Santo Niño",
+    "href": "/resorts#directory",
+    "section": "Resorts"
+  },
+  {
+    "title": "The Palms Peak Resort",
+    "description": "Published tourism listing · Brgy. Sandalan",
+    "href": "/resorts#directory",
+    "section": "Resorts"
+  },
+  {
+    "title": "Villanueva Resort",
+    "description": "Published tourism listing · Don Pedro Subdivision, Talaibon",
+    "href": "/resorts#directory",
+    "section": "Resorts"
+  },
+  {
+    "title": "Data validation and digitizing, Office of the Municipal Mayor",
+    "description": "Bidded · On process for award",
+    "href": "/procurement#results",
+    "section": "Procurement"
+  },
+  {
+    "title": "Establishment of Real Property GIS System, Office of the Municipal Assessor",
+    "description": "Bidded · On process for award",
+    "href": "/procurement#results",
+    "section": "Procurement"
+  },
+  {
+    "title": "Purchase of GIS system for disaster mapping",
+    "description": "Bidded · On process for award",
+    "href": "/procurement#results",
+    "section": "Procurement"
+  },
+  {
+    "title": "Supply and delivery of office equipment, Municipal Health Officer",
+    "description": "Bidded · On process for award",
+    "href": "/procurement#results",
+    "section": "Procurement"
+  },
+  {
+    "title": "Supply and delivery of medical equipment, Municipal Health Officer",
+    "description": "Bidded · On process for award",
+    "href": "/procurement#results",
+    "section": "Procurement"
+  },
+  {
+    "title": "Improvement of German S. Guerra Memorial Cemetery, Brgy. Sandalan",
+    "description": "Bidded · On process for award",
+    "href": "/procurement#results",
+    "section": "Procurement"
+  },
+  {
+    "title": "Improvement of Colegio de Ibaan, Brgy. Poblacion",
+    "description": "Bidded · On process for award",
+    "href": "/procurement#results",
+    "section": "Procurement"
+  },
+  {
+    "title": "Improvement of public cemetery, Brgy. Poblacion",
+    "description": "Bidded · On process for award",
+    "href": "/procurement#results",
+    "section": "Procurement"
+  },
+  {
+    "title": "Supply of sub-base and base course materials for barangay road maintenance",
+    "description": "Bidded · On process for award",
+    "href": "/procurement#results",
+    "section": "Procurement"
+  },
+  {
+    "title": "Construction of local road, Brgy. Santo Niño",
+    "description": "Bidded · On process for award",
+    "href": "/procurement#results",
+    "section": "Procurement"
+  },
+  {
+    "title": "Improvement of historical monument and rotunda, Brgy. Poblacion",
+    "description": "Bidded · On process for award",
+    "href": "/procurement#results",
+    "section": "Procurement"
   }
 ]

@@ -35,7 +35,7 @@ describe('Ibaan town profile', () => {
 });
 
 describe('barangay map data', () => {
-  it('contains exactly 26 Ibaan barangays with unique slugs and PSGC codes', () => {
+  it('contains exactly 26 Ibaan barangays with unique slugs and boundary codes', () => {
     expect(BARANGAYS).toHaveLength(26);
     expect(mapData.ibaan.barangays).toHaveLength(26);
 
@@ -45,16 +45,29 @@ describe('barangay map data', () => {
     expect(new Set(codes).size).toBe(codes.length);
   });
 
-  it('uses alphabetic names and valid 10-digit PSGC codes', () => {
+  it('uses alphabetic names and stable 10-digit boundary codes', () => {
     const names = BARANGAYS.map((barangay) => barangay.name);
     expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b)));
     expect(BARANGAYS.every((barangay) => /^\d{10}$/.test(barangay.code))).toBe(true);
   });
 
-  it('includes Poblacion and a drawable path for every barangay', () => {
+  it('includes Poblacion and a drawable fallback path for every barangay', () => {
     expect(BARANGAYS.some((barangay) => barangay.name === 'Poblacion')).toBe(true);
     expect(BARANGAYS.every((barangay) => barangay.path.startsWith('M'))).toBe(true);
     expect(BARANGAYS.every((barangay) => barangay.label.x > 0 && barangay.label.y > 0)).toBe(true);
+  });
+
+  it('supplies GeoJSON polygons and label centres for the interactive map', () => {
+    expect(mapData.ibaan.geojson.features).toHaveLength(26);
+    expect(mapData.ibaan.geojson.bbox).toEqual(expect.arrayContaining([expect.any(Number)]));
+    for (const feature of mapData.ibaan.geojson.features) {
+      expect(['Polygon', 'MultiPolygon']).toContain(feature.geometry.type);
+      expect(feature.properties.center).toHaveLength(2);
+      expect(feature.properties.center[0]).toBeGreaterThan(121);
+      expect(feature.properties.center[1]).toBeGreaterThan(13);
+      expect(feature.properties.center[0]).toBeLessThan(122);
+      expect(feature.properties.center[1]).toBeLessThan(14);
+    }
   });
 
   it('keeps the simplified mapped area close to the published geometry', () => {

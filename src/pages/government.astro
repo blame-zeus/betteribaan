@@ -1,0 +1,147 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import { OFFICES, OFFICE_COUNT, OFFICIALS, SOURCE } from '../data/ibaan-record';
+import { OFFICIAL } from '../lib/site';
+---
+
+<Base
+  title="Officials and offices"
+  description="The elected officials and departments published by the Municipality of Ibaan, with conflicting records named."
+  crumbs={[{ label: 'Government' }]}
+>
+  <PageHeader
+    title="Who holds office, and what is published."
+    intro="The municipal site publishes the current elected officials, twenty departments and offices, a vision and mission page, and awards notices. This page indexes those records without turning them into a claim of completeness."
+    note="Where another government source disagrees with the municipal site, both are named and the conflict is left visible."
+  >
+    <Toc
+      items={[
+        { id: 'officials', label: 'Elected officials' },
+        { id: 'offices', label: 'Departments and offices' },
+        { id: 'plans-and-awards', label: 'Plans and awards' },
+        { id: 'conflict', label: 'A conflicting record' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="officials">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Elected officials.</h2>
+        <div class="section-copy">
+          <p>
+            Names, roles, and committee assignments follow the municipal Elected Officials page.
+            The LnB and SKF presidents are included as the page presents them.
+          </p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Municipal officials of Ibaan as published by the municipality</caption>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Role</th>
+              <th scope="col">Committees</th>
+            </tr>
+          </thead>
+          <tbody>
+            {OFFICIALS.map((official) => (
+              <tr>
+                <th scope="row">{official.name}</th>
+                <td>{official.role}</td>
+                <td>{official.committees?.join(' · ') ?? '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <SourceNote
+        sources={[SOURCE.officials]}
+        title="Elected officials"
+        data="Names, roles, and committees from the municipal officials page"
+        note="Committee assignments are summarised from the same page. Check the official source for the current term."
+        refresh="Re-check after every local election or appointment"
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="offices">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Departments and offices.</h2>
+        <div class="section-copy">
+          <p>
+            The municipal Services menu lists {OFFICE_COUNT} offices. Their service entries are
+            grouped on the <a href="/services">municipal services page</a>.
+          </p>
+        </div>
+      </div>
+      <div class="directory-grid">
+        {OFFICES.map((office) => (
+          <div class="directory-card">
+            <h3>{office.name}</h3>
+            <p class="card-meta">{office.services.length} service entries</p>
+            <a href="/services#office-directory">See the services <span aria-hidden="true">→</span></a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="plans-and-awards">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Plans and awards.</h2>
+        <div class="section-copy">
+          <p>The municipality publishes separate pages for its vision and mission and for awards.</p>
+        </div>
+      </div>
+      <div class="directory-grid">
+        <div class="directory-card">
+          <h3>Vision and mission</h3>
+          <p class="card-meta">Municipality of Ibaan</p>
+          <a href={OFFICIAL.vision} target="_blank" rel="noopener noreferrer">Open the official page <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Achievements and awards</h3>
+          <p class="card-meta">Municipality of Ibaan</p>
+          <a href={OFFICIAL.awards} target="_blank" rel="noopener noreferrer">Open the official page <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Barangays</h3>
+          <p class="card-meta">26 barangays, with a boundary map</p>
+          <a href="/barangays">Open the barangay guide <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <SourceNote
+        sources={[SOURCE.vision, SOURCE.awards]}
+        title="Plans and recognition"
+        data="Official vision, mission, and awards pages"
+        note="Award notices are not summarised as rankings. The official pages carry their full wording and dates."
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="conflict">
+    <div class="frame">
+      <div class="callout">
+        <strong>Conflicting mayor record</strong>
+        <p>
+          The municipal Elected Officials page lists Hon. Jane A. Casas as mayor. The DTI CMCI
+          profile lists Hon. Edralyn Joy A. Salvame as mayor for 2024 and earlier years. This guide
+          follows the municipal page for the roles shown above and treats the CMCI field as stale.
+        </p>
+      </div>
+      <SourceNote
+        sources={[SOURCE.officials, SOURCE.cmci]}
+        title="Two records, one role"
+        data="Official municipal page and DTI CMCI profile"
+        note="The CMCI profile is useful for rank history, not for the current elected mayor."
+      />
+    </div>
+  </section>
+</Base>

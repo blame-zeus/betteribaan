@@ -1,0 +1,705 @@
+{
+ "url": "http://127.0.0.1:4322/",
+ "at": "2026-11-20T03:45:06.820Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.86,
+    0.95,
+    0.95,
+    0.69,
+    0.67,
+    0.74,
+    0.71,
+    0.75,
+    0.95
+   ],
+   "motion": {
+    "elements": 44,
+    "css": 4,
+    "transitions": 40,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 9158,
+     "screens": 8.9,
+     "words": 931,
+     "img": 7,
+     "video": 0,
+     "canvas": 1,
+     "svg": 6,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 5,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 1,
+     "pictureSamples": [
+      "ben-r-medrano-plaza-ibaan-batangas-2026.DErKwPq1",
+      "iba-tree-ibaan.Cj2rIHpJ_1zaOQa.webp",
+      "st-james-the-greater-shrine-parish-ibaan.DbTx58L",
+      "good-friday-procession-in-ibaan-batangas-2023.L4",
+      "panuluyan-sa-ibaan-batangas-2023-12-24.B-VecOqd_",
+      "j-pastor-street-ibaan-batangas-2026.DcP1FHpz_Z1y"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Iba ang Ibaan.",
+     "words": 3,
+     "chars": 14,
+     "lines": 1,
+     "size": 69.1,
+     "vw": 9,
+     "font": "Source Serif 4",
+     "weight": 600,
+     "tracking": -0.06,
+     "leading": 0.86,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.89,
+     "top": 127,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Iba ang Ibaan.",
+     "words": 3,
+     "lines": 1,
+     "size": 69.1,
+     "font": "Source Serif 4"
+    },
+    "headings": [
+     {
+      "text": "Iba ang Ibaan.",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 69.1,
+      "vw": 9,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 127,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Twenty-six barangays, one town.",
+      "words": 4,
+      "chars": 31,
+      "lines": 2,
+      "size": 52,
+      "vw": 6.8,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 1272,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "A town named for a tree.",
+      "words": 6,
+      "chars": 24,
+      "lines": 2,
+      "size": 52,
+      "vw": 6.8,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 3851,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Five neighbours.",
+      "words": 2,
+      "chars": 16,
+      "lines": 2,
+      "size": 52,
+      "vw": 6.8,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 4606,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The town, in ordinary light.",
+      "words": 5,
+      "chars": 28,
+      "lines": 2,
+      "size": 52,
+      "vw": 6.8,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 5826,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The public record.",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 52,
+      "vw": 6.8,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 7293,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Iba ang Ibaan.",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 99.8,
+      "vw": 13,
+      "font": "Source Serif 4",
+      "weight": 600,
+      "tracking": -0.06,
+      "leading": 0.88,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.66,
+      "top": 8224,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Public Sans",
+       "share": 0.94,
+       "mono": false
+      },
+      {
+       "family": "Source Serif 4",
+       "share": 0.06,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      16,
+      17,
+      18,
+      19,
+      22,
+      25,
+      52,
+      69,
+      100
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Public Sans",
+      "size": 16,
+      "leading": 1.62,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.1
+     },
+     "measureChars": 64,
+     "max": {
+      "size": 99.8,
+      "vw": 13,
+      "font": "Source Serif 4",
+      "text": "Iba ang Ibaan."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#fbfbfa",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.11,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#efefec",
+       "top": 111,
+       "hsl": {
+        "h": 60,
+        "s": 0.09,
+        "l": 0.93
+       }
+      },
+      {
+       "color": "#ebebe7",
+       "top": 450,
+       "hsl": {
+        "h": 60,
+        "s": 0.09,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 1562,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f7f7f5",
+       "top": 1576,
+       "hsl": {
+        "h": 60,
+        "s": 0.11,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#f2f2ef",
+       "top": 2450,
+       "hsl": {
+        "h": 60,
+        "s": 0.1,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#fbfbfa",
+       "top": 3133,
+       "hsl": {
+        "h": 60,
+        "s": 0.11,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#e8edf8",
+       "top": 7262,
+       "hsl": {
+        "h": 221,
+        "s": 0.53,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#0b1220",
+       "top": 8168,
+       "hsl": {
+        "h": 220,
+        "s": 0.49,
+        "l": 0.08
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#151d2b",
+       "share": 0.58
+      },
+      {
+       "color": "#5d6472",
+       "share": 0.17
+      },
+      {
+       "color": "#0b1220",
+       "share": 0.07
+      },
+      {
+       "color": "#1b3c8c",
+       "share": 0.05
+      },
+      {
+       "color": "#f4f5f9",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#0b2a6b",
+      "hsl": {
+       "h": 221,
+       "s": 0.81,
+       "l": 0.23
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 36,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to main content",
+      "Explore the barangays"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 11,
+     "boxRadius": 18,
+     "squareMedia": 0,
+     "roundedMedia": 7,
+     "mediaRadius": 18,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.46
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 60,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "source serif 4",
+     "public sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 9158,
+    "margins": {
+     "left": 26,
+     "right": 26
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 103,
+      "height": 1091,
+      "words": 63,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Iba ang",
+       "size": 69,
+       "tag": "h1"
+      },
+      "left": 36,
+      "right": 36,
+      "textLeft": 42,
+      "textRight": 235,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#barangays.section.map-section",
+      "tag": "section",
+      "top": 1194,
+      "height": 1939,
+      "words": 237,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Twenty-six barangays, one town.",
+       "size": 52,
+       "tag": "h2"
+      },
+      "left": 26,
+      "right": 41,
+      "textLeft": 26,
+      "textRight": 119,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.heritage-section",
+      "tag": "section",
+      "top": 3133,
+      "height": 1395,
+      "words": 121,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 26,
+      "right": 26,
+      "textLeft": 26,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.context-section",
+      "tag": "section",
+      "top": 4528,
+      "height": 1219,
+      "words": 56,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Five neighbours.",
+       "size": 52,
+       "tag": "h2"
+      },
+      "left": 26,
+      "right": 26,
+      "textLeft": 26,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.gallery-section",
+      "tag": "section",
+      "top": 5747,
+      "height": 1437,
+      "words": 74,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "The town, in ordinary light.",
+       "size": 52,
+       "tag": "h2"
+      },
+      "left": 26,
+      "right": 26,
+      "textLeft": 26,
+      "textRight": 177,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.public-record",
+      "tag": "section",
+      "top": 7184,
+      "height": 985,
+      "words": 156,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The public record.",
+       "size": 52,
+       "tag": "h2"
+      },
+      "left": 57,
+      "right": 77,
+      "textLeft": 57,
+      "textRight": 77,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 8168,
+      "height": 990,
+      "words": 100,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Iba ang Ibaan.",
+       "size": 100,
+       "tag": "a"
+      },
+      "left": 26,
+      "right": 29,
+      "textLeft": 26,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Iba ang Ibaan.",
+      "size": 69,
+      "top": 127,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 26,
+      "n": 8
+     },
+     {
+      "x": 42,
+      "n": 2
+     },
+     {
+      "x": 57,
+      "n": 2
+     },
+     {
+      "x": 341,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 768,
+   "message": "10 different font sizes (13, 16, 17, 18, 19, 22, 25, 52, 69, 100).",
+   "fix": "A page needs about five: display, heading, lead, body, small."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "C:\\Users\\jjzeu\\Documents\\Personal Projects\\betteribaan\\betteribaan\\.taste-skill\\map-home-final-768\\tablet-fold.jpg",
+   "pages": [
+    "C:\\Users\\jjzeu\\Documents\\Personal Projects\\betteribaan\\betteribaan\\.taste-skill\\map-home-final-768\\tablet-page-01.jpg",
+    "C:\\Users\\jjzeu\\Documents\\Personal Projects\\betteribaan\\betteribaan\\.taste-skill\\map-home-final-768\\tablet-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -1,21 +1,34 @@
 ---
 import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
-import { SITE } from '../lib/site';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import GapPanel from '../components/GapPanel.astro';
+import { GAPS, SOURCE } from '../data/ibaan-record';
+import { NAV_GROUPS, OFFICIAL, SITE } from '../lib/site';
 ---
 
 <Base
   title="About"
-  description="What Better Ibaan is, what it is not, and how it is sourced."
+  description="What Better Ibaan is, what it is not, and how its facts are sourced."
   crumbs={[{ label: 'About' }]}
 >
   <PageHeader
     title="A field guide, not an official site."
     intro="Better Ibaan is an independent civic project. It gathers what the Municipality of Ibaan and other public sources already publish, and puts it in one readable place."
     note="No ads. No tracking. No contact form. No claim to speak for the town."
-  />
+  >
+    <Toc
+      items={[
+        { id: 'purpose', label: 'Purpose' },
+        { id: 'sections', label: 'Six sections' },
+        { id: 'method', label: 'How facts are handled' },
+        { id: 'limits', label: 'What is left out' },
+      ]}
+    />
+  </PageHeader>
 
-  <section class="section-tight">
+  <section class="section-tight" id="purpose">
     <div class="frame">
       <div class="prose-wide">
         <h2>Why “Iba ang Ibaan”?</h2>
@@ -25,52 +38,73 @@ import { SITE } from '../lib/site';
           work. It is simply the shortest way to say: this place is specific, and it deserves a
           specific guide.
         </p>
-
         <h2>What this is</h2>
         <ul>
-          <li>A sourced field guide to Ibaan, Batangas.</li>
-          <li>A readable index of the town’s 26 barangays, geography, heritage, and public record.</li>
+          <li>A sourced field guide to Ibaan, Batangas, with the same section structure as a full town reference.</li>
+          <li>A readable index of offices, services, officials, barangays, statistics, procurement, and archives.</li>
           <li>A static site with no accounts, no comments, and no advertising.</li>
-          <li>An open-data project: the map data and barangay list are downloadable.</li>
+          <li>An open-data project: the datasets and boundary geometry are downloadable.</li>
         </ul>
-
         <h2>What this is not</h2>
         <ul>
           <li>Not an official website of the Municipality of Ibaan.</li>
-          <li>Not a substitute for the municipal profile, the Sangguniang Bayan, or any public office.</li>
+          <li>Not a substitute for a municipal office, the Sangguniang Bayan, or a legal record.</li>
           <li>Not a complete archive. If a page is missing, it may simply not have been added yet.</li>
           <li>Not a source of legal, property, or boundary advice.</li>
         </ul>
+      </div>
+      <SourceNote
+        sources={[SOURCE.profile, SOURCE.officials, SOURCE.bids]}
+        title="Core sources"
+        data="Municipal profile, officials, and bids"
+        note="The official site states that it is being updated. This guide records its checked state rather than assuming it is complete."
+      />
+    </div>
+  </section>
 
-        <h2>How the facts are handled</h2>
+  <section class="section-tight" id="sections">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Six sections.</h2>
+        <div class="section-copy">
+          <p>
+            The top-level navigation is the site's table of contents. Geography and heritage are
+            linked from Government and kept as standalone pages.
+          </p>
+        </div>
+      </div>
+      <div class="nav-card-grid">
+        {NAV_GROUPS.map((group) => (
+          <a class="nav-card" href={group.href}>
+            <strong>{group.label}</strong>
+            <span>{group.blurb}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="method">
+    <div class="frame">
+      <div class="prose-wide">
+        <h2>How facts are handled</h2>
         <p>
-          Municipal facts come from the Municipality of Ibaan’s own pages. Population and household
+          Municipal facts come from the Municipality of Ibaan's own pages. Population and household
           figures are the 2020 census values as stated in the municipal profile. The Iba tree feature
-          is a summary of the municipality’s Filipino-language heritage entry. The English is ours,
+          is a summary of the municipality's Filipino-language heritage entry. The English is ours,
           not an official translation.
         </p>
         <p>
           Where official pages disagree, the guide records the disagreement and leaves the figure
           out. The municipal profile and its geography section currently give different elevations
-          and different distances to Manila. Neither figure is published here. The figure notes are
-          on the <a href="/sources">sources page</a>.
+          and different distances to Manila. Neither figure is published here.
         </p>
-
         <h2>How the maps are handled</h2>
         <p>
           The barangay and provincial maps use the PSA and NAMRIA 2023 administrative boundary file,
           as published in the MIT-licensed barangay-boundaries-repository. The geometry is
-          simplified at roughly 500 metres. The map is an orientation aid, not a survey, and it does
-          not settle any legal boundary.
+          simplified at roughly 500 metres. The map is an orientation aid, not a survey.
         </p>
-
-        <h2>Why the guide points outward</h2>
-        <p>
-          The record belongs to the town. Where an official page exists, this guide links to it
-          instead of copying it wholesale. That keeps the source visible, and it keeps this project
-          from pretending to be the municipality.
-        </p>
-
         <h2>Technology</h2>
         <p>
           {SITE.name} is a static Astro site. Search, the barangay filter, the theme control, and the
@@ -78,22 +112,29 @@ import { SITE } from '../lib/site';
           self-hosted Source Serif 4 and Public Sans.
         </p>
       </div>
+      <div class="callout">
+        <strong>Official starting point</strong>
+        <p>
+          If you need an official answer, the municipal profile is the right place to begin. The
+          <a href="/sources">sources page</a> lists the rest.
+        </p>
+        <p class="note-actions">
+          <a class="btn" href={OFFICIAL.profile} target="_blank" rel="noopener noreferrer">
+            Municipal profile <span aria-hidden="true">↗</span>
+          </a>
+          <a class="text-link" href="/data">Open the datasets <span aria-hidden="true">→</span></a>
+        </p>
+      </div>
     </div>
   </section>
 
-  <section class="section-tight">
+  <section class="section-tight" id="limits">
     <div class="frame">
-      <div class="note-panel">
-        <h2>Start with a source</h2>
-        <p>
-          If you need an official answer, the municipal profile is the right place to begin. The
-          sources page lists the rest.
-        </p>
-        <p class="note-actions">
-          <a class="btn" href="https://www.ibaan.gov.ph/general-information/" target="_blank" rel="noopener noreferrer">Municipal profile <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="/sources">Sources and credits <span aria-hidden="true">→</span></a>
-        </p>
-      </div>
+      <GapPanel
+        items={GAPS}
+        title="What is not filled in"
+        intro="This guide does not borrow a figure from another town to make a page look complete. These are the open fields."
+      />
     </div>
   </section>
 </Base>

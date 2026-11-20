@@ -7,59 +7,67 @@ interface Props {
 }
 
 const {
-  mapTitle = 'The 26 barangays of Ibaan, raised by approximate mapped area',
-  mapDescription = 'Approximate barangay boundaries from the PSA and NAMRIA 2023 boundary file, simplified for the web. Raised faces show mapped area, not population.',
+  mapTitle = 'The 26 barangays of Ibaan on an OpenStreetMap-based map',
+  mapDescription = 'An interactive OpenStreetMap-style map of Ibaan with approximate PSA and NAMRIA 2023 barangay boundaries overlaid.',
 } = Astro.props;
-
-const bySlug = new Map(BARANGAYS.map((barangay) => [barangay.slug, barangay]));
-const drawnBarangays = MAP.ibaan.drawOrder.map((slug) => bySlug.get(slug)!);
 ---
 
 <section class="map-board" data-map-board aria-labelledby="barangay-map-title">
   <div class="map-stage">
     <div class="map-canvas">
-      <div class="map-svg-wrap">
-        <svg
-          class="ibaan-map"
-          viewBox={MAP.ibaan.viewBox}
-          role="img"
-          aria-labelledby="barangay-map-title barangay-map-desc"
-        >
-          <title id="barangay-map-title">{mapTitle}</title>
-          <desc id="barangay-map-desc">{mapDescription}</desc>
+      <div class="map-viewport">
+        <div class="map-svg-wrap" data-map-fallback>
+          <svg
+            class="ibaan-map"
+            viewBox={MAP.ibaan.viewBox}
+            role="img"
+            aria-labelledby="barangay-map-title barangay-map-desc"
+          >
+            <title id="barangay-map-title">{mapTitle}</title>
+            <desc id="barangay-map-desc">{mapDescription}</desc>
 
-          <g class="map-shapes">
-            {drawnBarangays.map((barangay, index) => (
-              <a
-                class="map-shape"
-                href={`/geography#barangay-${barangay.slug}`}
-                data-map-shape={barangay.slug}
-                data-name={barangay.name}
-                data-code={barangay.code}
-                aria-label={`Barangay ${barangay.name}, PSGC ${barangay.code}`}
-                style={`--lift:${barangay.height};--i:${index}`}
-              >
-                <path class="map-base" d={barangay.path} />
-                <path class="map-sides" d={barangay.sidePath} />
-                <g class="map-top-lift">
+            <g class="map-shapes">
+              {BARANGAYS.map((barangay, index) => (
+                <a
+                  class="map-shape"
+                  href={`/geography#barangay-${barangay.slug}`}
+                  data-map-shape={barangay.slug}
+                  data-name={barangay.name}
+                  data-code={barangay.code}
+                  aria-label={`Barangay ${barangay.name}, PSGC ${barangay.code}`}
+                  style={`--i:${index}`}
+                >
                   <path class="map-outline" d={barangay.path} />
-                </g>
-              </a>
-            ))}
-          </g>
+                </a>
+              ))}
+            </g>
 
-          <g class="map-compass" aria-hidden="true" transform="translate(764 -16)">
-            <path d="M0 18V-12M0-12l-7 13M0-12l7 13" />
-            <text x="0" y="-22">N</text>
-          </g>
-        </svg>
+            <g class="map-labels" aria-hidden="true">
+              {BARANGAYS.filter((barangay) => barangay.showLabel).map((barangay) => (
+                <text x={barangay.label.x} y={barangay.label.y}>{barangay.name}</text>
+              ))}
+            </g>
+
+            <g class="map-compass" aria-hidden="true" transform="translate(764 40)">
+              <path d="M0 18V-12M0-12l-7 13M0-12l7 13" />
+              <text x="0" y="-22">N</text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="map-canvas-gl" data-map-canvas data-ui aria-hidden="true" inert></div>
+
+        <p class="map-status" data-map-status data-ui role="status" aria-live="polite" hidden></p>
       </div>
 
-      <div class="map-toolbar">
+      <div class="map-toolbar" data-map-ui data-ui hidden>
         <button type="button" class="map-view-toggle" data-map-3d aria-pressed="true">
           3D view
         </button>
-        <p class="map-height-note">{MAP.ibaan.heightNote}</p>
+        <button type="button" class="map-reset" data-map-reset>Reset view</button>
+        <p class="map-view-note">
+          3D shows OpenStreetMap terrain and buildings. Height is not a data value.
+        </p>
       </div>
 
       <div class="map-readout" aria-live="polite" data-map-readout>
@@ -67,9 +75,9 @@ const drawnBarangays = MAP.ibaan.drawOrder.map((slug) => bySlug.get(slug)!);
         <span class="map-readout-code" data-map-code>{BARANGAYS.length} barangays · Batangas</span>
       </div>
 
-      <p class="map-caption">
-        Approximate boundaries · PSA/NAMRIA 2023, simplified.
-        <a href="/sources">Read the map note</a>.
+      <p class="map-caption" data-ui>
+        Basemap © OpenStreetMap contributors · tiles by OpenFreeMap. Boundary outlines are
+        approximate, PSA/NAMRIA 2023. <a href="/sources">Map sources</a>.
       </p>
     </div>
 
@@ -103,7 +111,7 @@ const drawnBarangays = MAP.ibaan.drawOrder.map((slug) => bySlug.get(slug)!);
         ))}
       </ul>
 
-      <p class="map-index-note">
+      <p class="map-index-note" data-ui>
         PSGC codes come from the 2023 boundary file. Hover, focus, or tap a name to find it on the map.
       </p>
     </aside>

@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import GapPanel from '../components/GapPanel.astro';
+import { GAPS, SOURCE, type GapEntry } from '../data/ibaan-record';
+import { OFFICIAL } from '../lib/site';
+
+const holidayGap = GAPS.filter((gap) => gap.fact.includes('holiday'));
+---
+
+<Base
+  title="Holidays"
+  description="What can be verified about Ibaan holiday notices, with the local calendar left as a gap."
+  crumbs={[{ label: 'Services' }, { label: 'Holidays' }]}
+>
+  <PageHeader
+    title="Holidays, with the gap marked."
+    intro="No dedicated Ibaan holiday calendar was found on the municipal site. This page points to the pages where notices do appear and leaves the local list unpublished."
+    note="A national holiday proclamation is not an Ibaan-specific source. This guide does not present one as the town calendar."
+  >
+    <Toc
+      items={[
+        { id: 'what-we-found', label: 'What we found' },
+        { id: 'where-to-check', label: 'Where to check' },
+        { id: 'verification-gap', label: 'Verification gap' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="what-we-found">
+    <div class="frame">
+      <div class="status-card" data-ui>
+        <h3>Local holiday calendar: not found</h3>
+        <p>
+          The municipal navigation and archive pages checked for this guide do not show a dedicated
+          holiday list. Announcements and advisories are the closest public channels.
+        </p>
+      </div>
+      <SourceNote
+        sources={[SOURCE.announcements, SOURCE.events]}
+        title="Archive check"
+        data="Announcements and events archives"
+        note="Archives are dynamic and cover the years served by the municipal site. A missing list here is not proof that no local holiday exists."
+        refresh="Re-check when the municipal site publishes a calendar"
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="where-to-check">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Where notices appear.</h2>
+        <div class="section-copy">
+          <p>These are the official municipal channels used for time-sensitive notices.</p>
+        </div>
+      </div>
+      <div class="directory-grid">
+        <div class="directory-card">
+          <h3>Announcements</h3>
+          <p class="card-meta">Municipality of Ibaan</p>
+          <a href={OFFICIAL.announcements} target="_blank" rel="noopener noreferrer">Open the archive <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Events</h3>
+          <p class="card-meta">Municipality of Ibaan</p>
+          <a href={OFFICIAL.events} target="_blank" rel="noopener noreferrer">Open the archive <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Municipal home</h3>
+          <p class="card-meta">Municipality of Ibaan</p>
+          <a href={OFFICIAL.home} target="_blank" rel="noopener noreferrer">Open the official site <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="verification-gap">
+    <div class="frame">
+      <GapPanel items={holidayGap as GapEntry[]} title="The open gap" intro="One holiday fact remains unresolved." />
+    </div>
+  </section>
+</Base>

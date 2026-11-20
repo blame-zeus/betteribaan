@@ -1,13 +1,14 @@
 import type { APIRoute } from 'astro';
-
-const paths = ['/', '/geography/', '/heritage/', '/about/', '/sources/'];
+import { PAGES } from '../data/town';
 
 export const GET: APIRoute = ({ site }) => {
   const origin = site ?? new URL('http://localhost:4321');
   const lastmod = new Date().toISOString().slice(0, 10);
+  const paths = PAGES.map((page) => page.href);
   const urls = paths
     .map((path) => {
-      const loc = new URL(path, origin).toString();
+      const withSlash = path.endsWith('/') ? path : `${path}/`;
+      const loc = new URL(withSlash, origin).toString();
       return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`;
     })
     .join('\n');

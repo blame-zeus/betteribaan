@@ -1,10 +1,43 @@
 ---
+import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
 import BarangayMap from '../components/BarangayMap.astro';
 import BatangasMap from '../components/BatangasMap.astro';
 import { BARANGAYS, MAP, NEIGHBOURS, TOWN } from '../data/town';
 import { formatNumber } from '../lib/format';
+
+import plazaPhoto from '../assets/images/ben-r-medrano-plaza-ibaan-batangas-2026.jpg';
+import streetPhoto from '../assets/images/j-pastor-street-ibaan-batangas-2026.jpg';
+import churchPhoto from '../assets/images/st-james-the-greater-shrine-parish-ibaan.jpg';
+import grottoPhoto from '../assets/images/ibaan-church-grotto-2026.jpg';
+
+const gallery = [
+  {
+    image: plazaPhoto,
+    alt: 'Ben R. Medrano Plaza in Ibaan, Batangas',
+    caption: 'Ben R. Medrano Plaza, 2026',
+    meta: 'Ralff Nestor Nacor · CC BY-SA 4.0',
+  },
+  {
+    image: streetPhoto,
+    alt: 'J. Pastor Street in Ibaan, Batangas',
+    caption: 'J. Pastor Street, 2026',
+    meta: 'Ralff Nestor Nacor · CC BY-SA 4.0',
+  },
+  {
+    image: churchPhoto,
+    alt: 'St. James the Greater Shrine-Parish in Ibaan, Batangas',
+    caption: 'St. James the Greater Shrine-Parish, 2023',
+    meta: 'LMP 2001 · CC BY-SA 4.0',
+  },
+  {
+    image: grottoPhoto,
+    alt: 'The grotto beside the church in Ibaan, Batangas',
+    caption: 'Ibaan Church Grotto, 2026',
+    meta: 'Ralff Nestor Nacor · CC BY-SA 4.0',
+  },
+];
 ---
 
 <Base
@@ -15,7 +48,7 @@ import { formatNumber } from '../lib/format';
   <PageHeader
     title="A small town, drawn plainly."
     intro="Ibaan is one of the municipalities of Batangas, with 26 barangays and a boundary it shares with five neighbours. This page keeps the map and the caveats together."
-    note="Official figures below come from the Municipality of Ibaan’s profile. The barangay map is a simplified orientation map, not a survey."
+    note="Official figures below come from the Municipality of Ibaan’s profile. The barangay map uses OpenStreetMap tiles and simplified boundaries; it is an orientation map, not a survey."
   />
 
   <section class="section-tight">
@@ -55,9 +88,9 @@ import { formatNumber } from '../lib/format';
         <h2>The 26 barangays.</h2>
         <div class="section-copy">
           <p>
-            The map is generated from the PSA and NAMRIA 2023 administrative boundary file. The
-            file is simplified at roughly 500 metres, so the outlines are for orientation only.
-            Raised faces show mapped area, not population.
+            The map overlays PSA and NAMRIA 2023 boundaries on OpenStreetMap data. The file is
+            simplified at roughly 500 metres, so the outlines are for orientation only. Switch
+            between flat and 3D views; height on the map shows terrain and buildings, not figures.
           </p>
           <p class="section-link"><a href="#boundary-notes">Skip to the boundary notes <span aria-hidden="true">→</span></a></p>
         </div>
@@ -69,21 +102,56 @@ import { formatNumber } from '../lib/format';
   <section class="section-tight">
     <div class="frame">
       <div class="table-head">
+        <h2>Ibaan, in four frames.</h2>
+        <p>Verified photographs of places in Ibaan, away from the diagrams and the boundary lines.</p>
+      </div>
+      <div class="photo-strip geography-photos">
+        {gallery.map((photo) => (
+          <figure>
+            <div class="photo-strip-image">
+              <Image
+                src={photo.image}
+                alt={photo.alt}
+                widths={[280, 560, 840]}
+                sizes="(max-width: 40rem) 46vw, (max-width: 64rem) 30vw, 20vw"
+                format="webp"
+                loading="lazy"
+              />
+            </div>
+            <figcaption>
+              <span>{photo.caption}</span>
+              <span>{photo.meta}</span>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+      <p class="photo-credit">
+        Photographs from Wikimedia Commons. <a href="/sources">Full credits and licences →</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section-tight list-section">
+    <div class="frame">
+      <div class="table-head">
         <h2>Barangay list</h2>
-        <p>PSGC codes are from the same 2023 boundary file. Names are listed alphabetically.</p>
+        <p>
+          Boundary codes are carried from the same 2023 map file. They are not presented as verified
+          PSGC codes. Names are listed alphabetically.
+        </p>
       </div>
       <div class="table-wrap">
         <table>
-          <caption class="visually-hidden">The 26 barangays of Ibaan, Batangas, with PSGC codes</caption>
+          <caption class="visually-hidden">The 26 barangays of Ibaan, Batangas, with map boundary codes</caption>
           <thead>
             <tr>
               <th scope="col">Barangay</th>
-              <th scope="col">PSGC code</th>
+              <th scope="col">Boundary code</th>
             </tr>
           </thead>
           <tbody>
             {BARANGAYS.map((barangay) => (
-              <tr>
+              <tr id={`barangay-${barangay.slug}`}>
                 <th scope="row">{barangay.name}</th>
                 <td><code>{barangay.code}</code></td>
               </tr>

@@ -1,0 +1,17 @@
+---
+interface TocItem {
+  id: string;
+  label: string;
+}
+
+interface Props {
+  items: TocItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<nav class="page-toc" aria-label="On this page">
+  <span>On this page</span>
+  {items.map((item) => <a href={`#${item.id}`}>{item.label}</a>)}
+</nav>

@@ -1,21 +1,39 @@
 ---
 import Base from '../layouts/Base.astro';
 import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import GapPanel from '../components/GapPanel.astro';
 import { CREDITS, FIGURE_NOTES, MAP, SOURCE_GROUPS, TOWN } from '../data/town';
+import { GAPS, SOURCE, VERIFIED_ON } from '../data/ibaan-record';
+import { OFFICIAL } from '../lib/site';
+
+const registry = Object.values(SOURCE);
 ---
 
 <Base
   title="Sources and credits"
-  description="Official Ibaan sources, map data, image credits, and the figures this guide leaves out."
+  description="Official Ibaan sources, checked dates, map data, image credits, and unresolved figures."
   crumbs={[{ label: 'Sources' }]}
 >
   <PageHeader
     title="Sources, credits, and the figures left out."
     intro="A civic guide is only as good as its paper trail. This page records where the facts, maps, and photographs come from, and where the official record disagrees with itself."
-    note="Last reviewed against the municipal site in November 2026. Official pages can change without notice."
-  />
+    note={`Checked ${VERIFIED_ON}. The checked date is not the same as a source's own as-of date.`}
+  >
+    <Toc
+      items={[
+        { id: 'figure-notes', label: 'Figure notes' },
+        { id: 'registry', label: 'Source registry' },
+        { id: 'source-groups', label: 'Source groups' },
+        { id: 'map', label: 'Map generation' },
+        { id: 'credits', label: 'Photograph credits' },
+        { id: 'gaps', label: 'Open gaps' },
+      ]}
+    />
+  </PageHeader>
 
-  <section class="section-tight">
+  <section class="section-tight" id="figure-notes">
     <div class="frame">
       <div class="section-head">
         <h2>Two figures not published here.</h2>
@@ -26,7 +44,6 @@ import { CREDITS, FIGURE_NOTES, MAP, SOURCE_GROUPS, TOWN } from '../data/town';
           </p>
         </div>
       </div>
-
       <div class="figure-notes">
         {FIGURE_NOTES.map((note) => (
           <div>
@@ -35,8 +52,7 @@ import { CREDITS, FIGURE_NOTES, MAP, SOURCE_GROUPS, TOWN } from '../data/town';
           </div>
         ))}
       </div>
-
-      <p class="source-note">
+      <p class="table-note">
         The distance to Batangas City, {TOWN.distanceToBatangasCityKm} kilometres, appears in the
         municipal profile and does not conflict across the two pages. It is the only distance figure
         used on this site.
@@ -44,7 +60,42 @@ import { CREDITS, FIGURE_NOTES, MAP, SOURCE_GROUPS, TOWN } from '../data/town';
     </div>
   </section>
 
-  <section class="section-tight">
+  <section class="section-tight" id="registry">
+    <div class="frame">
+      <SourceNote
+        sources={[SOURCE.profile, SOURCE.officials, SOURCE.bids, SOURCE.cmci, SOURCE.hotlines]}
+        title="Primary registry"
+        data="Municipal pages and the DTI CMCI profile"
+        note="Each page on this site carries its own source note. This registry is the common index."
+        refresh="Re-check monthly or after a municipal site update"
+      />
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Source registry for Better Ibaan</caption>
+          <thead>
+            <tr>
+              <th scope="col">Source</th>
+              <th scope="col">Publisher</th>
+              <th scope="col">Checked</th>
+            </tr>
+          </thead>
+          <tbody>
+            {registry.map((source) => (
+              <tr>
+                <th scope="row">
+                  <a href={source.url} target="_blank" rel="noopener noreferrer">{source.label} <span aria-hidden="true">↗</span></a>
+                </th>
+                <td>{source.publisher}</td>
+                <td class="num">{source.accessed}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="source-groups">
     <div class="frame">
       <div class="section-head">
         <h2>The source groups.</h2>
@@ -55,7 +106,6 @@ import { CREDITS, FIGURE_NOTES, MAP, SOURCE_GROUPS, TOWN } from '../data/town';
           </p>
         </div>
       </div>
-
       <div class="source-groups">
         {SOURCE_GROUPS.map((group) => (
           <section>
@@ -73,10 +123,27 @@ import { CREDITS, FIGURE_NOTES, MAP, SOURCE_GROUPS, TOWN } from '../data/town';
           </section>
         ))}
       </div>
+      <div class="directory-grid">
+        <div class="directory-card">
+          <h3>Official home</h3>
+          <p class="card-meta">Municipality of Ibaan</p>
+          <a href={OFFICIAL.home} target="_blank" rel="noopener noreferrer">Open the site <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Archives</h3>
+          <p class="card-meta">Announcements and events</p>
+          <a href={OFFICIAL.announcements} target="_blank" rel="noopener noreferrer">Open announcements <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Datasets</h3>
+          <p class="card-meta">Static JSON with provenance</p>
+          <a href="/data">Open the catalogue <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section-tight">
+  <section class="section-tight" id="map">
     <div class="frame">
       <div class="note-panel">
         <h2>Map generation</h2>
@@ -98,19 +165,18 @@ import { CREDITS, FIGURE_NOTES, MAP, SOURCE_GROUPS, TOWN } from '../data/town';
             </p>
           </div>
           <div>
-            <h3>Ibaan view</h3>
+            <h3>Interactive map</h3>
             <p>
-              The 26 barangay polygons are projected into a local SVG viewBox. The raised faces are
-              extruded SVG paths: their height follows the mapped area in that simplified file, not
-              official land area or population. Switch to the flat view for the plain outline.
+              The 26 barangay polygons are overlaid on OpenStreetMap data served by OpenFreeMap.
+              The 3D view also requests terrain and building data. No figure on this site is encoded
+              in the height of the map.
             </p>
           </div>
           <div>
-            <h3>Batangas view</h3>
+            <h3>Flat fallback</h3>
             <p>
-              The provincial context map combines the 29 municipalities and 5 component cities of
-              Batangas in the same source release. Ibaan is highlighted; the five neighbouring
-              local governments are labelled.
+              If WebGL or the tile services are unavailable, the page keeps a plain SVG outline of
+              the same 26 barangays. The flat view is also one click away in the map toolbar.
             </p>
           </div>
         </div>
@@ -118,7 +184,7 @@ import { CREDITS, FIGURE_NOTES, MAP, SOURCE_GROUPS, TOWN } from '../data/town';
     </div>
   </section>
 
-  <section class="section-tight">
+  <section class="section-tight" id="credits">
     <div class="frame">
       <div class="section-head">
         <h2>Photograph credits.</h2>
@@ -129,14 +195,11 @@ import { CREDITS, FIGURE_NOTES, MAP, SOURCE_GROUPS, TOWN } from '../data/town';
           </p>
         </div>
       </div>
-
       <ul class="credit-list">
         {CREDITS.map((credit) => (
           <li>
             <span class="credit-title">{credit.title}</span>
-            <span class="credit-meta">
-              {credit.creator} · {credit.license} · {credit.via}
-            </span>
+            <span class="credit-meta">{credit.creator} · {credit.license} · {credit.via}</span>
             <a href={credit.href} target="_blank" rel="noopener noreferrer">View the source <span aria-hidden="true">↗</span></a>
           </li>
         ))}
@@ -144,28 +207,13 @@ import { CREDITS, FIGURE_NOTES, MAP, SOURCE_GROUPS, TOWN } from '../data/town';
     </div>
   </section>
 
-  <section class="section-tight">
+  <section class="section-tight" id="gaps">
     <div class="frame">
-      <div class="prose-wide">
-        <h2>Typefaces</h2>
-        <p>
-          The site uses Source Serif 4 for display and Public Sans for text, both self-hosted. Both
-          are open-source typefaces released under the SIL Open Font License.
-        </p>
-
-        <h2>Open data</h2>
-        <p>
-          The town profile, barangay list, and map-derived fields are available as
-          <a href="/data/iba-an.json">JSON</a>. The map data is generated from the boundary source
-          above and carries the same caveat: approximate geometry for orientation.
-        </p>
-
-        <h2>Independence</h2>
-        <p>
-          Better Ibaan is not affiliated with the Municipality of Ibaan. It is not an official
-          government website. It has no advertising, no analytics, and no user accounts.
-        </p>
-      </div>
+      <GapPanel
+        items={GAPS}
+        title="Where the record stops"
+        intro="These fields are not in the guide or its datasets. Each line names the best public page to check next."
+      />
     </div>
   </section>
 </Base>

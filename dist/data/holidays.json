@@ -1,0 +1,24 @@
+{
+  "verifiedOn": "2026-11-20",
+  "status": "Not published",
+  "records": [],
+  "note": "No dedicated Ibaan holiday calendar was found on the checked municipal pages. National proclamations are not substituted for a local list.",
+  "channels": [
+    {
+      "label": "Announcements archive",
+      "url": "https://www.ibaan.gov.ph/archive/announcements/"
+    },
+    {
+      "label": "Events archive",
+      "url": "https://www.ibaan.gov.ph/archive/events/"
+    },
+    {
+      "label": "Municipal home",
+      "url": "https://www.ibaan.gov.ph/"
+    }
+  ],
+  "sources": [
+    "https://www.ibaan.gov.ph/archive/announcements/",
+    "https://www.ibaan.gov.ph/archive/events/"
+  ]
+}

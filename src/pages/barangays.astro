@@ -1,0 +1,139 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import GapPanel from '../components/GapPanel.astro';
+import BarangayMap from '../components/BarangayMap.astro';
+import { BARANGAYS, MAP, TOWN } from '../data/town';
+import { GAPS, SOURCE, type GapEntry } from '../data/ibaan-record';
+
+const relevantGaps = GAPS.filter(
+  (gap) => gap.fact.includes('PSGC') || gap.fact.includes('Barangay-level'),
+) as GapEntry[];
+---
+
+<Base
+  title="Barangays"
+  description="The 26 barangays of Ibaan, with the interactive boundary map and the figures that could not be verified."
+  crumbs={[{ label: 'Government' }, { label: 'Barangays' }]}
+>
+  <PageHeader
+    title="Twenty-six barangays."
+    intro={`Ibaan is divided into ${TOWN.barangayCount} barangays. This page keeps the names, the interactive map, and the gaps in one place.`}
+    note="Barangay names and the official count come from the municipal profile. The outlines are simplified map geometry, not a legal boundary."
+  >
+    <Toc
+      items={[
+        { id: 'interactive-map', label: 'Interactive map' },
+        { id: 'barangay-index', label: 'Barangay index' },
+        { id: 'boundary-note', label: 'Boundary note' },
+        { id: 'gaps', label: 'Unverified figures' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section map-section" id="interactive-map">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Find a barangay.</h2>
+        <div class="section-copy">
+          <p>
+            Filter the index, switch between 2D and 3D, and reset the view. The tilted view shows
+            real terrain and building height from public map data, not population or land area.
+          </p>
+        </div>
+      </div>
+      <BarangayMap />
+    </div>
+  </section>
+
+  <section class="section-tight" id="barangay-index">
+    <div class="frame">
+      <div class="section-head">
+        <h2>All 26 names.</h2>
+        <div class="section-copy">
+          <p>
+            The index follows the municipal count. The mapped area column describes the simplified
+            polygon only and is not an official land-area figure.
+          </p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">The 26 barangays of Ibaan with simplified mapped areas</caption>
+          <thead>
+            <tr>
+              <th scope="col">Barangay</th>
+              <th scope="col">Mapped area</th>
+              <th scope="col">Boundary code</th>
+            </tr>
+          </thead>
+          <tbody>
+            {BARANGAYS.map((barangay) => (
+              <tr>
+                <th scope="row">
+                  <a href={`/geography#barangay-${barangay.slug}`}>{barangay.name}</a>
+                </th>
+                <td class="num">{barangay.areaKm2.toFixed(2)} km²</td>
+                <td class="num"><code>{barangay.code}</code></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">
+        The mapped areas sum to about 70.32 km². The official municipal land area is
+        {TOWN.landAreaKm2} km²; use that figure for the town.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-tight" id="boundary-note">
+    <div class="frame">
+      <div class="note-panel">
+        <h2>Boundary note</h2>
+        <div class="note-grid">
+          <div>
+            <h3>Source</h3>
+            <p>
+              PSA and NAMRIA 2023 administrative boundaries, published in the
+              <a href={MAP.source.barangays} target="_blank" rel="noopener noreferrer">barangay-boundaries-repository</a>.
+              The repository is MIT-licensed.
+            </p>
+          </div>
+          <div>
+            <h3>Precision</h3>
+            <p>
+              The file is simplified at roughly 500 metres. It is suitable for orientation, not for
+              measurement, jurisdiction, or legal boundary questions.
+            </p>
+          </div>
+          <div>
+            <h3>Map services</h3>
+            <p>
+              The interactive map loads OpenStreetMap data through OpenFreeMap and requests terrain
+              tiles for the 3D view. A plain SVG outline is available when WebGL is unavailable.
+            </p>
+          </div>
+        </div>
+      </div>
+      <SourceNote
+        sources={[SOURCE.profile]}
+        title="Barangay count"
+        data="Official municipal profile"
+        note="The count is official. Boundary codes and mapped areas come from the separate map file and are not presented as official statistics."
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="gaps">
+    <div class="frame">
+      <GapPanel
+        items={relevantGaps}
+        title="Barangay figures we do not publish"
+        intro="The municipal profile gives town-level totals only. These barangay-level fields are left unresolved."
+      />
+    </div>
+  </section>
+</Base>

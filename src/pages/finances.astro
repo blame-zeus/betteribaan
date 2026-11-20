@@ -1,0 +1,95 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import GapPanel from '../components/GapPanel.astro';
+import { GAPS, SOURCE, type GapEntry } from '../data/ibaan-record';
+
+const financeGaps = GAPS.filter(
+  (gap) =>
+    gap.fact.includes('budgets') ||
+    gap.fact.includes('income classification') ||
+    gap.fact.includes('Full Disclosure'),
+) as GapEntry[];
+---
+
+<Base
+  title="Finances"
+  description="What can be verified about Ibaan's income class, with budgets and financial statements left unpublished."
+  crumbs={[{ label: 'Statistics' }, { label: 'Finances' }]}
+>
+  <PageHeader
+    title="Income class, not a budget."
+    intro="The municipal profile and the DTI CMCI both call Ibaan a second-class municipality. Neither publishes the town's annual income figure here, and no local budget or financial statement was found on the municipal site."
+    note="A classification band is not Ibaan's income. It is shown only as the CMCI definition."
+  >
+    <Toc
+      items={[
+        { id: 'class', label: 'Income class' },
+        { id: 'not-published', label: 'What is not published' },
+        { id: 'where-to-go', label: 'Where to go next' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="class">
+    <div class="frame">
+      <div class="status-card" data-ui>
+        <h3>Second-class municipality</h3>
+        <p>
+          The CMCI defines second class as average annual income of ₱45,000,000 to ₱54,999,999.
+          That is the definition of the band, not a reported figure for Ibaan.
+        </p>
+      </div>
+      <SourceNote
+        sources={[SOURCE.profile, SOURCE.cmciAbout, SOURCE.cmci]}
+        title="Classification"
+        data="Municipal profile and DTI CMCI definition"
+        note="The effective date and issuing order for Ibaan's classification are not given on the checked pages."
+        refresh="Re-check when a classification order or audited income figure is published"
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="not-published">
+    <div class="frame">
+      <GapPanel
+        items={financeGaps}
+        title="Financial records we do not publish"
+        intro="No budget, audited statement, or DILG filing was verified for Ibaan. These are gaps, not zero values."
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="where-to-go">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Public spending, where it is visible.</h2>
+        <div class="section-copy">
+          <p>
+            The municipal bid results show proposed projects and their processing status. They do
+            not show approved budgets or contract amounts.
+          </p>
+        </div>
+      </div>
+      <div class="directory-grid">
+        <div class="directory-card">
+          <h3>Procurement</h3>
+          <p class="card-meta">Invitations and bid results</p>
+          <a href="/procurement">Open the procurement guide <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Infrastructure</h3>
+          <p class="card-meta">Projects named in bid results</p>
+          <a href="/infrastructure">Open the project index <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="directory-card">
+          <h3>Transparency</h3>
+          <p class="card-meta">Disclosure map and open gaps</p>
+          <a href="/transparency">Open the transparency guide <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

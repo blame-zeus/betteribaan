@@ -1,0 +1,79 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import GapPanel from '../components/GapPanel.astro';
+import { GAPS, SOURCE, type GapEntry } from '../data/ibaan-record';
+import { OFFICIAL } from '../lib/site';
+
+const hotlineGap = GAPS.filter((gap) => gap.sourceKey === 'hotlines');
+---
+
+<Base
+  title="Emergency hotlines"
+  description="The official Ibaan hotline board, with numbers left untranscribed because the source publishes them as an image."
+  crumbs={[{ label: 'Services' }, { label: 'Emergency hotlines' }]}
+>
+  <PageHeader
+    title="Emergency contacts, without guessing."
+    intro="The Municipality of Ibaan publishes a hotline page. Its contact list is served as a single image, so this guide links to the board and does not transcribe numbers it cannot verify as text."
+    note="For an emergency, use the official board linked below. This page is an index, not a dispatch service."
+  >
+    <Toc
+      items={[
+        { id: 'official-board', label: 'Official board' },
+        { id: 'why-no-numbers', label: 'Why no numbers here' },
+        { id: 'verification-gap', label: 'Verification gap' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="official-board">
+    <div class="frame">
+      <div class="note-panel">
+        <h2>Start at the official hotline board</h2>
+        <p>
+          The municipal hotline page is the only local contact list this guide could verify. It is
+          published as an image and may be updated without notice.
+        </p>
+        <p class="note-actions">
+          <a class="btn" href={OFFICIAL.hotlines} target="_blank" rel="noopener noreferrer">
+            Open the official hotline page <span aria-hidden="true">↗</span>
+          </a>
+          <a class="text-link" href="/services">Browse municipal services <span aria-hidden="true">→</span></a>
+        </p>
+      </div>
+      <SourceNote
+        sources={[SOURCE.hotlines]}
+        title="Hotline source"
+        data="Official hotline page, published as an image"
+        note="The page exists and is linked from the municipal site. The numbers are not reproduced here because they cannot be checked as text."
+        refresh="Re-check if the municipality publishes a text version"
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="why-no-numbers">
+    <div class="frame">
+      <div class="prose-wide">
+        <h2>Why the numbers are not copied</h2>
+        <p>
+          A hotline list is the kind of record where a wrong digit matters. An image on a changing
+          municipal page is not a stable text source for this guide, and copying numbers into a
+          static page would create a second list that could drift out of date.
+        </p>
+        <p>
+          The official board stays the source of truth. If the municipality later publishes the same
+          list as text, this page can index it with a checked date.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="verification-gap">
+    <div class="frame">
+      <GapPanel items={hotlineGap as GapEntry[]} title="The open gap" intro="One hotline fact remains unresolved." />
+    </div>
+  </section>
+</Base>

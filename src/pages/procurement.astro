@@ -1,0 +1,108 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import { BID_RESULTS, SOURCE } from '../data/ibaan-record';
+import { OFFICIAL } from '../lib/site';
+---
+
+<Base
+  title="Procurement"
+  description="Invitation-to-bid and bid-result information published by the Municipality of Ibaan."
+  crumbs={[{ label: 'Transparency' }, { label: 'Procurement' }]}
+>
+  <PageHeader
+    title="Bids and awards, as published."
+    intro="The municipality separates invitations to bid from bid results. When checked, the invitation page said there were no projects available for bidding, while the results page listed eleven entries under the 2026 filter."
+    note="This guide does not host bid documents or infer award values from a title."
+  >
+    <Toc
+      items={[
+        { id: 'invitations', label: 'Invitations' },
+        { id: 'results', label: 'Bid results' },
+        { id: 'limits', label: 'Limits of the record' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="invitations">
+    <div class="frame">
+      <div class="status-card" data-ui>
+        <h3>No projects available for bidding</h3>
+        <p>
+          That is the message shown on the official Invitation to Bid page when checked. It is a
+          snapshot of that page, not a statement that the municipality never procures.
+        </p>
+      </div>
+      <div class="note-actions">
+        <a class="btn" href={OFFICIAL.invitations} target="_blank" rel="noopener noreferrer">
+          Open the official invitation page <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <SourceNote
+        sources={[SOURCE.invitations]}
+        title="Invitation to Bid"
+        data="Official municipal procurement page"
+        note="Procurement pages change often. Check the official page for open bids."
+        refresh="Re-check before relying on an open-bid status"
+      />
+    </div>
+  </section>
+
+  <section class="section-tight" id="results">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Bid results.</h2>
+        <div class="section-copy">
+          <p>
+            The results page offers 2026 and 2025 filters. These eleven entries are the ones shown
+            under the 2026 filter when checked.
+          </p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Bid results listed by the Municipality of Ibaan under the 2026 filter</caption>
+          <thead>
+            <tr>
+              <th scope="col">Project as listed</th>
+              <th scope="col">Bidding status</th>
+              <th scope="col">Award status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {BID_RESULTS.map((bid) => (
+              <tr>
+                <th scope="row">{bid.title}</th>
+                <td>{bid.status}</td>
+                <td>{bid.award}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">
+        For the infrastructure-only view, see <a href="/infrastructure">Infrastructure</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-tight" id="limits">
+    <div class="frame">
+      <div class="callout">
+        <strong>What is not visible</strong>
+        <p>
+          The extracted results text does not show an ABC, contract price, Notice of Award date, or
+          supplier. Titles and processing status are the only fields repeated here.
+        </p>
+      </div>
+      <SourceNote
+        sources={[SOURCE.bids]}
+        title="Bid results source"
+        data="Municipal bid results page"
+        note="All eleven entries show “Bidded” and “On process for award” in the checked text. That status may have changed."
+      />
+    </div>
+  </section>
+</Base>

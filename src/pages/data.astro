@@ -1,0 +1,137 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Toc from '../components/Toc.astro';
+import SourceNote from '../components/SourceNote.astro';
+import GapPanel from '../components/GapPanel.astro';
+import { GAPS, SOURCE, VERIFIED_ON } from '../data/ibaan-record';
+import { BARANGAYS } from '../data/town';
+
+const datasets = [
+  { name: 'Dataset index', path: '/data/index.json', note: 'Catalogue, provenance, and withheld fields' },
+  { name: 'Municipality', path: '/data/municipality.json', note: 'Official profile figures and neighbours' },
+  { name: 'Services', path: '/data/services.json', note: '20 offices and 176 linked service entries' },
+  { name: 'Officials', path: '/data/officials.json', note: 'Elected officials and committee assignments' },
+  { name: 'Resorts', path: '/data/resorts.json', note: '9 published tourism listings' },
+  { name: 'Bid results', path: '/data/bids.json', note: '11 entries under the 2026 filter' },
+  { name: 'Infrastructure', path: '/data/infrastructure.json', note: 'Projects named in bid titles' },
+  { name: 'Competitiveness', path: '/data/competitiveness.json', note: 'CMCI ranks and 2024 pillars' },
+  { name: 'Barangays GeoJSON', path: '/data/barangays.geojson', note: `${BARANGAYS.length} approximate boundary features` },
+  { name: 'Combined profile', path: '/data/iba-an.json', note: 'Profile, barangays, map note, and sources' },
+] as const;
+
+const unavailable = [
+  { name: 'Financials', path: '/data/financials.json', note: 'Status: not published' },
+  { name: 'DILG filings', path: '/data/fdp-filings.json', note: 'Status: could not verify' },
+  { name: 'Documents', path: '/data/documents.json', note: 'Official archive index only' },
+  { name: 'Holidays', path: '/data/holidays.json', note: 'Status: not published' },
+] as const;
+---
+
+<Base
+  title="Open data"
+  description="Machine-readable Ibaan datasets with provenance, statuses, and withheld fields."
+  crumbs={[{ label: 'About' }, { label: 'Open data' }]}
+>
+  <PageHeader
+    title="Data, with its paper trail."
+    intro="These endpoints are static JSON files generated with the site. Verified records are included with their sources; unavailable records are returned with an explicit status rather than an empty claim of fact."
+    note={`Checked ${VERIFIED_ON}. Data dates, review dates, and source links are kept separate.`}
+  >
+    <Toc
+      items={[
+        { id: 'catalogue', label: 'Catalogue' },
+        { id: 'unavailable', label: 'Unavailable datasets' },
+        { id: 'provenance', label: 'Provenance' },
+        { id: 'withheld', label: 'Withheld fields' },
+      ]}
+    />
+  </PageHeader>
+
+  <section class="section-tight" id="catalogue">
+    <div class="frame">
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Available Better Ibaan datasets</caption>
+          <thead>
+            <tr>
+              <th scope="col">Dataset</th>
+              <th scope="col">Endpoint</th>
+              <th scope="col">Contents</th>
+            </tr>
+          </thead>
+          <tbody>
+            {datasets.map((dataset) => (
+              <tr>
+                <th scope="row">{dataset.name}</th>
+                <td><a href={dataset.path}>{dataset.path}</a></td>
+                <td>{dataset.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="unavailable">
+    <div class="frame">
+      <div class="section-head">
+        <h2>Datasets with no verified records.</h2>
+        <div class="section-copy">
+          <p>
+            These endpoints exist so the absence is machine-readable. They carry a status, a note,
+            and the best page to check next.
+          </p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="visually-hidden">Unavailable Better Ibaan datasets</caption>
+          <thead>
+            <tr>
+              <th scope="col">Dataset</th>
+              <th scope="col">Endpoint</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {unavailable.map((dataset) => (
+              <tr>
+                <th scope="row">{dataset.name}</th>
+                <td><a href={dataset.path}>{dataset.path}</a></td>
+                <td>{dataset.note}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" id="provenance">
+    <div class="frame">
+      <SourceNote
+        sources={[SOURCE.profile, SOURCE.officials, SOURCE.bids, SOURCE.cmci]}
+        title="Dataset provenance"
+        data="Municipal and DTI pages, checked as listed"
+        note="Each endpoint also carries its own source URL. CMCI values are labelled as CMCI-specific and do not replace the municipal profile."
+        refresh="Re-check endpoints after a source page changes"
+      />
+      <p class="table-note">
+        Boundary geometry is from the MIT-licensed PSA/NAMRIA 2023 file. It is approximate and is
+        not a survey. See <a href="/sources">sources and credits</a> for the full note.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-tight" id="withheld">
+    <div class="frame">
+      <GapPanel
+        items={GAPS}
+        title="Withheld fields"
+        intro="These facts are not in the datasets because no checked primary source was available."
+      />
+    </div>
+  </section>
+</Base>
