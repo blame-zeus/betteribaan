@@ -553,11 +553,15 @@
             </ul>
           </section><section>
             <h3>Map boundaries</h3>
-            <p>The barangay and Batangas maps use the PSA/NAMRIA 2023 administrative boundaries published in the barangay-boundaries-repository. The polygons are simplified for the web, so they are for orientation, not survey work.</p>
+            <p>The barangay map uses detailed OCHA COD-AB boundaries from NAMRIA and PSA, released 2023-11-06 and redistributed with PSGC codes by faeldon/philippines-psgc-shapefiles. The Batangas context map uses a simplified PSA/NAMRIA file from barangay-boundaries-repository. Both are orientation aids, not survey work.</p>
             <ul>
               <li>
+                  <a href="https://github.com/faeldon/philippines-psgc-shapefiles/releases/tag/psgc-2023-4q" target="_blank" rel="noopener noreferrer">
+                    Detailed barangay boundaries <span aria-hidden="true">↗</span>
+                  </a>
+                </li><li>
                   <a href="https://github.com/bendlikeabamboo/barangay-boundaries-repository" target="_blank" rel="noopener noreferrer">
-                    Boundary repository <span aria-hidden="true">↗</span>
+                    Simplified context boundaries <span aria-hidden="true">↗</span>
                   </a>
                 </li>
             </ul>
@@ -609,17 +613,18 @@
           <div>
             <h3>Source</h3>
             <p>
-              PSA/NAMRIA 2023 administrative boundaries, published in the
-              <a href="https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/hierarchical_t0p005/barangays.geojson" target="_blank" rel="noopener noreferrer">barangay-boundaries-repository</a>.
-              The repository is MIT-licensed.
+              OCHA COD-AB boundaries from NAMRIA and PSA, released 2023-11-06 and redistributed with
+              PSGC codes by
+              <a href="https://github.com/faeldon/philippines-psgc-shapefiles/releases/tag/psgc-2023-4q" target="_blank" rel="noopener noreferrer">faeldon/philippines-psgc-shapefiles</a>.
+              Upstream data is CC BY-IGO 3.0; the redistribution wrapper is MIT.
             </p>
           </div>
           <div>
-            <h3>Simplification</h3>
+            <h3>Detail</h3>
             <p>
-              The boundary file is published at roughly 500-metre simplification. It is suitable for
-              orientation, but not for measuring land, settling jurisdiction, or drawing a legal
-              boundary.
+              The barangay outlines keep their source vertex detail, so they follow the mapped
+              shapes rather than coarse tiles. The Batangas context map remains simplified. Neither
+              map is for measuring land, settling jurisdiction, or drawing a legal boundary.
             </p>
           </div>
           <div>
@@ -876,6 +881,6 @@
     </ul>
   </div>
 </dialog>
-    <script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.BEj_TR5d.js"></script>
+    <script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.D6a-46vM.js"></script>
   </body>
 </html>
