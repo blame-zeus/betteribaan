@@ -48,7 +48,7 @@ const gallery = [
   <PageHeader
     title="A small town, drawn plainly."
     intro="Ibaan is one of the municipalities of Batangas, with 26 barangays and a boundary it shares with five neighbours. This page keeps the map and the caveats together."
-    note="Official figures below come from the Municipality of Ibaan’s profile. The barangay map uses OpenStreetMap tiles and simplified boundaries; it is an orientation map, not a survey."
+    note="Official figures below come from the Municipality of Ibaan’s profile. The barangay map uses OpenStreetMap tiles and source-detailed boundaries; it is an orientation map, not a survey."
   />
 
   <section class="section-tight">
@@ -88,9 +88,10 @@ const gallery = [
         <h2>The 26 barangays.</h2>
         <div class="section-copy">
           <p>
-            The map overlays PSA and NAMRIA 2023 boundaries on OpenStreetMap data. The file is
-            simplified at roughly 500 metres, so the outlines are for orientation only. Switch
-            between flat and 3D views; height on the map shows terrain and buildings, not figures.
+            The map overlays OCHA COD-AB boundaries from NAMRIA and PSA on OpenStreetMap data. The
+            outlines keep their source vertex detail, so they follow the mapped barangay shapes.
+            They are for orientation only. Switch between flat and 3D views; height on the map shows
+            terrain and buildings, not figures.
           </p>
           <p class="section-link"><a href="#boundary-notes">Skip to the boundary notes <span aria-hidden="true">→</span></a></p>
         </div>
@@ -160,9 +161,9 @@ const gallery = [
         </table>
       </div>
       <p class="table-note">
-        The mapped area of the simplified barangay file sums to about 70.32 km², while the
-        municipal profile gives 68.99 km². The difference comes from generalisation; the official
-        land area is the figure used on this site.
+        The mapped barangay polygons sum to about 70.35 km², while the municipal profile gives
+        68.99 km². The difference comes from the boundary source; the official land area is the
+        figure used on this site.
       </p>
     </div>
   </section>
@@ -186,8 +187,8 @@ const gallery = [
         </dl>
 
         <p class="context-note">
-          Directions follow the municipal profile. The context map uses the same simplified
-          PSA/NAMRIA file as the barangay map.
+          Directions follow the municipal profile. The Batangas context map uses a simplified
+          PSA/NAMRIA file; the local barangay map uses the detailed boundary outlines.
         </p>
       </div>
 
@@ -205,8 +206,9 @@ const gallery = [
           <div>
             <h3>Approximate, not surveyed</h3>
             <p>
-              The outlines on this site are simplified administrative boundaries. They do not
-              settle property lines, barangay jurisdiction, or any legal boundary question.
+              The local outlines keep their source vertex detail, but they are still administrative
+              boundaries. They do not settle property lines, barangay jurisdiction, or any legal
+              boundary question.
             </p>
           </div>
           <div>
@@ -219,16 +221,17 @@ const gallery = [
           <div>
             <h3>Source</h3>
             <p>
-              PSA and NAMRIA 2023 administrative boundaries, published in the
-              <a href={MAP.source.barangays} target="_blank" rel="noopener noreferrer">barangay-boundaries-repository</a>.
-              The repository is MIT-licensed.
+              OCHA COD-AB boundaries from NAMRIA and PSA, released 2023-11-06 and redistributed with
+              PSGC codes by
+              <a href={MAP.source.barangaysUrl} target="_blank" rel="noopener noreferrer">faeldon/philippines-psgc-shapefiles</a>.
+              Upstream data is CC BY-IGO 3.0; the redistribution wrapper is MIT.
             </p>
           </div>
           <div>
             <h3>Official land area</h3>
             <p>
               Use the municipal profile’s {TOWN.landAreaKm2} km² figure for the town’s land area.
-              The simplified map geometry is not a replacement for it.
+              The map geometry is not a replacement for it.
             </p>
           </div>
         </div>

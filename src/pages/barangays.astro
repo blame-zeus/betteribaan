@@ -21,7 +21,7 @@ const relevantGaps = GAPS.filter(
   <PageHeader
     title="Twenty-six barangays."
     intro={`Ibaan is divided into ${TOWN.barangayCount} barangays. This page keeps the names, the interactive map, and the gaps in one place.`}
-    note="Barangay names and the official count come from the municipal profile. The outlines are simplified map geometry, not a legal boundary."
+    note="Barangay names and the official count come from the municipal profile. The outlines follow source geometry, but they are not legal boundaries."
   >
     <Toc
       items={[
@@ -54,14 +54,14 @@ const relevantGaps = GAPS.filter(
         <h2>All 26 names.</h2>
         <div class="section-copy">
           <p>
-            The index follows the municipal count. The mapped area column describes the simplified
+            The index follows the municipal count. The mapped area column describes the mapped
             polygon only and is not an official land-area figure.
           </p>
         </div>
       </div>
       <div class="table-wrap">
         <table class="data-table">
-          <caption class="visually-hidden">The 26 barangays of Ibaan with simplified mapped areas</caption>
+          <caption class="visually-hidden">The 26 barangays of Ibaan with mapped areas</caption>
           <thead>
             <tr>
               <th scope="col">Barangay</th>
@@ -83,7 +83,7 @@ const relevantGaps = GAPS.filter(
         </table>
       </div>
       <p class="table-note">
-        The mapped areas sum to about 70.32 km². The official municipal land area is
+        The mapped areas sum to about 70.35 km². The official municipal land area is
         {TOWN.landAreaKm2} km²; use that figure for the town.
       </p>
     </div>
@@ -97,16 +97,18 @@ const relevantGaps = GAPS.filter(
           <div>
             <h3>Source</h3>
             <p>
-              PSA and NAMRIA 2023 administrative boundaries, published in the
-              <a href={MAP.source.barangays} target="_blank" rel="noopener noreferrer">barangay-boundaries-repository</a>.
-              The repository is MIT-licensed.
+              OCHA COD-AB administrative boundaries from NAMRIA and PSA, released 2023-11-06 and
+              redistributed with PSGC codes by
+              <a href={MAP.source.barangaysUrl} target="_blank" rel="noopener noreferrer">faeldon/philippines-psgc-shapefiles</a>.
+              Upstream data is CC BY-IGO 3.0; the redistribution wrapper is MIT.
             </p>
           </div>
           <div>
             <h3>Precision</h3>
             <p>
-              The file is simplified at roughly 500 metres. It is suitable for orientation, not for
-              measurement, jurisdiction, or legal boundary questions.
+              These outlines keep their source vertex detail, so they follow the mapped barangay
+              shapes rather than coarse tiles. They are still orientation aids, not survey,
+              jurisdiction, or legal boundary records.
             </p>
           </div>
           <div>

@@ -5,6 +5,7 @@ import Toc from '../components/Toc.astro';
 import SourceNote from '../components/SourceNote.astro';
 import GapPanel from '../components/GapPanel.astro';
 import { GAPS, SOURCE } from '../data/ibaan-record';
+import { MAP } from '../data/town';
 import { NAV_GROUPS, OFFICIAL, SITE } from '../lib/site';
 ---
 
@@ -101,9 +102,11 @@ import { NAV_GROUPS, OFFICIAL, SITE } from '../lib/site';
         </p>
         <h2>How the maps are handled</h2>
         <p>
-          The barangay and provincial maps use the PSA and NAMRIA 2023 administrative boundary file,
-          as published in the MIT-licensed barangay-boundaries-repository. The geometry is
-          simplified at roughly 500 metres. The map is an orientation aid, not a survey.
+          The barangay map uses detailed OCHA COD-AB boundaries from NAMRIA and PSA, released
+          2023-11-06 and redistributed with PSGC codes by
+          <a href={MAP.source.barangaysUrl} target="_blank" rel="noopener noreferrer">faeldon/philippines-psgc-shapefiles</a>.
+          The provincial context map uses a coarser PSA/NAMRIA file. Both are orientation aids, not
+          surveys.
         </p>
         <h2>Technology</h2>
         <p>

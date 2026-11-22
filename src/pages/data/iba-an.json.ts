@@ -7,7 +7,7 @@ export const GET: APIRoute = () =>
   jsonResponse({
     generated: MAP.generated,
     about:
-      'Ibaan, Batangas: a sourced town profile, barangay list, and simplified map geometry for orientation.',
+      'Ibaan, Batangas: a sourced town profile, barangay list, and source-detailed map geometry for orientation.',
     town: {
       name: TOWN.name,
       province: TOWN.province,
@@ -33,12 +33,12 @@ export const GET: APIRoute = () =>
       mapLabel: barangay.label,
     })),
     mapNote:
-      'Map geometry is from PSA/NAMRIA 2023 administrative boundaries, simplified at roughly 500 m. It is for orientation only. Boundary codes come from that file and are not presented as verified PSGC codes. The mapped area of the 26 simplified polygons sums to about 70.32 km2; the official municipal land area is 68.99 km2.',
+      'Barangay geometry is from OCHA COD-AB / NAMRIA / PSA administrative boundaries, 2023-11-06, with source vertex detail retained. It is for orientation only. Boundary codes come from the boundary file and are not presented as verified PSGC codes. The 26 mapped polygons sum to about 70.35 km2; the official municipal land area is 68.99 km2.',
     sources: {
       municipalProfile: OFFICIAL.profile,
       municipalHome: OFFICIAL.home,
       ibaTree: OFFICIAL.ibaTree,
       naturalHeritage: OFFICIAL.naturalHeritage,
-      boundaries: MAP.source.barangays,
+      boundaries: MAP.source.barangaysUrl,
     },
   });

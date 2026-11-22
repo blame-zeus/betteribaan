@@ -463,7 +463,7 @@ if (board) {
     const source = targets.find((target) => slugOf(target) === shown);
     nameNode.textContent = source?.getAttribute('data-name') ?? defaultName;
     const code = source?.getAttribute('data-code');
-    codeNode.textContent = code ? `PSGC ${code}` : defaultCode;
+    codeNode.textContent = code ? `Boundary code ${code}` : defaultCode;
   };
 
   const setActive = (slug: string | null): void => {

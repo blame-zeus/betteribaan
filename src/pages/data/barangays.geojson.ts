@@ -6,8 +6,8 @@ export const GET: APIRoute = () =>
   jsonResponse({
     ...IBAAN_GEOJSON,
     metadata: {
-      note: 'Approximate PSA/NAMRIA 2023 administrative boundaries, simplified at roughly 500 m. For orientation only.',
-      source: MAP.source.barangays,
+      note: 'OCHA COD-AB / NAMRIA / PSA administrative boundaries, 2023-11-06, with source vertex detail retained. For orientation only.',
+      source: MAP.source.barangaysUrl,
       codeNote: 'Feature codes come from the boundary file and are not presented as verified PSGC codes.',
     },
   });

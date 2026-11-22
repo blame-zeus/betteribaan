@@ -106,5 +106,6 @@ export const OFFICIAL = {
   online: 'https://online.ibaan.gov.ph/Ibaan/OnlineServices/',
 } as const;
 
+/** Simplified source used only for the Batangas context map. */
 export const MAP_REPOSITORY =
   'https://github.com/bendlikeabamboo/barangay-boundaries-repository';

@@ -8,7 +8,7 @@ interface Props {
 
 const {
   mapTitle = 'The 26 barangays of Ibaan on an OpenStreetMap-based map',
-  mapDescription = 'An interactive OpenStreetMap-style map of Ibaan with approximate PSA and NAMRIA 2023 barangay boundaries overlaid.',
+  mapDescription = 'An interactive OpenStreetMap-style map of Ibaan with source-detailed OCHA COD-AB, NAMRIA and PSA 2023 barangay boundaries overlaid.',
 } = Astro.props;
 ---
 
@@ -34,7 +34,7 @@ const {
                   data-map-shape={barangay.slug}
                   data-name={barangay.name}
                   data-code={barangay.code}
-                  aria-label={`Barangay ${barangay.name}, PSGC ${barangay.code}`}
+                  aria-label={`Barangay ${barangay.name}, boundary code ${barangay.code}`}
                   style={`--i:${index}`}
                 >
                   <path class="map-outline" d={barangay.path} />
@@ -76,8 +76,8 @@ const {
       </div>
 
       <p class="map-caption" data-ui>
-        Basemap © OpenStreetMap contributors · tiles by OpenFreeMap. Boundary outlines are
-        approximate, PSA/NAMRIA 2023. <a href="/sources">Map sources</a>.
+        Basemap © OpenStreetMap contributors · tiles by OpenFreeMap. Boundary outlines follow the
+        OCHA COD-AB / NAMRIA / PSA 2023 source shapes. <a href="/sources">Map sources</a>.
       </p>
     </div>
 
@@ -105,14 +105,14 @@ const {
               data-name={barangay.name}
               data-code={barangay.code}
             >
-              <span class="barangay-name">{barangay.name} · PSGC {barangay.code}, Ibaan, Batangas, Philippines</span>
+              <span class="barangay-name">{barangay.name} · boundary code {barangay.code}, Ibaan, Batangas, Philippines</span>
             </a>
           </li>
         ))}
       </ul>
 
       <p class="map-index-note" data-ui>
-        PSGC codes come from the 2023 boundary file. Hover, focus, or tap a name to find it on the map.
+        Boundary codes come from the 2023 boundary file. Hover, focus, or tap a name to find it on the map.
       </p>
     </aside>
   </div>

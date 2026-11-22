@@ -51,9 +51,10 @@ describe('barangay map data', () => {
     expect(BARANGAYS.every((barangay) => /^\d{10}$/.test(barangay.code))).toBe(true);
   });
 
-  it('includes Poblacion and a drawable fallback path for every barangay', () => {
+  it('includes Poblacion and a detailed fallback path for every barangay', () => {
     expect(BARANGAYS.some((barangay) => barangay.name === 'Poblacion')).toBe(true);
     expect(BARANGAYS.every((barangay) => barangay.path.startsWith('M'))).toBe(true);
+    expect(BARANGAYS.every((barangay) => barangay.path.split('L').length > 10)).toBe(true);
     expect(BARANGAYS.every((barangay) => barangay.label.x > 0 && barangay.label.y > 0)).toBe(true);
   });
 
@@ -70,9 +71,9 @@ describe('barangay map data', () => {
     }
   });
 
-  it('keeps the simplified mapped area close to the published geometry', () => {
+  it('keeps the mapped area close to the source geometry', () => {
     const mappedArea = BARANGAYS.reduce((sum, barangay) => sum + barangay.areaKm2, 0);
-    expect(mappedArea).toBeCloseTo(70.32, 1);
+    expect(mappedArea).toBeCloseTo(70.35, 1);
   });
 
   it('builds a Batangas context map with Ibaan and five neighbours', () => {
@@ -89,8 +90,10 @@ describe('barangay map data', () => {
     ]);
   });
 
-  it('uses the MIT-licensed PSA/NAMRIA repository as its map source', () => {
-    expect(mapData.source.barangays).toContain('bendlikeabamboo/barangay-boundaries-repository');
+  it('uses the detailed OCHA COD-AB boundary source for barangays', () => {
+    expect(mapData.source.barangays).toBe('src/data/ibaan-boundaries.geojson');
+    expect(mapData.source.barangaysUrl).toContain('faeldon/philippines-psgc-shapefiles');
+    expect(mapData.source.municipalities).toContain('bendlikeabamboo/barangay-boundaries-repository');
   });
 });
 

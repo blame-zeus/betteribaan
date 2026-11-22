@@ -7,9 +7,12 @@
  *   - the same outlines as GeoJSON for the OpenStreetMap-based interactive map;
  *   - Ibaan inside the municipalities and component cities of Batangas.
  *
- * Source: PSA/NAMRIA 2023 administrative boundaries, as published in the
- * barangay-boundaries-repository. The published polygons are simplified
- * (roughly 500 m), so the outputs are orientation maps, not survey data.
+ * Barangay outlines: the unsimplified OCHA COD-AB / NAMRIA / PSA boundaries
+ * (2023-11-06) redistributed with PSGC codes by faeldon/philippines-psgc-shapefiles.
+ * They keep their real vertex detail, but remain orientation maps, not survey data.
+ *
+ * Batangas context: the coarser PSA/NAMRIA 2023 outlines published by
+ * barangay-boundaries-repository (approximately 500 m simplification).
  *
  * Run: npm run data:map
  */
@@ -23,13 +26,16 @@ const BASE =
   'https://raw.githubusercontent.com/bendlikeabamboo/barangay-boundaries-repository/main/2023-10-24/hierarchical_t0p005';
 
 const SOURCES = {
-  barangays: `${BASE}/barangays.geojson`,
+  barangays: 'src/data/ibaan-boundaries.geojson',
   municipalities: `${BASE}/municipalities.geojson`,
   cities: `${BASE}/component_cities.geojson`,
   provinces: `${BASE}/provinces.geojson`,
 };
 
 async function load(name, url) {
+  if (!/^https?:\/\//.test(url)) {
+    return JSON.parse(readFileSync(resolve(ROOT, url), 'utf8'));
+  }
   mkdirSync(CACHE, { recursive: true });
   const cache = resolve(CACHE, `${name}.geojson`);
   if (existsSync(cache)) return JSON.parse(readFileSync(cache, 'utf8'));
@@ -160,12 +166,11 @@ const [barangays, municipalities, cities] = await Promise.all([
 ]);
 
 const ibaanFeatures = barangays.features
-  .filter((feature) => feature.properties.ADM3_EN === 'Ibaan')
   .map((feature) => ({
     ...feature,
-    name: feature.properties.ADM4_EN,
-    code: feature.properties.psgc_code,
-    area: feature.properties.AREA_SQKM,
+    name: feature.properties.name,
+    code: feature.properties.code,
+    area: feature.properties.areaKm2,
   }))
   .sort((a, b) => a.name.localeCompare(b.name));
 
@@ -272,8 +277,10 @@ const output = {
   generated: '2026-11-20',
   source: {
     label: 'PSA / NAMRIA 2023 administrative boundaries',
-    note: 'Simplified polygons for orientation; not survey data.',
+    note: 'Barangay outlines retain their source vertex detail. Batangas context is simplified. Orientation only; not survey data.',
     barangays: SOURCES.barangays,
+    barangaysLabel: 'OCHA COD-AB / NAMRIA / PSA boundaries, 2023-11-06, via faeldon/philippines-psgc-shapefiles',
+    barangaysUrl: 'https://github.com/faeldon/philippines-psgc-shapefiles/releases/tag/psgc-2023-4q',
     municipalities: SOURCES.municipalities,
     cities: SOURCES.cities,
   },

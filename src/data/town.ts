@@ -218,9 +218,10 @@ export const SOURCE_GROUPS = [
   },
   {
     title: 'Map boundaries',
-    note: 'The barangay and Batangas maps use the PSA/NAMRIA 2023 administrative boundaries published in the barangay-boundaries-repository. The polygons are simplified for the web, so they are for orientation, not survey work.',
+    note: 'The barangay map uses detailed OCHA COD-AB boundaries from NAMRIA and PSA, released 2023-11-06 and redistributed with PSGC codes by faeldon/philippines-psgc-shapefiles. The Batangas context map uses a simplified PSA/NAMRIA file from barangay-boundaries-repository. Both are orientation aids, not survey work.',
     links: [
-      { label: 'Boundary repository', href: MAP_REPOSITORY },
+      { label: 'Detailed barangay boundaries', href: MAP.source.barangaysUrl },
+      { label: 'Simplified context boundaries', href: MAP_REPOSITORY },
     ],
   },
   {
