@@ -1,31 +1,58 @@
 ---
+/**
+ * The barangay map: Ibaan's 26 outlines, raised in 3D by a sourced measure
+ * over the terrain, with a searchable index beside it.
+ *
+ * The page first renders a plain SVG map (every barangay a link), so it works
+ * without JavaScript, without WebGL and before anything loads. When the map
+ * nears the viewport, scripts/barangay-map.ts loads MapLibre and the outlines
+ * (/data/barangays.geojson) and takes over. Nothing map-related loads on pages
+ * without this component. Settings live in lib/map-config.ts.
+ */
 import { BARANGAYS, MAP } from '../data/town';
+import { MAP_MEASURES, measureById } from '../lib/map-config';
 
 interface Props {
+  /** Prefix for element ids; give each map on one page its own. */
+  id?: string;
+  /** Which measure raises and shades the barangays first (MAP_MEASURES id). */
+  measure?: string;
+  /** A barangay slug: the map opens framed on it, selected. */
+  focus?: string;
   mapTitle?: string;
   mapDescription?: string;
 }
 
 const {
-  mapTitle = 'The 26 barangays of Ibaan on an OpenStreetMap-based map',
-  mapDescription = 'An interactive OpenStreetMap-style map of Ibaan with source-detailed OCHA COD-AB, NAMRIA and PSA 2023 barangay boundaries overlaid.',
+  id = 'bmap',
+  measure: measureId,
+  focus,
+  mapTitle = 'The 26 barangays of Ibaan',
+  mapDescription = 'Boundary outlines from the 2023 OCHA COD-AB / NAMRIA / PSA file over an OpenStreetMap basemap and terrain.',
 } = Astro.props;
+
+const measure = measureById(measureId);
+const valueOf = (b: (typeof BARANGAYS)[number]) => Number((b as unknown as Record<string, unknown>)[measure.property] ?? 0);
+const max = Math.max(...BARANGAYS.map(valueOf));
+const format = (n: number) => n.toLocaleString('en-PH', { minimumFractionDigits: measure.digits, maximumFractionDigits: measure.digits });
 ---
 
-<section class="map-board" data-map-board aria-labelledby="barangay-map-title">
+<section
+  class="map-board"
+  data-map-board
+  data-src="/data/barangays.geojson"
+  data-measure={measure.id}
+  data-focus={focus}
+  data-bounds={JSON.stringify(MAP.ibaan.bounds)}
+  aria-labelledby={`${id}-title`}
+>
+  <h2 id={`${id}-title`} class="visually-hidden">{mapTitle}</h2>
   <div class="map-stage">
     <div class="map-canvas">
       <div class="map-viewport">
         <div class="map-svg-wrap" data-map-fallback>
-          <svg
-            class="ibaan-map"
-            viewBox={MAP.ibaan.viewBox}
-            role="img"
-            aria-labelledby="barangay-map-title barangay-map-desc"
-          >
-            <title id="barangay-map-title">{mapTitle}</title>
-            <desc id="barangay-map-desc">{mapDescription}</desc>
-
+          <svg class="ibaan-map" viewBox={MAP.ibaan.viewBox} role="group" aria-label={mapTitle} aria-describedby={`${id}-desc`}>
+            <desc id={`${id}-desc`}>{mapDescription}</desc>
             <g class="map-shapes">
               {BARANGAYS.map((barangay, index) => (
                 <a
@@ -34,20 +61,18 @@ const {
                   data-map-shape={barangay.slug}
                   data-name={barangay.name}
                   data-code={barangay.code}
-                  aria-label={`Barangay ${barangay.name}, boundary code ${barangay.code}`}
-                  style={`--i:${index}`}
+                  aria-label={`${barangay.name}: ${format(valueOf(barangay))} ${measure.unit}`}
+                  style={`--i:${index};--t:${(0.15 + (valueOf(barangay) / max) * 0.7).toFixed(2)}`}
                 >
                   <path class="map-outline" d={barangay.path} />
                 </a>
               ))}
             </g>
-
             <g class="map-labels" aria-hidden="true">
               {BARANGAYS.filter((barangay) => barangay.showLabel).map((barangay) => (
                 <text x={barangay.label.x} y={barangay.label.y}>{barangay.name}</text>
               ))}
             </g>
-
             <g class="map-compass" aria-hidden="true" transform="translate(764 40)">
               <path d="M0 18V-12M0-12l-7 13M0-12l7 13" />
               <text x="0" y="-22">N</text>
@@ -55,65 +80,73 @@ const {
           </svg>
         </div>
 
-        <div class="map-canvas-gl" data-map-canvas data-ui aria-hidden="true" inert></div>
+        <div class="map-canvas-gl" data-map-canvas aria-hidden="true" inert></div>
 
-        <p class="map-status" data-map-status data-ui role="status" aria-live="polite" hidden></p>
+        <div class="map-bar" data-map-ui data-ui hidden>
+          {MAP_MEASURES.length > 1 ? (
+            <div class="map-seg" role="radiogroup" aria-label="Raise barangays by">
+              {MAP_MEASURES.map((m) => (
+                <button type="button" role="radio" aria-checked={m.id === measure.id ? 'true' : 'false'} data-measure-option={m.id}>{m.label}</button>
+              ))}
+            </div>
+          ) : <span />}
+          <div class="map-tools">
+            <button type="button" class="map-tool map-tool-text" data-map-3d aria-pressed="true" title="Switch between 3D and flat">3D</button>
+            <button type="button" class="map-tool" data-map-zoom="1" aria-label="Zoom in">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            </button>
+            <button type="button" class="map-tool" data-map-zoom="-1" aria-label="Zoom out">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14" /></svg>
+            </button>
+            <button type="button" class="map-tool" data-map-reset aria-label="Reset the view">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8" /><path d="M3 3v5h5" /></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="map-legend" data-map-ui data-ui hidden>
+          <span class="map-legend-title" data-legend-label>{measure.legend}</span>
+          <span class="map-ramp" aria-hidden="true"></span>
+          <span class="map-legend-ends"><span>0</span><span data-legend-max>{format(max)} {measure.unit}</span></span>
+        </div>
+
+        <div class="map-tip" data-map-tip data-ui hidden></div>
+        <aside class="map-card" data-map-card data-ui aria-live="polite" hidden></aside>
+        <p class="map-status" data-map-status role="status" hidden></p>
       </div>
 
-      <div class="map-toolbar" data-map-ui data-ui hidden>
-        <button type="button" class="map-view-toggle" data-map-3d aria-pressed="true">
-          3D view
-        </button>
-        <button type="button" class="map-reset" data-map-reset>Reset view</button>
-        <p class="map-view-note">
-          3D shows OpenStreetMap terrain and buildings. Height is not a data value.
-        </p>
-      </div>
-
-      <div class="map-readout" aria-live="polite" data-map-readout>
+      <div class="map-readout" aria-live="polite">
         <span class="map-readout-name" data-map-name>Ibaan</span>
         <span class="map-readout-code" data-map-code>{BARANGAYS.length} barangays · Batangas</span>
       </div>
 
-      <p class="map-caption" data-ui>
-        Basemap © OpenStreetMap contributors · tiles by OpenFreeMap. Boundary outlines follow the
-        OCHA COD-AB / NAMRIA / PSA 2023 source shapes. <a href="/sources">Map sources</a>.
+      <p class="map-caption">
+        Height and shade: <span data-measure-legend>{measure.legend.toLowerCase()}</span>.
+        <span data-measure-note>{measure.note}</span> Outlines are for orientation, not survey use. <a href="/sources">Map sources</a>.
       </p>
     </div>
 
     <aside class="map-index" aria-label="Barangay index">
       <div class="map-index-head">
-        <label for="barangay-filter">Find a barangay</label>
-        <input
-          id="barangay-filter"
-          type="search"
-          placeholder="Type a name"
-          autocomplete="off"
-          spellcheck="false"
-          data-map-filter
-        />
+        <label for={`${id}-filter`}>Find a barangay</label>
+        <input id={`${id}-filter`} type="search" placeholder="Type a name or code" autocomplete="off" spellcheck="false" data-map-filter />
       </div>
-
       <p class="map-index-count" data-map-count aria-live="polite">{BARANGAYS.length} barangays</p>
-
       <ul class="barangay-index">
         {BARANGAYS.map((barangay) => (
-          <li id={`barangay-${barangay.slug}`} data-map-row={barangay.slug}>
-            <a
-              href={`/geography#barangay-${barangay.slug}`}
-              data-map-item={barangay.slug}
-              data-name={barangay.name}
-              data-code={barangay.code}
-            >
-              <span class="barangay-name">{barangay.name} · boundary code {barangay.code}, Ibaan, Batangas, Philippines</span>
+          <li data-map-row={barangay.slug}>
+            <a href={`/geography#barangay-${barangay.slug}`} data-map-item={barangay.slug} data-name={barangay.name} data-code={barangay.code}>
+              <span class="barangay-name">{barangay.name}</span>
+              <span class="barangay-code"><span class="visually-hidden">boundary code </span>{barangay.code}</span>
             </a>
           </li>
         ))}
       </ul>
-
-      <p class="map-index-note" data-ui>
-        Boundary codes come from the 2023 boundary file. Hover, focus, or tap a name to find it on the map.
-      </p>
+      <p class="map-index-note">Hover, focus or tap a name to find it on the map.</p>
     </aside>
   </div>
 </section>
+
+<script>
+  import '../scripts/barangay-map';
+</script>

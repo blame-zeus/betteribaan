@@ -140,3 +140,38 @@ describe('national pages removed', () => {
     expect(existsSync('src/data/portals.json')).toBe(false);
   });
 });
+
+describe('interactive map contract', () => {
+  it('serves 26 outlines the map script can draw and label', async () => {
+    const { IBAAN_GEOJSON } = await import('../src/data/town');
+    const { features } = IBAAN_GEOJSON;
+    expect(features).toHaveLength(26);
+    expect(new Set(features.map((f) => f.properties.slug)).size).toBe(26);
+    expect(new Set(features.map((f) => f.properties.code)).size).toBe(26);
+    for (const f of features) {
+      expect(['Polygon', 'MultiPolygon']).toContain(f.geometry.type);
+      expect(f.properties.center).toHaveLength(2);
+    }
+  });
+
+  it('gives every map measure a number on every outline and a source note', async () => {
+    const { IBAAN_GEOJSON } = await import('../src/data/town');
+    const { MAP_MEASURES } = await import('../src/lib/map-config');
+    expect(MAP_MEASURES.length).toBeGreaterThan(0);
+    expect(new Set(MAP_MEASURES.map((m) => m.id)).size).toBe(MAP_MEASURES.length);
+    for (const measure of MAP_MEASURES) {
+      expect(measure.note.length).toBeGreaterThan(20);
+      for (const f of IBAAN_GEOJSON.features) {
+        const value = (f.properties as unknown as Record<string, unknown>)[measure.property];
+        expect(typeof value, `${f.properties.name} ${measure.property}`).toBe('number');
+      }
+    }
+  });
+
+  it('keeps the boundary-file area total stated in the map note', async () => {
+    const { IBAAN_GEOJSON } = await import('../src/data/town');
+    const { measureById } = await import('../src/lib/map-config');
+    const total = IBAAN_GEOJSON.features.reduce((sum, f) => sum + f.properties.areaKm2, 0);
+    expect(measureById('area').note).toContain(`${total.toFixed(2)} km²`);
+  });
+});
