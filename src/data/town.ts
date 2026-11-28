@@ -226,7 +226,7 @@ export const SOURCE_GROUPS = [
   },
   {
     title: 'Interactive map tiles',
-    note: 'The interactive map loads OpenStreetMap data through OpenFreeMap vector tiles. Its 3D view also requests elevation tiles from the Mapzen Terrain Tiles dataset on AWS. Those services receive ordinary tile requests when a reader opens the map; this site has no analytics or user accounts. The 3D view shows real terrain and building height, not population or land-area figures.',
+    note: 'The interactive map loads OpenStreetMap data through OpenFreeMap vector tiles. Its 3D view also requests elevation tiles from the Mapzen Terrain Tiles dataset on AWS. Those services receive ordinary tile requests when a reader opens the map; this site has no analytics or user accounts. In the 3D view, barangay height and shade show the area recorded in the 2023 boundary file, not population; the terrain is real.',
     links: [
       { label: 'OpenFreeMap', href: 'https://openfreemap.org/' },
       { label: 'OpenStreetMap copyright', href: 'https://www.openstreetmap.org/copyright' },

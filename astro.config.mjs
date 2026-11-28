@@ -18,4 +18,9 @@ export default defineConfig({
   trailingSlash: 'ignore',
   build: { format: 'directory' },
   compressHTML: false,
+  vite: {
+    // The barangay map imports MapLibre lazily. Pre-bundling it stops the dev
+    // server from re-optimising mid-session, which breaks that import.
+    optimizeDeps: { include: ['maplibre-gl'] },
+  },
 });
